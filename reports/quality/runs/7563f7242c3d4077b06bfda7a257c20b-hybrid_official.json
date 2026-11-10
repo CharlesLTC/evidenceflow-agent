@@ -1,0 +1,256 @@
+{
+  "timestamp": "2026-11-10T20:01:19.650468+00:00",
+  "mode": "live",
+  "model_name": "qwen-plus",
+  "retrieval_strategy": "hybrid",
+  "critic_enabled": false,
+  "status": "PASS",
+  "blocker": null,
+  "passed": 6,
+  "total": 6,
+  "citation_validity": {
+    "numerator": 6,
+    "denominator": 6,
+    "rate": 1.0
+  },
+  "live_branch_count": 4,
+  "cases": [
+    {
+      "id": "TC01",
+      "question": "办公电脑申领审批需要多久？",
+      "status": "PASS",
+      "result_status": "COMPLETED",
+      "checks": {
+        "schema": true,
+        "mode_consistent": true,
+        "completed": true,
+        "correct_document": true,
+        "expected_fact": true,
+        "all_citations_valid": true
+      },
+      "trace": "examples/traces/live/bec38be561b2478ab10503387ee05ed4.json",
+      "output": "examples/outputs/live/bec38be561b2478ab10503387ee05ed4.json",
+      "input": "examples/inputs/live-bec38be561b2478ab10503387ee05ed4.json",
+      "model_decisions": 4,
+      "critic": {
+        "enabled": false,
+        "reviews": 0,
+        "model_calls": 0,
+        "model_steps": 0,
+        "revisions_requested": 0,
+        "repair_limit": 1,
+        "latency_ms": 0.0,
+        "usage": {}
+      },
+      "tools": [
+        "search_documents",
+        "read_document",
+        "inspect_versions",
+        "submit_answer"
+      ],
+      "search_strategies": [
+        "hybrid"
+      ],
+      "pre_trace": null
+    },
+    {
+      "id": "TC02",
+      "question": "差旅报销期限是多久？",
+      "status": "PASS",
+      "result_status": "NEEDS_CLARIFICATION",
+      "checks": {
+        "schema": true,
+        "mode_consistent": true,
+        "clarification": true,
+        "both_versions": true,
+        "both_values": true,
+        "unresolved": true,
+        "asks_for_context": true,
+        "all_citations_valid": true
+      },
+      "trace": "examples/traces/live/7b2133762a1a473fa73e3c396c36a1bb.json",
+      "output": "examples/outputs/live/7b2133762a1a473fa73e3c396c36a1bb.json",
+      "input": "examples/inputs/live-7b2133762a1a473fa73e3c396c36a1bb.json",
+      "model_decisions": 5,
+      "critic": {
+        "enabled": false,
+        "reviews": 0,
+        "model_calls": 0,
+        "model_steps": 0,
+        "revisions_requested": 0,
+        "repair_limit": 1,
+        "latency_ms": 0.0,
+        "usage": {}
+      },
+      "tools": [
+        "search_documents",
+        "read_document",
+        "read_document",
+        "inspect_versions",
+        "submit_answer"
+      ],
+      "search_strategies": [
+        "hybrid"
+      ],
+      "pre_trace": null
+    },
+    {
+      "id": "TC03",
+      "question": "公司的年终奖金是多少？",
+      "status": "PASS",
+      "result_status": "INSUFFICIENT_EVIDENCE",
+      "checks": {
+        "schema": true,
+        "mode_consistent": true,
+        "abstention": true,
+        "no_false_citation": true,
+        "all_citations_valid": true
+      },
+      "trace": "examples/traces/live/8447cd69afa84cc1946470bc6de126c5.json",
+      "output": "examples/outputs/live/8447cd69afa84cc1946470bc6de126c5.json",
+      "input": "examples/inputs/live-8447cd69afa84cc1946470bc6de126c5.json",
+      "model_decisions": 5,
+      "critic": {
+        "enabled": false,
+        "reviews": 0,
+        "model_calls": 0,
+        "model_steps": 0,
+        "revisions_requested": 0,
+        "repair_limit": 1,
+        "latency_ms": 0.0,
+        "usage": {}
+      },
+      "tools": [
+        "search_documents",
+        "inspect_versions",
+        "search_documents",
+        "submit_answer",
+        "submit_answer"
+      ],
+      "search_strategies": [
+        "hybrid",
+        "bm25"
+      ],
+      "pre_trace": null
+    },
+    {
+      "id": "TC04",
+      "question": "领电脑一般几天能批下来？",
+      "status": "PASS",
+      "result_status": "COMPLETED",
+      "checks": {
+        "schema": true,
+        "mode_consistent": true,
+        "completed": true,
+        "correct_document": true,
+        "expected_fact": true,
+        "all_citations_valid": true
+      },
+      "trace": "examples/traces/live/2ab6ac968d9f4f158e69594fb19e3344.json",
+      "output": "examples/outputs/live/2ab6ac968d9f4f158e69594fb19e3344.json",
+      "input": "examples/inputs/live-2ab6ac968d9f4f158e69594fb19e3344.json",
+      "model_decisions": 4,
+      "critic": {
+        "enabled": false,
+        "reviews": 0,
+        "model_calls": 0,
+        "model_steps": 0,
+        "revisions_requested": 0,
+        "repair_limit": 1,
+        "latency_ms": 0.0,
+        "usage": {}
+      },
+      "tools": [
+        "search_documents",
+        "read_document",
+        "inspect_versions",
+        "submit_answer"
+      ],
+      "search_strategies": [
+        "hybrid"
+      ],
+      "pre_trace": null
+    },
+    {
+      "id": "TC05",
+      "question": "那多久批下来？",
+      "status": "PASS",
+      "result_status": "COMPLETED",
+      "checks": {
+        "schema": true,
+        "mode_consistent": true,
+        "completed": true,
+        "correct_document": true,
+        "expected_fact": true,
+        "context_precondition": true,
+        "same_session": true,
+        "all_citations_valid": true
+      },
+      "trace": "examples/traces/live/e1739eee9fff47c69c4b2dab22e47f81.json",
+      "output": "examples/outputs/live/e1739eee9fff47c69c4b2dab22e47f81.json",
+      "input": "examples/inputs/live-e1739eee9fff47c69c4b2dab22e47f81.json",
+      "model_decisions": 4,
+      "critic": {
+        "enabled": false,
+        "reviews": 0,
+        "model_calls": 0,
+        "model_steps": 0,
+        "revisions_requested": 0,
+        "repair_limit": 1,
+        "latency_ms": 0.0,
+        "usage": {}
+      },
+      "tools": [
+        "search_documents",
+        "read_document",
+        "inspect_versions",
+        "submit_answer"
+      ],
+      "search_strategies": [
+        "hybrid"
+      ],
+      "pre_trace": "examples/traces/live/afdca092718d4af0b568ad65c23d6c6d.json"
+    },
+    {
+      "id": "TC06",
+      "question": "办公电脑申领审批需要多久？",
+      "status": "PASS",
+      "result_status": "COMPLETED",
+      "checks": {
+        "schema": true,
+        "mode_consistent": true,
+        "controlled_state": true,
+        "tool_error_observed": true,
+        "decision_after_error": true,
+        "honest_success": true,
+        "all_citations_valid": true
+      },
+      "trace": "examples/traces/live/b6027e5038cc4daf8e7087310d2d57d5.json",
+      "output": "examples/outputs/live/b6027e5038cc4daf8e7087310d2d57d5.json",
+      "input": "examples/inputs/live-b6027e5038cc4daf8e7087310d2d57d5.json",
+      "model_decisions": 5,
+      "critic": {
+        "enabled": false,
+        "reviews": 0,
+        "model_calls": 0,
+        "model_steps": 0,
+        "revisions_requested": 0,
+        "repair_limit": 1,
+        "latency_ms": 0.0,
+        "usage": {}
+      },
+      "tools": [
+        "search_documents",
+        "search_documents",
+        "read_document",
+        "inspect_versions",
+        "submit_answer"
+      ],
+      "search_strategies": [
+        "hybrid",
+        "bm25"
+      ],
+      "pre_trace": null
+    }
+  ]
+}

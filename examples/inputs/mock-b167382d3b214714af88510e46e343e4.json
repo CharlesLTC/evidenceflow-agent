@@ -1,0 +1,9 @@
+{
+  "question": "差旅报销期限是多久？",
+  "session_id": "d44c6f848709477eadb5cfd88ef639ae",
+  "mode": "mock",
+  "max_model_steps": 8,
+  "max_tool_calls": 12,
+  "fail_search_count": 0,
+  "enable_critic": null
+}

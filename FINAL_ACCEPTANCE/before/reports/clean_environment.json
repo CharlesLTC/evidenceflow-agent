@@ -1,0 +1,89 @@
+{
+  "timestamp": "2026-11-10T05:07:12.808376+00:00",
+  "status": "PASS",
+  "commands": [
+    {
+      "argv": [
+        "E:\\秋招笔试\\EvidenceFlow\\evidenceflow-agent\\.venv\\Scripts\\python.exe",
+        "-m",
+        "venv",
+        "E:\\秋招笔试\\EvidenceFlow\\evidenceflow-agent\\.cache\\repro-venv"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 8.38349599999492,
+      "log": "reports/logs/clean-0.txt"
+    },
+    {
+      "argv": [
+        "E:\\秋招笔试\\EvidenceFlow\\evidenceflow-agent\\.cache\\repro-venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "install",
+        "-r",
+        "requirements.txt",
+        "--index-url",
+        "https://pypi.org/simple",
+        "--disable-pip-version-check"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 130.85062339999422,
+      "log": "reports/logs/clean-1.txt"
+    },
+    {
+      "argv": [
+        "E:\\秋招笔试\\EvidenceFlow\\evidenceflow-agent\\.cache\\repro-venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "install",
+        "--no-deps",
+        "--no-build-isolation",
+        "-e",
+        ".[dev,embeddings]"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 5.1182432000059634,
+      "log": "reports/logs/clean-2.txt"
+    },
+    {
+      "argv": [
+        "E:\\秋招笔试\\EvidenceFlow\\evidenceflow-agent\\.cache\\repro-venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 1.5539628000115044,
+      "log": "reports/logs/clean-3.txt"
+    },
+    {
+      "argv": [
+        "E:\\秋招笔试\\EvidenceFlow\\evidenceflow-agent\\.cache\\repro-venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "--junitxml=reports/logs/clean-pytest.xml"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 5.56884789999458,
+      "log": "reports/logs/clean-4.txt"
+    },
+    {
+      "argv": [
+        "E:\\秋招笔试\\EvidenceFlow\\evidenceflow-agent\\.cache\\repro-venv\\Scripts\\python.exe",
+        "-m",
+        "evidenceflow.cli",
+        "--help"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 0.09453380000195466,
+      "log": "reports/logs/clean-5.txt"
+    }
+  ],
+  "note": "Fresh venv from frozen requirements; model weights remain in project ignored cache; pytest does not call external models.",
+  "latest_source_regression": {
+    "timestamp": "2026-11-10T07:31:47.788920+00:00",
+    "report": "reports/quality/final_validation.json",
+    "junit": "reports/quality/isolated-pytest.xml",
+    "note": "Previously created locked isolated environment rerun on latest source; not a second fresh install."
+  }
+}

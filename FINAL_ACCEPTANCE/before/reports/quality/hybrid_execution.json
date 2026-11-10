@@ -1,0 +1,82 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "id": "TC01",
+      "official_status": "PASS",
+      "attempted_hybrid": true,
+      "successful_hybrid_searches": 1,
+      "search_strategies": [
+        "hybrid"
+      ],
+      "traces": [
+        "examples/traces/live/6827fe9166a64952b5e134a47f461ecf.json"
+      ]
+    },
+    {
+      "id": "TC02",
+      "official_status": "PASS",
+      "attempted_hybrid": true,
+      "successful_hybrid_searches": 1,
+      "search_strategies": [
+        "hybrid"
+      ],
+      "traces": [
+        "examples/traces/live/32d20c70b4f74b40b31bccafbe528f5c.json"
+      ]
+    },
+    {
+      "id": "TC03",
+      "official_status": "PASS",
+      "attempted_hybrid": true,
+      "successful_hybrid_searches": 1,
+      "search_strategies": [
+        "hybrid",
+        "bm25"
+      ],
+      "traces": [
+        "examples/traces/live/0d4286e7a8e34ec0b5caa38d466f5938.json"
+      ]
+    },
+    {
+      "id": "TC04",
+      "official_status": "PASS",
+      "attempted_hybrid": true,
+      "successful_hybrid_searches": 1,
+      "search_strategies": [
+        "hybrid"
+      ],
+      "traces": [
+        "examples/traces/live/00e27fb491fb4b2daa0fe36590c2a9cb.json"
+      ]
+    },
+    {
+      "id": "TC05",
+      "official_status": "PASS",
+      "attempted_hybrid": true,
+      "successful_hybrid_searches": 2,
+      "search_strategies": [
+        "hybrid",
+        "hybrid"
+      ],
+      "traces": [
+        "examples/traces/live/a9cd3ce8db644043abdece9f4eeedb11.json",
+        "examples/traces/live/a6e5152c0fdc4fd6a2c4083eccdc61c0.json"
+      ]
+    },
+    {
+      "id": "TC06",
+      "official_status": "PASS",
+      "attempted_hybrid": true,
+      "successful_hybrid_searches": 0,
+      "search_strategies": [
+        "hybrid",
+        "bm25"
+      ],
+      "traces": [
+        "examples/traces/live/df05242ac584406f81e9fac6fcae0262.json"
+      ]
+    }
+  ],
+  "criterion": "All official assertions unchanged; every case attempts Hybrid (TC05 includes setup turn), with successful Hybrid execution; timeout recovery may explicitly use BM25."
+}

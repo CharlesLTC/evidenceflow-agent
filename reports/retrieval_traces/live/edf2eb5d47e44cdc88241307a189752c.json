@@ -1,0 +1,158 @@
+{
+  "mode": "live",
+  "model_name": "qwen-plus",
+  "question": "出差交通票先审批还是先预订？",
+  "events": [
+    {
+      "kind": "tool_observation",
+      "tool_name": "search_documents",
+      "timestamp": "2026-11-10T20:02:08.961892+00:00",
+      "arguments": {
+        "query": "出差交通票先审批还是先预订？",
+        "strategy": "hybrid",
+        "top_k": 10
+      },
+      "observation": {
+        "query": "出差交通票先审批还是先预订？",
+        "strategy": "hybrid",
+        "hits": [
+          {
+            "doc_id": "D30",
+            "chunk_id": "D30-C01",
+            "title": "出差交通预订",
+            "topic": "交通预订",
+            "version_date": "2025-09-01",
+            "score": 0.03278688524590164,
+            "preview": "出差交通须先完成出差审批，再通过指定平台预订。"
+          },
+          {
+            "doc_id": "D01",
+            "chunk_id": "D01-C01",
+            "title": "差旅报销制度 A",
+            "topic": "差旅报销",
+            "version_date": "2025-01-01",
+            "score": 0.03200204813108039,
+            "preview": "差旅报销应在30天内提交。报销须附发票和出差审批单。"
+          },
+          {
+            "doc_id": "D02",
+            "chunk_id": "D02-C01",
+            "title": "差旅报销制度 B",
+            "topic": "差旅报销",
+            "version_date": "2025-07-01",
+            "score": 0.03125,
+            "preview": "差旅报销应在15天内提交。报销须附发票和出差审批单。"
+          },
+          {
+            "doc_id": "D09",
+            "chunk_id": "D09-C01",
+            "title": "会议室预订",
+            "topic": "会议室",
+            "version_date": "2025-09-01",
+            "score": 0.03021353930031804,
+            "preview": "会议室须通过办公系统预订，连续使用不得超过2小时。"
+          },
+          {
+            "doc_id": "D08",
+            "chunk_id": "D08-C01",
+            "title": "采购申请",
+            "topic": "采购",
+            "version_date": "2025-01-01",
+            "score": 0.029437229437229435,
+            "preview": "采购须先提交采购申请，经预算负责人审批后由采购部执行。"
+          },
+          {
+            "doc_id": "D17",
+            "chunk_id": "D17-C01",
+            "title": "境外出差补贴",
+            "topic": "差旅补贴",
+            "version_date": "2025-09-01",
+            "score": 0.02904040404040404,
+            "preview": "境外出差每天补贴200元。"
+          },
+          {
+            "doc_id": "D16",
+            "chunk_id": "D16-C01",
+            "title": "国内出差补贴",
+            "topic": "差旅补贴",
+            "version_date": "2025-09-01",
+            "score": 0.028205128205128206,
+            "preview": "国内出差每天补贴100元。"
+          },
+          {
+            "doc_id": "D26",
+            "chunk_id": "D26-C01",
+            "title": "代码仓库权限",
+            "topic": "仓库权限",
+            "version_date": "2025-09-01",
+            "score": 0.028006267136701922,
+            "preview": "代码仓库访问权限须经项目负责人审批后由IT开通。"
+          },
+          {
+            "doc_id": "D05",
+            "chunk_id": "D05-C01",
+            "title": "员工请假制度",
+            "topic": "请假",
+            "version_date": "2025-01-01",
+            "score": 0.027912386121341344,
+            "preview": "请假应在HR系统提交申请，由直属主管审批。"
+          },
+          {
+            "doc_id": "D03",
+            "chunk_id": "D03-C01",
+            "title": "办公电脑申领",
+            "topic": "电脑申领",
+            "version_date": "2025-01-01",
+            "score": 0.027783137179239824,
+            "preview": "办公电脑申领须在IT门户填写申请，经主管审批后3个工作日内完成。"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "model_decision",
+      "tool_calls": [
+        {
+          "id": "call_b66df595b4c64ab485b840",
+          "name": "finish_retrieval",
+          "arguments": {}
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1302,
+        "total_tokens": 1316,
+        "completion_tokens": 14,
+        "prompt_tokens_details": {
+          "cached_tokens": 192
+        }
+      },
+      "timestamp": "2026-11-10T20:02:09.531573+00:00"
+    },
+    {
+      "kind": "tool_observation",
+      "tool_name": "finish_retrieval",
+      "arguments": {},
+      "observation": {
+        "finished": true
+      },
+      "timestamp": "2026-11-10T20:02:09.532577+00:00"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1302,
+    "completion_tokens": 14,
+    "total_tokens": 1316
+  },
+  "ranked_doc_ids": [
+    "D30",
+    "D01",
+    "D02",
+    "D09",
+    "D08",
+    "D17",
+    "D16",
+    "D26",
+    "D05",
+    "D03"
+  ]
+}

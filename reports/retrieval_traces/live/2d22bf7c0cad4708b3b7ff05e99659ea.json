@@ -1,0 +1,158 @@
+{
+  "mode": "live",
+  "model_name": "qwen-plus",
+  "question": "部门邮件别名找谁创建？",
+  "events": [
+    {
+      "kind": "tool_observation",
+      "tool_name": "search_documents",
+      "timestamp": "2026-11-10T20:01:55.568834+00:00",
+      "arguments": {
+        "query": "部门邮件别名找谁创建？",
+        "strategy": "hybrid",
+        "top_k": 10
+      },
+      "observation": {
+        "query": "部门邮件别名找谁创建？",
+        "strategy": "hybrid",
+        "hits": [
+          {
+            "doc_id": "D15",
+            "chunk_id": "D15-C01",
+            "title": "邮件别名申请",
+            "topic": "邮件别名",
+            "version_date": "2025-09-01",
+            "score": 0.03278688524590164,
+            "preview": "部门邮件别名由部门负责人提交申请，IT支持组创建。"
+          },
+          {
+            "doc_id": "D20",
+            "chunk_id": "D20-C01",
+            "title": "节假日值班",
+            "topic": "值班",
+            "version_date": "2025-09-01",
+            "score": 0.030017921146953404,
+            "preview": "节假日值班安排由部门负责人在节前发布。"
+          },
+          {
+            "doc_id": "D12",
+            "chunk_id": "D12-C01",
+            "title": "名片制作",
+            "topic": "名片",
+            "version_date": "2025-09-01",
+            "score": 0.016129032258064516,
+            "preview": "名片制作须填写中英文姓名和职务，由行政部统一印制。"
+          },
+          {
+            "doc_id": "D05",
+            "chunk_id": "D05-C01",
+            "title": "员工请假制度",
+            "topic": "请假",
+            "version_date": "2025-01-01",
+            "score": 0.015873015873015872,
+            "preview": "请假应在HR系统提交申请，由直属主管审批。"
+          },
+          {
+            "doc_id": "D28",
+            "chunk_id": "D28-C01",
+            "title": "发票抬头查询",
+            "topic": "发票",
+            "version_date": "2025-09-01",
+            "score": 0.015625,
+            "preview": "开具发票前应在财务门户核对公司抬头和税号。"
+          },
+          {
+            "doc_id": "D27",
+            "chunk_id": "D27-C01",
+            "title": "公章使用",
+            "topic": "公章",
+            "version_date": "2025-09-01",
+            "score": 0.015384615384615385,
+            "preview": "使用公章须在行政系统提交用印申请并附审批文件。"
+          },
+          {
+            "doc_id": "D23",
+            "chunk_id": "D23-C01",
+            "title": "办公网络报障",
+            "topic": "网络故障",
+            "version_date": "2025-09-01",
+            "score": 0.015151515151515152,
+            "preview": "办公室网络无法连接时应提交网络报障工单并注明工位。"
+          },
+          {
+            "doc_id": "D29",
+            "chunk_id": "D29-C01",
+            "title": "快递寄送",
+            "topic": "快递",
+            "version_date": "2025-09-01",
+            "score": 0.014925373134328358,
+            "preview": "工作快递由前台登记寄送，私人快递费用自理。"
+          },
+          {
+            "doc_id": "D10",
+            "chunk_id": "D10-C01",
+            "title": "远程会议",
+            "topic": "远程会议",
+            "version_date": "2025-09-01",
+            "score": 0.014705882352941176,
+            "preview": "远程会议使用公司会议平台，外部参会人须由主持人发送邀请。"
+          },
+          {
+            "doc_id": "D32",
+            "chunk_id": "D32-C01",
+            "title": "紧急事件联系",
+            "topic": "紧急联系",
+            "version_date": "2025-09-01",
+            "score": 0.014492753623188406,
+            "preview": "办公区发生紧急事件时应立即联系现场安保和值班行政。"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "model_decision",
+      "tool_calls": [
+        {
+          "id": "call_3ec6fa3b0c214d4c934dee",
+          "name": "finish_retrieval",
+          "arguments": {}
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1289,
+        "total_tokens": 1303,
+        "completion_tokens": 14,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "timestamp": "2026-11-10T20:01:56.171504+00:00"
+    },
+    {
+      "kind": "tool_observation",
+      "tool_name": "finish_retrieval",
+      "arguments": {},
+      "observation": {
+        "finished": true
+      },
+      "timestamp": "2026-11-10T20:01:56.171504+00:00"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1289,
+    "completion_tokens": 14,
+    "total_tokens": 1303
+  },
+  "ranked_doc_ids": [
+    "D15",
+    "D20",
+    "D12",
+    "D05",
+    "D28",
+    "D27",
+    "D23",
+    "D29",
+    "D10",
+    "D32"
+  ]
+}

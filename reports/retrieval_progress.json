@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-10T04:51:10.446981+00:00",
+  "timestamp": "2026-11-10T20:01:27.676089+00:00",
   "dataset_sha256": {
     "documents.json": "7fac27332b3357d1f59dbaffb61e1af76129350f53b258d20f6119767822fc85",
     "eval_questions.jsonl": "f4a938acb88e9367541c5d538158726419f9a6d0710aa8dd7151b04c82a19451",
@@ -37,8 +37,8 @@
           "denominator": 40
         },
         "ndcg_at_5": null,
-        "mean_latency_ms": 0.13550227231462486,
-        "p95_latency_ms": 0.1712899953417946,
+        "mean_latency_ms": 0.20014090709578755,
+        "p95_latency_ms": 0.2400749988737516,
         "mean_model_calls": 0,
         "mean_tool_calls": 1,
         "correct_abstention_rate": null
@@ -73,8 +73,8 @@
           "denominator": 40
         },
         "ndcg_at_5": null,
-        "mean_latency_ms": 1.9611159090841697,
-        "p95_latency_ms": 2.383719999488676,
+        "mean_latency_ms": 2.4274749997527,
+        "p95_latency_ms": 3.0679949748446234,
         "mean_model_calls": 0,
         "mean_tool_calls": 1,
         "correct_abstention_rate": null
@@ -109,8 +109,8 @@
           "denominator": 40
         },
         "ndcg_at_5": null,
-        "mean_latency_ms": 1.8588704545188441,
-        "p95_latency_ms": 2.2228400091989897,
+        "mean_latency_ms": 2.334770456813699,
+        "p95_latency_ms": 2.829265015316196,
         "mean_model_calls": 0,
         "mean_tool_calls": 1,
         "correct_abstention_rate": null
@@ -145,20 +145,20 @@
           "denominator": 40
         },
         "ndcg_at_5": null,
-        "mean_latency_ms": 1052.4614454552648,
-        "p95_latency_ms": 1633.6474299925612,
+        "mean_latency_ms": 964.8850727297196,
+        "p95_latency_ms": 1596.8289049953457,
         "mean_model_calls": 1.4545454545454546,
         "mean_tool_calls": 1.4545454545454546,
         "correct_abstention_rate": null
       },
       "cost_usd": null,
       "usage": {
-        "prompt_tokens": 103918,
+        "prompt_tokens": 103910,
         "completion_tokens": 1037,
-        "total_tokens": 104955
+        "total_tokens": 104947
       }
     }
   },
-  "initialization_ms": 986.9684000004781,
+  "initialization_ms": 9623.660199984442,
   "embedding_error": null
 }

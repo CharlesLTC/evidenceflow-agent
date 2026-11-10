@@ -1,0 +1,478 @@
+{
+  "timestamp": "2026-11-10T20:04:21.036751+00:00",
+  "status": "PASS",
+  "commands": [
+    {
+      "command": [
+        ".venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.quality_core",
+        "--strategy",
+        "hybrid",
+        "--fallback-probe"
+      ],
+      "exit_code": 0,
+      "seconds": 58.7845171999943,
+      "status": "PASS",
+      "log": "FINAL_ACCEPTANCE/logs/20261110T200028345658Z-scripts-quality_core.txt"
+    },
+    {
+      "command": [
+        ".venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.evaluate_retrieval"
+      ],
+      "exit_code": 0,
+      "seconds": 54.54078140002093,
+      "status": "PASS",
+      "log": "FINAL_ACCEPTANCE/logs/20261110T200127132388Z-scripts-evaluate_retrieval.txt"
+    },
+    {
+      "command": [
+        ".venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.verify_retrieval_results"
+      ],
+      "exit_code": 0,
+      "seconds": 0.5917403000057675,
+      "status": "PASS",
+      "log": "FINAL_ACCEPTANCE/logs/20261110T200221674226Z-scripts-verify_retrieval_results.txt"
+    },
+    {
+      "command": [
+        ".venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.evaluate_critic"
+      ],
+      "exit_code": 0,
+      "seconds": 95.02202550001675,
+      "status": "PASS",
+      "log": "FINAL_ACCEPTANCE/logs/20261110T200222268838Z-scripts-evaluate_critic.txt"
+    },
+    {
+      "command": [
+        ".venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.run_extended_live"
+      ],
+      "exit_code": 0,
+      "seconds": 23.739894700003788,
+      "status": "PASS",
+      "log": "FINAL_ACCEPTANCE/logs/20261110T200357291724Z-scripts-run_extended_live.txt"
+    }
+  ],
+  "tc02_fresh": {
+    "status": "PASS",
+    "passed": 5,
+    "total": 5,
+    "success_rate": 1.0,
+    "guard_rejections": 0,
+    "runs": [
+      {
+        "run": 1,
+        "status": "PASS",
+        "checks": {
+          "schema": true,
+          "mode_consistent": true,
+          "clarification": true,
+          "both_versions": true,
+          "both_values": true,
+          "unresolved": true,
+          "asks_for_context": true,
+          "all_citations_valid": true
+        },
+        "trace": "examples/traces/live/73ec24e5d3214407a4ec80f6e708de43.json",
+        "input": "examples/inputs/live-73ec24e5d3214407a4ec80f6e708de43.json",
+        "output": "examples/outputs/live/73ec24e5d3214407a4ec80f6e708de43.json",
+        "result_status": "NEEDS_CLARIFICATION",
+        "submission_attempts": 1,
+        "guard_rejections": 0,
+        "first_submission_valid": true,
+        "usage": {
+          "prompt_tokens": 10193,
+          "completion_tokens": 326,
+          "total_tokens": 10519
+        },
+        "latency_ms": 8593.601300002774
+      },
+      {
+        "run": 2,
+        "status": "PASS",
+        "checks": {
+          "schema": true,
+          "mode_consistent": true,
+          "clarification": true,
+          "both_versions": true,
+          "both_values": true,
+          "unresolved": true,
+          "asks_for_context": true,
+          "all_citations_valid": true
+        },
+        "trace": "examples/traces/live/c533f8f391a747588f8e35b7ae3933c5.json",
+        "input": "examples/inputs/live-c533f8f391a747588f8e35b7ae3933c5.json",
+        "output": "examples/outputs/live/c533f8f391a747588f8e35b7ae3933c5.json",
+        "result_status": "NEEDS_CLARIFICATION",
+        "submission_attempts": 1,
+        "guard_rejections": 0,
+        "first_submission_valid": true,
+        "usage": {
+          "prompt_tokens": 10193,
+          "completion_tokens": 346,
+          "total_tokens": 10539
+        },
+        "latency_ms": 9076.221800001804
+      },
+      {
+        "run": 3,
+        "status": "PASS",
+        "checks": {
+          "schema": true,
+          "mode_consistent": true,
+          "clarification": true,
+          "both_versions": true,
+          "both_values": true,
+          "unresolved": true,
+          "asks_for_context": true,
+          "all_citations_valid": true
+        },
+        "trace": "examples/traces/live/ff1799c722104c3d91377014eaec6f51.json",
+        "input": "examples/inputs/live-ff1799c722104c3d91377014eaec6f51.json",
+        "output": "examples/outputs/live/ff1799c722104c3d91377014eaec6f51.json",
+        "result_status": "NEEDS_CLARIFICATION",
+        "submission_attempts": 1,
+        "guard_rejections": 0,
+        "first_submission_valid": true,
+        "usage": {
+          "prompt_tokens": 10165,
+          "completion_tokens": 305,
+          "total_tokens": 10470
+        },
+        "latency_ms": 8141.30170000135
+      },
+      {
+        "run": 4,
+        "status": "PASS",
+        "checks": {
+          "schema": true,
+          "mode_consistent": true,
+          "clarification": true,
+          "both_versions": true,
+          "both_values": true,
+          "unresolved": true,
+          "asks_for_context": true,
+          "all_citations_valid": true
+        },
+        "trace": "examples/traces/live/61309852d7024c149fb6e7abe2f88103.json",
+        "input": "examples/inputs/live-61309852d7024c149fb6e7abe2f88103.json",
+        "output": "examples/outputs/live/61309852d7024c149fb6e7abe2f88103.json",
+        "result_status": "NEEDS_CLARIFICATION",
+        "submission_attempts": 1,
+        "guard_rejections": 0,
+        "first_submission_valid": true,
+        "usage": {
+          "prompt_tokens": 10165,
+          "completion_tokens": 306,
+          "total_tokens": 10471
+        },
+        "latency_ms": 8312.70609999774
+      },
+      {
+        "run": 5,
+        "status": "PASS",
+        "checks": {
+          "schema": true,
+          "mode_consistent": true,
+          "clarification": true,
+          "both_versions": true,
+          "both_values": true,
+          "unresolved": true,
+          "asks_for_context": true,
+          "all_citations_valid": true
+        },
+        "trace": "examples/traces/live/3444382f0a85439c8e22d10348358753.json",
+        "input": "examples/inputs/live-3444382f0a85439c8e22d10348358753.json",
+        "output": "examples/outputs/live/3444382f0a85439c8e22d10348358753.json",
+        "result_status": "NEEDS_CLARIFICATION",
+        "submission_attempts": 1,
+        "guard_rejections": 0,
+        "first_submission_valid": true,
+        "usage": {
+          "prompt_tokens": 8121,
+          "completion_tokens": 318,
+          "total_tokens": 8439
+        },
+        "latency_ms": 8358.376699994551
+      }
+    ]
+  },
+  "tc02_history": {
+    "timestamp": "2026-11-10T07:13:55.458895+00:00",
+    "status": "PASS",
+    "passed": 5,
+    "total": 5,
+    "success_rate": 1.0,
+    "first_submission_success_rate": 1.0,
+    "baseline_guard_rejections": 3,
+    "mean_guard_rejections": 0.0,
+    "runs": [
+      {
+        "status": "PASS",
+        "checks": {
+          "schema": true,
+          "mode_consistent": true,
+          "clarification": true,
+          "both_versions": true,
+          "both_values": true,
+          "unresolved": true,
+          "asks_for_context": true,
+          "all_citations_valid": true
+        },
+        "trace": "examples/traces/live/d4cb406a81fa4e4f8f4db9dc03d6d813.json",
+        "input": "examples/inputs/live-d4cb406a81fa4e4f8f4db9dc03d6d813.json",
+        "output": "examples/outputs/live/d4cb406a81fa4e4f8f4db9dc03d6d813.json",
+        "result_status": "NEEDS_CLARIFICATION",
+        "submission_attempts": 1,
+        "guard_rejections": 0,
+        "first_submission_valid": true,
+        "usage": {
+          "prompt_tokens": 10165,
+          "completion_tokens": 339,
+          "total_tokens": 10504
+        },
+        "latency_ms": 9422.168799996143,
+        "run": 1
+      },
+      {
+        "status": "PASS",
+        "checks": {
+          "schema": true,
+          "mode_consistent": true,
+          "clarification": true,
+          "both_versions": true,
+          "both_values": true,
+          "unresolved": true,
+          "asks_for_context": true,
+          "all_citations_valid": true
+        },
+        "trace": "examples/traces/live/7815dd28e7f74c2eb09d6b2636e6e162.json",
+        "input": "examples/inputs/live-7815dd28e7f74c2eb09d6b2636e6e162.json",
+        "output": "examples/outputs/live/7815dd28e7f74c2eb09d6b2636e6e162.json",
+        "result_status": "NEEDS_CLARIFICATION",
+        "submission_attempts": 1,
+        "guard_rejections": 0,
+        "first_submission_valid": true,
+        "usage": {
+          "prompt_tokens": 10193,
+          "completion_tokens": 320,
+          "total_tokens": 10513
+        },
+        "latency_ms": 8976.598399982322,
+        "run": 2
+      },
+      {
+        "status": "PASS",
+        "checks": {
+          "schema": true,
+          "mode_consistent": true,
+          "clarification": true,
+          "both_versions": true,
+          "both_values": true,
+          "unresolved": true,
+          "asks_for_context": true,
+          "all_citations_valid": true
+        },
+        "trace": "examples/traces/live/a6900ec3faca4826b5a9e53a114469ff.json",
+        "input": "examples/inputs/live-a6900ec3faca4826b5a9e53a114469ff.json",
+        "output": "examples/outputs/live/a6900ec3faca4826b5a9e53a114469ff.json",
+        "result_status": "NEEDS_CLARIFICATION",
+        "submission_attempts": 1,
+        "guard_rejections": 0,
+        "first_submission_valid": true,
+        "usage": {
+          "prompt_tokens": 10165,
+          "completion_tokens": 353,
+          "total_tokens": 10518
+        },
+        "latency_ms": 9834.67219999875,
+        "run": 3
+      },
+      {
+        "status": "PASS",
+        "checks": {
+          "schema": true,
+          "mode_consistent": true,
+          "clarification": true,
+          "both_versions": true,
+          "both_values": true,
+          "unresolved": true,
+          "asks_for_context": true,
+          "all_citations_valid": true
+        },
+        "trace": "examples/traces/live/491237b6c58d4a3a9ef8798cf4db6ea9.json",
+        "input": "examples/inputs/live-491237b6c58d4a3a9ef8798cf4db6ea9.json",
+        "output": "examples/outputs/live/491237b6c58d4a3a9ef8798cf4db6ea9.json",
+        "result_status": "NEEDS_CLARIFICATION",
+        "submission_attempts": 1,
+        "guard_rejections": 0,
+        "first_submission_valid": true,
+        "usage": {
+          "prompt_tokens": 8121,
+          "completion_tokens": 305,
+          "total_tokens": 8426
+        },
+        "latency_ms": 8711.219699995127,
+        "run": 4
+      },
+      {
+        "status": "PASS",
+        "checks": {
+          "schema": true,
+          "mode_consistent": true,
+          "clarification": true,
+          "both_versions": true,
+          "both_values": true,
+          "unresolved": true,
+          "asks_for_context": true,
+          "all_citations_valid": true
+        },
+        "trace": "examples/traces/live/a4a0a53303834359aa0ee4df02522ed0.json",
+        "input": "examples/inputs/live-a4a0a53303834359aa0ee4df02522ed0.json",
+        "output": "examples/outputs/live/a4a0a53303834359aa0ee4df02522ed0.json",
+        "result_status": "NEEDS_CLARIFICATION",
+        "submission_attempts": 1,
+        "guard_rejections": 0,
+        "first_submission_valid": true,
+        "usage": {
+          "prompt_tokens": 10165,
+          "completion_tokens": 335,
+          "total_tokens": 10500
+        },
+        "latency_ms": 10850.19949998241,
+        "run": 5
+      }
+    ],
+    "criteria": "Five consecutive live runs, unchanged TC02 assertions; no run discarded or retried externally."
+  },
+  "tc03_current": [
+    {
+      "strategy": "bm25",
+      "case": {
+        "id": "TC03",
+        "question": "公司的年终奖金是多少？",
+        "status": "PASS",
+        "result_status": "INSUFFICIENT_EVIDENCE",
+        "checks": {
+          "schema": true,
+          "mode_consistent": true,
+          "abstention": true,
+          "no_false_citation": true,
+          "all_citations_valid": true
+        },
+        "trace": "examples/traces/live/90ebac3d03074110ab256efcfdf67f69.json",
+        "output": "examples/outputs/live/90ebac3d03074110ab256efcfdf67f69.json",
+        "input": "examples/inputs/live-90ebac3d03074110ab256efcfdf67f69.json",
+        "model_decisions": 6,
+        "critic": {
+          "enabled": false,
+          "reviews": 0,
+          "model_calls": 0,
+          "model_steps": 0,
+          "revisions_requested": 0,
+          "repair_limit": 1,
+          "latency_ms": 0.0,
+          "usage": {}
+        },
+        "tools": [
+          "search_documents",
+          "inspect_versions",
+          "search_documents",
+          "read_document",
+          "search_documents",
+          "submit_answer"
+        ],
+        "search_strategies": [
+          "bm25",
+          "bm25",
+          "bm25"
+        ],
+        "pre_trace": null
+      },
+      "intermediate_guard_rejections": []
+    },
+    {
+      "strategy": "hybrid",
+      "case": {
+        "id": "TC03",
+        "question": "公司的年终奖金是多少？",
+        "status": "PASS",
+        "result_status": "INSUFFICIENT_EVIDENCE",
+        "checks": {
+          "schema": true,
+          "mode_consistent": true,
+          "abstention": true,
+          "no_false_citation": true,
+          "all_citations_valid": true
+        },
+        "trace": "examples/traces/live/8447cd69afa84cc1946470bc6de126c5.json",
+        "output": "examples/outputs/live/8447cd69afa84cc1946470bc6de126c5.json",
+        "input": "examples/inputs/live-8447cd69afa84cc1946470bc6de126c5.json",
+        "model_decisions": 5,
+        "critic": {
+          "enabled": false,
+          "reviews": 0,
+          "model_calls": 0,
+          "model_steps": 0,
+          "revisions_requested": 0,
+          "repair_limit": 1,
+          "latency_ms": 0.0,
+          "usage": {}
+        },
+        "tools": [
+          "search_documents",
+          "inspect_versions",
+          "search_documents",
+          "submit_answer",
+          "submit_answer"
+        ],
+        "search_strategies": [
+          "hybrid",
+          "bm25"
+        ],
+        "pre_trace": null
+      },
+      "intermediate_guard_rejections": [
+        {
+          "kind": "tool_observation",
+          "step": 8,
+          "trace_id": "8447cd69afa84cc1946470bc6de126c5",
+          "mode": "live",
+          "model_name": "qwen-plus",
+          "timestamp": "2026-11-10T20:00:58.478036+00:00",
+          "model_step": 4,
+          "tool_call_number": 4,
+          "tool_name": "submit_answer",
+          "arguments": {
+            "status": "INSUFFICIENT_EVIDENCE",
+            "answer": "当前资料不足，无法依据知识库回答。"
+          },
+          "observation": {
+            "valid": false,
+            "errors": [
+              "MISSING_INFO_REQUIRED"
+            ],
+            "conflicts": [],
+            "expected_answer_format": "当前资料不足，无法依据知识库回答。"
+          },
+          "observation_summary": "{\"valid\": false, \"errors\": [\"MISSING_INFO_REQUIRED\"], \"conflicts\": [], \"expected_answer_format\": \"当前资料不足，无法依据知识库回答。\"}",
+          "latency_ms": 0.05460000829771161,
+          "next_action": "agent_decide",
+          "decision_basis": "Guard 拒绝候选：MISSING_INFO_REQUIRED",
+          "decision_basis_source": "current_observation"
+        }
+      ]
+    }
+  ],
+  "critic_protocol": "Fixed four controlled omissions plus two clean controls. Not a natural model error-rate estimate.",
+  "criteria_changes": false,
+  "external_retries": 0
+}

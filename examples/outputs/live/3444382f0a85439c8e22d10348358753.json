@@ -1,0 +1,66 @@
+{
+  "question": "差旅报销期限是多久？",
+  "answer": "D01：差旅报销应在30天内提交。报销须附发票和出差审批单。\nD02：差旅报销应在15天内提交。报销须附发票和出差审批单。\n适用范围及优先级尚待确认，当前无法确定唯一规则。",
+  "status": "NEEDS_CLARIFICATION",
+  "citations": [
+    {
+      "doc_id": "D01",
+      "version_date": "2025-01-01",
+      "quote": "差旅报销应在30天内提交。报销须附发票和出差审批单。",
+      "chunk_id": "D01-C01"
+    },
+    {
+      "doc_id": "D02",
+      "version_date": "2025-07-01",
+      "quote": "差旅报销应在15天内提交。报销须附发票和出差审批单。",
+      "chunk_id": "D02-C01"
+    }
+  ],
+  "missing_info": [
+    "D01与D02的适用范围（如部门、职级、差旅类型）未明确",
+    "两份制度之间是否存在废止或替代关系未说明",
+    "是否有更高层级文件规定冲突时的优先适用规则"
+  ],
+  "conflicts": [
+    {
+      "topic": "差旅报销",
+      "field": "提交期限",
+      "documents": [
+        "D02",
+        "D01"
+      ],
+      "values": [
+        "15天",
+        "30天"
+      ],
+      "resolution": "UNRESOLVED",
+      "scope": [
+        null,
+        null
+      ]
+    }
+  ],
+  "steps_used": 4,
+  "tool_calls_used": 5,
+  "trace_id": "3444382f0a85439c8e22d10348358753",
+  "session_id": "1f20a1969dd24723ae7e86acf8c5bc1f",
+  "mode": "live",
+  "model_name": "qwen-plus",
+  "latency_ms": 8358.376699994551,
+  "usage": {
+    "prompt_tokens": 8121,
+    "completion_tokens": 318,
+    "total_tokens": 8439
+  },
+  "error_code": null,
+  "critic": {
+    "enabled": false,
+    "reviews": 0,
+    "model_calls": 0,
+    "model_steps": 0,
+    "revisions_requested": 0,
+    "repair_limit": 1,
+    "latency_ms": 0.0,
+    "usage": {}
+  }
+}

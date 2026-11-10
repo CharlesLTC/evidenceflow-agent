@@ -1,0 +1,197 @@
+Final check 0: exit=0 (reports/quality/final-00.txt)
+Final check 1: exit=0 (reports/quality/final-01.txt)
+Final check 2: exit=0 (reports/quality/final-02.txt)
+Final check 3: exit=0 (reports/quality/final-03.txt)
+Final check 4: exit=0 (reports/quality/final-04.txt)
+Final check 5: exit=0 (reports/quality/final-05.txt)
+Final check 6: exit=0 (reports/quality/final-06.txt)
+Final check 7: exit=0 (reports/quality/final-07.txt)
+Final check 8: exit=0 (reports/quality/final-08.txt)
+Final check 9: exit=0 (reports/quality/final-09.txt)
+Final check 10: exit=0 (reports/quality/final-10.txt)
+Final check 11: exit=0 (reports/quality/final-11.txt)
+Final check 12: exit=0 (reports/quality/final-12.txt)
+Final check 13: exit=0 (reports/quality/final-13.txt)
+Final check 14: exit=0 (reports/quality/final-14.txt)
+{
+  "started_at": "2026-11-10T07:29:27.478295+00:00",
+  "finished_at": "2026-11-10T07:31:47.788920+00:00",
+  "status": "PASS",
+  "commands": [
+    {
+      "argv": [
+        "E:\\秋招笔试\\EvidenceFlow\\evidenceflow-agent\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "--junitxml=reports/quality/final-pytest.xml"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 4.0707581999886315,
+      "log": "reports/quality/final-00.txt"
+    },
+    {
+      "argv": [
+        "E:\\秋招笔试\\EvidenceFlow\\evidenceflow-agent\\.venv\\Scripts\\python.exe",
+        "-m",
+        "ruff",
+        "check",
+        "src",
+        "scripts",
+        "tests",
+        "ui"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 0.10103099999832921,
+      "log": "reports/quality/final-01.txt"
+    },
+    {
+      "argv": [
+        "E:\\秋招笔试\\EvidenceFlow\\evidenceflow-agent\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 1.3979060999990907,
+      "log": "reports/quality/final-02.txt"
+    },
+    {
+      "argv": [
+        "E:\\秋招笔试\\EvidenceFlow\\evidenceflow-agent\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.run_acceptance",
+        "--mode",
+        "mock"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 1.3023169999942183,
+      "log": "reports/quality/final-03.txt"
+    },
+    {
+      "argv": [
+        "E:\\秋招笔试\\EvidenceFlow\\evidenceflow-agent\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.quality_core",
+        "--strategy",
+        "bm25"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 40.64486690002377,
+      "log": "reports/quality/final-04.txt"
+    },
+    {
+      "argv": [
+        "E:\\秋招笔试\\EvidenceFlow\\evidenceflow-agent\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.quality_core",
+        "--strategy",
+        "hybrid"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 44.65749290000531,
+      "log": "reports/quality/final-05.txt"
+    },
+    {
+      "argv": [
+        "E:\\秋招笔试\\EvidenceFlow\\evidenceflow-agent\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.run_extended_live"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 25.210037899989402,
+      "log": "reports/quality/final-06.txt"
+    },
+    {
+      "argv": [
+        "E:\\秋招笔试\\EvidenceFlow\\evidenceflow-agent\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.validate_live_evidence"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 0.18267739997827448,
+      "log": "reports/quality/final-07.txt"
+    },
+    {
+      "argv": [
+        "E:\\秋招笔试\\EvidenceFlow\\evidenceflow-agent\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.verify_retrieval_results"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 0.46739619999425486,
+      "log": "reports/quality/final-08.txt"
+    },
+    {
+      "argv": [
+        "E:\\秋招笔试\\EvidenceFlow\\evidenceflow-agent\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.smoke_ui"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 4.679590300016571,
+      "log": "reports/quality/final-09.txt"
+    },
+    {
+      "argv": [
+        "E:\\秋招笔试\\EvidenceFlow\\evidenceflow-agent\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.verify_quality_results"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 1.1580450999899767,
+      "log": "reports/quality/final-10.txt"
+    },
+    {
+      "argv": [
+        "E:\\秋招笔试\\EvidenceFlow\\evidenceflow-agent\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.security_scan"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 5.927231099980418,
+      "log": "reports/quality/final-11.txt"
+    },
+    {
+      "argv": [
+        "E:\\秋招笔试\\EvidenceFlow\\evidenceflow-agent\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.verify_artifacts"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 4.823574700014433,
+      "log": "reports/quality/final-12.txt"
+    },
+    {
+      "argv": [
+        "E:\\秋招笔试\\EvidenceFlow\\evidenceflow-agent\\.cache\\repro-venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 1.4897896999900695,
+      "log": "reports/quality/final-13.txt"
+    },
+    {
+      "argv": [
+        "E:\\秋招笔试\\EvidenceFlow\\evidenceflow-agent\\.cache\\repro-venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "--junitxml=reports/quality/isolated-pytest.xml"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 4.186190100008389,
+      "log": "reports/quality/final-14.txt"
+    }
+  ],
+  "pytest": {
+    "tests": 75,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": 75
+  },
+  "isolated_environment_note": "Previously created isolated locked environment rerun on current source; not claimed as a new fresh install in this round."
+}

@@ -1,0 +1,6 @@
+bm25 official: PASS 6/6
+TC02 run 1: PASS, guard_rejections=0
+TC02 run 2: PASS, guard_rejections=0
+TC02 run 3: PASS, guard_rejections=0
+TC02 run 4: PASS, guard_rejections=0
+TC02 run 5: PASS, guard_rejections=0

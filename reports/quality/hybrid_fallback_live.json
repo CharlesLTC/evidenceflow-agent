@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "trace": "examples/traces/live/a61034fdd1f24cfe9a307fdb41c8fb73.json",
+  "trace": "examples/traces/live/08d82b14c063402d83839a53fd166c06.json",
   "injection": "semantic backend deliberately unavailable; no automatic tool retry",
   "result_status": "COMPLETED",
   "observed_unavailable": true,

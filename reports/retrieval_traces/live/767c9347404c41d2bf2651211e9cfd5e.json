@@ -1,0 +1,288 @@
+{
+  "mode": "live",
+  "model_name": "qwen-plus",
+  "question": "公司的发票抬头和税号哪里查？",
+  "events": [
+    {
+      "kind": "tool_observation",
+      "tool_name": "search_documents",
+      "timestamp": "2026-11-10T20:02:06.970986+00:00",
+      "arguments": {
+        "query": "公司的发票抬头和税号哪里查？",
+        "strategy": "hybrid",
+        "top_k": 10
+      },
+      "observation": {
+        "query": "公司的发票抬头和税号哪里查？",
+        "strategy": "hybrid",
+        "hits": [
+          {
+            "doc_id": "D28",
+            "chunk_id": "D28-C01",
+            "title": "发票抬头查询",
+            "topic": "发票",
+            "version_date": "2025-09-01",
+            "score": 0.03278688524590164,
+            "preview": "开具发票前应在财务门户核对公司抬头和税号。"
+          },
+          {
+            "doc_id": "D01",
+            "chunk_id": "D01-C01",
+            "title": "差旅报销制度 A",
+            "topic": "差旅报销",
+            "version_date": "2025-01-01",
+            "score": 0.03149801587301587,
+            "preview": "差旅报销应在30天内提交。报销须附发票和出差审批单。"
+          },
+          {
+            "doc_id": "D02",
+            "chunk_id": "D02-C01",
+            "title": "差旅报销制度 B",
+            "topic": "差旅报销",
+            "version_date": "2025-07-01",
+            "score": 0.03149801587301587,
+            "preview": "差旅报销应在15天内提交。报销须附发票和出差审批单。"
+          },
+          {
+            "doc_id": "D10",
+            "chunk_id": "D10-C01",
+            "title": "远程会议",
+            "topic": "远程会议",
+            "version_date": "2025-09-01",
+            "score": 0.0277569392348087,
+            "preview": "远程会议使用公司会议平台，外部参会人须由主持人发送邀请。"
+          },
+          {
+            "doc_id": "D29",
+            "chunk_id": "D29-C01",
+            "title": "快递寄送",
+            "topic": "快递",
+            "version_date": "2025-09-01",
+            "score": 0.016129032258064516,
+            "preview": "工作快递由前台登记寄送，私人快递费用自理。"
+          },
+          {
+            "doc_id": "D12",
+            "chunk_id": "D12-C01",
+            "title": "名片制作",
+            "topic": "名片",
+            "version_date": "2025-09-01",
+            "score": 0.015384615384615385,
+            "preview": "名片制作须填写中英文姓名和职务，由行政部统一印制。"
+          },
+          {
+            "doc_id": "D05",
+            "chunk_id": "D05-C01",
+            "title": "员工请假制度",
+            "topic": "请假",
+            "version_date": "2025-01-01",
+            "score": 0.015151515151515152,
+            "preview": "请假应在HR系统提交申请，由直属主管审批。"
+          },
+          {
+            "doc_id": "D15",
+            "chunk_id": "D15-C01",
+            "title": "邮件别名申请",
+            "topic": "邮件别名",
+            "version_date": "2025-09-01",
+            "score": 0.014925373134328358,
+            "preview": "部门邮件别名由部门负责人提交申请，IT支持组创建。"
+          },
+          {
+            "doc_id": "D20",
+            "chunk_id": "D20-C01",
+            "title": "节假日值班",
+            "topic": "值班",
+            "version_date": "2025-09-01",
+            "score": 0.014705882352941176,
+            "preview": "节假日值班安排由部门负责人在节前发布。"
+          },
+          {
+            "doc_id": "D27",
+            "chunk_id": "D27-C01",
+            "title": "公章使用",
+            "topic": "公章",
+            "version_date": "2025-09-01",
+            "score": 0.014492753623188406,
+            "preview": "使用公章须在行政系统提交用印申请并附审批文件。"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "model_decision",
+      "tool_calls": [
+        {
+          "id": "call_6d23c1b3dd064832b37362",
+          "name": "search_documents",
+          "arguments": {
+            "query": "公司开票信息 查询路径"
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1311,
+        "total_tokens": 1332,
+        "completion_tokens": 21,
+        "prompt_tokens_details": {
+          "cached_tokens": 192
+        }
+      },
+      "timestamp": "2026-11-10T20:02:07.686828+00:00"
+    },
+    {
+      "kind": "tool_observation",
+      "tool_name": "search_documents",
+      "arguments": {
+        "query": "公司开票信息 查询路径"
+      },
+      "observation": {
+        "query": "公司开票信息 查询路径",
+        "strategy": "hybrid",
+        "hits": [
+          {
+            "doc_id": "D28",
+            "chunk_id": "D28-C01",
+            "title": "发票抬头查询",
+            "topic": "发票",
+            "version_date": "2025-09-01",
+            "score": 0.03278688524590164,
+            "preview": "开具发票前应在财务门户核对公司抬头和税号。"
+          },
+          {
+            "doc_id": "D10",
+            "chunk_id": "D10-C01",
+            "title": "远程会议",
+            "topic": "远程会议",
+            "version_date": "2025-09-01",
+            "score": 0.03036576949620428,
+            "preview": "远程会议使用公司会议平台，外部参会人须由主持人发送邀请。"
+          },
+          {
+            "doc_id": "D06",
+            "chunk_id": "D06-C01",
+            "title": "新员工培训",
+            "topic": "入职培训",
+            "version_date": "2025-01-01",
+            "score": 0.02832415420928403,
+            "preview": "新员工应在入职后7天内完成信息安全培训。"
+          },
+          {
+            "doc_id": "D15",
+            "chunk_id": "D15-C01",
+            "title": "邮件别名申请",
+            "topic": "邮件别名",
+            "version_date": "2025-09-01",
+            "score": 0.016129032258064516,
+            "preview": "部门邮件别名由部门负责人提交申请，IT支持组创建。"
+          },
+          {
+            "doc_id": "D07",
+            "chunk_id": "D07-C01",
+            "title": "访客管理",
+            "topic": "访客",
+            "version_date": "2025-01-01",
+            "score": 0.015873015873015872,
+            "preview": "访客到访前须由接待员工登记并由前台核验身份。"
+          },
+          {
+            "doc_id": "D30",
+            "chunk_id": "D30-C01",
+            "title": "出差交通预订",
+            "topic": "交通预订",
+            "version_date": "2025-09-01",
+            "score": 0.015625,
+            "preview": "出差交通须先完成出差审批，再通过指定平台预订。"
+          },
+          {
+            "doc_id": "D08",
+            "chunk_id": "D08-C01",
+            "title": "采购申请",
+            "topic": "采购",
+            "version_date": "2025-01-01",
+            "score": 0.015384615384615385,
+            "preview": "采购须先提交采购申请，经预算负责人审批后由采购部执行。"
+          },
+          {
+            "doc_id": "D05",
+            "chunk_id": "D05-C01",
+            "title": "员工请假制度",
+            "topic": "请假",
+            "version_date": "2025-01-01",
+            "score": 0.015151515151515152,
+            "preview": "请假应在HR系统提交申请，由直属主管审批。"
+          },
+          {
+            "doc_id": "D03",
+            "chunk_id": "D03-C01",
+            "title": "办公电脑申领",
+            "topic": "电脑申领",
+            "version_date": "2025-01-01",
+            "score": 0.014925373134328358,
+            "preview": "办公电脑申领须在IT门户填写申请，经主管审批后3个工作日内完成。"
+          },
+          {
+            "doc_id": "D27",
+            "chunk_id": "D27-C01",
+            "title": "公章使用",
+            "topic": "公章",
+            "version_date": "2025-09-01",
+            "score": 0.014705882352941176,
+            "preview": "使用公章须在行政系统提交用印申请并附审批文件。"
+          }
+        ]
+      },
+      "timestamp": "2026-11-10T20:02:07.690276+00:00"
+    },
+    {
+      "kind": "model_decision",
+      "tool_calls": [
+        {
+          "id": "call_b53db77d4f894c28bed2e8",
+          "name": "finish_retrieval",
+          "arguments": {}
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 2323,
+        "total_tokens": 2337,
+        "completion_tokens": 14,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "timestamp": "2026-11-10T20:02:08.318580+00:00"
+    },
+    {
+      "kind": "tool_observation",
+      "tool_name": "finish_retrieval",
+      "arguments": {},
+      "observation": {
+        "finished": true
+      },
+      "timestamp": "2026-11-10T20:02:08.318580+00:00"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3634,
+    "completion_tokens": 35,
+    "total_tokens": 3669
+  },
+  "ranked_doc_ids": [
+    "D28",
+    "D10",
+    "D15",
+    "D05",
+    "D27",
+    "D01",
+    "D02",
+    "D06",
+    "D07",
+    "D29",
+    "D12",
+    "D30",
+    "D08",
+    "D03",
+    "D20"
+  ]
+}

@@ -1,0 +1,3 @@
+Streamlit, version 1.67.0
+
+STDERR:

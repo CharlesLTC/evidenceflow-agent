@@ -1,0 +1,15 @@
+{
+  "verified_at": "2026-11-10T07:48:08.831147+00:00",
+  "status": "CHECKED",
+  "private": true,
+  "collaborators": [
+    {
+      "login": "CharlesLTC",
+      "role": "admin",
+      "read": true
+    }
+  ],
+  "pending_invitations": [],
+  "intended_reviewer": null,
+  "conclusion": "No intended reviewer account supplied; do not infer their access from repository visibility."
+}

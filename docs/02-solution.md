@@ -17,3 +17,9 @@ API/CLI/UI 共用 AgentService，UI 仅经真实 HTTP 取数。模型 API 不重
 本轮提交接口增加兼容的结构化入口：优先省略 answer，由服务端从 status/citations 生成固定摘录与后缀；显式提供 answer 仍按原 Guard 严格校验。没有放宽引用、已读、冲突或事实断言条件。策略配置同时进入工具 Schema 与运行默认值，真实 Trace 标记 executed_strategy。
 
 P7 在 Guard 通过后调用独立 Evidence Critic 检查相关性、关键事实覆盖和适用范围。只返回 PASS/REVISE 与枚举问题代码，无隐藏推理或替代答案。修正反馈携带已读原文引用及剩余预算，模型自主决定重交或补查；最多一次修正，Critic 与主 Agent 共享 8 次模型上限。默认关闭，任何 Critic 错误都受控返回，不能冒充已完成。实验注入只允许程序化评测钩子安装，API/CLI 无此入口。
+
+## 2026-11-11 最终复验
+
+本轮重新执行，未扩展业务架构或修改验收标准。pytest 75/75（0跳过），BM25官方live 6/6，Hybrid官方live 6/6；TC02五次 5/5，Critic PASS。上文旧日期及表格均为历史观察；当前每项结果、失败、路径及权限限制见 [最终报告](../FINAL_ACCEPTANCE/FINAL_REPORT.md) 和 [F4增强实测](../FINAL_ACCEPTANCE/F4_enhancement_validation.json)。
+
+本轮TC03：bm25：0 次中间拒绝，最终 INSUFFICIENT_EVIDENCE（PASS）；hybrid：1 次中间拒绝，最终 INSUFFICIENT_EVIDENCE（PASS）。F7历史路径问题未获改写授权，保持BLOCKED；未发现配置密钥泄露；当前日志只作路径隐私脱敏，原失败事实、非路径字节、原始本机备份和全部历史失败记录保留。评审账号未提供，PENDING_REVIEWER_ACCESS。新模型调用、UI真实HTTP检查和实验均有工件，未声称独立人工语义标注或浏览器人工检查。

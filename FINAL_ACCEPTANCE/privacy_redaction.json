@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "source": "reports/logs/attempts/P0-1794285668763432800/P0-0.txt",
+  "redacted_private_path_occurrences": 4,
+  "original_sha256": "5805f1e2e85b4272aafe96e6c4ec59bdeedd250a1206d70e8ac47be55275ea5c",
+  "redacted_sha256": "b915c426fde1b19e7c081bab0615a3555eaeeb71af6004b6f380f5c3473cac2c",
+  "original_preserved_locally_ignored": true,
+  "failure_result_and_all_non_path_bytes_preserved": true,
+  "git_history_cleanup": "PENDING_EXPLICIT_AUTHORIZATION"
+}

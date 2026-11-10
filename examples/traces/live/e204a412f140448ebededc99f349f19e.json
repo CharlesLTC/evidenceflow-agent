@@ -1,0 +1,416 @@
+{
+  "trace_schema_version": 2,
+  "trace_id": "e204a412f140448ebededc99f349f19e",
+  "mode": "live",
+  "model_name": "qwen-plus",
+  "events": [
+    {
+      "kind": "model_decision",
+      "step": 1,
+      "trace_id": "e204a412f140448ebededc99f349f19e",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T20:04:05.311461+00:00",
+      "model_step": 1,
+      "tool_calls": [
+        {
+          "id": "call_19c6122e0b414334b429a0",
+          "name": "search_documents",
+          "arguments": {
+            "query": "员工餐补标准 实习生餐补标准",
+            "strategy": "bm25"
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1520,
+        "total_tokens": 1553,
+        "completion_tokens": 33,
+        "prompt_tokens_details": {
+          "cached_tokens": 1408
+        }
+      },
+      "next_action": [
+        "search_documents"
+      ],
+      "decision_basis": "当前轮尚无工具 Observation；模型选择 search_documents。",
+      "decision_basis_source": "observable_events",
+      "basis_event_steps": []
+    },
+    {
+      "kind": "tool_observation",
+      "step": 2,
+      "trace_id": "e204a412f140448ebededc99f349f19e",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T20:04:05.312964+00:00",
+      "model_step": 1,
+      "tool_call_number": 1,
+      "tool_name": "search_documents",
+      "arguments": {
+        "query": "员工餐补标准 实习生餐补标准",
+        "strategy": "bm25"
+      },
+      "observation": {
+        "query": "员工餐补标准 实习生餐补标准",
+        "strategy": "bm25",
+        "hits": [
+          {
+            "doc_id": "D19",
+            "chunk_id": "D19-C01",
+            "title": "实习生餐补",
+            "topic": "餐补",
+            "version_date": "2025-09-01",
+            "score": 16.165702393575884,
+            "preview": "实习生每个出勤日餐补20元。"
+          },
+          {
+            "doc_id": "D18",
+            "chunk_id": "D18-C01",
+            "title": "正式员工餐补",
+            "topic": "餐补",
+            "version_date": "2025-09-01",
+            "score": 10.356925958742973,
+            "preview": "正式员工每个出勤日餐补30元。"
+          },
+          {
+            "doc_id": "D22",
+            "chunk_id": "D22-C01",
+            "title": "实习生休假",
+            "topic": "年假",
+            "version_date": "2025-09-01",
+            "score": 7.400785554824707,
+            "preview": "实习生每年可申请2天休假，具体日期需经主管批准。"
+          },
+          {
+            "doc_id": "D06",
+            "chunk_id": "D06-C01",
+            "title": "新员工培训",
+            "topic": "入职培训",
+            "version_date": "2025-01-01",
+            "score": 2.6428962125919933,
+            "preview": "新员工应在入职后7天内完成信息安全培训。"
+          },
+          {
+            "doc_id": "D21",
+            "chunk_id": "D21-C01",
+            "title": "正式员工年假",
+            "topic": "年假",
+            "version_date": "2025-09-01",
+            "score": 2.5003246163894186,
+            "preview": "正式员工每年可申请5天年假，具体日期需经主管批准。"
+          }
+        ],
+        "configured_strategy": "bm25",
+        "executed_strategy": "bm25"
+      },
+      "observation_summary": "{\"query\": \"员工餐补标准 实习生餐补标准\", \"strategy\": \"bm25\", \"hits\": [{\"doc_id\": \"D19\", \"chunk_id\": \"D19-C01\", \"title\": \"实习生餐补\", \"topic\": \"餐补\", \"version_date\": \"2025-09-01\", \"score\": 16.165702393575884, \"preview\": \"实习生每个出勤日餐补20元。\"}, {\"doc_id\": \"D18\", \"chunk_id\": \"D18-C01\", \"title\": \"正式员工餐补\", \"topic\": \"餐补\", \"version_date\": \"2025-09-01\", \"score\": 10.356925958742973, \"preview\": \"正式员工每个出勤日餐补30元。\"}, {\"doc_id\": \"D22\", \"chunk_id\": \"D22-C01\", \"title\": \"实习生休假\", \"topic\": \"年假\", \"version_date\": \"2025-09-01\", \"score\": 7.",
+      "latency_ms": 0.41489998693577945,
+      "next_action": "agent_decide",
+      "decision_basis": "bm25 检索返回 5 篇候选（D19, D18, D22, D06, D21），尚不具备引用资格。",
+      "decision_basis_source": "current_observation"
+    },
+    {
+      "kind": "model_decision",
+      "step": 3,
+      "trace_id": "e204a412f140448ebededc99f349f19e",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T20:04:06.297464+00:00",
+      "model_step": 2,
+      "tool_calls": [
+        {
+          "id": "call_e4e3878c34c348a7af36a6",
+          "name": "read_document",
+          "arguments": {
+            "doc_id": "D19",
+            "chunk_ids": [
+              "D19-C01"
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 2082,
+        "total_tokens": 2114,
+        "completion_tokens": 32,
+        "prompt_tokens_details": {
+          "cached_tokens": 1984
+        }
+      },
+      "next_action": [
+        "read_document"
+      ],
+      "decision_basis": "bm25 检索返回 5 篇候选（D19, D18, D22, D06, D21），尚不具备引用资格。本轮模型选择 read_document。",
+      "decision_basis_source": "observable_events",
+      "basis_event_steps": [
+        2
+      ]
+    },
+    {
+      "kind": "tool_observation",
+      "step": 4,
+      "trace_id": "e204a412f140448ebededc99f349f19e",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T20:04:06.298465+00:00",
+      "model_step": 2,
+      "tool_call_number": 2,
+      "tool_name": "read_document",
+      "arguments": {
+        "doc_id": "D19",
+        "chunk_ids": [
+          "D19-C01"
+        ]
+      },
+      "observation": {
+        "doc_id": "D19",
+        "title": "实习生餐补",
+        "version_date": "2025-09-01",
+        "effective_date": null,
+        "scope": "实习生",
+        "status": "published",
+        "topic": "餐补",
+        "content": "实习生每个出勤日餐补20元。",
+        "chunks": [
+          {
+            "doc_id": "D19",
+            "chunk_id": "D19-C01",
+            "start": 0,
+            "end": 14,
+            "text": "实习生每个出勤日餐补20元。"
+          }
+        ],
+        "trust": "untrusted_document_data",
+        "evidence_context": {
+          "read_doc_ids": [
+            "D19"
+          ],
+          "conflicts": []
+        }
+      },
+      "observation_summary": "{\"doc_id\": \"D19\", \"title\": \"实习生餐补\", \"version_date\": \"2025-09-01\", \"effective_date\": null, \"scope\": \"实习生\", \"status\": \"published\", \"topic\": \"餐补\", \"content\": \"实习生每个出勤日餐补20元。\", \"chunks\": [{\"doc_id\": \"D19\", \"chunk_id\": \"D19-C01\", \"start\": 0, \"end\": 14, \"text\": \"实习生每个出勤日餐补20元。\"}], \"trust\": \"untrusted_document_data\", \"evidence_context\": {\"read_doc_ids\": [\"D19\"], \"conflicts\": []}}",
+      "latency_ms": 0.0926000066101551,
+      "next_action": "agent_decide",
+      "decision_basis": "已读取 D19 的 1 个原文片段。",
+      "decision_basis_source": "current_observation"
+    },
+    {
+      "kind": "model_decision",
+      "step": 5,
+      "trace_id": "e204a412f140448ebededc99f349f19e",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T20:04:07.277856+00:00",
+      "model_step": 3,
+      "tool_calls": [
+        {
+          "id": "call_74fc473e715345ca91a3f8",
+          "name": "read_document",
+          "arguments": {
+            "doc_id": "D18",
+            "chunk_ids": [
+              "D18-C01"
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 2288,
+        "total_tokens": 2320,
+        "completion_tokens": 32,
+        "prompt_tokens_details": {
+          "cached_tokens": 1984
+        }
+      },
+      "next_action": [
+        "read_document"
+      ],
+      "decision_basis": "已读取 D19 的 1 个原文片段。本轮模型选择 read_document。",
+      "decision_basis_source": "observable_events",
+      "basis_event_steps": [
+        4
+      ]
+    },
+    {
+      "kind": "tool_observation",
+      "step": 6,
+      "trace_id": "e204a412f140448ebededc99f349f19e",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T20:04:07.278905+00:00",
+      "model_step": 3,
+      "tool_call_number": 3,
+      "tool_name": "read_document",
+      "arguments": {
+        "doc_id": "D18",
+        "chunk_ids": [
+          "D18-C01"
+        ]
+      },
+      "observation": {
+        "doc_id": "D18",
+        "title": "正式员工餐补",
+        "version_date": "2025-09-01",
+        "effective_date": null,
+        "scope": "正式员工",
+        "status": "published",
+        "topic": "餐补",
+        "content": "正式员工每个出勤日餐补30元。",
+        "chunks": [
+          {
+            "doc_id": "D18",
+            "chunk_id": "D18-C01",
+            "start": 0,
+            "end": 15,
+            "text": "正式员工每个出勤日餐补30元。"
+          }
+        ],
+        "trust": "untrusted_document_data",
+        "evidence_context": {
+          "read_doc_ids": [
+            "D18",
+            "D19"
+          ],
+          "conflicts": []
+        }
+      },
+      "observation_summary": "{\"doc_id\": \"D18\", \"title\": \"正式员工餐补\", \"version_date\": \"2025-09-01\", \"effective_date\": null, \"scope\": \"正式员工\", \"status\": \"published\", \"topic\": \"餐补\", \"content\": \"正式员工每个出勤日餐补30元。\", \"chunks\": [{\"doc_id\": \"D18\", \"chunk_id\": \"D18-C01\", \"start\": 0, \"end\": 15, \"text\": \"正式员工每个出勤日餐补30元。\"}], \"trust\": \"untrusted_document_data\", \"evidence_context\": {\"read_doc_ids\": [\"D18\", \"D19\"], \"conflicts\": []}}",
+      "latency_ms": 0.09849999332800508,
+      "next_action": "agent_decide",
+      "decision_basis": "已读取 D18 的 1 个原文片段。",
+      "decision_basis_source": "current_observation"
+    },
+    {
+      "kind": "model_decision",
+      "step": 7,
+      "trace_id": "e204a412f140448ebededc99f349f19e",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T20:04:10.419581+00:00",
+      "model_step": 4,
+      "tool_calls": [
+        {
+          "id": "call_9c4e7e2735b54aa3aa3b60",
+          "name": "submit_answer",
+          "arguments": {
+            "status": "COMPLETED",
+            "citations": [
+              {
+                "doc_id": "D19",
+                "version_date": "2025-09-01",
+                "quote": "实习生每个出勤日餐补20元。",
+                "chunk_id": "D19-C01"
+              },
+              {
+                "doc_id": "D18",
+                "version_date": "2025-09-01",
+                "quote": "正式员工每个出勤日餐补30元。",
+                "chunk_id": "D18-C01"
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 2503,
+        "total_tokens": 2633,
+        "completion_tokens": 130,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "next_action": [
+        "submit_answer"
+      ],
+      "decision_basis": "已读取 D18 的 1 个原文片段。本轮模型选择 submit_answer。",
+      "decision_basis_source": "observable_events",
+      "basis_event_steps": [
+        6
+      ]
+    },
+    {
+      "kind": "tool_observation",
+      "step": 8,
+      "trace_id": "e204a412f140448ebededc99f349f19e",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T20:04:10.420585+00:00",
+      "model_step": 4,
+      "tool_call_number": 4,
+      "tool_name": "submit_answer",
+      "arguments": {
+        "status": "COMPLETED",
+        "citations": [
+          {
+            "doc_id": "D19",
+            "version_date": "2025-09-01",
+            "quote": "实习生每个出勤日餐补20元。",
+            "chunk_id": "D19-C01"
+          },
+          {
+            "doc_id": "D18",
+            "version_date": "2025-09-01",
+            "quote": "正式员工每个出勤日餐补30元。",
+            "chunk_id": "D18-C01"
+          }
+        ]
+      },
+      "observation": {
+        "valid": true,
+        "errors": [],
+        "conflicts": [],
+        "expected_answer_format": null
+      },
+      "observation_summary": "{\"valid\": true, \"errors\": [], \"conflicts\": [], \"expected_answer_format\": null}",
+      "latency_ms": 0.1912999723572284,
+      "next_action": "finalize",
+      "decision_basis": "候选已通过原文、已读资格、版本、冲突及摘录格式校验。",
+      "decision_basis_source": "current_observation"
+    }
+  ],
+  "result": {
+    "question": "正式员工与实习生每天餐补各是多少？",
+    "answer": "D19：实习生每个出勤日餐补20元。\nD18：正式员工每个出勤日餐补30元。",
+    "status": "COMPLETED",
+    "citations": [
+      {
+        "doc_id": "D19",
+        "version_date": "2025-09-01",
+        "quote": "实习生每个出勤日餐补20元。",
+        "chunk_id": "D19-C01"
+      },
+      {
+        "doc_id": "D18",
+        "version_date": "2025-09-01",
+        "quote": "正式员工每个出勤日餐补30元。",
+        "chunk_id": "D18-C01"
+      }
+    ],
+    "missing_info": [],
+    "conflicts": [],
+    "steps_used": 4,
+    "tool_calls_used": 4,
+    "trace_id": "e204a412f140448ebededc99f349f19e",
+    "session_id": "39e3f60302234081a69dd0299a2ae63d",
+    "mode": "live",
+    "model_name": "qwen-plus",
+    "latency_ms": 6201.771000021836,
+    "usage": {
+      "prompt_tokens": 8393,
+      "completion_tokens": 227,
+      "total_tokens": 8620
+    },
+    "error_code": null,
+    "critic": {
+      "enabled": false,
+      "reviews": 0,
+      "model_calls": 0,
+      "model_steps": 0,
+      "revisions_requested": 0,
+      "repair_limit": 1,
+      "latency_ms": 0.0,
+      "usage": {}
+    }
+  }
+}

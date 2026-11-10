@@ -1,0 +1,19 @@
+
+Protocol tcp Port Exclusion Ranges
+
+Start Port    End Port      
+----------    --------      
+      8494        8593      
+      8694        8793      
+      8854        8953      
+      8954        9053      
+      9152        9251      
+      9252        9351      
+      9616        9715      
+      9742        9841      
+      9842        9941      
+     10516       10615      
+     50000       50059     *
+
+* - Administered port exclusions.
+

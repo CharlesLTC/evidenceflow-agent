@@ -1,0 +1,133 @@
+{
+  "timestamp": "2026-11-10T20:03:23.300199+00:00",
+  "status": "PASS",
+  "api_url": "http://127.0.0.1:9551",
+  "ui_url": "http://127.0.0.1:9552",
+  "port_binding_errors": [
+    {
+      "port": 8000,
+      "error_type": "OSError",
+      "errno": 10048
+    },
+    {
+      "port": 18501,
+      "error_type": "OSError",
+      "errno": 10048
+    }
+  ],
+  "cases": [
+    {
+      "mode": "live",
+      "question": "办公电脑申领审批需要多久？",
+      "fail_search_count": 0,
+      "expected": "COMPLETED",
+      "actual": "COMPLETED",
+      "status": "PASS",
+      "model": "qwen-plus",
+      "trace": "examples/traces/live/4aff13e93d37487bb3117f5f941bfa70.json",
+      "output": "examples/outputs/live/4aff13e93d37487bb3117f5f941bfa70.json",
+      "citations": 1,
+      "trace_events": 8,
+      "ui_json_blocks": 9,
+      "session_http_status": 200
+    },
+    {
+      "mode": "mock",
+      "question": "差旅报销期限是多久？",
+      "fail_search_count": 0,
+      "expected": "NEEDS_CLARIFICATION",
+      "actual": "NEEDS_CLARIFICATION",
+      "status": "PASS",
+      "model": "offline-observation-simulator",
+      "trace": "examples/traces/mock/b167382d3b214714af88510e46e343e4.json",
+      "output": "examples/outputs/mock/b167382d3b214714af88510e46e343e4.json",
+      "citations": 2,
+      "trace_events": 10,
+      "ui_json_blocks": 12,
+      "session_http_status": 200
+    },
+    {
+      "mode": "mock",
+      "question": "公司的年终奖金是多少？",
+      "fail_search_count": 0,
+      "expected": "INSUFFICIENT_EVIDENCE",
+      "actual": "INSUFFICIENT_EVIDENCE",
+      "status": "PASS",
+      "model": "offline-observation-simulator",
+      "trace": "examples/traces/mock/2bab995030894b299187daf98cb72479.json",
+      "output": "examples/outputs/mock/2bab995030894b299187daf98cb72479.json",
+      "citations": 0,
+      "trace_events": 4,
+      "ui_json_blocks": 5,
+      "session_http_status": 200
+    },
+    {
+      "mode": "mock",
+      "question": "办公电脑申领审批需要多久？",
+      "fail_search_count": 2,
+      "expected": "FAILED",
+      "actual": "FAILED",
+      "status": "PASS",
+      "model": "offline-observation-simulator",
+      "trace": "examples/traces/mock/9c97c5ca44664a31a289d554b9f263ea.json",
+      "output": "examples/outputs/mock/9c97c5ca44664a31a289d554b9f263ea.json",
+      "citations": 0,
+      "trace_events": 6,
+      "ui_json_blocks": 7,
+      "session_http_status": 200
+    }
+  ],
+  "method": "Two actual child servers, HTTP health/page probes and Streamlit AppTest against actual HTTP API; not browser pixel QA",
+  "commands": [
+    [
+      ".venv/Scripts/python.exe",
+      "-m",
+      "uvicorn",
+      "evidenceflow.api:app",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "9551"
+    ],
+    [
+      ".venv/Scripts/python.exe",
+      "-m",
+      "streamlit",
+      "run",
+      "ui/app.py",
+      "--server.address",
+      "127.0.0.1",
+      "--server.port",
+      "9552",
+      "--server.headless",
+      "true",
+      "--browser.gatherUsageStats",
+      "false"
+    ]
+  ],
+  "http_probes": {
+    "api_health": 200,
+    "health_body": {
+      "status": "ok",
+      "llm_configured": true,
+      "documents": 32,
+      "embedding_ready": true
+    },
+    "api_docs": 200,
+    "openapi": 200,
+    "streamlit_page": 200,
+    "streamlit_health": 200,
+    "page_bytes": 7863
+  },
+  "empty_input_disabled": true,
+  "api_error_checks": {
+    "metrics": 200,
+    "missing_trace": 404,
+    "invalid_request": 422
+  },
+  "disconnected_backend_shows_error": true,
+  "owned_servers_stopped_after_check": true
+}
+
+STDERR:
+2026-11-11 04:03:25.055 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.

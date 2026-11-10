@@ -1,0 +1,283 @@
+{
+  "mode": "live",
+  "model_name": "qwen-plus",
+  "question": "代码仓库权限如何申请？",
+  "events": [
+    {
+      "kind": "tool_observation",
+      "tool_name": "search_documents",
+      "timestamp": "2026-11-10T20:02:04.173813+00:00",
+      "arguments": {
+        "query": "代码仓库权限如何申请？",
+        "strategy": "hybrid",
+        "top_k": 10
+      },
+      "observation": {
+        "query": "代码仓库权限如何申请？",
+        "strategy": "hybrid",
+        "hits": [
+          {
+            "doc_id": "D26",
+            "chunk_id": "D26-C01",
+            "title": "代码仓库权限",
+            "topic": "仓库权限",
+            "version_date": "2025-09-01",
+            "score": 0.03278688524590164,
+            "preview": "代码仓库访问权限须经项目负责人审批后由IT开通。"
+          },
+          {
+            "doc_id": "D08",
+            "chunk_id": "D08-C01",
+            "title": "采购申请",
+            "topic": "采购",
+            "version_date": "2025-01-01",
+            "score": 0.03125,
+            "preview": "采购须先提交采购申请，经预算负责人审批后由采购部执行。"
+          },
+          {
+            "doc_id": "D11",
+            "chunk_id": "D11-C01",
+            "title": "加班申请",
+            "topic": "加班",
+            "version_date": "2025-09-01",
+            "score": 0.031054405392392875,
+            "preview": "加班须事先在HR系统申请并经主管批准。"
+          },
+          {
+            "doc_id": "D05",
+            "chunk_id": "D05-C01",
+            "title": "员工请假制度",
+            "topic": "请假",
+            "version_date": "2025-01-01",
+            "score": 0.03076923076923077,
+            "preview": "请假应在HR系统提交申请，由直属主管审批。"
+          },
+          {
+            "doc_id": "D15",
+            "chunk_id": "D15-C01",
+            "title": "邮件别名申请",
+            "topic": "邮件别名",
+            "version_date": "2025-09-01",
+            "score": 0.03057889822595705,
+            "preview": "部门邮件别名由部门负责人提交申请，IT支持组创建。"
+          },
+          {
+            "doc_id": "D27",
+            "chunk_id": "D27-C01",
+            "title": "公章使用",
+            "topic": "公章",
+            "version_date": "2025-09-01",
+            "score": 0.03057889822595705,
+            "preview": "使用公章须在行政系统提交用印申请并附审批文件。"
+          },
+          {
+            "doc_id": "D03",
+            "chunk_id": "D03-C01",
+            "title": "办公电脑申领",
+            "topic": "电脑申领",
+            "version_date": "2025-01-01",
+            "score": 0.0304147465437788,
+            "preview": "办公电脑申领须在IT门户填写申请，经主管审批后3个工作日内完成。"
+          },
+          {
+            "doc_id": "D13",
+            "chunk_id": "D13-C01",
+            "title": "远程网络接入",
+            "topic": "VPN",
+            "version_date": "2025-09-01",
+            "score": 0.028665028665028666,
+            "preview": "在家访问内部系统须申请VPN，并启用多因素认证。"
+          },
+          {
+            "doc_id": "D22",
+            "chunk_id": "D22-C01",
+            "title": "实习生休假",
+            "topic": "年假",
+            "version_date": "2025-09-01",
+            "score": 0.027271052146674038,
+            "preview": "实习生每年可申请2天休假，具体日期需经主管批准。"
+          },
+          {
+            "doc_id": "D21",
+            "chunk_id": "D21-C01",
+            "title": "正式员工年假",
+            "topic": "年假",
+            "version_date": "2025-09-01",
+            "score": 0.026540946394272742,
+            "preview": "正式员工每年可申请5天年假，具体日期需经主管批准。"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "model_decision",
+      "tool_calls": [
+        {
+          "id": "call_d263610bc19948e0a3496c",
+          "name": "search_documents",
+          "arguments": {
+            "query": "代码仓库 权限 申请 流程"
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1286,
+        "total_tokens": 1311,
+        "completion_tokens": 25,
+        "prompt_tokens_details": {
+          "cached_tokens": 192
+        }
+      },
+      "timestamp": "2026-11-10T20:02:05.053053+00:00"
+    },
+    {
+      "kind": "tool_observation",
+      "tool_name": "search_documents",
+      "arguments": {
+        "query": "代码仓库 权限 申请 流程"
+      },
+      "observation": {
+        "query": "代码仓库 权限 申请 流程",
+        "strategy": "hybrid",
+        "hits": [
+          {
+            "doc_id": "D26",
+            "chunk_id": "D26-C01",
+            "title": "代码仓库权限",
+            "topic": "仓库权限",
+            "version_date": "2025-09-01",
+            "score": 0.03278688524590164,
+            "preview": "代码仓库访问权限须经项目负责人审批后由IT开通。"
+          },
+          {
+            "doc_id": "D08",
+            "chunk_id": "D08-C01",
+            "title": "采购申请",
+            "topic": "采购",
+            "version_date": "2025-01-01",
+            "score": 0.031754032258064516,
+            "preview": "采购须先提交采购申请，经预算负责人审批后由采购部执行。"
+          },
+          {
+            "doc_id": "D15",
+            "chunk_id": "D15-C01",
+            "title": "邮件别名申请",
+            "topic": "邮件别名",
+            "version_date": "2025-09-01",
+            "score": 0.031024531024531024,
+            "preview": "部门邮件别名由部门负责人提交申请，IT支持组创建。"
+          },
+          {
+            "doc_id": "D11",
+            "chunk_id": "D11-C01",
+            "title": "加班申请",
+            "topic": "加班",
+            "version_date": "2025-09-01",
+            "score": 0.030834914611005692,
+            "preview": "加班须事先在HR系统申请并经主管批准。"
+          },
+          {
+            "doc_id": "D05",
+            "chunk_id": "D05-C01",
+            "title": "员工请假制度",
+            "topic": "请假",
+            "version_date": "2025-01-01",
+            "score": 0.03076923076923077,
+            "preview": "请假应在HR系统提交申请，由直属主管审批。"
+          },
+          {
+            "doc_id": "D27",
+            "chunk_id": "D27-C01",
+            "title": "公章使用",
+            "topic": "公章",
+            "version_date": "2025-09-01",
+            "score": 0.03057889822595705,
+            "preview": "使用公章须在行政系统提交用印申请并附审批文件。"
+          },
+          {
+            "doc_id": "D03",
+            "chunk_id": "D03-C01",
+            "title": "办公电脑申领",
+            "topic": "电脑申领",
+            "version_date": "2025-01-01",
+            "score": 0.029910714285714284,
+            "preview": "办公电脑申领须在IT门户填写申请，经主管审批后3个工作日内完成。"
+          },
+          {
+            "doc_id": "D13",
+            "chunk_id": "D13-C01",
+            "title": "远程网络接入",
+            "topic": "VPN",
+            "version_date": "2025-09-01",
+            "score": 0.027651515151515153,
+            "preview": "在家访问内部系统须申请VPN，并启用多因素认证。"
+          },
+          {
+            "doc_id": "D22",
+            "chunk_id": "D22-C01",
+            "title": "实习生休假",
+            "topic": "年假",
+            "version_date": "2025-09-01",
+            "score": 0.027271052146674038,
+            "preview": "实习生每年可申请2天休假，具体日期需经主管批准。"
+          },
+          {
+            "doc_id": "D21",
+            "chunk_id": "D21-C01",
+            "title": "正式员工年假",
+            "topic": "年假",
+            "version_date": "2025-09-01",
+            "score": 0.02625745950554135,
+            "preview": "正式员工每年可申请5天年假，具体日期需经主管批准。"
+          }
+        ]
+      },
+      "timestamp": "2026-11-10T20:02:05.057054+00:00"
+    },
+    {
+      "kind": "model_decision",
+      "tool_calls": [
+        {
+          "id": "call_703885b4347f42298d2c37",
+          "name": "finish_retrieval",
+          "arguments": {}
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 2315,
+        "total_tokens": 2329,
+        "completion_tokens": 14,
+        "prompt_tokens_details": {
+          "cached_tokens": 192
+        }
+      },
+      "timestamp": "2026-11-10T20:02:05.642841+00:00"
+    },
+    {
+      "kind": "tool_observation",
+      "tool_name": "finish_retrieval",
+      "arguments": {},
+      "observation": {
+        "finished": true
+      },
+      "timestamp": "2026-11-10T20:02:05.642841+00:00"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3601,
+    "completion_tokens": 39,
+    "total_tokens": 3640
+  },
+  "ranked_doc_ids": [
+    "D26",
+    "D08",
+    "D11",
+    "D15",
+    "D05",
+    "D27",
+    "D03",
+    "D13",
+    "D22",
+    "D21"
+  ]
+}

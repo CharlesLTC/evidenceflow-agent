@@ -1,0 +1,3 @@
+Running uvicorn 0.54.0 with CPython 3.12.3 on Windows
+
+STDERR:

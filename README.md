@@ -1,5 +1,13 @@
 # EvidenceFlow · 题目 3 企业知识问答 Agent
 
+本轮最终验收（2026-11-11）：**DELIVERY_BLOCKED**；pytest **75/75**、官方BM25 live **6/6**、Hybrid live **6/6**、TC02 **5/5**、Critic **PASS**。当前安全扫描无匹配的凭证，历史私人路径仍待授权清理；私有仓库评审 **PENDING_REVIEWER_ACCESS**。完整当前证据以 [FINAL_REPORT](FINAL_ACCEPTANCE/FINAL_REPORT.md) 为准。以下早期“本轮/最终”描述均为历史交付快照，不替代本次复验。
+
+## 当前交付限制与局限
+
+历史安装失败日志的私人路径已在当前版本脱敏，原始失败及本机备份保留；Git 历史尚待授权清理，安全验收保持 BLOCKED。未提供评审账号，私有仓库待授权。Hybrid TC03 本轮出现一次 `MISSING_INFO_REQUIRED` 中间拒绝后正确恢复，详见最终报告。
+
+检索与 Critic 结果限于固定合成数据和受控注入，未做独立人工语义标注。API 用于本机演示，未实施多用户鉴权。前端验证包含真实 HTTP 和 AppTest，未做浏览器像素人工验收；默认端口被占用时需选择空闲端口，并同步设置 `EVIDENCEFLOW_API_URL`。本轮没有修改业务代码、测试标准或依赖架构。
+
 **LangGraph StateGraph + 真实模型 Tool Calling**：模型自行选择检索、读原文、核查版本、补查和结束；程序在模型外强制执行引用校验、冲突边界和循环预算。
 
 实际结果：qwen-plus 官方六项 live **6/6**；32 篇合成制度、44 个固定检索问题（40 个有答案）；Hybrid Recall@3 **0.9875**。最终测试数、阶段及 GitHub 状态以 [最终验收报告](reports/final_acceptance.md) 为准。历史失败和阻塞保留。

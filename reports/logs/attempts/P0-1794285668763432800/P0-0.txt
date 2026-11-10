@@ -12,9 +12,9 @@ STDERR:
   │ exit code: 1
   ╰─> [4 lines of output]
       running dist_info
-      creating D:\WpSystem\S-1-5-21-3252492114-3515504054-1515835552-1001\AppData\Local\Packages\OpenAI.Codex_2p2nqsd0c76g0\AC\#!sandbox.{59b23acf-c9ca-4bd8-bd9d-b448b0026fdc}\Temp\pip-modern-metadata-ay9xvssd\evidenceflow_agent.egg-info
-      writing D:\WpSystem\S-1-5-21-3252492114-3515504054-1515835552-1001\AppData\Local\Packages\OpenAI.Codex_2p2nqsd0c76g0\AC\#!sandbox.{59b23acf-c9ca-4bd8-bd9d-b448b0026fdc}\Temp\pip-modern-metadata-ay9xvssd\evidenceflow_agent.egg-info\PKG-INFO
-      error: [WinError 5] 鎷掔粷璁块棶銆\x82: 'D:\\WpSystem\\S-1-5-21-3252492114-3515504054-1515835552-1001\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\AC\\#!sandbox.{59b23acf-c9ca-4bd8-bd9d-b448b0026fdc}\\Temp\\pip-modern-metadata-ay9xvssd\\evidenceflow_agent.egg-info\\tmp_91hd7pd' -> 'D:\\WpSystem\\S-1-5-21-3252492114-3515504054-1515835552-1001\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\AC\\#!sandbox.{59b23acf-c9ca-4bd8-bd9d-b448b0026fdc}\\Temp\\pip-modern-metadata-ay9xvssd\\evidenceflow_agent.egg-info\\PKG-INFO'
+      creating [REDACTED_SANDBOX_TEMP]/pip-modern-metadata-ay9xvssd\evidenceflow_agent.egg-info
+      writing [REDACTED_SANDBOX_TEMP]/pip-modern-metadata-ay9xvssd\evidenceflow_agent.egg-info\PKG-INFO
+      error: [WinError 5] 鎷掔粷璁块棶銆\x82: '[REDACTED_SANDBOX_TEMP]/pip-modern-metadata-ay9xvssd\\evidenceflow_agent.egg-info\\tmp_91hd7pd' -> '[REDACTED_SANDBOX_TEMP]/pip-modern-metadata-ay9xvssd\\evidenceflow_agent.egg-info\\PKG-INFO'
       [end of output]
   
   note: This error originates from a subprocess, and is likely not a problem with pip.

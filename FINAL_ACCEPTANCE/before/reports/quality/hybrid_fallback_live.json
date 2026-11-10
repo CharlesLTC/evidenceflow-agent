@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "trace": "examples/traces/live/a61034fdd1f24cfe9a307fdb41c8fb73.json",
+  "injection": "semantic backend deliberately unavailable; no automatic tool retry",
+  "result_status": "COMPLETED",
+  "observed_unavailable": true,
+  "model_chose_bm25": true
+}

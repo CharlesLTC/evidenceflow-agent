@@ -1,0 +1,158 @@
+{
+  "mode": "live",
+  "model_name": "qwen-plus",
+  "question": "离职电脑配件交给谁？",
+  "events": [
+    {
+      "kind": "tool_observation",
+      "tool_name": "search_documents",
+      "timestamp": "2026-11-10T20:02:09.535577+00:00",
+      "arguments": {
+        "query": "离职电脑配件交给谁？",
+        "strategy": "hybrid",
+        "top_k": 10
+      },
+      "observation": {
+        "query": "离职电脑配件交给谁？",
+        "strategy": "hybrid",
+        "hits": [
+          {
+            "doc_id": "D31",
+            "chunk_id": "D31-C01",
+            "title": "离职设备归还",
+            "topic": "设备归还",
+            "version_date": "2025-09-01",
+            "score": 0.03278688524590164,
+            "preview": "离职前须向IT归还电脑和配件，由IT确认资产交接。"
+          },
+          {
+            "doc_id": "D03",
+            "chunk_id": "D03-C01",
+            "title": "办公电脑申领",
+            "topic": "电脑申领",
+            "version_date": "2025-01-01",
+            "score": 0.031754032258064516,
+            "preview": "办公电脑申领须在IT门户填写申请，经主管审批后3个工作日内完成。"
+          },
+          {
+            "doc_id": "D25",
+            "chunk_id": "D25-C01",
+            "title": "工作文件备份",
+            "topic": "备份",
+            "version_date": "2025-09-01",
+            "score": 0.016129032258064516,
+            "preview": "工作文件应保存在团队网盘，系统每天执行一次备份。"
+          },
+          {
+            "doc_id": "D23",
+            "chunk_id": "D23-C01",
+            "title": "办公网络报障",
+            "topic": "网络故障",
+            "version_date": "2025-09-01",
+            "score": 0.015873015873015872,
+            "preview": "办公室网络无法连接时应提交网络报障工单并注明工位。"
+          },
+          {
+            "doc_id": "D05",
+            "chunk_id": "D05-C01",
+            "title": "员工请假制度",
+            "topic": "请假",
+            "version_date": "2025-01-01",
+            "score": 0.015384615384615385,
+            "preview": "请假应在HR系统提交申请，由直属主管审批。"
+          },
+          {
+            "doc_id": "D04",
+            "chunk_id": "D04-C01",
+            "title": "IT设备维修",
+            "topic": "设备维修",
+            "version_date": "2025-01-01",
+            "score": 0.015151515151515152,
+            "preview": "IT设备故障须在IT门户提交维修工单，由IT支持组受理。"
+          },
+          {
+            "doc_id": "D11",
+            "chunk_id": "D11-C01",
+            "title": "加班申请",
+            "topic": "加班",
+            "version_date": "2025-09-01",
+            "score": 0.014925373134328358,
+            "preview": "加班须事先在HR系统申请并经主管批准。"
+          },
+          {
+            "doc_id": "D19",
+            "chunk_id": "D19-C01",
+            "title": "实习生餐补",
+            "topic": "餐补",
+            "version_date": "2025-09-01",
+            "score": 0.014705882352941176,
+            "preview": "实习生每个出勤日餐补20元。"
+          },
+          {
+            "doc_id": "D29",
+            "chunk_id": "D29-C01",
+            "title": "快递寄送",
+            "topic": "快递",
+            "version_date": "2025-09-01",
+            "score": 0.014492753623188406,
+            "preview": "工作快递由前台登记寄送，私人快递费用自理。"
+          },
+          {
+            "doc_id": "D10",
+            "chunk_id": "D10-C01",
+            "title": "远程会议",
+            "topic": "远程会议",
+            "version_date": "2025-09-01",
+            "score": 0.014285714285714285,
+            "preview": "远程会议使用公司会议平台，外部参会人须由主持人发送邀请。"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "model_decision",
+      "tool_calls": [
+        {
+          "id": "call_606bef06c97d466a9db169",
+          "name": "finish_retrieval",
+          "arguments": {}
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1308,
+        "total_tokens": 1322,
+        "completion_tokens": 14,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "timestamp": "2026-11-10T20:02:10.068590+00:00"
+    },
+    {
+      "kind": "tool_observation",
+      "tool_name": "finish_retrieval",
+      "arguments": {},
+      "observation": {
+        "finished": true
+      },
+      "timestamp": "2026-11-10T20:02:10.068590+00:00"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1308,
+    "completion_tokens": 14,
+    "total_tokens": 1322
+  },
+  "ranked_doc_ids": [
+    "D31",
+    "D03",
+    "D25",
+    "D23",
+    "D05",
+    "D04",
+    "D11",
+    "D19",
+    "D29",
+    "D10"
+  ]
+}

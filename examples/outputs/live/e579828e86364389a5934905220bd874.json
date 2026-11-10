@@ -1,0 +1,33 @@
+{
+  "question": "办公电脑申领审批需要多久？",
+  "answer": "工具或模型服务不可用，本次未能完成核验。",
+  "status": "FAILED",
+  "citations": [],
+  "missing_info": [
+    "办公电脑申领审批时限相关制度文档无法检索"
+  ],
+  "conflicts": [],
+  "steps_used": 6,
+  "tool_calls_used": 6,
+  "trace_id": "e579828e86364389a5934905220bd874",
+  "session_id": "c9b01e0eb6ad48c1a99cc59605a255cb",
+  "mode": "live",
+  "model_name": "qwen-plus",
+  "latency_ms": 5802.407500013942,
+  "usage": {
+    "prompt_tokens": 10249,
+    "completion_tokens": 180,
+    "total_tokens": 10429
+  },
+  "error_code": null,
+  "critic": {
+    "enabled": false,
+    "reviews": 0,
+    "model_calls": 0,
+    "model_steps": 0,
+    "revisions_requested": 0,
+    "repair_limit": 1,
+    "latency_ms": 0.0,
+    "usage": {}
+  }
+}

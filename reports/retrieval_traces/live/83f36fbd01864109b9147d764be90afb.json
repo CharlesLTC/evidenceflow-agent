@@ -1,0 +1,283 @@
+{
+  "mode": "live",
+  "model_name": "qwen-plus",
+  "question": "股票期权授予数量是多少？",
+  "events": [
+    {
+      "kind": "tool_observation",
+      "tool_name": "search_documents",
+      "timestamp": "2026-11-10T20:02:15.295609+00:00",
+      "arguments": {
+        "query": "股票期权授予数量是多少？",
+        "strategy": "hybrid",
+        "top_k": 10
+      },
+      "observation": {
+        "query": "股票期权授予数量是多少？",
+        "strategy": "hybrid",
+        "hits": [
+          {
+            "doc_id": "D28",
+            "chunk_id": "D28-C01",
+            "title": "发票抬头查询",
+            "topic": "发票",
+            "version_date": "2025-09-01",
+            "score": 0.01639344262295082,
+            "preview": "开具发票前应在财务门户核对公司抬头和税号。"
+          },
+          {
+            "doc_id": "D02",
+            "chunk_id": "D02-C01",
+            "title": "差旅报销制度 B",
+            "topic": "差旅报销",
+            "version_date": "2025-07-01",
+            "score": 0.016129032258064516,
+            "preview": "差旅报销应在15天内提交。报销须附发票和出差审批单。"
+          },
+          {
+            "doc_id": "D01",
+            "chunk_id": "D01-C01",
+            "title": "差旅报销制度 A",
+            "topic": "差旅报销",
+            "version_date": "2025-01-01",
+            "score": 0.015873015873015872,
+            "preview": "差旅报销应在30天内提交。报销须附发票和出差审批单。"
+          },
+          {
+            "doc_id": "D08",
+            "chunk_id": "D08-C01",
+            "title": "采购申请",
+            "topic": "采购",
+            "version_date": "2025-01-01",
+            "score": 0.015625,
+            "preview": "采购须先提交采购申请，经预算负责人审批后由采购部执行。"
+          },
+          {
+            "doc_id": "D21",
+            "chunk_id": "D21-C01",
+            "title": "正式员工年假",
+            "topic": "年假",
+            "version_date": "2025-09-01",
+            "score": 0.015384615384615385,
+            "preview": "正式员工每年可申请5天年假，具体日期需经主管批准。"
+          },
+          {
+            "doc_id": "D03",
+            "chunk_id": "D03-C01",
+            "title": "办公电脑申领",
+            "topic": "电脑申领",
+            "version_date": "2025-01-01",
+            "score": 0.015151515151515152,
+            "preview": "办公电脑申领须在IT门户填写申请，经主管审批后3个工作日内完成。"
+          },
+          {
+            "doc_id": "D29",
+            "chunk_id": "D29-C01",
+            "title": "快递寄送",
+            "topic": "快递",
+            "version_date": "2025-09-01",
+            "score": 0.014925373134328358,
+            "preview": "工作快递由前台登记寄送，私人快递费用自理。"
+          },
+          {
+            "doc_id": "D15",
+            "chunk_id": "D15-C01",
+            "title": "邮件别名申请",
+            "topic": "邮件别名",
+            "version_date": "2025-09-01",
+            "score": 0.014705882352941176,
+            "preview": "部门邮件别名由部门负责人提交申请，IT支持组创建。"
+          },
+          {
+            "doc_id": "D27",
+            "chunk_id": "D27-C01",
+            "title": "公章使用",
+            "topic": "公章",
+            "version_date": "2025-09-01",
+            "score": 0.014492753623188406,
+            "preview": "使用公章须在行政系统提交用印申请并附审批文件。"
+          },
+          {
+            "doc_id": "D05",
+            "chunk_id": "D05-C01",
+            "title": "员工请假制度",
+            "topic": "请假",
+            "version_date": "2025-01-01",
+            "score": 0.014285714285714285,
+            "preview": "请假应在HR系统提交申请，由直属主管审批。"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "model_decision",
+      "tool_calls": [
+        {
+          "id": "call_b63d06bdf34f4b618087fa",
+          "name": "search_documents",
+          "arguments": {
+            "query": "股票期权 授予 数量"
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1310,
+        "total_tokens": 1332,
+        "completion_tokens": 22,
+        "prompt_tokens_details": {
+          "cached_tokens": 192
+        }
+      },
+      "timestamp": "2026-11-10T20:02:16.223522+00:00"
+    },
+    {
+      "kind": "tool_observation",
+      "tool_name": "search_documents",
+      "arguments": {
+        "query": "股票期权 授予 数量"
+      },
+      "observation": {
+        "query": "股票期权 授予 数量",
+        "strategy": "hybrid",
+        "hits": [
+          {
+            "doc_id": "D28",
+            "chunk_id": "D28-C01",
+            "title": "发票抬头查询",
+            "topic": "发票",
+            "version_date": "2025-09-01",
+            "score": 0.01639344262295082,
+            "preview": "开具发票前应在财务门户核对公司抬头和税号。"
+          },
+          {
+            "doc_id": "D08",
+            "chunk_id": "D08-C01",
+            "title": "采购申请",
+            "topic": "采购",
+            "version_date": "2025-01-01",
+            "score": 0.016129032258064516,
+            "preview": "采购须先提交采购申请，经预算负责人审批后由采购部执行。"
+          },
+          {
+            "doc_id": "D02",
+            "chunk_id": "D02-C01",
+            "title": "差旅报销制度 B",
+            "topic": "差旅报销",
+            "version_date": "2025-07-01",
+            "score": 0.015873015873015872,
+            "preview": "差旅报销应在15天内提交。报销须附发票和出差审批单。"
+          },
+          {
+            "doc_id": "D01",
+            "chunk_id": "D01-C01",
+            "title": "差旅报销制度 A",
+            "topic": "差旅报销",
+            "version_date": "2025-01-01",
+            "score": 0.015625,
+            "preview": "差旅报销应在30天内提交。报销须附发票和出差审批单。"
+          },
+          {
+            "doc_id": "D21",
+            "chunk_id": "D21-C01",
+            "title": "正式员工年假",
+            "topic": "年假",
+            "version_date": "2025-09-01",
+            "score": 0.015384615384615385,
+            "preview": "正式员工每年可申请5天年假，具体日期需经主管批准。"
+          },
+          {
+            "doc_id": "D29",
+            "chunk_id": "D29-C01",
+            "title": "快递寄送",
+            "topic": "快递",
+            "version_date": "2025-09-01",
+            "score": 0.015151515151515152,
+            "preview": "工作快递由前台登记寄送，私人快递费用自理。"
+          },
+          {
+            "doc_id": "D27",
+            "chunk_id": "D27-C01",
+            "title": "公章使用",
+            "topic": "公章",
+            "version_date": "2025-09-01",
+            "score": 0.014925373134328358,
+            "preview": "使用公章须在行政系统提交用印申请并附审批文件。"
+          },
+          {
+            "doc_id": "D03",
+            "chunk_id": "D03-C01",
+            "title": "办公电脑申领",
+            "topic": "电脑申领",
+            "version_date": "2025-01-01",
+            "score": 0.014705882352941176,
+            "preview": "办公电脑申领须在IT门户填写申请，经主管审批后3个工作日内完成。"
+          },
+          {
+            "doc_id": "D05",
+            "chunk_id": "D05-C01",
+            "title": "员工请假制度",
+            "topic": "请假",
+            "version_date": "2025-01-01",
+            "score": 0.014492753623188406,
+            "preview": "请假应在HR系统提交申请，由直属主管审批。"
+          },
+          {
+            "doc_id": "D15",
+            "chunk_id": "D15-C01",
+            "title": "邮件别名申请",
+            "topic": "邮件别名",
+            "version_date": "2025-09-01",
+            "score": 0.014285714285714285,
+            "preview": "部门邮件别名由部门负责人提交申请，IT支持组创建。"
+          }
+        ]
+      },
+      "timestamp": "2026-11-10T20:02:16.227029+00:00"
+    },
+    {
+      "kind": "model_decision",
+      "tool_calls": [
+        {
+          "id": "call_72f7a2c845474015b0e5cb",
+          "name": "finish_retrieval",
+          "arguments": {}
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 2342,
+        "total_tokens": 2356,
+        "completion_tokens": 14,
+        "prompt_tokens_details": {
+          "cached_tokens": 1216
+        }
+      },
+      "timestamp": "2026-11-10T20:02:16.905665+00:00"
+    },
+    {
+      "kind": "tool_observation",
+      "tool_name": "finish_retrieval",
+      "arguments": {},
+      "observation": {
+        "finished": true
+      },
+      "timestamp": "2026-11-10T20:02:16.905665+00:00"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3652,
+    "completion_tokens": 36,
+    "total_tokens": 3688
+  },
+  "ranked_doc_ids": [
+    "D28",
+    "D02",
+    "D08",
+    "D01",
+    "D21",
+    "D29",
+    "D03",
+    "D27",
+    "D15",
+    "D05"
+  ]
+}

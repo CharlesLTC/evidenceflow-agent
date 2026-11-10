@@ -1,0 +1,406 @@
+{
+  "trace_schema_version": 2,
+  "trace_id": "8447cd69afa84cc1946470bc6de126c5",
+  "mode": "live",
+  "model_name": "qwen-plus",
+  "events": [
+    {
+      "kind": "model_decision",
+      "step": 1,
+      "trace_id": "8447cd69afa84cc1946470bc6de126c5",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T20:00:55.825528+00:00",
+      "model_step": 1,
+      "tool_calls": [
+        {
+          "id": "call_fc58e356df7045ef826efd",
+          "name": "search_documents",
+          "arguments": {
+            "query": "年终奖金 标准 金额 计算方法",
+            "strategy": "hybrid"
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1511,
+        "total_tokens": 1544,
+        "completion_tokens": 33,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "next_action": [
+        "search_documents"
+      ],
+      "decision_basis": "当前轮尚无工具 Observation；模型选择 search_documents。",
+      "decision_basis_source": "observable_events",
+      "basis_event_steps": []
+    },
+    {
+      "kind": "tool_observation",
+      "step": 2,
+      "trace_id": "8447cd69afa84cc1946470bc6de126c5",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T20:00:55.830532+00:00",
+      "model_step": 1,
+      "tool_call_number": 1,
+      "tool_name": "search_documents",
+      "arguments": {
+        "query": "年终奖金 标准 金额 计算方法",
+        "strategy": "hybrid"
+      },
+      "observation": {
+        "query": "年终奖金 标准 金额 计算方法",
+        "strategy": "hybrid",
+        "hits": [
+          {
+            "doc_id": "D01",
+            "chunk_id": "D01-C01",
+            "title": "差旅报销制度 A",
+            "topic": "差旅报销",
+            "version_date": "2025-01-01",
+            "score": 0.01639344262295082,
+            "preview": "差旅报销应在30天内提交。报销须附发票和出差审批单。"
+          },
+          {
+            "doc_id": "D28",
+            "chunk_id": "D28-C01",
+            "title": "发票抬头查询",
+            "topic": "发票",
+            "version_date": "2025-09-01",
+            "score": 0.016129032258064516,
+            "preview": "开具发票前应在财务门户核对公司抬头和税号。"
+          },
+          {
+            "doc_id": "D02",
+            "chunk_id": "D02-C01",
+            "title": "差旅报销制度 B",
+            "topic": "差旅报销",
+            "version_date": "2025-07-01",
+            "score": 0.015873015873015872,
+            "preview": "差旅报销应在15天内提交。报销须附发票和出差审批单。"
+          },
+          {
+            "doc_id": "D21",
+            "chunk_id": "D21-C01",
+            "title": "正式员工年假",
+            "topic": "年假",
+            "version_date": "2025-09-01",
+            "score": 0.015625,
+            "preview": "正式员工每年可申请5天年假，具体日期需经主管批准。"
+          },
+          {
+            "doc_id": "D18",
+            "chunk_id": "D18-C01",
+            "title": "正式员工餐补",
+            "topic": "餐补",
+            "version_date": "2025-09-01",
+            "score": 0.015384615384615385,
+            "preview": "正式员工每个出勤日餐补30元。"
+          }
+        ],
+        "configured_strategy": "hybrid",
+        "executed_strategy": "hybrid"
+      },
+      "observation_summary": "{\"query\": \"年终奖金 标准 金额 计算方法\", \"strategy\": \"hybrid\", \"hits\": [{\"doc_id\": \"D01\", \"chunk_id\": \"D01-C01\", \"title\": \"差旅报销制度 A\", \"topic\": \"差旅报销\", \"version_date\": \"2025-01-01\", \"score\": 0.01639344262295082, \"preview\": \"差旅报销应在30天内提交。报销须附发票和出差审批单。\"}, {\"doc_id\": \"D28\", \"chunk_id\": \"D28-C01\", \"title\": \"发票抬头查询\", \"topic\": \"发票\", \"version_date\": \"2025-09-01\", \"score\": 0.016129032258064516, \"preview\": \"开具发票前应在财务门户核对公司抬头和税号。\"}, {\"doc_id\": \"D02\", \"chunk_id\": \"D02-C01\", \"title\": \"差旅报销制度 B\", \"topic\": \"差旅报销\", \"versio",
+      "latency_ms": 4.6030000085011125,
+      "next_action": "agent_decide",
+      "decision_basis": "hybrid 检索返回 5 篇候选（D01, D28, D02, D21, D18），尚不具备引用资格。",
+      "decision_basis_source": "current_observation"
+    },
+    {
+      "kind": "model_decision",
+      "step": 3,
+      "trace_id": "8447cd69afa84cc1946470bc6de126c5",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T20:00:56.468981+00:00",
+      "model_step": 2,
+      "tool_calls": [
+        {
+          "id": "call_8c2827974bd34e0bbffdd8",
+          "name": "inspect_versions",
+          "arguments": {
+            "topic": "年终奖金"
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 2088,
+        "total_tokens": 2105,
+        "completion_tokens": 17,
+        "prompt_tokens_details": {
+          "cached_tokens": 1408
+        }
+      },
+      "next_action": [
+        "inspect_versions"
+      ],
+      "decision_basis": "hybrid 检索返回 5 篇候选（D01, D28, D02, D21, D18），尚不具备引用资格。本轮模型选择 inspect_versions。",
+      "decision_basis_source": "observable_events",
+      "basis_event_steps": [
+        2
+      ]
+    },
+    {
+      "kind": "tool_observation",
+      "step": 4,
+      "trace_id": "8447cd69afa84cc1946470bc6de126c5",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T20:00:56.469984+00:00",
+      "model_step": 2,
+      "tool_call_number": 2,
+      "tool_name": "inspect_versions",
+      "arguments": {
+        "topic": "年终奖金"
+      },
+      "observation": {
+        "topic": "年终奖金",
+        "versions": [],
+        "precedence": null,
+        "note": "Newer version alone does not establish precedence."
+      },
+      "observation_summary": "{\"topic\": \"年终奖金\", \"versions\": [], \"precedence\": null, \"note\": \"Newer version alone does not establish precedence.\"}",
+      "latency_ms": 0.04500002251006663,
+      "next_action": "agent_decide",
+      "decision_basis": "版本查询返回 0 个版本，0 个适用范围未知；优先级为 None。",
+      "decision_basis_source": "current_observation"
+    },
+    {
+      "kind": "model_decision",
+      "step": 5,
+      "trace_id": "8447cd69afa84cc1946470bc6de126c5",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T20:00:57.431715+00:00",
+      "model_step": 3,
+      "tool_calls": [
+        {
+          "id": "call_011d52fcb7824f32a58434",
+          "name": "search_documents",
+          "arguments": {
+            "query": "奖金 年终 发放标准",
+            "strategy": "bm25"
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 2152,
+        "total_tokens": 2182,
+        "completion_tokens": 30,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "next_action": [
+        "search_documents"
+      ],
+      "decision_basis": "版本查询返回 0 个版本，0 个适用范围未知；优先级为 None。本轮模型选择 search_documents。",
+      "decision_basis_source": "observable_events",
+      "basis_event_steps": [
+        4
+      ]
+    },
+    {
+      "kind": "tool_observation",
+      "step": 6,
+      "trace_id": "8447cd69afa84cc1946470bc6de126c5",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T20:00:57.432721+00:00",
+      "model_step": 3,
+      "tool_call_number": 3,
+      "tool_name": "search_documents",
+      "arguments": {
+        "query": "奖金 年终 发放标准",
+        "strategy": "bm25"
+      },
+      "observation": {
+        "query": "奖金 年终 发放标准",
+        "strategy": "bm25",
+        "hits": [
+          {
+            "doc_id": "D24",
+            "chunk_id": "D24-C01",
+            "title": "访客无线网络",
+            "topic": "访客网络",
+            "version_date": "2025-09-01",
+            "score": 3.1695363398966974,
+            "preview": "访客无线网络由前台发放临时凭证，当日有效。"
+          }
+        ],
+        "configured_strategy": "hybrid",
+        "executed_strategy": "bm25"
+      },
+      "observation_summary": "{\"query\": \"奖金 年终 发放标准\", \"strategy\": \"bm25\", \"hits\": [{\"doc_id\": \"D24\", \"chunk_id\": \"D24-C01\", \"title\": \"访客无线网络\", \"topic\": \"访客网络\", \"version_date\": \"2025-09-01\", \"score\": 3.1695363398966974, \"preview\": \"访客无线网络由前台发放临时凭证，当日有效。\"}], \"configured_strategy\": \"hybrid\", \"executed_strategy\": \"bm25\"}",
+      "latency_ms": 0.18400000408291817,
+      "next_action": "agent_decide",
+      "decision_basis": "bm25 检索返回 1 篇候选（D24），尚不具备引用资格。",
+      "decision_basis_source": "current_observation"
+    },
+    {
+      "kind": "model_decision",
+      "step": 7,
+      "trace_id": "8447cd69afa84cc1946470bc6de126c5",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T20:00:58.477033+00:00",
+      "model_step": 4,
+      "tool_calls": [
+        {
+          "id": "call_268d5adce02a4103989205",
+          "name": "submit_answer",
+          "arguments": {
+            "status": "INSUFFICIENT_EVIDENCE",
+            "answer": "当前资料不足，无法依据知识库回答。"
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 2335,
+        "total_tokens": 2371,
+        "completion_tokens": 36,
+        "prompt_tokens_details": {
+          "cached_tokens": 2048
+        }
+      },
+      "next_action": [
+        "submit_answer"
+      ],
+      "decision_basis": "bm25 检索返回 1 篇候选（D24），尚不具备引用资格。本轮模型选择 submit_answer。",
+      "decision_basis_source": "observable_events",
+      "basis_event_steps": [
+        6
+      ]
+    },
+    {
+      "kind": "tool_observation",
+      "step": 8,
+      "trace_id": "8447cd69afa84cc1946470bc6de126c5",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T20:00:58.478036+00:00",
+      "model_step": 4,
+      "tool_call_number": 4,
+      "tool_name": "submit_answer",
+      "arguments": {
+        "status": "INSUFFICIENT_EVIDENCE",
+        "answer": "当前资料不足，无法依据知识库回答。"
+      },
+      "observation": {
+        "valid": false,
+        "errors": [
+          "MISSING_INFO_REQUIRED"
+        ],
+        "conflicts": [],
+        "expected_answer_format": "当前资料不足，无法依据知识库回答。"
+      },
+      "observation_summary": "{\"valid\": false, \"errors\": [\"MISSING_INFO_REQUIRED\"], \"conflicts\": [], \"expected_answer_format\": \"当前资料不足，无法依据知识库回答。\"}",
+      "latency_ms": 0.05460000829771161,
+      "next_action": "agent_decide",
+      "decision_basis": "Guard 拒绝候选：MISSING_INFO_REQUIRED",
+      "decision_basis_source": "current_observation"
+    },
+    {
+      "kind": "model_decision",
+      "step": 9,
+      "trace_id": "8447cd69afa84cc1946470bc6de126c5",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T20:00:59.578885+00:00",
+      "model_step": 5,
+      "tool_calls": [
+        {
+          "id": "call_fd9b420849974185995118",
+          "name": "submit_answer",
+          "arguments": {
+            "status": "INSUFFICIENT_EVIDENCE",
+            "missing_info": [
+              "未检索到任何关于‘年终奖金’的制度文档"
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 2423,
+        "total_tokens": 2463,
+        "completion_tokens": 40,
+        "prompt_tokens_details": {
+          "cached_tokens": 1984
+        }
+      },
+      "next_action": [
+        "submit_answer"
+      ],
+      "decision_basis": "Guard 拒绝候选：MISSING_INFO_REQUIRED本轮模型选择 submit_answer。",
+      "decision_basis_source": "observable_events",
+      "basis_event_steps": [
+        8
+      ]
+    },
+    {
+      "kind": "tool_observation",
+      "step": 10,
+      "trace_id": "8447cd69afa84cc1946470bc6de126c5",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T20:00:59.579889+00:00",
+      "model_step": 5,
+      "tool_call_number": 5,
+      "tool_name": "submit_answer",
+      "arguments": {
+        "status": "INSUFFICIENT_EVIDENCE",
+        "missing_info": [
+          "未检索到任何关于‘年终奖金’的制度文档"
+        ]
+      },
+      "observation": {
+        "valid": true,
+        "errors": [],
+        "conflicts": [],
+        "expected_answer_format": null
+      },
+      "observation_summary": "{\"valid\": true, \"errors\": [], \"conflicts\": [], \"expected_answer_format\": null}",
+      "latency_ms": 0.05940001574344933,
+      "next_action": "finalize",
+      "decision_basis": "候选已通过原文、已读资格、版本、冲突及摘录格式校验。",
+      "decision_basis_source": "current_observation"
+    }
+  ],
+  "result": {
+    "question": "公司的年终奖金是多少？",
+    "answer": "当前资料不足，无法依据知识库回答。",
+    "status": "INSUFFICIENT_EVIDENCE",
+    "citations": [],
+    "missing_info": [
+      "未检索到任何关于‘年终奖金’的制度文档"
+    ],
+    "conflicts": [],
+    "steps_used": 5,
+    "tool_calls_used": 5,
+    "trace_id": "8447cd69afa84cc1946470bc6de126c5",
+    "session_id": "accept_7f86fe4ab05c42d8be4b60425f17f614",
+    "mode": "live",
+    "model_name": "qwen-plus",
+    "latency_ms": 4749.749000009615,
+    "usage": {
+      "prompt_tokens": 10509,
+      "completion_tokens": 156,
+      "total_tokens": 10665
+    },
+    "error_code": null,
+    "critic": {
+      "enabled": false,
+      "reviews": 0,
+      "model_calls": 0,
+      "model_steps": 0,
+      "revisions_requested": 0,
+      "repair_limit": 1,
+      "latency_ms": 0.0,
+      "usage": {}
+    }
+  }
+}

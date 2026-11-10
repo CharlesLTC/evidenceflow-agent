@@ -1,24 +1,14 @@
-# 检索消融实测
+# 检索消融本轮实测（2026-11-11）
 
-同一固定数据集：32 篇，44 题，40 个有答案。
+| 策略 | 状态 | R@3 | R@5 | MRR@5 | 平均ms | P95ms | 模型/工具调用均值 |
+|---|---|---:|---:|---:|---:|---:|---:|
+| A_BM25 | PASS | 0.9250 | 0.9375 | 0.9175 | 0.200 | 0.240 | 0.0000 / 1.0000 |
+| B_Dense | PASS | 0.9750 | 0.9750 | 0.9625 | 2.427 | 3.068 | 0.0000 / 1.0000 |
+| C_Hybrid_RRF | PASS | 0.9875 | 1.0000 | 0.9833 | 2.335 | 2.829 | 0.0000 / 1.0000 |
+| D_Hybrid_AgentRewrite | PASS | 0.9875 | 1.0000 | 0.9833 | 964.885 | 1596.829 | 1.4545 / 1.4545 |
 
-| 策略 | 状态 | Recall@3 | Recall@5 | MRR@5 | 平均 ms | P95 ms | 平均模型调用 | USD |
-|---|---|---:|---:|---:|---:|---:|---:|---:|
-| A_BM25 | PASS | 0.9250 | 0.9375 | 0.9175 | 0.136 | 0.171 | 0.0000 | 0.0 |
-| B_Dense | PASS | 0.9750 | 0.9750 | 0.9625 | 1.961 | 2.384 | 0.0000 | 0.0 |
-| C_Hybrid_RRF | PASS | 0.9875 | 1.0000 | 0.9833 | 1.859 | 2.223 | 0.0000 | 0.0 |
-| D_Hybrid_AgentRewrite | PASS | 0.9875 | 1.0000 | 0.9833 | 1052.461 | 1633.647 | 1.4545 | None |
+同一固定语料32篇、44题、40个可回答。指标由176条原始记录重算，数据哈希一致；D是实际qwen-plus决策和补查，未改善R@3/MRR。初始化 9623.660ms单列，单轮CPU查询，不含初始化，无置信区间。
 
-![Recall@3](../reports/charts/recall_at_3.png)
+实际token、逐题排名、调用和延迟见 [本轮检索指标](../FINAL_ACCEPTANCE/F4_retrieval_metrics.json) 与 [原始数据](../FINAL_ACCEPTANCE/F4_retrieval_details.json)。4个资料外问题不进入Recall/MRR分母。无分级标签，nDCG=null；未知模型单价USD=null；检索实验不冒充问答引用正确率或自然拒答率。模型 revision/文件哈希见 ../reports/embedding_manifest.json，D每题Trace路径在逐题记录内。
 
-![效果与调用成本](../reports/charts/quality_cost.png)
-
-初始化与计时协议：986.9684000004781 ms；CPU; encoder/index initialization excluded and separately timed; uncached query encoding; single query pass, no confidence intervals
-
-A 为中文 bigram BM25；B 为实际多语 MiniLM ONNX 量化嵌入＋cosine；C 为 RRF k=60；D 为真实 qwen-plus 基于候选 Observation 自主改写补查，最多两次。D 未带来指标改善，增加外部调用和延迟，该负面结果不删除。
-
-Recall 为逐题宏平均，报告也提供检出相关文档/总相关文档和每题分子分母；MRR 记录倒数排名和分母。4 个资料外问题不进入这些分母。无分级标注，nDCG=null；检索器不产生问答拒答率。模型单价未知则 USD=null，保留实际 token 用量。
-
-语料与标签在实验前固定并保存 SHA256；不得事后改标签。标注由开发依据合成制度制作，未独立人工复审，单次小样本无置信区间，不代表真实企业分布。
-
-逐题原始结果：reports/retrieval_details.json / CSV；错例：reports/retrieval_failures.json；每题 D 的真实模型 Trace：reports/retrieval_traces/live；模型 revision 和文件哈希：reports/embedding_manifest.json。
+上轮指标完整保存于 ../FINAL_ACCEPTANCE/before/reports/retrieval_metrics.json；历史FAIL和错例不删除。[本轮全报告](../FINAL_ACCEPTANCE/FINAL_REPORT.md)。

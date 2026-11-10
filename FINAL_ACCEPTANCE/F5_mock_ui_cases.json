@@ -1,0 +1,53 @@
+{
+  "timestamp": "2026-11-10T20:04:26.287688+00:00",
+  "status": "PASS",
+  "method": "Streamlit AppTest + actual loopback HTTP uvicorn API",
+  "cases": [
+    {
+      "question": "办公电脑申领审批需要多久？",
+      "fail_search_count": 0,
+      "expected": "COMPLETED",
+      "actual": "COMPLETED",
+      "mode": "mock",
+      "trace": "examples/traces/mock/d00849bcaa5b4e82af8b486e35988c2c.json",
+      "status": "PASS"
+    },
+    {
+      "question": "差旅报销期限是多久？",
+      "fail_search_count": 0,
+      "expected": "NEEDS_CLARIFICATION",
+      "actual": "NEEDS_CLARIFICATION",
+      "mode": "mock",
+      "trace": "examples/traces/mock/6cd248d308d64f1ca7f74b050c6ae3de.json",
+      "status": "PASS"
+    },
+    {
+      "question": "公司的年终奖金是多少？",
+      "fail_search_count": 0,
+      "expected": "INSUFFICIENT_EVIDENCE",
+      "actual": "INSUFFICIENT_EVIDENCE",
+      "mode": "mock",
+      "trace": "examples/traces/mock/47eff33c46164f99ab27f36715343bb6.json",
+      "status": "PASS"
+    },
+    {
+      "question": "办公电脑申领审批需要多久？",
+      "fail_search_count": 1,
+      "expected": "COMPLETED",
+      "actual": "COMPLETED",
+      "mode": "mock",
+      "trace": "examples/traces/mock/cfe65195569c47a4844091ead5f54728.json",
+      "status": "PASS"
+    },
+    {
+      "question": "办公电脑申领审批需要多久？",
+      "fail_search_count": 2,
+      "expected": "FAILED",
+      "actual": "FAILED",
+      "mode": "mock",
+      "trace": "examples/traces/mock/b6ee3472419c44c689f73f97a0bc35f6.json",
+      "status": "PASS"
+    }
+  ],
+  "limitations": "AppTest inspects widgets and state, not browser pixel layout. Model mode is explicitly mock for repeatability."
+}

@@ -1,0 +1,19 @@
+{
+  "command": [
+    ".venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "-q",
+    "--junitxml=FINAL_ACCEPTANCE/F2_pytest_results.xml"
+  ],
+  "exit_code": 0,
+  "seconds": 18.306961399997817,
+  "status": "PASS",
+  "log": "FINAL_ACCEPTANCE/logs/20261110T195847957082Z-pytest.txt",
+  "tests": 75,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "passed": 75,
+  "pytest_seconds": 14.762
+}

@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "same_gold_ids": 44,
+  "raw_rows": 176
+}
+
+STDERR:

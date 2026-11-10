@@ -1,0 +1,144 @@
+{
+  "status": "PASS",
+  "passed": 5,
+  "total": 5,
+  "success_rate": 1.0,
+  "guard_rejections": 0,
+  "runs": [
+    {
+      "run": 1,
+      "status": "PASS",
+      "checks": {
+        "schema": true,
+        "mode_consistent": true,
+        "clarification": true,
+        "both_versions": true,
+        "both_values": true,
+        "unresolved": true,
+        "asks_for_context": true,
+        "all_citations_valid": true
+      },
+      "trace": "examples/traces/live/73ec24e5d3214407a4ec80f6e708de43.json",
+      "input": "examples/inputs/live-73ec24e5d3214407a4ec80f6e708de43.json",
+      "output": "examples/outputs/live/73ec24e5d3214407a4ec80f6e708de43.json",
+      "result_status": "NEEDS_CLARIFICATION",
+      "submission_attempts": 1,
+      "guard_rejections": 0,
+      "first_submission_valid": true,
+      "usage": {
+        "prompt_tokens": 10193,
+        "completion_tokens": 326,
+        "total_tokens": 10519
+      },
+      "latency_ms": 8593.601300002774
+    },
+    {
+      "run": 2,
+      "status": "PASS",
+      "checks": {
+        "schema": true,
+        "mode_consistent": true,
+        "clarification": true,
+        "both_versions": true,
+        "both_values": true,
+        "unresolved": true,
+        "asks_for_context": true,
+        "all_citations_valid": true
+      },
+      "trace": "examples/traces/live/c533f8f391a747588f8e35b7ae3933c5.json",
+      "input": "examples/inputs/live-c533f8f391a747588f8e35b7ae3933c5.json",
+      "output": "examples/outputs/live/c533f8f391a747588f8e35b7ae3933c5.json",
+      "result_status": "NEEDS_CLARIFICATION",
+      "submission_attempts": 1,
+      "guard_rejections": 0,
+      "first_submission_valid": true,
+      "usage": {
+        "prompt_tokens": 10193,
+        "completion_tokens": 346,
+        "total_tokens": 10539
+      },
+      "latency_ms": 9076.221800001804
+    },
+    {
+      "run": 3,
+      "status": "PASS",
+      "checks": {
+        "schema": true,
+        "mode_consistent": true,
+        "clarification": true,
+        "both_versions": true,
+        "both_values": true,
+        "unresolved": true,
+        "asks_for_context": true,
+        "all_citations_valid": true
+      },
+      "trace": "examples/traces/live/ff1799c722104c3d91377014eaec6f51.json",
+      "input": "examples/inputs/live-ff1799c722104c3d91377014eaec6f51.json",
+      "output": "examples/outputs/live/ff1799c722104c3d91377014eaec6f51.json",
+      "result_status": "NEEDS_CLARIFICATION",
+      "submission_attempts": 1,
+      "guard_rejections": 0,
+      "first_submission_valid": true,
+      "usage": {
+        "prompt_tokens": 10165,
+        "completion_tokens": 305,
+        "total_tokens": 10470
+      },
+      "latency_ms": 8141.30170000135
+    },
+    {
+      "run": 4,
+      "status": "PASS",
+      "checks": {
+        "schema": true,
+        "mode_consistent": true,
+        "clarification": true,
+        "both_versions": true,
+        "both_values": true,
+        "unresolved": true,
+        "asks_for_context": true,
+        "all_citations_valid": true
+      },
+      "trace": "examples/traces/live/61309852d7024c149fb6e7abe2f88103.json",
+      "input": "examples/inputs/live-61309852d7024c149fb6e7abe2f88103.json",
+      "output": "examples/outputs/live/61309852d7024c149fb6e7abe2f88103.json",
+      "result_status": "NEEDS_CLARIFICATION",
+      "submission_attempts": 1,
+      "guard_rejections": 0,
+      "first_submission_valid": true,
+      "usage": {
+        "prompt_tokens": 10165,
+        "completion_tokens": 306,
+        "total_tokens": 10471
+      },
+      "latency_ms": 8312.70609999774
+    },
+    {
+      "run": 5,
+      "status": "PASS",
+      "checks": {
+        "schema": true,
+        "mode_consistent": true,
+        "clarification": true,
+        "both_versions": true,
+        "both_values": true,
+        "unresolved": true,
+        "asks_for_context": true,
+        "all_citations_valid": true
+      },
+      "trace": "examples/traces/live/3444382f0a85439c8e22d10348358753.json",
+      "input": "examples/inputs/live-3444382f0a85439c8e22d10348358753.json",
+      "output": "examples/outputs/live/3444382f0a85439c8e22d10348358753.json",
+      "result_status": "NEEDS_CLARIFICATION",
+      "submission_attempts": 1,
+      "guard_rejections": 0,
+      "first_submission_valid": true,
+      "usage": {
+        "prompt_tokens": 8121,
+        "completion_tokens": 318,
+        "total_tokens": 8439
+      },
+      "latency_ms": 8358.376699994551
+    }
+  ]
+}

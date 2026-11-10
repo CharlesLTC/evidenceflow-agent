@@ -1,0 +1,287 @@
+{
+  "mode": "live",
+  "model_name": "qwen-plus",
+  "question": "办公室断网应该怎么办？",
+  "events": [
+    {
+      "kind": "tool_observation",
+      "tool_name": "search_documents",
+      "timestamp": "2026-11-10T20:02:00.118823+00:00",
+      "arguments": {
+        "query": "办公室断网应该怎么办？",
+        "strategy": "hybrid",
+        "top_k": 10
+      },
+      "observation": {
+        "query": "办公室断网应该怎么办？",
+        "strategy": "hybrid",
+        "hits": [
+          {
+            "doc_id": "D23",
+            "chunk_id": "D23-C01",
+            "title": "办公网络报障",
+            "topic": "网络故障",
+            "version_date": "2025-09-01",
+            "score": 0.03278688524590164,
+            "preview": "办公室网络无法连接时应提交网络报障工单并注明工位。"
+          },
+          {
+            "doc_id": "D03",
+            "chunk_id": "D03-C01",
+            "title": "办公电脑申领",
+            "topic": "电脑申领",
+            "version_date": "2025-01-01",
+            "score": 0.03200204813108039,
+            "preview": "办公电脑申领须在IT门户填写申请，经主管审批后3个工作日内完成。"
+          },
+          {
+            "doc_id": "D09",
+            "chunk_id": "D09-C01",
+            "title": "会议室预订",
+            "topic": "会议室",
+            "version_date": "2025-09-01",
+            "score": 0.03200204813108039,
+            "preview": "会议室须通过办公系统预订，连续使用不得超过2小时。"
+          },
+          {
+            "doc_id": "D32",
+            "chunk_id": "D32-C01",
+            "title": "紧急事件联系",
+            "topic": "紧急联系",
+            "version_date": "2025-09-01",
+            "score": 0.03125,
+            "preview": "办公区发生紧急事件时应立即联系现场安保和值班行政。"
+          },
+          {
+            "doc_id": "D31",
+            "chunk_id": "D31-C01",
+            "title": "离职设备归还",
+            "topic": "设备归还",
+            "version_date": "2025-09-01",
+            "score": 0.015384615384615385,
+            "preview": "离职前须向IT归还电脑和配件，由IT确认资产交接。"
+          },
+          {
+            "doc_id": "D21",
+            "chunk_id": "D21-C01",
+            "title": "正式员工年假",
+            "topic": "年假",
+            "version_date": "2025-09-01",
+            "score": 0.015151515151515152,
+            "preview": "正式员工每年可申请5天年假，具体日期需经主管批准。"
+          },
+          {
+            "doc_id": "D11",
+            "chunk_id": "D11-C01",
+            "title": "加班申请",
+            "topic": "加班",
+            "version_date": "2025-09-01",
+            "score": 0.014925373134328358,
+            "preview": "加班须事先在HR系统申请并经主管批准。"
+          },
+          {
+            "doc_id": "D24",
+            "chunk_id": "D24-C01",
+            "title": "访客无线网络",
+            "topic": "访客网络",
+            "version_date": "2025-09-01",
+            "score": 0.014705882352941176,
+            "preview": "访客无线网络由前台发放临时凭证，当日有效。"
+          },
+          {
+            "doc_id": "D26",
+            "chunk_id": "D26-C01",
+            "title": "代码仓库权限",
+            "topic": "仓库权限",
+            "version_date": "2025-09-01",
+            "score": 0.014492753623188406,
+            "preview": "代码仓库访问权限须经项目负责人审批后由IT开通。"
+          },
+          {
+            "doc_id": "D22",
+            "chunk_id": "D22-C01",
+            "title": "实习生休假",
+            "topic": "年假",
+            "version_date": "2025-09-01",
+            "score": 0.014285714285714285,
+            "preview": "实习生每年可申请2天休假，具体日期需经主管批准。"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "model_decision",
+      "tool_calls": [
+        {
+          "id": "call_ba008cd0ef6045cf96e42d",
+          "name": "search_documents",
+          "arguments": {
+            "query": "办公网络故障排查步骤"
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1302,
+        "total_tokens": 1322,
+        "completion_tokens": 20,
+        "prompt_tokens_details": {
+          "cached_tokens": 192
+        }
+      },
+      "timestamp": "2026-11-10T20:02:00.851640+00:00"
+    },
+    {
+      "kind": "tool_observation",
+      "tool_name": "search_documents",
+      "arguments": {
+        "query": "办公网络故障排查步骤"
+      },
+      "observation": {
+        "query": "办公网络故障排查步骤",
+        "strategy": "hybrid",
+        "hits": [
+          {
+            "doc_id": "D23",
+            "chunk_id": "D23-C01",
+            "title": "办公网络报障",
+            "topic": "网络故障",
+            "version_date": "2025-09-01",
+            "score": 0.03278688524590164,
+            "preview": "办公室网络无法连接时应提交网络报障工单并注明工位。"
+          },
+          {
+            "doc_id": "D24",
+            "chunk_id": "D24-C01",
+            "title": "访客无线网络",
+            "topic": "访客网络",
+            "version_date": "2025-09-01",
+            "score": 0.03225806451612903,
+            "preview": "访客无线网络由前台发放临时凭证，当日有效。"
+          },
+          {
+            "doc_id": "D03",
+            "chunk_id": "D03-C01",
+            "title": "办公电脑申领",
+            "topic": "电脑申领",
+            "version_date": "2025-01-01",
+            "score": 0.03149801587301587,
+            "preview": "办公电脑申领须在IT门户填写申请，经主管审批后3个工作日内完成。"
+          },
+          {
+            "doc_id": "D04",
+            "chunk_id": "D04-C01",
+            "title": "IT设备维修",
+            "topic": "设备维修",
+            "version_date": "2025-01-01",
+            "score": 0.03149801587301587,
+            "preview": "IT设备故障须在IT门户提交维修工单，由IT支持组受理。"
+          },
+          {
+            "doc_id": "D13",
+            "chunk_id": "D13-C01",
+            "title": "远程网络接入",
+            "topic": "VPN",
+            "version_date": "2025-09-01",
+            "score": 0.030309988518943745,
+            "preview": "在家访问内部系统须申请VPN，并启用多因素认证。"
+          },
+          {
+            "doc_id": "D32",
+            "chunk_id": "D32-C01",
+            "title": "紧急事件联系",
+            "topic": "紧急联系",
+            "version_date": "2025-09-01",
+            "score": 0.030309988518943745,
+            "preview": "办公区发生紧急事件时应立即联系现场安保和值班行政。"
+          },
+          {
+            "doc_id": "D09",
+            "chunk_id": "D09-C01",
+            "title": "会议室预订",
+            "topic": "会议室",
+            "version_date": "2025-09-01",
+            "score": 0.02964426877470356,
+            "preview": "会议室须通过办公系统预订，连续使用不得超过2小时。"
+          },
+          {
+            "doc_id": "D31",
+            "chunk_id": "D31-C01",
+            "title": "离职设备归还",
+            "topic": "设备归还",
+            "version_date": "2025-09-01",
+            "score": 0.015151515151515152,
+            "preview": "离职前须向IT归还电脑和配件，由IT确认资产交接。"
+          },
+          {
+            "doc_id": "D10",
+            "chunk_id": "D10-C01",
+            "title": "远程会议",
+            "topic": "远程会议",
+            "version_date": "2025-09-01",
+            "score": 0.014705882352941176,
+            "preview": "远程会议使用公司会议平台，外部参会人须由主持人发送邀请。"
+          },
+          {
+            "doc_id": "D05",
+            "chunk_id": "D05-C01",
+            "title": "员工请假制度",
+            "topic": "请假",
+            "version_date": "2025-01-01",
+            "score": 0.014285714285714285,
+            "preview": "请假应在HR系统提交申请，由直属主管审批。"
+          }
+        ]
+      },
+      "timestamp": "2026-11-10T20:02:00.855640+00:00"
+    },
+    {
+      "kind": "model_decision",
+      "tool_calls": [
+        {
+          "id": "call_c92e12563ecf4f6183ad88",
+          "name": "finish_retrieval",
+          "arguments": {}
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 2330,
+        "total_tokens": 2344,
+        "completion_tokens": 14,
+        "prompt_tokens_details": {
+          "cached_tokens": 192
+        }
+      },
+      "timestamp": "2026-11-10T20:02:01.470063+00:00"
+    },
+    {
+      "kind": "tool_observation",
+      "tool_name": "finish_retrieval",
+      "arguments": {},
+      "observation": {
+        "finished": true
+      },
+      "timestamp": "2026-11-10T20:02:01.470063+00:00"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3632,
+    "completion_tokens": 34,
+    "total_tokens": 3666
+  },
+  "ranked_doc_ids": [
+    "D23",
+    "D03",
+    "D24",
+    "D09",
+    "D32",
+    "D31",
+    "D04",
+    "D13",
+    "D21",
+    "D11",
+    "D10",
+    "D26",
+    "D05",
+    "D22"
+  ]
+}

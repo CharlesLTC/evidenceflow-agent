@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "scanned_text_files": 865,
+  "findings": [],
+  "scope": "deliverable files, excluding ignored environments/cache and local .env"
+}
+
+STDERR:

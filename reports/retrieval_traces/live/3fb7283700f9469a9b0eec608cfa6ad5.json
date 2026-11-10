@@ -1,0 +1,158 @@
+{
+  "mode": "live",
+  "model_name": "qwen-plus",
+  "question": "实习生每年休假几天？",
+  "events": [
+    {
+      "kind": "tool_observation",
+      "tool_name": "search_documents",
+      "timestamp": "2026-11-10T20:01:59.570073+00:00",
+      "arguments": {
+        "query": "实习生每年休假几天？",
+        "strategy": "hybrid",
+        "top_k": 10
+      },
+      "observation": {
+        "query": "实习生每年休假几天？",
+        "strategy": "hybrid",
+        "hits": [
+          {
+            "doc_id": "D22",
+            "chunk_id": "D22-C01",
+            "title": "实习生休假",
+            "topic": "年假",
+            "version_date": "2025-09-01",
+            "score": 0.03278688524590164,
+            "preview": "实习生每年可申请2天休假，具体日期需经主管批准。"
+          },
+          {
+            "doc_id": "D19",
+            "chunk_id": "D19-C01",
+            "title": "实习生餐补",
+            "topic": "餐补",
+            "version_date": "2025-09-01",
+            "score": 0.03200204813108039,
+            "preview": "实习生每个出勤日餐补20元。"
+          },
+          {
+            "doc_id": "D21",
+            "chunk_id": "D21-C01",
+            "title": "正式员工年假",
+            "topic": "年假",
+            "version_date": "2025-09-01",
+            "score": 0.03200204813108039,
+            "preview": "正式员工每年可申请5天年假，具体日期需经主管批准。"
+          },
+          {
+            "doc_id": "D11",
+            "chunk_id": "D11-C01",
+            "title": "加班申请",
+            "topic": "加班",
+            "version_date": "2025-09-01",
+            "score": 0.015625,
+            "preview": "加班须事先在HR系统申请并经主管批准。"
+          },
+          {
+            "doc_id": "D09",
+            "chunk_id": "D09-C01",
+            "title": "会议室预订",
+            "topic": "会议室",
+            "version_date": "2025-09-01",
+            "score": 0.015384615384615385,
+            "preview": "会议室须通过办公系统预订，连续使用不得超过2小时。"
+          },
+          {
+            "doc_id": "D06",
+            "chunk_id": "D06-C01",
+            "title": "新员工培训",
+            "topic": "入职培训",
+            "version_date": "2025-01-01",
+            "score": 0.015151515151515152,
+            "preview": "新员工应在入职后7天内完成信息安全培训。"
+          },
+          {
+            "doc_id": "D25",
+            "chunk_id": "D25-C01",
+            "title": "工作文件备份",
+            "topic": "备份",
+            "version_date": "2025-09-01",
+            "score": 0.014925373134328358,
+            "preview": "工作文件应保存在团队网盘，系统每天执行一次备份。"
+          },
+          {
+            "doc_id": "D01",
+            "chunk_id": "D01-C01",
+            "title": "差旅报销制度 A",
+            "topic": "差旅报销",
+            "version_date": "2025-01-01",
+            "score": 0.014705882352941176,
+            "preview": "差旅报销应在30天内提交。报销须附发票和出差审批单。"
+          },
+          {
+            "doc_id": "D18",
+            "chunk_id": "D18-C01",
+            "title": "正式员工餐补",
+            "topic": "餐补",
+            "version_date": "2025-09-01",
+            "score": 0.014492753623188406,
+            "preview": "正式员工每个出勤日餐补30元。"
+          },
+          {
+            "doc_id": "D20",
+            "chunk_id": "D20-C01",
+            "title": "节假日值班",
+            "topic": "值班",
+            "version_date": "2025-09-01",
+            "score": 0.014285714285714285,
+            "preview": "节假日值班安排由部门负责人在节前发布。"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "model_decision",
+      "tool_calls": [
+        {
+          "id": "call_8d80b1bedb974bf19c5365",
+          "name": "finish_retrieval",
+          "arguments": {}
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1275,
+        "total_tokens": 1289,
+        "completion_tokens": 14,
+        "prompt_tokens_details": {
+          "cached_tokens": 192
+        }
+      },
+      "timestamp": "2026-11-10T20:02:00.113311+00:00"
+    },
+    {
+      "kind": "tool_observation",
+      "tool_name": "finish_retrieval",
+      "arguments": {},
+      "observation": {
+        "finished": true
+      },
+      "timestamp": "2026-11-10T20:02:00.113311+00:00"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1275,
+    "completion_tokens": 14,
+    "total_tokens": 1289
+  },
+  "ranked_doc_ids": [
+    "D22",
+    "D19",
+    "D21",
+    "D11",
+    "D09",
+    "D06",
+    "D25",
+    "D01",
+    "D18",
+    "D20"
+  ]
+}

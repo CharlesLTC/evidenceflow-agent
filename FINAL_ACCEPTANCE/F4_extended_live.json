@@ -1,0 +1,64 @@
+{
+  "timestamp": "2026-11-10T20:04:20.877185+00:00",
+  "mode": "live",
+  "model": "qwen-plus",
+  "status": "PASS",
+  "cases": [
+    {
+      "id": "TC07",
+      "status": "PASS",
+      "result_status": "COMPLETED",
+      "question": "办公电脑申领审批需要多久？",
+      "trace": "examples/traces/live/982a7120daba46feab2ed5ccf9a0d3c9.json",
+      "snapshot": "examples/inputs/mutations/TC07-51659ecf634c4529ba23e74d36589c76.json",
+      "injection": "duration",
+      "steps": 4,
+      "tool_calls": 4
+    },
+    {
+      "id": "TC09",
+      "status": "PASS",
+      "result_status": "INCOMPLETE",
+      "question": "办公电脑申领审批需要多久？",
+      "trace": "examples/traces/live/1cd469c3ace3467a97a703d335677d39.json",
+      "snapshot": null,
+      "injection": null,
+      "steps": 1,
+      "tool_calls": 1
+    },
+    {
+      "id": "TC10",
+      "status": "PASS",
+      "result_status": "COMPLETED",
+      "question": "正式员工与实习生每天餐补各是多少？",
+      "trace": "examples/traces/live/e204a412f140448ebededc99f349f19e.json",
+      "snapshot": null,
+      "injection": null,
+      "steps": 4,
+      "tool_calls": 4
+    },
+    {
+      "id": "TC11",
+      "status": "PASS",
+      "result_status": "COMPLETED",
+      "question": "办公电脑申领审批需要多久？",
+      "trace": "examples/traces/live/99f2750b3a6e4dd58d7938480f55dead.json",
+      "snapshot": "examples/inputs/mutations/TC11-c4bdfeed8c9344179c1440d3e50ff9eb.json",
+      "injection": "injection",
+      "steps": 4,
+      "tool_calls": 4
+    },
+    {
+      "id": "TC12",
+      "status": "PASS",
+      "result_status": "FAILED",
+      "question": "办公电脑申领审批需要多久？",
+      "trace": "examples/traces/live/e579828e86364389a5934905220bd874.json",
+      "snapshot": null,
+      "injection": "unavailable",
+      "steps": 6,
+      "tool_calls": 6
+    }
+  ],
+  "note": "TC08 invalid-reference/quote injection is covered by deterministic Guard tests, not claimed as live."
+}

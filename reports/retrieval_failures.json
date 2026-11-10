@@ -15,7 +15,7 @@
       "D01",
       "D02"
     ],
-    "latency_ms": 0.13590000162366778,
+    "latency_ms": 0.19829999655485153,
     "model_calls": 0,
     "tool_calls": 1,
     "usage": {},
@@ -31,7 +31,7 @@
       "D17"
     ],
     "ranked_doc_ids": [],
-    "latency_ms": 0.13630000466946512,
+    "latency_ms": 0.2145000034943223,
     "model_calls": 0,
     "tool_calls": 1,
     "usage": {},
@@ -47,7 +47,7 @@
       "D14"
     ],
     "ranked_doc_ids": [],
-    "latency_ms": 0.15859999984968454,
+    "latency_ms": 0.23880001390352845,
     "model_calls": 0,
     "tool_calls": 1,
     "usage": {},
@@ -74,7 +74,7 @@
       "D10",
       "D24"
     ],
-    "latency_ms": 2.2669000027235597,
+    "latency_ms": 2.157599985366687,
     "model_calls": 0,
     "tool_calls": 1,
     "usage": {},
@@ -102,7 +102,7 @@
       "D28",
       "D18"
     ],
-    "latency_ms": 2.0155999955022708,
+    "latency_ms": 2.511600003344938,
     "model_calls": 0,
     "tool_calls": 1,
     "usage": {},
@@ -130,7 +130,7 @@
       "D28",
       "D18"
     ],
-    "latency_ms": 720.4478000057861,
+    "latency_ms": 565.7806000090204,
     "model_calls": 1,
     "tool_calls": 1,
     "usage": {
@@ -138,7 +138,7 @@
       "completion_tokens": 14,
       "total_tokens": 1319
     },
-    "trace": "reports/retrieval_traces/live/6f99e3c889bb43d5b7fdd0917f630abb.json",
+    "trace": "reports/retrieval_traces/live/96ad716e4e1941948ddec55fe49bc1bc.json",
     "error": null,
     "cost_usd": null
   }

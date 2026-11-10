@@ -1,0 +1,38 @@
+{
+  "question": "正式员工与实习生每天餐补各是多少？",
+  "answer": "D18：正式员工每个出勤日餐补30元。",
+  "status": "COMPLETED",
+  "citations": [
+    {
+      "doc_id": "D18",
+      "version_date": "2025-09-01",
+      "quote": "正式员工每个出勤日餐补30元。",
+      "chunk_id": "D18-C01"
+    }
+  ],
+  "missing_info": [],
+  "conflicts": [],
+  "steps_used": 4,
+  "tool_calls_used": 4,
+  "trace_id": "857a4cb884d94688a2625384def0b50f",
+  "session_id": "df3082d143e14111b3d80c470bde2faa",
+  "mode": "live",
+  "model_name": "qwen-plus",
+  "latency_ms": 6112.2021000192035,
+  "usage": {
+    "prompt_tokens": 8393,
+    "completion_tokens": 227,
+    "total_tokens": 8620
+  },
+  "error_code": null,
+  "critic": {
+    "enabled": false,
+    "reviews": 0,
+    "model_calls": 0,
+    "model_steps": 0,
+    "revisions_requested": 0,
+    "repair_limit": 1,
+    "latency_ms": 0.0,
+    "usage": {}
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "question": "那多久批下来？",
+  "answer": "D03：办公电脑申领须在IT门户填写申请，经主管审批后3个工作日内完成。",
+  "status": "COMPLETED",
+  "citations": [
+    {
+      "doc_id": "D03",
+      "version_date": "2025-01-01",
+      "quote": "办公电脑申领须在IT门户填写申请，经主管审批后3个工作日内完成。",
+      "chunk_id": "D03-C01"
+    }
+  ],
+  "missing_info": [],
+  "conflicts": [],
+  "steps_used": 4,
+  "tool_calls_used": 4,
+  "trace_id": "fe7df459449c4ad1a244427398468301",
+  "session_id": "accept_2e5a1ec0ea9d472e90863d65fc8346e8",
+  "mode": "live",
+  "model_name": "qwen-plus",
+  "latency_ms": 4654.126100009307,
+  "usage": {
+    "prompt_tokens": 8530,
+    "completion_tokens": 165,
+    "total_tokens": 8695
+  },
+  "error_code": null,
+  "critic": {
+    "enabled": false,
+    "reviews": 0,
+    "model_calls": 0,
+    "model_steps": 0,
+    "revisions_requested": 0,
+    "repair_limit": 1,
+    "latency_ms": 0.0,
+    "usage": {}
+  }
+}

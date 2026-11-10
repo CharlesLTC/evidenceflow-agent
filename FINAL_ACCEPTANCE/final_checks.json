@@ -1,0 +1,53 @@
+{
+  "commands": [
+    {
+      "command": [
+        ".venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.smoke_ui"
+      ],
+      "exit_code": 0,
+      "seconds": 5.895734799996717,
+      "status": "PASS",
+      "log": "FINAL_ACCEPTANCE/logs/20261110T200421037752Z-scripts-smoke_ui.txt"
+    },
+    {
+      "command": [
+        ".venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.verify_artifacts"
+      ],
+      "exit_code": 0,
+      "seconds": 7.713976200000616,
+      "status": "PASS",
+      "log": "FINAL_ACCEPTANCE/logs/20261110T200426934699Z-scripts-verify_artifacts.txt"
+    },
+    {
+      "command": [
+        ".venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.security_scan"
+      ],
+      "exit_code": 0,
+      "seconds": 4.335988700011512,
+      "status": "PASS",
+      "log": "FINAL_ACCEPTANCE/logs/20261110T200434648961Z-scripts-security_scan.txt"
+    },
+    {
+      "command": [
+        ".venv\\Scripts\\python.exe",
+        "-m",
+        "ruff",
+        "check",
+        "src",
+        "scripts",
+        "tests",
+        "ui"
+      ],
+      "exit_code": 0,
+      "seconds": 0.13234290000400506,
+      "status": "PASS",
+      "log": "FINAL_ACCEPTANCE/logs/20261110T200438985961Z-ruff.txt"
+    }
+  ]
+}

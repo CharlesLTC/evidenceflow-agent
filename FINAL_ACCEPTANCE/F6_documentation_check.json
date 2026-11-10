@@ -1,0 +1,48 @@
+{
+  "timestamp": "2026-11-10T20:06:55.375792+00:00",
+  "status": "PASS",
+  "required_documents": [
+    "docs/01-requirements.md",
+    "docs/02-solution.md",
+    "docs/03-evaluation.md",
+    "docs/04-ai-usage.md",
+    "docs/05-retrospective.md"
+  ],
+  "readme_topics": {
+    "purpose_and_architecture": true,
+    "install_and_configuration": true,
+    "cli_api_ui": true,
+    "mock_live_trace": true,
+    "experiments_and_limits": true
+  },
+  "current_report": "FINAL_ACCEPTANCE/FINAL_REPORT.md",
+  "old_results_are_labelled_historical": true,
+  "evidence_index": [
+    "FINAL_ACCEPTANCE/F1_project_integrity.json",
+    "FINAL_ACCEPTANCE/F2_pytest_results.xml",
+    "FINAL_ACCEPTANCE/F2_pytest_summary.json",
+    "FINAL_ACCEPTANCE/F3_dynamic_paths.json",
+    "FINAL_ACCEPTANCE/F3_live_acceptance.json",
+    "FINAL_ACCEPTANCE/F4_critic_evaluation.json",
+    "FINAL_ACCEPTANCE/F4_enhancement_validation.json",
+    "FINAL_ACCEPTANCE/F4_extended_live.json",
+    "FINAL_ACCEPTANCE/F4_hybrid_execution.json",
+    "FINAL_ACCEPTANCE/F4_hybrid_fallback_live.json",
+    "FINAL_ACCEPTANCE/F4_hybrid_official.json",
+    "FINAL_ACCEPTANCE/F4_retrieval_details.json",
+    "FINAL_ACCEPTANCE/F4_retrieval_failures.json",
+    "FINAL_ACCEPTANCE/F4_retrieval_metrics.json",
+    "FINAL_ACCEPTANCE/F4_tc02_runs.json",
+    "FINAL_ACCEPTANCE/F4_tc02_stability.json",
+    "FINAL_ACCEPTANCE/F5_mock_ui_cases.json",
+    "FINAL_ACCEPTANCE/F5_port_exclusions.txt",
+    "FINAL_ACCEPTANCE/F5_ui_api_check.json",
+    "FINAL_ACCEPTANCE/F5_ui_api_first_attempt.json",
+    "FINAL_ACCEPTANCE/F6_documentation_check.initial_FAIL.json",
+    "FINAL_ACCEPTANCE/F6_documentation_check.json",
+    "FINAL_ACCEPTANCE/F7_security_audit.initial.json",
+    "FINAL_ACCEPTANCE/F7_security_audit.json",
+    "FINAL_ACCEPTANCE/FINAL_REPORT.md",
+    "FINAL_ACCEPTANCE/final_checks.json"
+  ]
+}

@@ -1,0 +1,144 @@
+INFO:     127.0.0.1:3746 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:3748 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:3751 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:3754 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:3757 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:3760 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:3763 - "POST /ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:3764 - "GET /traces/3604e8a200c84de8b90ff8caaa8c98df?mode=mock HTTP/1.1" 200 OK
+INFO:     127.0.0.1:3765 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:3748 - "GET /traces/3604e8a200c84de8b90ff8caaa8c98df?mode=mock HTTP/1.1" 200 OK
+INFO:     127.0.0.1:3768 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:3771 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:3774 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:3777 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:3780 - "POST /ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:3781 - "GET /traces/5eb64189f99947689385f4a8e9fc9faf?mode=mock HTTP/1.1" 200 OK
+INFO:     127.0.0.1:3782 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:3748 - "GET /traces/5eb64189f99947689385f4a8e9fc9faf?mode=mock HTTP/1.1" 200 OK
+INFO:     127.0.0.1:3785 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:3788 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:3791 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:3794 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:3797 - "POST /ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:3798 - "GET /traces/dd634b0a81164aa4ab47d9ed9d9d93f6?mode=mock HTTP/1.1" 200 OK
+INFO:     127.0.0.1:3799 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:3748 - "GET /traces/dd634b0a81164aa4ab47d9ed9d9d93f6?mode=mock HTTP/1.1" 200 OK
+INFO:     127.0.0.1:3802 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:3805 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:3808 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:3811 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:3814 - "POST /ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:3815 - "GET /traces/eec1d46b42c74f9380371a86ab572b86?mode=mock HTTP/1.1" 200 OK
+INFO:     127.0.0.1:3816 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:3748 - "GET /traces/eec1d46b42c74f9380371a86ab572b86?mode=mock HTTP/1.1" 200 OK
+INFO:     127.0.0.1:3819 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:3822 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:3825 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:3828 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:3831 - "POST /ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:3832 - "GET /traces/944ea9d34690491d883bc7d3e0ce4e5b?mode=mock HTTP/1.1" 200 OK
+INFO:     127.0.0.1:3833 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:3748 - "GET /traces/944ea9d34690491d883bc7d3e0ce4e5b?mode=mock HTTP/1.1" 200 OK
+{
+  "timestamp": "2026-11-10T07:31:29.778928+00:00",
+  "status": "PASS",
+  "method": "Streamlit AppTest + actual loopback HTTP uvicorn API",
+  "cases": [
+    {
+      "question": "办公电脑申领审批需要多久？",
+      "fail_search_count": 0,
+      "expected": "COMPLETED",
+      "actual": "COMPLETED",
+      "mode": "mock",
+      "trace": "examples/traces/mock/3604e8a200c84de8b90ff8caaa8c98df.json",
+      "status": "PASS"
+    },
+    {
+      "question": "差旅报销期限是多久？",
+      "fail_search_count": 0,
+      "expected": "NEEDS_CLARIFICATION",
+      "actual": "NEEDS_CLARIFICATION",
+      "mode": "mock",
+      "trace": "examples/traces/mock/5eb64189f99947689385f4a8e9fc9faf.json",
+      "status": "PASS"
+    },
+    {
+      "question": "公司的年终奖金是多少？",
+      "fail_search_count": 0,
+      "expected": "INSUFFICIENT_EVIDENCE",
+      "actual": "INSUFFICIENT_EVIDENCE",
+      "mode": "mock",
+      "trace": "examples/traces/mock/dd634b0a81164aa4ab47d9ed9d9d93f6.json",
+      "status": "PASS"
+    },
+    {
+      "question": "办公电脑申领审批需要多久？",
+      "fail_search_count": 1,
+      "expected": "COMPLETED",
+      "actual": "COMPLETED",
+      "mode": "mock",
+      "trace": "examples/traces/mock/eec1d46b42c74f9380371a86ab572b86.json",
+      "status": "PASS"
+    },
+    {
+      "question": "办公电脑申领审批需要多久？",
+      "fail_search_count": 2,
+      "expected": "FAILED",
+      "actual": "FAILED",
+      "mode": "mock",
+      "trace": "examples/traces/mock/944ea9d34690491d883bc7d3e0ce4e5b.json",
+      "status": "PASS"
+    }
+  ],
+  "limitations": "AppTest inspects widgets and state, not browser pixel layout. Model mode is explicitly mock for repeatability."
+}
+
+STDERR:
+2026-11-10 15:31:27.390 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-10 15:31:28.283 127.0.0.1:3746 - "GET /metrics HTTP/1.1" 200
+2026-11-10 15:31:28.790 127.0.0.1:3748 - "GET /health HTTP/1.1" 200
+2026-11-10 15:31:28.813 127.0.0.1:3751 - "GET /metrics HTTP/1.1" 200
+2026-11-10 15:31:28.838 127.0.0.1:3754 - "GET /metrics HTTP/1.1" 200
+2026-11-10 15:31:28.883 127.0.0.1:3757 - "GET /metrics HTTP/1.1" 200
+2026-11-10 15:31:28.906 127.0.0.1:3760 - "GET /metrics HTTP/1.1" 200
+2026-11-10 15:31:28.950 127.0.0.1:3763 - "POST /ask HTTP/1.1" 200
+2026-11-10 15:31:28.967 127.0.0.1:3764 - "GET /traces/3604e8a200c84de8b90ff8caaa8c98df?mode=mock HTTP/1.1" 200
+2026-11-10 15:31:28.981 127.0.0.1:3765 - "GET /metrics HTTP/1.1" 200
+2026-11-10 15:31:28.984 127.0.0.1:3748 - "GET /traces/3604e8a200c84de8b90ff8caaa8c98df?mode=mock HTTP/1.1" 200
+2026-11-10 15:31:29.009 127.0.0.1:3768 - "GET /metrics HTTP/1.1" 200
+2026-11-10 15:31:29.032 127.0.0.1:3771 - "GET /metrics HTTP/1.1" 200
+2026-11-10 15:31:29.057 127.0.0.1:3774 - "GET /metrics HTTP/1.1" 200
+2026-11-10 15:31:29.096 127.0.0.1:3777 - "GET /metrics HTTP/1.1" 200
+2026-11-10 15:31:29.138 127.0.0.1:3780 - "POST /ask HTTP/1.1" 200
+2026-11-10 15:31:29.158 127.0.0.1:3781 - "GET /traces/5eb64189f99947689385f4a8e9fc9faf?mode=mock HTTP/1.1" 200
+2026-11-10 15:31:29.192 127.0.0.1:3782 - "GET /metrics HTTP/1.1" 200
+2026-11-10 15:31:29.197 127.0.0.1:3748 - "GET /traces/5eb64189f99947689385f4a8e9fc9faf?mode=mock HTTP/1.1" 200
+2026-11-10 15:31:29.222 127.0.0.1:3785 - "GET /metrics HTTP/1.1" 200
+2026-11-10 15:31:29.245 127.0.0.1:3788 - "GET /metrics HTTP/1.1" 200
+2026-11-10 15:31:29.268 127.0.0.1:3791 - "GET /metrics HTTP/1.1" 200
+2026-11-10 15:31:29.291 127.0.0.1:3794 - "GET /metrics HTTP/1.1" 200
+2026-11-10 15:31:29.325 127.0.0.1:3797 - "POST /ask HTTP/1.1" 200
+2026-11-10 15:31:29.339 127.0.0.1:3798 - "GET /traces/dd634b0a81164aa4ab47d9ed9d9d93f6?mode=mock HTTP/1.1" 200
+2026-11-10 15:31:29.351 127.0.0.1:3799 - "GET /metrics HTTP/1.1" 200
+2026-11-10 15:31:29.356 127.0.0.1:3748 - "GET /traces/dd634b0a81164aa4ab47d9ed9d9d93f6?mode=mock HTTP/1.1" 200
+2026-11-10 15:31:29.379 127.0.0.1:3802 - "GET /metrics HTTP/1.1" 200
+2026-11-10 15:31:29.403 127.0.0.1:3805 - "GET /metrics HTTP/1.1" 200
+2026-11-10 15:31:29.427 127.0.0.1:3808 - "GET /metrics HTTP/1.1" 200
+2026-11-10 15:31:29.451 127.0.0.1:3811 - "GET /metrics HTTP/1.1" 200
+2026-11-10 15:31:29.548 127.0.0.1:3814 - "POST /ask HTTP/1.1" 200
+2026-11-10 15:31:29.564 127.0.0.1:3815 - "GET /traces/eec1d46b42c74f9380371a86ab572b86?mode=mock HTTP/1.1" 200
+2026-11-10 15:31:29.577 127.0.0.1:3816 - "GET /metrics HTTP/1.1" 200
+2026-11-10 15:31:29.583 127.0.0.1:3748 - "GET /traces/eec1d46b42c74f9380371a86ab572b86?mode=mock HTTP/1.1" 200
+2026-11-10 15:31:29.612 127.0.0.1:3819 - "GET /metrics HTTP/1.1" 200
+2026-11-10 15:31:29.647 127.0.0.1:3822 - "GET /metrics HTTP/1.1" 200
+2026-11-10 15:31:29.671 127.0.0.1:3825 - "GET /metrics HTTP/1.1" 200
+2026-11-10 15:31:29.709 127.0.0.1:3828 - "GET /metrics HTTP/1.1" 200
+2026-11-10 15:31:29.746 127.0.0.1:3831 - "POST /ask HTTP/1.1" 200
+2026-11-10 15:31:29.759 127.0.0.1:3832 - "GET /traces/944ea9d34690491d883bc7d3e0ce4e5b?mode=mock HTTP/1.1" 200
+2026-11-10 15:31:29.772 127.0.0.1:3833 - "GET /metrics HTTP/1.1" 200
+2026-11-10 15:31:29.777 127.0.0.1:3748 - "GET /traces/944ea9d34690491d883bc7d3e0ce4e5b?mode=mock HTTP/1.1" 200
+2026-11-10 15:31:29.844 Shutting down
+2026-11-10 15:31:29.953 Waiting for application shutdown.
+2026-11-10 15:31:29.953 Application shutdown complete.
+2026-11-10 15:31:29.953 Finished server process [54416]

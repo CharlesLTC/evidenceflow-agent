@@ -10,7 +10,7 @@
         "hybrid"
       ],
       "traces": [
-        "examples/traces/live/6827fe9166a64952b5e134a47f461ecf.json"
+        "examples/traces/live/bec38be561b2478ab10503387ee05ed4.json"
       ]
     },
     {
@@ -22,7 +22,7 @@
         "hybrid"
       ],
       "traces": [
-        "examples/traces/live/32d20c70b4f74b40b31bccafbe528f5c.json"
+        "examples/traces/live/7b2133762a1a473fa73e3c396c36a1bb.json"
       ]
     },
     {
@@ -35,7 +35,7 @@
         "bm25"
       ],
       "traces": [
-        "examples/traces/live/0d4286e7a8e34ec0b5caa38d466f5938.json"
+        "examples/traces/live/8447cd69afa84cc1946470bc6de126c5.json"
       ]
     },
     {
@@ -47,7 +47,7 @@
         "hybrid"
       ],
       "traces": [
-        "examples/traces/live/00e27fb491fb4b2daa0fe36590c2a9cb.json"
+        "examples/traces/live/2ab6ac968d9f4f158e69594fb19e3344.json"
       ]
     },
     {
@@ -60,8 +60,8 @@
         "hybrid"
       ],
       "traces": [
-        "examples/traces/live/a9cd3ce8db644043abdece9f4eeedb11.json",
-        "examples/traces/live/a6e5152c0fdc4fd6a2c4083eccdc61c0.json"
+        "examples/traces/live/e1739eee9fff47c69c4b2dab22e47f81.json",
+        "examples/traces/live/afdca092718d4af0b568ad65c23d6c6d.json"
       ]
     },
     {
@@ -74,7 +74,7 @@
         "bm25"
       ],
       "traces": [
-        "examples/traces/live/df05242ac584406f81e9fac6fcae0262.json"
+        "examples/traces/live/b6027e5038cc4daf8e7087310d2d57d5.json"
       ]
     }
   ],

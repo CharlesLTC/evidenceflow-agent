@@ -1,0 +1,139 @@
+{
+  "timestamp": "2026-11-10T20:06:19.083265+00:00",
+  "status": "PASS",
+  "required_files": [
+    "README.md",
+    "requirements.txt",
+    ".env.example",
+    ".gitignore",
+    "src",
+    "data",
+    "tests",
+    "examples",
+    "docs/01-requirements.md",
+    "docs/02-solution.md",
+    "docs/03-evaluation.md",
+    "docs/04-ai-usage.md",
+    "docs/05-retrospective.md"
+  ],
+  "missing": [],
+  "validation_counts": {
+    "python": 62,
+    "json": 984,
+    "jsonl_rows": 62
+  },
+  "errors": [],
+  "imports": {
+    "agent_graph": "PASS",
+    "llm_client": "PASS",
+    "retriever": "PASS",
+    "embeddings": "PASS",
+    "query_rewrite": "PASS",
+    "document_store": "PASS",
+    "evidence_guard": "PASS",
+    "claim_conflicts": "PASS",
+    "tools": "PASS",
+    "session_store": "PASS",
+    "evidence_critic": "PASS",
+    "api": "PASS",
+    "cli": "PASS",
+    "decision_basis": "PASS"
+  },
+  "package_modules": [
+    "__init__",
+    "agent_graph",
+    "api",
+    "claim_conflicts",
+    "cli",
+    "config",
+    "decision_basis",
+    "document_store",
+    "embeddings",
+    "evidence_critic",
+    "evidence_guard",
+    "llm_client",
+    "query_rewrite",
+    "retriever",
+    "schemas",
+    "session_store",
+    "tools",
+    "trace_writer"
+  ],
+  "cli_entry": {
+    "evidenceflow": "evidenceflow.cli:main"
+  },
+  "dependencies": [
+    "langgraph>=1.0,<2",
+    "pydantic>=2.10,<3",
+    "httpx==0.28.1",
+    "python-dotenv>=1.0,<2",
+    "numpy>=1.26,<3",
+    "fastapi>=0.115,<1",
+    "uvicorn>=0.32,<1",
+    "streamlit>=1.40,<2",
+    "matplotlib>=3.9,<4"
+  ],
+  "optional_dependencies": {
+    "dev": [
+      "pytest>=8.3,<10",
+      "ruff>=0.9,<1",
+      "build>=1.2,<2"
+    ],
+    "embeddings": [
+      "onnxruntime>=1.20,<2",
+      "tokenizers>=0.21,<1",
+      "huggingface-hub>=0.29,<2"
+    ]
+  },
+  "readme_startup_commands_match": true,
+  "commands": [
+    {
+      "command": [
+        ".venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "exit_code": 0,
+      "seconds": 1.4462000000057742,
+      "status": "PASS",
+      "log": "FINAL_ACCEPTANCE/logs/20261110T200616151063Z-pip.txt"
+    },
+    {
+      "command": [
+        ".venv\\Scripts\\python.exe",
+        "-m",
+        "evidenceflow.cli",
+        "--help"
+      ],
+      "exit_code": 0,
+      "seconds": 0.08334209999884479,
+      "status": "PASS",
+      "log": "FINAL_ACCEPTANCE/logs/20261110T200617598365Z-evidenceflow-cli.txt"
+    },
+    {
+      "command": [
+        ".venv\\Scripts\\python.exe",
+        "-m",
+        "uvicorn",
+        "--version"
+      ],
+      "exit_code": 0,
+      "seconds": 0.439732400001958,
+      "status": "PASS",
+      "log": "FINAL_ACCEPTANCE/logs/20261110T200617682070Z-uvicorn.txt"
+    },
+    {
+      "command": [
+        ".venv\\Scripts\\python.exe",
+        "-m",
+        "streamlit",
+        "--version"
+      ],
+      "exit_code": 0,
+      "seconds": 0.9598648999817669,
+      "status": "PASS",
+      "log": "FINAL_ACCEPTANCE/logs/20261110T200618122386Z-streamlit.txt"
+    }
+  ]
+}

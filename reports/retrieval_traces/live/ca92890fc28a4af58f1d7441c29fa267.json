@@ -1,0 +1,158 @@
+{
+  "mode": "live",
+  "model_name": "qwen-plus",
+  "question": "领电脑一般几天能批下来？",
+  "events": [
+    {
+      "kind": "tool_observation",
+      "tool_name": "search_documents",
+      "timestamp": "2026-11-10T20:01:38.196366+00:00",
+      "arguments": {
+        "query": "领电脑一般几天能批下来？",
+        "strategy": "hybrid",
+        "top_k": 10
+      },
+      "observation": {
+        "query": "领电脑一般几天能批下来？",
+        "strategy": "hybrid",
+        "hits": [
+          {
+            "doc_id": "D03",
+            "chunk_id": "D03-C01",
+            "title": "办公电脑申领",
+            "topic": "电脑申领",
+            "version_date": "2025-01-01",
+            "score": 0.03278688524590164,
+            "preview": "办公电脑申领须在IT门户填写申请，经主管审批后3个工作日内完成。"
+          },
+          {
+            "doc_id": "D31",
+            "chunk_id": "D31-C01",
+            "title": "离职设备归还",
+            "topic": "设备归还",
+            "version_date": "2025-09-01",
+            "score": 0.0315136476426799,
+            "preview": "离职前须向IT归还电脑和配件，由IT确认资产交接。"
+          },
+          {
+            "doc_id": "D21",
+            "chunk_id": "D21-C01",
+            "title": "正式员工年假",
+            "topic": "年假",
+            "version_date": "2025-09-01",
+            "score": 0.016129032258064516,
+            "preview": "正式员工每年可申请5天年假，具体日期需经主管批准。"
+          },
+          {
+            "doc_id": "D25",
+            "chunk_id": "D25-C01",
+            "title": "工作文件备份",
+            "topic": "备份",
+            "version_date": "2025-09-01",
+            "score": 0.015873015873015872,
+            "preview": "工作文件应保存在团队网盘，系统每天执行一次备份。"
+          },
+          {
+            "doc_id": "D22",
+            "chunk_id": "D22-C01",
+            "title": "实习生休假",
+            "topic": "年假",
+            "version_date": "2025-09-01",
+            "score": 0.015625,
+            "preview": "实习生每年可申请2天休假，具体日期需经主管批准。"
+          },
+          {
+            "doc_id": "D06",
+            "chunk_id": "D06-C01",
+            "title": "新员工培训",
+            "topic": "入职培训",
+            "version_date": "2025-01-01",
+            "score": 0.015151515151515152,
+            "preview": "新员工应在入职后7天内完成信息安全培训。"
+          },
+          {
+            "doc_id": "D09",
+            "chunk_id": "D09-C01",
+            "title": "会议室预订",
+            "topic": "会议室",
+            "version_date": "2025-09-01",
+            "score": 0.014925373134328358,
+            "preview": "会议室须通过办公系统预订，连续使用不得超过2小时。"
+          },
+          {
+            "doc_id": "D01",
+            "chunk_id": "D01-C01",
+            "title": "差旅报销制度 A",
+            "topic": "差旅报销",
+            "version_date": "2025-01-01",
+            "score": 0.014705882352941176,
+            "preview": "差旅报销应在30天内提交。报销须附发票和出差审批单。"
+          },
+          {
+            "doc_id": "D02",
+            "chunk_id": "D02-C01",
+            "title": "差旅报销制度 B",
+            "topic": "差旅报销",
+            "version_date": "2025-07-01",
+            "score": 0.014492753623188406,
+            "preview": "差旅报销应在15天内提交。报销须附发票和出差审批单。"
+          },
+          {
+            "doc_id": "D24",
+            "chunk_id": "D24-C01",
+            "title": "访客无线网络",
+            "topic": "访客网络",
+            "version_date": "2025-09-01",
+            "score": 0.014285714285714285,
+            "preview": "访客无线网络由前台发放临时凭证，当日有效。"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "model_decision",
+      "tool_calls": [
+        {
+          "id": "call_350330469aa24f67a60931",
+          "name": "finish_retrieval",
+          "arguments": {}
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1319,
+        "total_tokens": 1333,
+        "completion_tokens": 14,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "timestamp": "2026-11-10T20:01:38.827940+00:00"
+    },
+    {
+      "kind": "tool_observation",
+      "tool_name": "finish_retrieval",
+      "arguments": {},
+      "observation": {
+        "finished": true
+      },
+      "timestamp": "2026-11-10T20:01:38.827940+00:00"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1319,
+    "completion_tokens": 14,
+    "total_tokens": 1333
+  },
+  "ranked_doc_ids": [
+    "D03",
+    "D31",
+    "D21",
+    "D25",
+    "D22",
+    "D06",
+    "D09",
+    "D01",
+    "D02",
+    "D24"
+  ]
+}

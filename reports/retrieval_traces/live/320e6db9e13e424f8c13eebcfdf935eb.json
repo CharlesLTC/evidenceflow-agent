@@ -1,0 +1,291 @@
+{
+  "mode": "live",
+  "model_name": "qwen-plus",
+  "question": "盖公章要哪些材料？",
+  "events": [
+    {
+      "kind": "tool_observation",
+      "tool_name": "search_documents",
+      "timestamp": "2026-11-10T20:02:05.646845+00:00",
+      "arguments": {
+        "query": "盖公章要哪些材料？",
+        "strategy": "hybrid",
+        "top_k": 10
+      },
+      "observation": {
+        "query": "盖公章要哪些材料？",
+        "strategy": "hybrid",
+        "hits": [
+          {
+            "doc_id": "D27",
+            "chunk_id": "D27-C01",
+            "title": "公章使用",
+            "topic": "公章",
+            "version_date": "2025-09-01",
+            "score": 0.03278688524590164,
+            "preview": "使用公章须在行政系统提交用印申请并附审批文件。"
+          },
+          {
+            "doc_id": "D31",
+            "chunk_id": "D31-C01",
+            "title": "离职设备归还",
+            "topic": "设备归还",
+            "version_date": "2025-09-01",
+            "score": 0.016129032258064516,
+            "preview": "离职前须向IT归还电脑和配件，由IT确认资产交接。"
+          },
+          {
+            "doc_id": "D12",
+            "chunk_id": "D12-C01",
+            "title": "名片制作",
+            "topic": "名片",
+            "version_date": "2025-09-01",
+            "score": 0.015873015873015872,
+            "preview": "名片制作须填写中英文姓名和职务，由行政部统一印制。"
+          },
+          {
+            "doc_id": "D20",
+            "chunk_id": "D20-C01",
+            "title": "节假日值班",
+            "topic": "值班",
+            "version_date": "2025-09-01",
+            "score": 0.015625,
+            "preview": "节假日值班安排由部门负责人在节前发布。"
+          },
+          {
+            "doc_id": "D08",
+            "chunk_id": "D08-C01",
+            "title": "采购申请",
+            "topic": "采购",
+            "version_date": "2025-01-01",
+            "score": 0.015384615384615385,
+            "preview": "采购须先提交采购申请，经预算负责人审批后由采购部执行。"
+          },
+          {
+            "doc_id": "D25",
+            "chunk_id": "D25-C01",
+            "title": "工作文件备份",
+            "topic": "备份",
+            "version_date": "2025-09-01",
+            "score": 0.015151515151515152,
+            "preview": "工作文件应保存在团队网盘，系统每天执行一次备份。"
+          },
+          {
+            "doc_id": "D04",
+            "chunk_id": "D04-C01",
+            "title": "IT设备维修",
+            "topic": "设备维修",
+            "version_date": "2025-01-01",
+            "score": 0.014925373134328358,
+            "preview": "IT设备故障须在IT门户提交维修工单，由IT支持组受理。"
+          },
+          {
+            "doc_id": "D28",
+            "chunk_id": "D28-C01",
+            "title": "发票抬头查询",
+            "topic": "发票",
+            "version_date": "2025-09-01",
+            "score": 0.014705882352941176,
+            "preview": "开具发票前应在财务门户核对公司抬头和税号。"
+          },
+          {
+            "doc_id": "D23",
+            "chunk_id": "D23-C01",
+            "title": "办公网络报障",
+            "topic": "网络故障",
+            "version_date": "2025-09-01",
+            "score": 0.014492753623188406,
+            "preview": "办公室网络无法连接时应提交网络报障工单并注明工位。"
+          },
+          {
+            "doc_id": "D26",
+            "chunk_id": "D26-C01",
+            "title": "代码仓库权限",
+            "topic": "仓库权限",
+            "version_date": "2025-09-01",
+            "score": 0.014285714285714285,
+            "preview": "代码仓库访问权限须经项目负责人审批后由IT开通。"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "model_decision",
+      "tool_calls": [
+        {
+          "id": "call_eca38111e700461db07e8a",
+          "name": "search_documents",
+          "arguments": {
+            "query": "公章使用申请材料"
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1293,
+        "total_tokens": 1312,
+        "completion_tokens": 19,
+        "prompt_tokens_details": {
+          "cached_tokens": 192
+        }
+      },
+      "timestamp": "2026-11-10T20:02:06.378121+00:00"
+    },
+    {
+      "kind": "tool_observation",
+      "tool_name": "search_documents",
+      "arguments": {
+        "query": "公章使用申请材料"
+      },
+      "observation": {
+        "query": "公章使用申请材料",
+        "strategy": "hybrid",
+        "hits": [
+          {
+            "doc_id": "D27",
+            "chunk_id": "D27-C01",
+            "title": "公章使用",
+            "topic": "公章",
+            "version_date": "2025-09-01",
+            "score": 0.03278688524590164,
+            "preview": "使用公章须在行政系统提交用印申请并附审批文件。"
+          },
+          {
+            "doc_id": "D08",
+            "chunk_id": "D08-C01",
+            "title": "采购申请",
+            "topic": "采购",
+            "version_date": "2025-01-01",
+            "score": 0.03128054740957967,
+            "preview": "采购须先提交采购申请，经预算负责人审批后由采购部执行。"
+          },
+          {
+            "doc_id": "D15",
+            "chunk_id": "D15-C01",
+            "title": "邮件别名申请",
+            "topic": "邮件别名",
+            "version_date": "2025-09-01",
+            "score": 0.031009615384615385,
+            "preview": "部门邮件别名由部门负责人提交申请，IT支持组创建。"
+          },
+          {
+            "doc_id": "D05",
+            "chunk_id": "D05-C01",
+            "title": "员工请假制度",
+            "topic": "请假",
+            "version_date": "2025-01-01",
+            "score": 0.030798389007344232,
+            "preview": "请假应在HR系统提交申请，由直属主管审批。"
+          },
+          {
+            "doc_id": "D11",
+            "chunk_id": "D11-C01",
+            "title": "加班申请",
+            "topic": "加班",
+            "version_date": "2025-09-01",
+            "score": 0.03055037313432836,
+            "preview": "加班须事先在HR系统申请并经主管批准。"
+          },
+          {
+            "doc_id": "D03",
+            "chunk_id": "D03-C01",
+            "title": "办公电脑申领",
+            "topic": "电脑申领",
+            "version_date": "2025-01-01",
+            "score": 0.02946912242686891,
+            "preview": "办公电脑申领须在IT门户填写申请，经主管审批后3个工作日内完成。"
+          },
+          {
+            "doc_id": "D10",
+            "chunk_id": "D10-C01",
+            "title": "远程会议",
+            "topic": "远程会议",
+            "version_date": "2025-09-01",
+            "score": 0.028373015873015873,
+            "preview": "远程会议使用公司会议平台，外部参会人须由主持人发送邀请。"
+          },
+          {
+            "doc_id": "D09",
+            "chunk_id": "D09-C01",
+            "title": "会议室预订",
+            "topic": "会议室",
+            "version_date": "2025-09-01",
+            "score": 0.02832415420928403,
+            "preview": "会议室须通过办公系统预订，连续使用不得超过2小时。"
+          },
+          {
+            "doc_id": "D13",
+            "chunk_id": "D13-C01",
+            "title": "远程网络接入",
+            "topic": "VPN",
+            "version_date": "2025-09-01",
+            "score": 0.027364110201042444,
+            "preview": "在家访问内部系统须申请VPN，并启用多因素认证。"
+          },
+          {
+            "doc_id": "D22",
+            "chunk_id": "D22-C01",
+            "title": "实习生休假",
+            "topic": "年假",
+            "version_date": "2025-09-01",
+            "score": 0.02625745950554135,
+            "preview": "实习生每年可申请2天休假，具体日期需经主管批准。"
+          }
+        ]
+      },
+      "timestamp": "2026-11-10T20:02:06.381124+00:00"
+    },
+    {
+      "kind": "model_decision",
+      "tool_calls": [
+        {
+          "id": "call_f2331d3ee7d54abea7fe67",
+          "name": "finish_retrieval",
+          "arguments": {}
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 2302,
+        "total_tokens": 2316,
+        "completion_tokens": 14,
+        "prompt_tokens_details": {
+          "cached_tokens": 192
+        }
+      },
+      "timestamp": "2026-11-10T20:02:06.964892+00:00"
+    },
+    {
+      "kind": "tool_observation",
+      "tool_name": "finish_retrieval",
+      "arguments": {},
+      "observation": {
+        "finished": true
+      },
+      "timestamp": "2026-11-10T20:02:06.964892+00:00"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3595,
+    "completion_tokens": 33,
+    "total_tokens": 3628
+  },
+  "ranked_doc_ids": [
+    "D27",
+    "D08",
+    "D31",
+    "D12",
+    "D15",
+    "D05",
+    "D20",
+    "D11",
+    "D03",
+    "D25",
+    "D04",
+    "D10",
+    "D09",
+    "D28",
+    "D13",
+    "D23",
+    "D22",
+    "D26"
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "timestamp": "2026-11-10T20:01:27.676089+00:00",
+  "dataset_sha256": {
+    "documents.json": "7fac27332b3357d1f59dbaffb61e1af76129350f53b258d20f6119767822fc85",
+    "eval_questions.jsonl": "f4a938acb88e9367541c5d538158726419f9a6d0710aa8dd7151b04c82a19451",
+    "gold_labels.json": "53247bed92ddbbff1a0f31d62a245e86cb6f2854073c3fd1f850c4354c33b652"
+  },
+  "documents": 32,
+  "queries": 44,
+  "answerable_queries": 40,
+  "timing_protocol": "CPU; encoder/index initialization excluded and separately timed; uncached query encoding; single query pass, no confidence intervals",
+  "strategies": {
+    "A_BM25": {
+      "status": "PASS",
+      "metrics": {
+        "sample_count": 44,
+        "answerable_count": 40,
+        "unanswerable_count": 4,
+        "failed_queries": 0,
+        "recall_at_3": {
+          "value": 0.925,
+          "recall_sum": 37.0,
+          "query_denominator": 40,
+          "relevant_retrieved": 38,
+          "relevant_total": 42
+        },
+        "recall_at_5": {
+          "value": 0.9375,
+          "recall_sum": 37.5,
+          "query_denominator": 40,
+          "relevant_retrieved": 39,
+          "relevant_total": 42
+        },
+        "mrr_at_5": {
+          "value": 0.9175000000000001,
+          "reciprocal_rank_sum": 36.7,
+          "denominator": 40
+        },
+        "ndcg_at_5": null,
+        "mean_latency_ms": 0.20014090709578755,
+        "p95_latency_ms": 0.2400749988737516,
+        "mean_model_calls": 0,
+        "mean_tool_calls": 1,
+        "correct_abstention_rate": null
+      },
+      "cost_usd": 0.0,
+      "usage": null
+    },
+    "B_Dense": {
+      "status": "PASS",
+      "metrics": {
+        "sample_count": 44,
+        "answerable_count": 40,
+        "unanswerable_count": 4,
+        "failed_queries": 0,
+        "recall_at_3": {
+          "value": 0.975,
+          "recall_sum": 39.0,
+          "query_denominator": 40,
+          "relevant_retrieved": 41,
+          "relevant_total": 42
+        },
+        "recall_at_5": {
+          "value": 0.975,
+          "recall_sum": 39.0,
+          "query_denominator": 40,
+          "relevant_retrieved": 41,
+          "relevant_total": 42
+        },
+        "mrr_at_5": {
+          "value": 0.9625,
+          "reciprocal_rank_sum": 38.5,
+          "denominator": 40
+        },
+        "ndcg_at_5": null,
+        "mean_latency_ms": 2.4274749997527,
+        "p95_latency_ms": 3.0679949748446234,
+        "mean_model_calls": 0,
+        "mean_tool_calls": 1,
+        "correct_abstention_rate": null
+      },
+      "cost_usd": 0.0,
+      "usage": null
+    },
+    "C_Hybrid_RRF": {
+      "status": "PASS",
+      "metrics": {
+        "sample_count": 44,
+        "answerable_count": 40,
+        "unanswerable_count": 4,
+        "failed_queries": 0,
+        "recall_at_3": {
+          "value": 0.9875,
+          "recall_sum": 39.5,
+          "query_denominator": 40,
+          "relevant_retrieved": 41,
+          "relevant_total": 42
+        },
+        "recall_at_5": {
+          "value": 1.0,
+          "recall_sum": 40.0,
+          "query_denominator": 40,
+          "relevant_retrieved": 42,
+          "relevant_total": 42
+        },
+        "mrr_at_5": {
+          "value": 0.9833333333333334,
+          "reciprocal_rank_sum": 39.333333333333336,
+          "denominator": 40
+        },
+        "ndcg_at_5": null,
+        "mean_latency_ms": 2.334770456813699,
+        "p95_latency_ms": 2.829265015316196,
+        "mean_model_calls": 0,
+        "mean_tool_calls": 1,
+        "correct_abstention_rate": null
+      },
+      "cost_usd": 0.0,
+      "usage": null
+    },
+    "D_Hybrid_AgentRewrite": {
+      "status": "PASS",
+      "metrics": {
+        "sample_count": 44,
+        "answerable_count": 40,
+        "unanswerable_count": 4,
+        "failed_queries": 0,
+        "recall_at_3": {
+          "value": 0.9875,
+          "recall_sum": 39.5,
+          "query_denominator": 40,
+          "relevant_retrieved": 41,
+          "relevant_total": 42
+        },
+        "recall_at_5": {
+          "value": 1.0,
+          "recall_sum": 40.0,
+          "query_denominator": 40,
+          "relevant_retrieved": 42,
+          "relevant_total": 42
+        },
+        "mrr_at_5": {
+          "value": 0.9833333333333334,
+          "reciprocal_rank_sum": 39.333333333333336,
+          "denominator": 40
+        },
+        "ndcg_at_5": null,
+        "mean_latency_ms": 964.8850727297196,
+        "p95_latency_ms": 1596.8289049953457,
+        "mean_model_calls": 1.4545454545454546,
+        "mean_tool_calls": 1.4545454545454546,
+        "correct_abstention_rate": null
+      },
+      "cost_usd": null,
+      "usage": {
+        "prompt_tokens": 103910,
+        "completion_tokens": 1037,
+        "total_tokens": 104947
+      }
+    }
+  },
+  "initialization_ms": 9623.660199984442,
+  "embedding_error": null,
+  "status": "PASS"
+}

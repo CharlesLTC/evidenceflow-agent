@@ -1,0 +1,38 @@
+{
+  "question": "IT设备故障应通过什么途径报修？",
+  "answer": "D04：IT设备故障须在IT门户提交维修工单，由IT支持组受理。",
+  "status": "COMPLETED",
+  "citations": [
+    {
+      "doc_id": "D04",
+      "version_date": "2025-01-01",
+      "quote": "IT设备故障须在IT门户提交维修工单，由IT支持组受理。",
+      "chunk_id": "D04-C01"
+    }
+  ],
+  "missing_info": [],
+  "conflicts": [],
+  "steps_used": 4,
+  "tool_calls_used": 4,
+  "trace_id": "81331749335e4216a5577f655b31d947",
+  "session_id": "dca0387bd03f48fd864a43f0a259bfef",
+  "mode": "live",
+  "model_name": "qwen-plus",
+  "latency_ms": 4568.1775999837555,
+  "usage": {
+    "prompt_tokens": 8370,
+    "completion_tokens": 162,
+    "total_tokens": 8532
+  },
+  "error_code": null,
+  "critic": {
+    "enabled": false,
+    "reviews": 0,
+    "model_calls": 0,
+    "model_steps": 0,
+    "revisions_requested": 0,
+    "repair_limit": 1,
+    "latency_ms": 0.0,
+    "usage": {}
+  }
+}

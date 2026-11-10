@@ -1,0 +1,9 @@
+{
+  "question": "那多久批下来？",
+  "session_id": "accept_2e5a1ec0ea9d472e90863d65fc8346e8",
+  "mode": "live",
+  "max_model_steps": 8,
+  "max_tool_calls": 12,
+  "fail_search_count": 0,
+  "enable_critic": null
+}

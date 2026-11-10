@@ -1,0 +1,7 @@
+{
+  "version": "v2.103.3",
+  "sha256": "98d0cfa794721665d7973dd728c78aff7bd836d58f10f6d7a03568eccb0a22e0",
+  "asset": "gh_2.103.3_windows_amd64.zip",
+  "checksum_verified": true,
+  "executable": ".tools\\gh\\bin\\gh.exe"
+}

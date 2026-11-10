@@ -1,0 +1,40 @@
+CE01 critic=False: correct=False state=COMPLETED
+CE01 critic=True: correct=True state=COMPLETED
+CE02 critic=False: correct=False state=COMPLETED
+CE02 critic=True: correct=True state=COMPLETED
+CE03 critic=False: correct=False state=NEEDS_CLARIFICATION
+CE03 critic=True: correct=True state=NEEDS_CLARIFICATION
+CE04 critic=False: correct=False state=COMPLETED
+CE04 critic=True: correct=True state=COMPLETED
+CE05 critic=False: correct=True state=COMPLETED
+CE05 critic=True: correct=True state=COMPLETED
+CE06 critic=False: correct=True state=COMPLETED
+CE06 critic=True: correct=True state=COMPLETED
+{
+  "run_id": "5be8f8bcecad466b95b8019ee9f02f65",
+  "started_at": "2026-11-10T20:02:23.623521+00:00",
+  "fixture_sha256": "536a693905b5ea4f9145df64e78f25a37b17196aca3cbccc5643aa84086ac005",
+  "protocol": "6 fixed cases: 4 controlled omissions and 2 clean controls. Only the first real model submission is transformed, visibly labelled candidate_injection; this is not a natural error-rate estimate. Baseline and Critic use the same fixture and unchanged external criteria.",
+  "finished_at": "2026-11-10T20:03:57.148907+00:00",
+  "total": 6,
+  "injected_cases": 4,
+  "baseline_correct": 2,
+  "critic_correct": 6,
+  "correction_success": {
+    "numerator": 4,
+    "denominator": 4,
+    "rate": 1.0
+  },
+  "new_final_errors": 0,
+  "clean_control_false_revisions": 0,
+  "invalid_final_citations": 0,
+  "mean_extra_model_steps": 2.3333333333333335,
+  "mean_critic_api_calls": 1.6666666666666667,
+  "mean_extra_latency_ms": 4259.310116666408,
+  "mean_critic_latency_ms": 1878.3844666662237,
+  "extra_tokens": 21951,
+  "cost_usd": null,
+  "status": "PASS"
+}
+
+STDERR:
