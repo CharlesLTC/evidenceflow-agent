@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "default_port": 18501,
+  "environment_override": 19001,
+  "method": "Actual PowerShell execution of README port selection"
+}

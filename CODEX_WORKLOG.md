@@ -171,3 +171,9 @@ Actual RETRIEVAL_STRATEGY=hybrid official six passed, executed_strategy recorded
 P7 developed only after core stability. Optional independent critic is off by default, one repair maximum, shares total eight model steps. Fixed four omission injections plus two clean controls: first attempt FAIL 3/4 repairs; after read-evidence/budget feedback same dataset passed 4/4 and 6/6 overall. First critic-enabled official run FAIL 5/6 on schema ValidationError; stricter consistency guidance/diagnostics added and same six passed 6/6. Every failed trial is retained.
 
 Final commands: main and existing isolated environment 75/75, BM25 official 6/6, Hybrid official 6/6, exceptional live suite, quote audit, secret scan, original retrieval recomputation and real HTTP UI all exit zero. No labels, case denominators, execution bounds or original assertions changed.
+
+## Delivery-only finalization — 2026-11-10T07:51:34.867458+00:00
+
+README Windows Streamlit default 18501 with STREAMLIT_SERVER_PORT / CLI override; report-generation text synchronized. Application, data, dependencies, existing tests and acceptance assertions unchanged.
+
+Actual final run: pytest 75/75, qwen-plus official live 6/6, quote/artifact/security and dependency checks passed. Complete reachable Git history scanned (909 commit/blob objects); no findings. 611 prior evidence/failure files kept byte-identical. Details: reports/handoff/20261110T074943Z/summary.json. Private reviewer access pending because no account supplied; no invitations or visibility changes issued.

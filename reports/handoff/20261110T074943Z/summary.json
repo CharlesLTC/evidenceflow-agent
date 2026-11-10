@@ -1,0 +1,104 @@
+{
+  "status": "PASS",
+  "started_at": "2026-11-10T07:49:43.566061+00:00",
+  "finished_at": "2026-11-10T07:51:34.867458+00:00",
+  "baseline_commit": "1ee65427e1982d75e8bc71232dba872b69411906",
+  "commands": [
+    {
+      "argv": [
+        "E:\\秋招笔试\\EvidenceFlow\\evidenceflow-agent\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "--junitxml=reports/handoff/20261110T074943Z/pytest.xml"
+      ],
+      "exit_code": 0,
+      "seconds": 4.936506000027293,
+      "log": "reports/handoff/20261110T074943Z/check-00.txt"
+    },
+    {
+      "argv": [
+        "E:\\秋招笔试\\EvidenceFlow\\evidenceflow-agent\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.run_acceptance",
+        "--mode",
+        "live"
+      ],
+      "exit_code": 0,
+      "seconds": 42.10039949999191,
+      "log": "reports/handoff/20261110T074943Z/check-01.txt"
+    },
+    {
+      "argv": [
+        "E:\\秋招笔试\\EvidenceFlow\\evidenceflow-agent\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.validate_live_evidence"
+      ],
+      "exit_code": 0,
+      "seconds": 0.1753712999925483,
+      "log": "reports/handoff/20261110T074943Z/check-02.txt"
+    },
+    {
+      "argv": [
+        "E:\\秋招笔试\\EvidenceFlow\\evidenceflow-agent\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.verify_artifacts"
+      ],
+      "exit_code": 0,
+      "seconds": 5.202593900001375,
+      "log": "reports/handoff/20261110T074943Z/check-03.txt"
+    },
+    {
+      "argv": [
+        "E:\\秋招笔试\\EvidenceFlow\\evidenceflow-agent\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.security_scan"
+      ],
+      "exit_code": 0,
+      "seconds": 3.7867567999928724,
+      "log": "reports/handoff/20261110T074943Z/check-04.txt"
+    },
+    {
+      "argv": [
+        "E:\\秋招笔试\\EvidenceFlow\\evidenceflow-agent\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "exit_code": 0,
+      "seconds": 1.2904972999822348,
+      "log": "reports/handoff/20261110T074943Z/check-05.txt"
+    }
+  ],
+  "pytest": {
+    "tests": 75,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": 75
+  },
+  "official_live": {
+    "status": "PASS",
+    "passed": 6,
+    "total": 6,
+    "mode": "live",
+    "model": "qwen-plus",
+    "strategy": "bm25",
+    "critic_enabled": false,
+    "path": "reports/handoff/20261110T074943Z/official_live.json"
+  },
+  "history_security": {
+    "status": "PASS",
+    "timestamp": "2026-11-10T07:51:34.706158+00:00",
+    "scope": "All reachable Git commit and blob objects; configured secret values, known credential patterns, private-key headers and sensitive filenames. Values never printed.",
+    "commit_and_blob_objects": 909,
+    "text_objects": 906,
+    "findings": [],
+    "is_shallow": "false"
+  },
+  "protected_historical_files": 611,
+  "changed_historical_files": [],
+  "runtime_or_test_changes": [],
+  "artifact_verification": "PASS",
+  "security_scan": "PASS"
+}

@@ -45,10 +45,11 @@ SQLite 保存历史，live/mock 按模式隔离；本轮引用必须重新读取
 
 ```powershell
 python -m uvicorn evidenceflow.api:app --host 127.0.0.1 --port 8000
-python -m streamlit run ui/app.py --server.address 127.0.0.1 --server.port 8501
+$evidenceflowUiPort = if ($env:STREAMLIT_SERVER_PORT) { [int]$env:STREAMLIT_SERVER_PORT } else { 18501 }
+python -m streamlit run ui/app.py --server.address 127.0.0.1 --server.port $evidenceflowUiPort
 ```
 
-API 文档：[本机 8000/docs](http://127.0.0.1:8000/docs)；界面：[本机 8501](http://127.0.0.1:8501)。界面经实际 HTTP 读取答案、引用、冲突、Trace、检索排名和实验指标，失败状态不会显示成功。
+API 文档：[本机 8000/docs](http://127.0.0.1:8000/docs)；界面默认：[本机 18501](http://127.0.0.1:18501)。启动前可用 `$env:STREAMLIT_SERVER_PORT="19001"` 覆盖端口，或直接指定 `--server.port 19001`。界面经实际 HTTP 读取答案、引用、冲突、Trace、检索排名和实验指标，失败状态不会显示成功。
 
 | 接口 | 用途 |
 |---|---|
@@ -149,3 +150,4 @@ API 使用 enable_critic:true/false；省略或 null 时尊重 EVIDENCE_CRITIC_E
 
 实际建仓和首次三方 SHA 核对记录在 `reports/github_delivery.json`。commit 不能将自身 SHA 嵌入自身内容；`python -m scripts.verify_delivery` 核对本地 HEAD、git ls-remote HEAD、GitHub API SHA 和远程 README。本机忽略的 `reports/delivery_verification.local.json` 保存最后实际对照。私有仓库仍需给评审账号授权，本次尚未提供评审账号。
 
+最终交付复验：pytest 75/75、官方 live 6/6，工件与安全检查通过；最新命令日志、JUnit及Trace见 [最终交付记录](reports/handoff/20261110T074943Z/delivery.md)。评审访问仍待授权，未修改历史失败记录。

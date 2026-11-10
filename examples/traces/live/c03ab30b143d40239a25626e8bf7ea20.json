@@ -1,0 +1,349 @@
+{
+  "trace_schema_version": 2,
+  "trace_id": "c03ab30b143d40239a25626e8bf7ea20",
+  "mode": "live",
+  "model_name": "qwen-plus",
+  "events": [
+    {
+      "kind": "model_decision",
+      "step": 1,
+      "trace_id": "c03ab30b143d40239a25626e8bf7ea20",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T07:50:57.556018+00:00",
+      "model_step": 1,
+      "tool_calls": [
+        {
+          "id": "call_8692306f290e49468f14a0",
+          "name": "search_documents",
+          "arguments": {
+            "query": "年终奖金 标准 金额",
+            "strategy": "bm25"
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1515,
+        "total_tokens": 1545,
+        "completion_tokens": 30,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "next_action": [
+        "search_documents"
+      ],
+      "decision_basis": "当前轮尚无工具 Observation；模型选择 search_documents。",
+      "decision_basis_source": "observable_events",
+      "basis_event_steps": []
+    },
+    {
+      "kind": "tool_observation",
+      "step": 2,
+      "trace_id": "c03ab30b143d40239a25626e8bf7ea20",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T07:50:57.557025+00:00",
+      "model_step": 1,
+      "tool_call_number": 1,
+      "tool_name": "search_documents",
+      "arguments": {
+        "query": "年终奖金 标准 金额",
+        "strategy": "bm25"
+      },
+      "observation": {
+        "query": "年终奖金 标准 金额",
+        "strategy": "bm25",
+        "hits": [],
+        "configured_strategy": "bm25",
+        "executed_strategy": "bm25"
+      },
+      "observation_summary": "{\"query\": \"年终奖金 标准 金额\", \"strategy\": \"bm25\", \"hits\": [], \"configured_strategy\": \"bm25\", \"executed_strategy\": \"bm25\"}",
+      "latency_ms": 0.1714999962132424,
+      "next_action": "agent_decide",
+      "decision_basis": "bm25 检索返回 0 篇候选（无结果），尚不具备引用资格。",
+      "decision_basis_source": "current_observation"
+    },
+    {
+      "kind": "model_decision",
+      "step": 3,
+      "trace_id": "c03ab30b143d40239a25626e8bf7ea20",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T07:50:58.428602+00:00",
+      "model_step": 2,
+      "tool_calls": [
+        {
+          "id": "call_4e138cbad8524167893a08",
+          "name": "inspect_versions",
+          "arguments": {
+            "topic": "年终奖金"
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1604,
+        "total_tokens": 1621,
+        "completion_tokens": 17,
+        "prompt_tokens_details": {
+          "cached_tokens": 1408
+        }
+      },
+      "next_action": [
+        "inspect_versions"
+      ],
+      "decision_basis": "bm25 检索返回 0 篇候选（无结果），尚不具备引用资格。本轮模型选择 inspect_versions。",
+      "decision_basis_source": "observable_events",
+      "basis_event_steps": [
+        2
+      ]
+    },
+    {
+      "kind": "tool_observation",
+      "step": 4,
+      "trace_id": "c03ab30b143d40239a25626e8bf7ea20",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T07:50:58.429609+00:00",
+      "model_step": 2,
+      "tool_call_number": 2,
+      "tool_name": "inspect_versions",
+      "arguments": {
+        "topic": "年终奖金"
+      },
+      "observation": {
+        "topic": "年终奖金",
+        "versions": [],
+        "precedence": null,
+        "note": "Newer version alone does not establish precedence."
+      },
+      "observation_summary": "{\"topic\": \"年终奖金\", \"versions\": [], \"precedence\": null, \"note\": \"Newer version alone does not establish precedence.\"}",
+      "latency_ms": 0.036999990697950125,
+      "next_action": "agent_decide",
+      "decision_basis": "版本查询返回 0 个版本，0 个适用范围未知；优先级为 None。",
+      "decision_basis_source": "current_observation"
+    },
+    {
+      "kind": "model_decision",
+      "step": 5,
+      "trace_id": "c03ab30b143d40239a25626e8bf7ea20",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T07:50:59.487081+00:00",
+      "model_step": 3,
+      "tool_calls": [
+        {
+          "id": "call_2050a6a690084a2aa7f525",
+          "name": "submit_answer",
+          "arguments": {
+            "status": "INSUFFICIENT_EVIDENCE",
+            "answer": "当前资料不足，无法依据知识库回答。"
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1668,
+        "total_tokens": 1704,
+        "completion_tokens": 36,
+        "prompt_tokens_details": {
+          "cached_tokens": 1408
+        }
+      },
+      "next_action": [
+        "submit_answer"
+      ],
+      "decision_basis": "版本查询返回 0 个版本，0 个适用范围未知；优先级为 None。本轮模型选择 submit_answer。",
+      "decision_basis_source": "observable_events",
+      "basis_event_steps": [
+        4
+      ]
+    },
+    {
+      "kind": "tool_observation",
+      "step": 6,
+      "trace_id": "c03ab30b143d40239a25626e8bf7ea20",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T07:50:59.488088+00:00",
+      "model_step": 3,
+      "tool_call_number": 3,
+      "tool_name": "submit_answer",
+      "arguments": {
+        "status": "INSUFFICIENT_EVIDENCE",
+        "answer": "当前资料不足，无法依据知识库回答。"
+      },
+      "observation": {
+        "valid": false,
+        "errors": [
+          "MISSING_INFO_REQUIRED"
+        ],
+        "conflicts": [],
+        "expected_answer_format": "当前资料不足，无法依据知识库回答。"
+      },
+      "observation_summary": "{\"valid\": false, \"errors\": [\"MISSING_INFO_REQUIRED\"], \"conflicts\": [], \"expected_answer_format\": \"当前资料不足，无法依据知识库回答。\"}",
+      "latency_ms": 0.049299997044727206,
+      "next_action": "agent_decide",
+      "decision_basis": "Guard 拒绝候选：MISSING_INFO_REQUIRED",
+      "decision_basis_source": "current_observation"
+    },
+    {
+      "kind": "model_decision",
+      "step": 7,
+      "trace_id": "c03ab30b143d40239a25626e8bf7ea20",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T07:51:00.278593+00:00",
+      "model_step": 4,
+      "tool_calls": [
+        {
+          "id": "call_eac7bc048cb441dca22337",
+          "name": "submit_answer",
+          "arguments": {
+            "status": "INSUFFICIENT_EVIDENCE"
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1756,
+        "total_tokens": 1777,
+        "completion_tokens": 21,
+        "prompt_tokens_details": {
+          "cached_tokens": 1408
+        }
+      },
+      "next_action": [
+        "submit_answer"
+      ],
+      "decision_basis": "Guard 拒绝候选：MISSING_INFO_REQUIRED本轮模型选择 submit_answer。",
+      "decision_basis_source": "observable_events",
+      "basis_event_steps": [
+        6
+      ]
+    },
+    {
+      "kind": "tool_observation",
+      "step": 8,
+      "trace_id": "c03ab30b143d40239a25626e8bf7ea20",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T07:51:00.279600+00:00",
+      "model_step": 4,
+      "tool_call_number": 4,
+      "tool_name": "submit_answer",
+      "arguments": {
+        "status": "INSUFFICIENT_EVIDENCE"
+      },
+      "observation": {
+        "valid": false,
+        "errors": [
+          "MISSING_INFO_REQUIRED"
+        ],
+        "conflicts": [],
+        "expected_answer_format": "当前资料不足，无法依据知识库回答。"
+      },
+      "observation_summary": "{\"valid\": false, \"errors\": [\"MISSING_INFO_REQUIRED\"], \"conflicts\": [], \"expected_answer_format\": \"当前资料不足，无法依据知识库回答。\"}",
+      "latency_ms": 0.07539999205619097,
+      "next_action": "agent_decide",
+      "decision_basis": "Guard 拒绝候选：MISSING_INFO_REQUIRED",
+      "decision_basis_source": "current_observation"
+    },
+    {
+      "kind": "model_decision",
+      "step": 9,
+      "trace_id": "c03ab30b143d40239a25626e8bf7ea20",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T07:51:01.507677+00:00",
+      "model_step": 5,
+      "tool_calls": [
+        {
+          "id": "call_b354ebfa45944802876c73",
+          "name": "submit_answer",
+          "arguments": {
+            "status": "INSUFFICIENT_EVIDENCE",
+            "missing_info": [
+              "公司年终奖金的计算标准、发放条件及具体金额"
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1829,
+        "total_tokens": 1869,
+        "completion_tokens": 40,
+        "prompt_tokens_details": {
+          "cached_tokens": 1408
+        }
+      },
+      "next_action": [
+        "submit_answer"
+      ],
+      "decision_basis": "Guard 拒绝候选：MISSING_INFO_REQUIRED本轮模型选择 submit_answer。",
+      "decision_basis_source": "observable_events",
+      "basis_event_steps": [
+        8
+      ]
+    },
+    {
+      "kind": "tool_observation",
+      "step": 10,
+      "trace_id": "c03ab30b143d40239a25626e8bf7ea20",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T07:51:01.507677+00:00",
+      "model_step": 5,
+      "tool_call_number": 5,
+      "tool_name": "submit_answer",
+      "arguments": {
+        "status": "INSUFFICIENT_EVIDENCE",
+        "missing_info": [
+          "公司年终奖金的计算标准、发放条件及具体金额"
+        ]
+      },
+      "observation": {
+        "valid": true,
+        "errors": [],
+        "conflicts": [],
+        "expected_answer_format": null
+      },
+      "observation_summary": "{\"valid\": true, \"errors\": [], \"conflicts\": [], \"expected_answer_format\": null}",
+      "latency_ms": 0.05289999535307288,
+      "next_action": "finalize",
+      "decision_basis": "候选已通过原文、已读资格、版本、冲突及摘录格式校验。",
+      "decision_basis_source": "current_observation"
+    }
+  ],
+  "result": {
+    "question": "公司的年终奖金是多少？",
+    "answer": "当前资料不足，无法依据知识库回答。",
+    "status": "INSUFFICIENT_EVIDENCE",
+    "citations": [],
+    "missing_info": [
+      "公司年终奖金的计算标准、发放条件及具体金额"
+    ],
+    "conflicts": [],
+    "steps_used": 5,
+    "tool_calls_used": 5,
+    "trace_id": "c03ab30b143d40239a25626e8bf7ea20",
+    "session_id": "accept_b7b548877a66416ea7ddce34c52dcd56",
+    "mode": "live",
+    "model_name": "qwen-plus",
+    "latency_ms": 4903.996299981372,
+    "usage": {
+      "prompt_tokens": 8372,
+      "completion_tokens": 144,
+      "total_tokens": 8516
+    },
+    "error_code": null,
+    "critic": {
+      "enabled": false,
+      "reviews": 0,
+      "model_calls": 0,
+      "model_steps": 0,
+      "revisions_requested": 0,
+      "repair_limit": 1,
+      "latency_ms": 0.0,
+      "usage": {}
+    }
+  }
+}

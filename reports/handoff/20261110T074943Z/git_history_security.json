@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "timestamp": "2026-11-10T07:51:34.706158+00:00",
+  "scope": "All reachable Git commit and blob objects; configured secret values, known credential patterns, private-key headers and sensitive filenames. Values never printed.",
+  "commit_and_blob_objects": 909,
+  "text_objects": 906,
+  "findings": [],
+  "is_shallow": "false"
+}

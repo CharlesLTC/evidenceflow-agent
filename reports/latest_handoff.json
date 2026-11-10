@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "run_path": "reports/handoff/20261110T074943Z",
+  "report": "reports/handoff/20261110T074943Z/delivery.md",
+  "summary": "reports/handoff/20261110T074943Z/summary.json",
+  "pytest": {
+    "tests": 75,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": 75
+  },
+  "official_live": {
+    "status": "PASS",
+    "passed": 6,
+    "total": 6,
+    "mode": "live",
+    "model": "qwen-plus",
+    "strategy": "bm25",
+    "critic_enabled": false,
+    "path": "reports/handoff/20261110T074943Z/official_live.json"
+  },
+  "ui_default_port": 18501,
+  "ui_port_override": "STREAMLIT_SERVER_PORT or --server.port",
+  "reviewer_access": "PENDING_AUTHORIZATION: intended reviewer account not supplied",
+  "final_sha_receipt": "reports/delivery_verification.local.json"
+}

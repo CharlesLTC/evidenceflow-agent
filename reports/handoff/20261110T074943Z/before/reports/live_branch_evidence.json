@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "model": "qwen-plus",
+  "six_passed": 6,
+  "normal": {
+    "trace_id": "6827fe9166a64952b5e134a47f461ecf",
+    "tools": [
+      "search_documents",
+      "read_document",
+      "inspect_versions",
+      "submit_answer"
+    ]
+  },
+  "failure_observation": {
+    "trace_id": "df05242ac584406f81e9fac6fcae0262",
+    "tools": [
+      "search_documents",
+      "search_documents",
+      "read_document",
+      "inspect_versions",
+      "submit_answer"
+    ]
+  },
+  "different_paths_verified": true,
+  "citation_validity": {
+    "numerator": 6,
+    "denominator": 6,
+    "rate": 1.0
+  }
+}
