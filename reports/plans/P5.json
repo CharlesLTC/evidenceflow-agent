@@ -1,0 +1,33 @@
+{
+  "commands": [
+    [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "tests/test_retriever.py",
+      "tests/test_retrieval_metrics.py",
+      "--junitxml=reports/logs/P5-pytest.xml"
+    ],
+    [
+      "python",
+      "-m",
+      "scripts.verify_retrieval_results"
+    ]
+  ],
+  "evidence": [
+    "reports/retrieval_metrics.json",
+    "reports/retrieval_details.json",
+    "reports/retrieval_details.csv",
+    "reports/retrieval_failures.json",
+    "reports/embedding_manifest.json",
+    "reports/charts",
+    "reports/logs/P5-retrieval-run.txt",
+    "reports/retrieval_traces/live"
+  ],
+  "changes": [
+    "Expanded to 32 synthetic documents and frozen 44-query gold set (40 answerable). Implemented real quantized multilingual MiniLM + cosine, RRF, and model-driven rewrite.",
+    "Executed all A/B/C/D on the same labels. Hybrid Recall@3=0.9875. Rewrite produced no gain and added latency; negative result retained. USD costs remain null because provider rates were not configured.",
+    "Expanded corpus exposed generic-word false relevance in the mock simulator. Corrected simulator topic coherence; live decisions remain exclusively model-driven."
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "mode": "live",
+  "model_name": "qwen-plus",
+  "question": "出差费用最晚何时递交？",
+  "events": [
+    {
+      "kind": "tool_observation",
+      "tool_name": "search_documents",
+      "timestamp": "2026-11-10T04:51:13.761247+00:00",
+      "arguments": {
+        "query": "出差费用最晚何时递交？",
+        "strategy": "hybrid",
+        "top_k": 10
+      },
+      "observation": {
+        "query": "出差费用最晚何时递交？",
+        "strategy": "hybrid",
+        "hits": [
+          {
+            "doc_id": "D29",
+            "chunk_id": "D29-C01",
+            "title": "快递寄送",
+            "topic": "快递",
+            "version_date": "2025-09-01",
+            "score": 0.032018442622950824,
+            "preview": "工作快递由前台登记寄送，私人快递费用自理。"
+          },
+          {
+            "doc_id": "D30",
+            "chunk_id": "D30-C01",
+            "title": "出差交通预订",
+            "topic": "交通预订",
+            "version_date": "2025-09-01",
+            "score": 0.03200204813108039,
+            "preview": "出差交通须先完成出差审批，再通过指定平台预订。"
+          },
+          {
+            "doc_id": "D01",
+            "chunk_id": "D01-C01",
+            "title": "差旅报销制度 A",
+            "topic": "差旅报销",
+            "version_date": "2025-01-01",
+            "score": 0.03177805800756621,
+            "preview": "差旅报销应在30天内提交。报销须附发票和出差审批单。"
+          },
+          {
+            "doc_id": "D02",
+            "chunk_id": "D02-C01",
+            "title": "差旅报销制度 B",
+            "topic": "差旅报销",
+            "version_date": "2025-07-01",
+            "score": 0.03128054740957967,
+            "preview": "差旅报销应在15天内提交。报销须附发票和出差审批单。"
+          },
+          {
+            "doc_id": "D17",
+            "chunk_id": "D17-C01",
+            "title": "境外出差补贴",
+            "topic": "差旅补贴",
+            "version_date": "2025-09-01",
+            "score": 0.031009615384615385,
+            "preview": "境外出差每天补贴200元。"
+          },
+          {
+            "doc_id": "D16",
+            "chunk_id": "D16-C01",
+            "title": "国内出差补贴",
+            "topic": "差旅补贴",
+            "version_date": "2025-09-01",
+            "score": 0.02976190476190476,
+            "preview": "国内出差每天补贴100元。"
+          },
+          {
+            "doc_id": "D22",
+            "chunk_id": "D22-C01",
+            "title": "实习生休假",
+            "topic": "年假",
+            "version_date": "2025-09-01",
+            "score": 0.015151515151515152,
+            "preview": "实习生每年可申请2天休假，具体日期需经主管批准。"
+          },
+          {
+            "doc_id": "D21",
+            "chunk_id": "D21-C01",
+            "title": "正式员工年假",
+            "topic": "年假",
+            "version_date": "2025-09-01",
+            "score": 0.014925373134328358,
+            "preview": "正式员工每年可申请5天年假，具体日期需经主管批准。"
+          },
+          {
+            "doc_id": "D28",
+            "chunk_id": "D28-C01",
+            "title": "发票抬头查询",
+            "topic": "发票",
+            "version_date": "2025-09-01",
+            "score": 0.014705882352941176,
+            "preview": "开具发票前应在财务门户核对公司抬头和税号。"
+          },
+          {
+            "doc_id": "D18",
+            "chunk_id": "D18-C01",
+            "title": "正式员工餐补",
+            "topic": "餐补",
+            "version_date": "2025-09-01",
+            "score": 0.014492753623188406,
+            "preview": "正式员工每个出勤日餐补30元。"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "model_decision",
+      "tool_calls": [
+        {
+          "id": "call_3740e94c9c3543d59b40ff",
+          "name": "finish_retrieval",
+          "arguments": {}
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1305,
+        "total_tokens": 1319,
+        "completion_tokens": 14,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "timestamp": "2026-11-10T04:51:14.476938+00:00"
+    },
+    {
+      "kind": "tool_observation",
+      "tool_name": "finish_retrieval",
+      "arguments": {},
+      "observation": {
+        "finished": true
+      },
+      "timestamp": "2026-11-10T04:51:14.476938+00:00"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1305,
+    "completion_tokens": 14,
+    "total_tokens": 1319
+  },
+  "ranked_doc_ids": [
+    "D29",
+    "D30",
+    "D01",
+    "D02",
+    "D17",
+    "D16",
+    "D22",
+    "D21",
+    "D28",
+    "D18"
+  ]
+}

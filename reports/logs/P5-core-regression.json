@@ -1,0 +1,168 @@
+{
+  "timestamp": "2026-11-10T04:48:22.481367+00:00",
+  "mode": "mock",
+  "model_name": "offline-observation-simulator",
+  "status": "FAIL",
+  "blocker": null,
+  "passed": 5,
+  "total": 6,
+  "citation_validity": {
+    "numerator": 7,
+    "denominator": 7,
+    "rate": 1.0
+  },
+  "live_branch_count": 0,
+  "cases": [
+    {
+      "id": "TC01",
+      "question": "办公电脑申领审批需要多久？",
+      "status": "PASS",
+      "result_status": "COMPLETED",
+      "checks": {
+        "schema": true,
+        "mode_consistent": true,
+        "completed": true,
+        "correct_document": true,
+        "expected_fact": true,
+        "all_citations_valid": true
+      },
+      "trace": "examples/traces/mock/eeedda5bea684b94ba2a44245eb0747a.json",
+      "output": "examples/outputs/mock/eeedda5bea684b94ba2a44245eb0747a.json",
+      "input": "examples/inputs/mock-eeedda5bea684b94ba2a44245eb0747a.json",
+      "model_decisions": 3,
+      "tools": [
+        "search_documents",
+        "read_document",
+        "submit_answer"
+      ],
+      "pre_trace": null
+    },
+    {
+      "id": "TC02",
+      "question": "差旅报销期限是多久？",
+      "status": "PASS",
+      "result_status": "NEEDS_CLARIFICATION",
+      "checks": {
+        "schema": true,
+        "mode_consistent": true,
+        "clarification": true,
+        "both_versions": true,
+        "both_values": true,
+        "unresolved": true,
+        "asks_for_context": true,
+        "all_citations_valid": true
+      },
+      "trace": "examples/traces/mock/5d4da672aa234a86905973667ba4ef5f.json",
+      "output": "examples/outputs/mock/5d4da672aa234a86905973667ba4ef5f.json",
+      "input": "examples/inputs/mock-5d4da672aa234a86905973667ba4ef5f.json",
+      "model_decisions": 5,
+      "tools": [
+        "search_documents",
+        "read_document",
+        "read_document",
+        "inspect_versions",
+        "submit_answer"
+      ],
+      "pre_trace": null
+    },
+    {
+      "id": "TC03",
+      "question": "公司的年终奖金是多少？",
+      "status": "FAIL",
+      "result_status": "COMPLETED",
+      "checks": {
+        "schema": true,
+        "mode_consistent": true,
+        "abstention": false,
+        "no_false_citation": false,
+        "all_citations_valid": true
+      },
+      "trace": "examples/traces/mock/d292e57d5a6a42aaa6a2b5cb5446132e.json",
+      "output": "examples/outputs/mock/d292e57d5a6a42aaa6a2b5cb5446132e.json",
+      "input": "examples/inputs/mock-d292e57d5a6a42aaa6a2b5cb5446132e.json",
+      "model_decisions": 3,
+      "tools": [
+        "search_documents",
+        "read_document",
+        "submit_answer"
+      ],
+      "pre_trace": null
+    },
+    {
+      "id": "TC04",
+      "question": "领电脑一般几天能批下来？",
+      "status": "PASS",
+      "result_status": "COMPLETED",
+      "checks": {
+        "schema": true,
+        "mode_consistent": true,
+        "completed": true,
+        "correct_document": true,
+        "expected_fact": true,
+        "all_citations_valid": true
+      },
+      "trace": "examples/traces/mock/d061e2a05a79482fb9868bc06ae2065f.json",
+      "output": "examples/outputs/mock/d061e2a05a79482fb9868bc06ae2065f.json",
+      "input": "examples/inputs/mock-d061e2a05a79482fb9868bc06ae2065f.json",
+      "model_decisions": 3,
+      "tools": [
+        "search_documents",
+        "read_document",
+        "submit_answer"
+      ],
+      "pre_trace": null
+    },
+    {
+      "id": "TC05",
+      "question": "那多久批下来？",
+      "status": "PASS",
+      "result_status": "COMPLETED",
+      "checks": {
+        "schema": true,
+        "mode_consistent": true,
+        "completed": true,
+        "correct_document": true,
+        "expected_fact": true,
+        "context_precondition": true,
+        "same_session": true,
+        "all_citations_valid": true
+      },
+      "trace": "examples/traces/mock/dc02269aed2948dab34c48f2201ee566.json",
+      "output": "examples/outputs/mock/dc02269aed2948dab34c48f2201ee566.json",
+      "input": "examples/inputs/mock-dc02269aed2948dab34c48f2201ee566.json",
+      "model_decisions": 3,
+      "tools": [
+        "search_documents",
+        "read_document",
+        "submit_answer"
+      ],
+      "pre_trace": "examples/traces/mock/b799151446474d48917af4b47ed02c90.json"
+    },
+    {
+      "id": "TC06",
+      "question": "办公电脑申领审批需要多久？",
+      "status": "PASS",
+      "result_status": "COMPLETED",
+      "checks": {
+        "schema": true,
+        "mode_consistent": true,
+        "controlled_state": true,
+        "tool_error_observed": true,
+        "decision_after_error": true,
+        "honest_success": true,
+        "all_citations_valid": true
+      },
+      "trace": "examples/traces/mock/ce5a7ccf34504480801c812e15db6312.json",
+      "output": "examples/outputs/mock/ce5a7ccf34504480801c812e15db6312.json",
+      "input": "examples/inputs/mock-ce5a7ccf34504480801c812e15db6312.json",
+      "model_decisions": 4,
+      "tools": [
+        "search_documents",
+        "search_documents",
+        "read_document",
+        "submit_answer"
+      ],
+      "pre_trace": null
+    }
+  ]
+}

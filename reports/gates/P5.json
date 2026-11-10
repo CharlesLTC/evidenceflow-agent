@@ -1,0 +1,187 @@
+{
+  "stage": "P5",
+  "started_at": "2026-11-10T04:54:55.122111+00:00",
+  "finished_at": "2026-11-10T04:54:58.656707+00:00",
+  "status": "PASS",
+  "commands": [
+    {
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "tests/test_retriever.py",
+        "tests/test_retrieval_metrics.py",
+        "--junitxml=reports/logs/P5-pytest.xml"
+      ],
+      "exit_code": 0,
+      "allowed_exit_codes": [
+        0
+      ],
+      "duration_seconds": 2.825896100010141,
+      "log": "reports/logs/P5-0.txt"
+    },
+    {
+      "argv": [
+        "python",
+        "-m",
+        "scripts.verify_retrieval_results"
+      ],
+      "exit_code": 0,
+      "allowed_exit_codes": [
+        0
+      ],
+      "duration_seconds": 0.6995579000067664,
+      "log": "reports/logs/P5-1.txt"
+    }
+  ],
+  "test_counts": {
+    "tests": 9,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": 9
+  },
+  "metrics": {
+    "A_BM25": {
+      "sample_count": 44,
+      "answerable_count": 40,
+      "unanswerable_count": 4,
+      "failed_queries": 0,
+      "recall_at_3": {
+        "value": 0.925,
+        "recall_sum": 37.0,
+        "query_denominator": 40,
+        "relevant_retrieved": 38,
+        "relevant_total": 42
+      },
+      "recall_at_5": {
+        "value": 0.9375,
+        "recall_sum": 37.5,
+        "query_denominator": 40,
+        "relevant_retrieved": 39,
+        "relevant_total": 42
+      },
+      "mrr_at_5": {
+        "value": 0.9175000000000001,
+        "reciprocal_rank_sum": 36.7,
+        "denominator": 40
+      },
+      "ndcg_at_5": null,
+      "mean_latency_ms": 0.13550227231462486,
+      "p95_latency_ms": 0.1712899953417946,
+      "mean_model_calls": 0,
+      "mean_tool_calls": 1,
+      "correct_abstention_rate": null
+    },
+    "B_Dense": {
+      "sample_count": 44,
+      "answerable_count": 40,
+      "unanswerable_count": 4,
+      "failed_queries": 0,
+      "recall_at_3": {
+        "value": 0.975,
+        "recall_sum": 39.0,
+        "query_denominator": 40,
+        "relevant_retrieved": 41,
+        "relevant_total": 42
+      },
+      "recall_at_5": {
+        "value": 0.975,
+        "recall_sum": 39.0,
+        "query_denominator": 40,
+        "relevant_retrieved": 41,
+        "relevant_total": 42
+      },
+      "mrr_at_5": {
+        "value": 0.9625,
+        "reciprocal_rank_sum": 38.5,
+        "denominator": 40
+      },
+      "ndcg_at_5": null,
+      "mean_latency_ms": 1.9611159090841697,
+      "p95_latency_ms": 2.383719999488676,
+      "mean_model_calls": 0,
+      "mean_tool_calls": 1,
+      "correct_abstention_rate": null
+    },
+    "C_Hybrid_RRF": {
+      "sample_count": 44,
+      "answerable_count": 40,
+      "unanswerable_count": 4,
+      "failed_queries": 0,
+      "recall_at_3": {
+        "value": 0.9875,
+        "recall_sum": 39.5,
+        "query_denominator": 40,
+        "relevant_retrieved": 41,
+        "relevant_total": 42
+      },
+      "recall_at_5": {
+        "value": 1.0,
+        "recall_sum": 40.0,
+        "query_denominator": 40,
+        "relevant_retrieved": 42,
+        "relevant_total": 42
+      },
+      "mrr_at_5": {
+        "value": 0.9833333333333334,
+        "reciprocal_rank_sum": 39.333333333333336,
+        "denominator": 40
+      },
+      "ndcg_at_5": null,
+      "mean_latency_ms": 1.8588704545188441,
+      "p95_latency_ms": 2.2228400091989897,
+      "mean_model_calls": 0,
+      "mean_tool_calls": 1,
+      "correct_abstention_rate": null
+    },
+    "D_Hybrid_AgentRewrite": {
+      "sample_count": 44,
+      "answerable_count": 40,
+      "unanswerable_count": 4,
+      "failed_queries": 0,
+      "recall_at_3": {
+        "value": 0.9875,
+        "recall_sum": 39.5,
+        "query_denominator": 40,
+        "relevant_retrieved": 41,
+        "relevant_total": 42
+      },
+      "recall_at_5": {
+        "value": 1.0,
+        "recall_sum": 40.0,
+        "query_denominator": 40,
+        "relevant_retrieved": 42,
+        "relevant_total": 42
+      },
+      "mrr_at_5": {
+        "value": 0.9833333333333334,
+        "reciprocal_rank_sum": 39.333333333333336,
+        "denominator": 40
+      },
+      "ndcg_at_5": null,
+      "mean_latency_ms": 1052.4614454552648,
+      "p95_latency_ms": 1633.6474299925612,
+      "mean_model_calls": 1.4545454545454546,
+      "mean_tool_calls": 1.4545454545454546,
+      "correct_abstention_rate": null
+    }
+  },
+  "evidence_paths": [
+    "reports/retrieval_metrics.json",
+    "reports/retrieval_details.json",
+    "reports/retrieval_details.csv",
+    "reports/retrieval_failures.json",
+    "reports/embedding_manifest.json",
+    "reports/charts",
+    "reports/logs/P5-retrieval-run.txt",
+    "reports/retrieval_traces/live"
+  ],
+  "errors": [],
+  "changes_made": [
+    "Expanded to 32 synthetic documents and frozen 44-query gold set (40 answerable). Implemented real quantized multilingual MiniLM + cosine, RRF, and model-driven rewrite.",
+    "Executed all A/B/C/D on the same labels. Hybrid Recall@3=0.9875. Rewrite produced no gain and added latency; negative result retained. USD costs remain null because provider rates were not configured.",
+    "Expanded corpus exposed generic-word false relevance in the mock simulator. Corrected simulator topic coherence; live decisions remain exclusively model-driven."
+  ]
+}

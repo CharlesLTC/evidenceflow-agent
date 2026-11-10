@@ -1,0 +1,4665 @@
+[
+  {
+    "strategy": "A_BM25",
+    "id": "Q01",
+    "question": "办公电脑申领审批需要多久？",
+    "expected_doc_ids": [
+      "D03"
+    ],
+    "ranked_doc_ids": [
+      "D03",
+      "D23",
+      "D31",
+      "D09",
+      "D32",
+      "D05",
+      "D27",
+      "D30",
+      "D26",
+      "D01"
+    ],
+    "latency_ms": 0.23419999342877418,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "A_BM25",
+    "id": "Q02",
+    "question": "领电脑一般几天能批下来？",
+    "expected_doc_ids": [
+      "D03"
+    ],
+    "ranked_doc_ids": [
+      "D03",
+      "D31"
+    ],
+    "latency_ms": 0.15700000221841037,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "A_BM25",
+    "id": "Q03",
+    "question": "差旅报销期限是多久？",
+    "expected_doc_ids": [
+      "D01",
+      "D02"
+    ],
+    "ranked_doc_ids": [
+      "D01",
+      "D02"
+    ],
+    "latency_ms": 0.12759999663103372,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "A_BM25",
+    "id": "Q04",
+    "question": "出差费用最晚何时递交？",
+    "expected_doc_ids": [
+      "D01",
+      "D02"
+    ],
+    "ranked_doc_ids": [
+      "D29",
+      "D30",
+      "D16",
+      "D17",
+      "D01",
+      "D02"
+    ],
+    "latency_ms": 0.13590000162366778,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "A_BM25",
+    "id": "Q05",
+    "question": "电脑坏了找谁维修？",
+    "expected_doc_ids": [
+      "D04"
+    ],
+    "ranked_doc_ids": [
+      "D04",
+      "D03",
+      "D31"
+    ],
+    "latency_ms": 0.11660000018309802,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "A_BM25",
+    "id": "Q06",
+    "question": "IT设备维修走什么流程？",
+    "expected_doc_ids": [
+      "D04"
+    ],
+    "ranked_doc_ids": [
+      "D04",
+      "D31",
+      "D15",
+      "D26",
+      "D03"
+    ],
+    "latency_ms": 0.1345999917248264,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "A_BM25",
+    "id": "Q07",
+    "question": "如何请假？",
+    "expected_doc_ids": [
+      "D05"
+    ],
+    "ranked_doc_ids": [
+      "D05"
+    ],
+    "latency_ms": 0.08749999688006938,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "A_BM25",
+    "id": "Q08",
+    "question": "新员工信息安全培训什么时候完成？",
+    "expected_doc_ids": [
+      "D06"
+    ],
+    "ranked_doc_ids": [
+      "D06",
+      "D18",
+      "D21",
+      "D30",
+      "D03",
+      "D05",
+      "D07"
+    ],
+    "latency_ms": 0.17329999536741525,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "A_BM25",
+    "id": "Q09",
+    "question": "访客到访要提前登记吗？",
+    "expected_doc_ids": [
+      "D07"
+    ],
+    "ranked_doc_ids": [
+      "D07",
+      "D24",
+      "D29"
+    ],
+    "latency_ms": 0.13220000255387276,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "A_BM25",
+    "id": "Q10",
+    "question": "采购申请谁审批？",
+    "expected_doc_ids": [
+      "D08"
+    ],
+    "ranked_doc_ids": [
+      "D08",
+      "D05",
+      "D27",
+      "D03",
+      "D11",
+      "D15",
+      "D30",
+      "D26",
+      "D01",
+      "D02"
+    ],
+    "latency_ms": 0.12150000839028507,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "A_BM25",
+    "id": "Q11",
+    "question": "会议室一次最多可以使用多久？",
+    "expected_doc_ids": [
+      "D09"
+    ],
+    "ranked_doc_ids": [
+      "D09",
+      "D10",
+      "D27",
+      "D13",
+      "D25"
+    ],
+    "latency_ms": 0.1534000039100647,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "A_BM25",
+    "id": "Q12",
+    "question": "怎么预订会议室？",
+    "expected_doc_ids": [
+      "D09"
+    ],
+    "ranked_doc_ids": [
+      "D09",
+      "D10",
+      "D30"
+    ],
+    "latency_ms": 0.11110000195913017,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "A_BM25",
+    "id": "Q13",
+    "question": "远程会议外部人员怎么加入？",
+    "expected_doc_ids": [
+      "D10"
+    ],
+    "ranked_doc_ids": [
+      "D10",
+      "D09",
+      "D13"
+    ],
+    "latency_ms": 0.14659999578725547,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "A_BM25",
+    "id": "Q14",
+    "question": "加班需要提前批准吗？",
+    "expected_doc_ids": [
+      "D11"
+    ],
+    "ranked_doc_ids": [
+      "D11",
+      "D22",
+      "D21"
+    ],
+    "latency_ms": 0.1272999943466857,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "A_BM25",
+    "id": "Q15",
+    "question": "印制名片需要哪些信息？",
+    "expected_doc_ids": [
+      "D12"
+    ],
+    "ranked_doc_ids": [
+      "D12",
+      "D06"
+    ],
+    "latency_ms": 0.12900000729132444,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "A_BM25",
+    "id": "Q16",
+    "question": "在家如何访问内网？",
+    "expected_doc_ids": [
+      "D13"
+    ],
+    "ranked_doc_ids": [
+      "D13",
+      "D26"
+    ],
+    "latency_ms": 0.12849998893216252,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "A_BM25",
+    "id": "Q17",
+    "question": "VPN需要多因素认证吗？",
+    "expected_doc_ids": [
+      "D13"
+    ],
+    "ranked_doc_ids": [
+      "D13"
+    ],
+    "latency_ms": 0.12320000678300858,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "A_BM25",
+    "id": "Q18",
+    "question": "忘记密码怎么重置？",
+    "expected_doc_ids": [
+      "D14"
+    ],
+    "ranked_doc_ids": [
+      "D14"
+    ],
+    "latency_ms": 0.11470000026747584,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "A_BM25",
+    "id": "Q19",
+    "question": "部门邮件别名找谁创建？",
+    "expected_doc_ids": [
+      "D15"
+    ],
+    "ranked_doc_ids": [
+      "D15",
+      "D20"
+    ],
+    "latency_ms": 0.12989999959245324,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "A_BM25",
+    "id": "Q20",
+    "question": "国内出差一天补贴多少？",
+    "expected_doc_ids": [
+      "D16"
+    ],
+    "ranked_doc_ids": [
+      "D16",
+      "D17",
+      "D30",
+      "D01",
+      "D02"
+    ],
+    "latency_ms": 0.13130001025274396,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "A_BM25",
+    "id": "Q21",
+    "question": "海外商务旅行每日津贴多少？",
+    "expected_doc_ids": [
+      "D17"
+    ],
+    "ranked_doc_ids": [],
+    "latency_ms": 0.13630000466946512,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "A_BM25",
+    "id": "Q22",
+    "question": "正式员工每天餐补多少钱？",
+    "expected_doc_ids": [
+      "D18"
+    ],
+    "ranked_doc_ids": [
+      "D18",
+      "D21",
+      "D19",
+      "D16",
+      "D17",
+      "D06",
+      "D25",
+      "D05",
+      "D07"
+    ],
+    "latency_ms": 0.14280001050792634,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "A_BM25",
+    "id": "Q23",
+    "question": "实习生餐补是多少？",
+    "expected_doc_ids": [
+      "D19"
+    ],
+    "ranked_doc_ids": [
+      "D19",
+      "D22",
+      "D18"
+    ],
+    "latency_ms": 0.11589999485295266,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "A_BM25",
+    "id": "Q24",
+    "question": "节假日值班表谁发布？",
+    "expected_doc_ids": [
+      "D20"
+    ],
+    "ranked_doc_ids": [
+      "D20",
+      "D32"
+    ],
+    "latency_ms": 0.12099999003112316,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "A_BM25",
+    "id": "Q25",
+    "question": "正式员工年假几天？",
+    "expected_doc_ids": [
+      "D21"
+    ],
+    "ranked_doc_ids": [
+      "D21",
+      "D18",
+      "D06",
+      "D05",
+      "D07"
+    ],
+    "latency_ms": 0.11850000009872019,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "A_BM25",
+    "id": "Q26",
+    "question": "实习生每年休假几天？",
+    "expected_doc_ids": [
+      "D22"
+    ],
+    "ranked_doc_ids": [
+      "D22",
+      "D19",
+      "D21"
+    ],
+    "latency_ms": 0.12229999992996454,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "A_BM25",
+    "id": "Q27",
+    "question": "办公室断网应该怎么办？",
+    "expected_doc_ids": [
+      "D23"
+    ],
+    "ranked_doc_ids": [
+      "D23",
+      "D03",
+      "D09",
+      "D32"
+    ],
+    "latency_ms": 0.1292000088142231,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "A_BM25",
+    "id": "Q28",
+    "question": "访客无线网络密码从哪里拿？",
+    "expected_doc_ids": [
+      "D24"
+    ],
+    "ranked_doc_ids": [
+      "D24",
+      "D14",
+      "D07",
+      "D23",
+      "D13"
+    ],
+    "latency_ms": 0.14760000340174884,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "A_BM25",
+    "id": "Q29",
+    "question": "工作文件应该保存在哪里？",
+    "expected_doc_ids": [
+      "D25"
+    ],
+    "ranked_doc_ids": [
+      "D25",
+      "D27",
+      "D29",
+      "D03"
+    ],
+    "latency_ms": 0.1416000013705343,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "A_BM25",
+    "id": "Q30",
+    "question": "团队网盘多久备份？",
+    "expected_doc_ids": [
+      "D25"
+    ],
+    "ranked_doc_ids": [
+      "D25"
+    ],
+    "latency_ms": 0.17669999215286225,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "A_BM25",
+    "id": "Q31",
+    "question": "代码仓库权限如何申请？",
+    "expected_doc_ids": [
+      "D26"
+    ],
+    "ranked_doc_ids": [
+      "D26",
+      "D11",
+      "D15",
+      "D08",
+      "D05",
+      "D13",
+      "D22",
+      "D27",
+      "D21",
+      "D03"
+    ],
+    "latency_ms": 0.13580000086221844,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "A_BM25",
+    "id": "Q32",
+    "question": "盖公章要哪些材料？",
+    "expected_doc_ids": [
+      "D27"
+    ],
+    "ranked_doc_ids": [
+      "D27"
+    ],
+    "latency_ms": 0.11249999806750566,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "A_BM25",
+    "id": "Q33",
+    "question": "公司的发票抬头和税号哪里查？",
+    "expected_doc_ids": [
+      "D28"
+    ],
+    "ranked_doc_ids": [
+      "D28",
+      "D10",
+      "D01",
+      "D02"
+    ],
+    "latency_ms": 0.15219999477267265,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "A_BM25",
+    "id": "Q34",
+    "question": "私人快递费用谁付？",
+    "expected_doc_ids": [
+      "D29"
+    ],
+    "ranked_doc_ids": [
+      "D29"
+    ],
+    "latency_ms": 0.11440001253504306,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "A_BM25",
+    "id": "Q35",
+    "question": "出差交通票先审批还是先预订？",
+    "expected_doc_ids": [
+      "D30"
+    ],
+    "ranked_doc_ids": [
+      "D30",
+      "D09",
+      "D01",
+      "D02",
+      "D16",
+      "D17",
+      "D05",
+      "D27",
+      "D26",
+      "D08"
+    ],
+    "latency_ms": 0.1568000006955117,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "A_BM25",
+    "id": "Q36",
+    "question": "离职电脑配件交给谁？",
+    "expected_doc_ids": [
+      "D31"
+    ],
+    "ranked_doc_ids": [
+      "D31",
+      "D03"
+    ],
+    "latency_ms": 0.12159999459981918,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "A_BM25",
+    "id": "Q37",
+    "question": "办公区紧急事件联系谁？",
+    "expected_doc_ids": [
+      "D32"
+    ],
+    "ranked_doc_ids": [
+      "D32",
+      "D23",
+      "D03",
+      "D09"
+    ],
+    "latency_ms": 0.13249999028630555,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "A_BM25",
+    "id": "Q38",
+    "question": "我不能登录账户了，怎么恢复口令？",
+    "expected_doc_ids": [
+      "D14"
+    ],
+    "ranked_doc_ids": [],
+    "latency_ms": 0.15859999984968454,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "A_BM25",
+    "id": "Q39",
+    "question": "新同事入职第一周要完成什么学习？",
+    "expected_doc_ids": [
+      "D06"
+    ],
+    "ranked_doc_ids": [
+      "D06",
+      "D30",
+      "D03"
+    ],
+    "latency_ms": 0.1598999951966107,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "A_BM25",
+    "id": "Q40",
+    "question": "外部客人来访由谁验明身份？",
+    "expected_doc_ids": [
+      "D07"
+    ],
+    "ranked_doc_ids": [
+      "D10",
+      "D07",
+      "D14"
+    ],
+    "latency_ms": 0.14029999147169292,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "A_BM25",
+    "id": "Q41",
+    "question": "公司的年终奖金是多少？",
+    "expected_doc_ids": [],
+    "ranked_doc_ids": [
+      "D28",
+      "D10"
+    ],
+    "latency_ms": 0.13220000255387276,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "A_BM25",
+    "id": "Q42",
+    "question": "股票期权授予数量是多少？",
+    "expected_doc_ids": [],
+    "ranked_doc_ids": [],
+    "latency_ms": 0.13509999553207308,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "A_BM25",
+    "id": "Q43",
+    "question": "火星殖民火箭发射日期？",
+    "expected_doc_ids": [],
+    "ranked_doc_ids": [
+      "D22",
+      "D21"
+    ],
+    "latency_ms": 0.12519999290816486,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "A_BM25",
+    "id": "Q44",
+    "question": "董事长私人银行余额？",
+    "expected_doc_ids": [],
+    "ranked_doc_ids": [
+      "D29"
+    ],
+    "latency_ms": 0.11770000855904073,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "B_Dense",
+    "id": "Q01",
+    "question": "办公电脑申领审批需要多久？",
+    "expected_doc_ids": [
+      "D03"
+    ],
+    "ranked_doc_ids": [
+      "D03",
+      "D02",
+      "D11",
+      "D21",
+      "D01",
+      "D27",
+      "D05",
+      "D09",
+      "D06",
+      "D22"
+    ],
+    "latency_ms": 2.8223999979672953,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "B_Dense",
+    "id": "Q02",
+    "question": "领电脑一般几天能批下来？",
+    "expected_doc_ids": [
+      "D03"
+    ],
+    "ranked_doc_ids": [
+      "D03",
+      "D21",
+      "D25",
+      "D22",
+      "D31",
+      "D06",
+      "D09",
+      "D01",
+      "D02",
+      "D24"
+    ],
+    "latency_ms": 2.0674999977927655,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "B_Dense",
+    "id": "Q03",
+    "question": "差旅报销期限是多久？",
+    "expected_doc_ids": [
+      "D01",
+      "D02"
+    ],
+    "ranked_doc_ids": [
+      "D01",
+      "D02",
+      "D22",
+      "D21",
+      "D29",
+      "D16",
+      "D17",
+      "D24",
+      "D19",
+      "D30"
+    ],
+    "latency_ms": 2.0124000002397224,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "B_Dense",
+    "id": "Q04",
+    "question": "出差费用最晚何时递交？",
+    "expected_doc_ids": [
+      "D01",
+      "D02"
+    ],
+    "ranked_doc_ids": [
+      "D01",
+      "D02",
+      "D30",
+      "D29",
+      "D17",
+      "D22",
+      "D21",
+      "D28",
+      "D18",
+      "D08"
+    ],
+    "latency_ms": 2.3348999966401607,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "B_Dense",
+    "id": "Q05",
+    "question": "电脑坏了找谁维修？",
+    "expected_doc_ids": [
+      "D04"
+    ],
+    "ranked_doc_ids": [
+      "D04",
+      "D31",
+      "D23",
+      "D25",
+      "D03",
+      "D14",
+      "D15",
+      "D12",
+      "D26",
+      "D07"
+    ],
+    "latency_ms": 2.0475000055739656,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "B_Dense",
+    "id": "Q06",
+    "question": "IT设备维修走什么流程？",
+    "expected_doc_ids": [
+      "D04"
+    ],
+    "ranked_doc_ids": [
+      "D04",
+      "D31",
+      "D03",
+      "D25",
+      "D26",
+      "D06",
+      "D23",
+      "D12",
+      "D15",
+      "D14"
+    ],
+    "latency_ms": 2.3868999996921048,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "B_Dense",
+    "id": "Q07",
+    "question": "如何请假？",
+    "expected_doc_ids": [
+      "D05"
+    ],
+    "ranked_doc_ids": [
+      "D22",
+      "D01",
+      "D19",
+      "D30",
+      "D02",
+      "D32",
+      "D07",
+      "D09",
+      "D10",
+      "D24"
+    ],
+    "latency_ms": 2.2669000027235597,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "B_Dense",
+    "id": "Q08",
+    "question": "新员工信息安全培训什么时候完成？",
+    "expected_doc_ids": [
+      "D06"
+    ],
+    "ranked_doc_ids": [
+      "D06",
+      "D21",
+      "D11",
+      "D22",
+      "D03",
+      "D32",
+      "D05",
+      "D26",
+      "D31",
+      "D07"
+    ],
+    "latency_ms": 1.9291999924462289,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "B_Dense",
+    "id": "Q09",
+    "question": "访客到访要提前登记吗？",
+    "expected_doc_ids": [
+      "D07"
+    ],
+    "ranked_doc_ids": [
+      "D07",
+      "D30",
+      "D01",
+      "D02",
+      "D24",
+      "D03",
+      "D22",
+      "D09",
+      "D11",
+      "D05"
+    ],
+    "latency_ms": 1.9637999939732254,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "B_Dense",
+    "id": "Q10",
+    "question": "采购申请谁审批？",
+    "expected_doc_ids": [
+      "D08"
+    ],
+    "ranked_doc_ids": [
+      "D08",
+      "D05",
+      "D27",
+      "D30",
+      "D15",
+      "D07",
+      "D03",
+      "D11",
+      "D12",
+      "D01"
+    ],
+    "latency_ms": 1.6093000012915581,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "B_Dense",
+    "id": "Q11",
+    "question": "会议室一次最多可以使用多久？",
+    "expected_doc_ids": [
+      "D09"
+    ],
+    "ranked_doc_ids": [
+      "D09",
+      "D22",
+      "D10",
+      "D03",
+      "D11",
+      "D21",
+      "D06",
+      "D25",
+      "D01",
+      "D02"
+    ],
+    "latency_ms": 1.8133999983547255,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "B_Dense",
+    "id": "Q12",
+    "question": "怎么预订会议室？",
+    "expected_doc_ids": [
+      "D09"
+    ],
+    "ranked_doc_ids": [
+      "D09",
+      "D10",
+      "D22",
+      "D03",
+      "D11",
+      "D07",
+      "D05",
+      "D26",
+      "D27",
+      "D23"
+    ],
+    "latency_ms": 1.617299989447929,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "B_Dense",
+    "id": "Q13",
+    "question": "远程会议外部人员怎么加入？",
+    "expected_doc_ids": [
+      "D10"
+    ],
+    "ranked_doc_ids": [
+      "D10",
+      "D09",
+      "D23",
+      "D07",
+      "D13",
+      "D24",
+      "D22",
+      "D05",
+      "D15",
+      "D11"
+    ],
+    "latency_ms": 1.8407000025035813,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "B_Dense",
+    "id": "Q14",
+    "question": "加班需要提前批准吗？",
+    "expected_doc_ids": [
+      "D11"
+    ],
+    "ranked_doc_ids": [
+      "D11",
+      "D22",
+      "D21",
+      "D01",
+      "D02",
+      "D09",
+      "D03",
+      "D05",
+      "D06",
+      "D07"
+    ],
+    "latency_ms": 2.13130000338424,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "B_Dense",
+    "id": "Q15",
+    "question": "印制名片需要哪些信息？",
+    "expected_doc_ids": [
+      "D12"
+    ],
+    "ranked_doc_ids": [
+      "D27",
+      "D12",
+      "D28",
+      "D08",
+      "D02",
+      "D03",
+      "D07",
+      "D31",
+      "D01",
+      "D30"
+    ],
+    "latency_ms": 2.053800009889528,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "B_Dense",
+    "id": "Q16",
+    "question": "在家如何访问内网？",
+    "expected_doc_ids": [
+      "D13"
+    ],
+    "ranked_doc_ids": [
+      "D13",
+      "D24",
+      "D23",
+      "D10",
+      "D29",
+      "D31",
+      "D09",
+      "D16",
+      "D32",
+      "D17"
+    ],
+    "latency_ms": 1.746499998262152,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "B_Dense",
+    "id": "Q17",
+    "question": "VPN需要多因素认证吗？",
+    "expected_doc_ids": [
+      "D13"
+    ],
+    "ranked_doc_ids": [
+      "D13",
+      "D24",
+      "D23",
+      "D30",
+      "D10",
+      "D26",
+      "D28",
+      "D03",
+      "D07",
+      "D05"
+    ],
+    "latency_ms": 1.755999997840263,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "B_Dense",
+    "id": "Q18",
+    "question": "忘记密码怎么重置？",
+    "expected_doc_ids": [
+      "D14"
+    ],
+    "ranked_doc_ids": [
+      "D14",
+      "D31",
+      "D04",
+      "D03",
+      "D25",
+      "D09",
+      "D07",
+      "D24",
+      "D15",
+      "D23"
+    ],
+    "latency_ms": 1.7060999962268397,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "B_Dense",
+    "id": "Q19",
+    "question": "部门邮件别名找谁创建？",
+    "expected_doc_ids": [
+      "D15"
+    ],
+    "ranked_doc_ids": [
+      "D15",
+      "D12",
+      "D05",
+      "D28",
+      "D27",
+      "D23",
+      "D29",
+      "D10",
+      "D32",
+      "D07"
+    ],
+    "latency_ms": 1.8767000001389533,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "B_Dense",
+    "id": "Q20",
+    "question": "国内出差一天补贴多少？",
+    "expected_doc_ids": [
+      "D16"
+    ],
+    "ranked_doc_ids": [
+      "D16",
+      "D17",
+      "D18",
+      "D01",
+      "D19",
+      "D29",
+      "D02",
+      "D21",
+      "D24",
+      "D22"
+    ],
+    "latency_ms": 1.7019000079017133,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "B_Dense",
+    "id": "Q21",
+    "question": "海外商务旅行每日津贴多少？",
+    "expected_doc_ids": [
+      "D17"
+    ],
+    "ranked_doc_ids": [
+      "D17",
+      "D16",
+      "D01",
+      "D02",
+      "D18",
+      "D19",
+      "D30",
+      "D29",
+      "D24",
+      "D22"
+    ],
+    "latency_ms": 1.8646999960765243,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "B_Dense",
+    "id": "Q22",
+    "question": "正式员工每天餐补多少钱？",
+    "expected_doc_ids": [
+      "D18"
+    ],
+    "ranked_doc_ids": [
+      "D18",
+      "D19",
+      "D16",
+      "D21",
+      "D17",
+      "D22",
+      "D25",
+      "D29",
+      "D11",
+      "D20"
+    ],
+    "latency_ms": 1.9036000012420118,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "B_Dense",
+    "id": "Q23",
+    "question": "实习生餐补是多少？",
+    "expected_doc_ids": [
+      "D19"
+    ],
+    "ranked_doc_ids": [
+      "D19",
+      "D18",
+      "D22",
+      "D09",
+      "D10",
+      "D17",
+      "D11",
+      "D20",
+      "D21",
+      "D16"
+    ],
+    "latency_ms": 1.899700000649318,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "B_Dense",
+    "id": "Q24",
+    "question": "节假日值班表谁发布？",
+    "expected_doc_ids": [
+      "D20"
+    ],
+    "ranked_doc_ids": [
+      "D20",
+      "D01",
+      "D19",
+      "D22",
+      "D18",
+      "D21",
+      "D02",
+      "D28",
+      "D16",
+      "D12"
+    ],
+    "latency_ms": 1.9825999916065484,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "B_Dense",
+    "id": "Q25",
+    "question": "正式员工年假几天？",
+    "expected_doc_ids": [
+      "D21"
+    ],
+    "ranked_doc_ids": [
+      "D21",
+      "D22",
+      "D11",
+      "D06",
+      "D01",
+      "D09",
+      "D18",
+      "D25",
+      "D02",
+      "D19"
+    ],
+    "latency_ms": 1.8699000065680593,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "B_Dense",
+    "id": "Q26",
+    "question": "实习生每年休假几天？",
+    "expected_doc_ids": [
+      "D22"
+    ],
+    "ranked_doc_ids": [
+      "D22",
+      "D21",
+      "D19",
+      "D11",
+      "D09",
+      "D06",
+      "D25",
+      "D01",
+      "D18",
+      "D20"
+    ],
+    "latency_ms": 1.9183999975211918,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "B_Dense",
+    "id": "Q27",
+    "question": "办公室断网应该怎么办？",
+    "expected_doc_ids": [
+      "D23"
+    ],
+    "ranked_doc_ids": [
+      "D23",
+      "D09",
+      "D03",
+      "D32",
+      "D31",
+      "D21",
+      "D11",
+      "D24",
+      "D26",
+      "D22"
+    ],
+    "latency_ms": 1.745899993693456,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "B_Dense",
+    "id": "Q28",
+    "question": "访客无线网络密码从哪里拿？",
+    "expected_doc_ids": [
+      "D24"
+    ],
+    "ranked_doc_ids": [
+      "D24",
+      "D13",
+      "D23",
+      "D07",
+      "D14",
+      "D26",
+      "D10",
+      "D31",
+      "D29",
+      "D01"
+    ],
+    "latency_ms": 2.007300005061552,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "B_Dense",
+    "id": "Q29",
+    "question": "工作文件应该保存在哪里？",
+    "expected_doc_ids": [
+      "D25"
+    ],
+    "ranked_doc_ids": [
+      "D25",
+      "D23",
+      "D27",
+      "D31",
+      "D29",
+      "D12",
+      "D09",
+      "D26",
+      "D04",
+      "D11"
+    ],
+    "latency_ms": 1.741200001561083,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "B_Dense",
+    "id": "Q30",
+    "question": "团队网盘多久备份？",
+    "expected_doc_ids": [
+      "D25"
+    ],
+    "ranked_doc_ids": [
+      "D25",
+      "D31",
+      "D06",
+      "D01",
+      "D02",
+      "D22",
+      "D03",
+      "D04",
+      "D19",
+      "D21"
+    ],
+    "latency_ms": 1.8596000008983538,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "B_Dense",
+    "id": "Q31",
+    "question": "代码仓库权限如何申请？",
+    "expected_doc_ids": [
+      "D26"
+    ],
+    "ranked_doc_ids": [
+      "D26",
+      "D03",
+      "D27",
+      "D08",
+      "D05",
+      "D23",
+      "D11",
+      "D15",
+      "D30",
+      "D04"
+    ],
+    "latency_ms": 1.900299990666099,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "B_Dense",
+    "id": "Q32",
+    "question": "盖公章要哪些材料？",
+    "expected_doc_ids": [
+      "D27"
+    ],
+    "ranked_doc_ids": [
+      "D27",
+      "D31",
+      "D12",
+      "D20",
+      "D08",
+      "D25",
+      "D04",
+      "D28",
+      "D23",
+      "D26"
+    ],
+    "latency_ms": 1.779099999112077,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "B_Dense",
+    "id": "Q33",
+    "question": "公司的发票抬头和税号哪里查？",
+    "expected_doc_ids": [
+      "D28"
+    ],
+    "ranked_doc_ids": [
+      "D28",
+      "D29",
+      "D02",
+      "D01",
+      "D12",
+      "D05",
+      "D15",
+      "D20",
+      "D27",
+      "D03"
+    ],
+    "latency_ms": 2.365699998335913,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "B_Dense",
+    "id": "Q34",
+    "question": "私人快递费用谁付？",
+    "expected_doc_ids": [
+      "D29"
+    ],
+    "ranked_doc_ids": [
+      "D29",
+      "D17",
+      "D01",
+      "D16",
+      "D02",
+      "D28",
+      "D30",
+      "D05",
+      "D24",
+      "D08"
+    ],
+    "latency_ms": 1.677200008998625,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "B_Dense",
+    "id": "Q35",
+    "question": "出差交通票先审批还是先预订？",
+    "expected_doc_ids": [
+      "D30"
+    ],
+    "ranked_doc_ids": [
+      "D30",
+      "D01",
+      "D07",
+      "D02",
+      "D29",
+      "D08",
+      "D28",
+      "D24",
+      "D22",
+      "D11"
+    ],
+    "latency_ms": 2.0361000060802326,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "B_Dense",
+    "id": "Q36",
+    "question": "离职电脑配件交给谁？",
+    "expected_doc_ids": [
+      "D31"
+    ],
+    "ranked_doc_ids": [
+      "D31",
+      "D25",
+      "D23",
+      "D03",
+      "D05",
+      "D04",
+      "D11",
+      "D19",
+      "D29",
+      "D10"
+    ],
+    "latency_ms": 1.9717000104719773,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "B_Dense",
+    "id": "Q37",
+    "question": "办公区紧急事件联系谁？",
+    "expected_doc_ids": [
+      "D32"
+    ],
+    "ranked_doc_ids": [
+      "D32",
+      "D23",
+      "D15",
+      "D05",
+      "D20",
+      "D10",
+      "D07",
+      "D09",
+      "D11",
+      "D12"
+    ],
+    "latency_ms": 1.8646999960765243,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "B_Dense",
+    "id": "Q38",
+    "question": "我不能登录账户了，怎么恢复口令？",
+    "expected_doc_ids": [
+      "D14"
+    ],
+    "ranked_doc_ids": [
+      "D14",
+      "D02",
+      "D31",
+      "D01",
+      "D03",
+      "D09",
+      "D28",
+      "D04",
+      "D07",
+      "D29"
+    ],
+    "latency_ms": 2.409199994872324,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "B_Dense",
+    "id": "Q39",
+    "question": "新同事入职第一周要完成什么学习？",
+    "expected_doc_ids": [
+      "D06"
+    ],
+    "ranked_doc_ids": [
+      "D06",
+      "D22",
+      "D19",
+      "D07",
+      "D21",
+      "D11",
+      "D25",
+      "D08",
+      "D03",
+      "D09"
+    ],
+    "latency_ms": 2.2816000127932057,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "B_Dense",
+    "id": "Q40",
+    "question": "外部客人来访由谁验明身份？",
+    "expected_doc_ids": [
+      "D07"
+    ],
+    "ranked_doc_ids": [
+      "D07",
+      "D10",
+      "D30",
+      "D05",
+      "D24",
+      "D01",
+      "D19",
+      "D02",
+      "D15",
+      "D12"
+    ],
+    "latency_ms": 2.23349999578204,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "B_Dense",
+    "id": "Q41",
+    "question": "公司的年终奖金是多少？",
+    "expected_doc_ids": [],
+    "ranked_doc_ids": [
+      "D18",
+      "D21",
+      "D28",
+      "D01",
+      "D19",
+      "D02",
+      "D03",
+      "D11",
+      "D31",
+      "D16"
+    ],
+    "latency_ms": 1.9155000045429915,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "B_Dense",
+    "id": "Q42",
+    "question": "股票期权授予数量是多少？",
+    "expected_doc_ids": [],
+    "ranked_doc_ids": [
+      "D28",
+      "D02",
+      "D01",
+      "D08",
+      "D21",
+      "D03",
+      "D29",
+      "D15",
+      "D27",
+      "D05"
+    ],
+    "latency_ms": 1.872599998023361,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "B_Dense",
+    "id": "Q43",
+    "question": "火星殖民火箭发射日期？",
+    "expected_doc_ids": [],
+    "ranked_doc_ids": [
+      "D08",
+      "D03",
+      "D20",
+      "D02",
+      "D06",
+      "D32",
+      "D31",
+      "D22",
+      "D01",
+      "D25"
+    ],
+    "latency_ms": 1.8383999995421618,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "B_Dense",
+    "id": "Q44",
+    "question": "董事长私人银行余额？",
+    "expected_doc_ids": [],
+    "ranked_doc_ids": [
+      "D28",
+      "D29",
+      "D02",
+      "D05",
+      "D08",
+      "D01",
+      "D15",
+      "D26",
+      "D03",
+      "D18"
+    ],
+    "latency_ms": 1.6660999972373247,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "C_Hybrid_RRF",
+    "id": "Q01",
+    "question": "办公电脑申领审批需要多久？",
+    "expected_doc_ids": [
+      "D03"
+    ],
+    "ranked_doc_ids": [
+      "D03",
+      "D09",
+      "D02",
+      "D05",
+      "D27",
+      "D31",
+      "D01",
+      "D23",
+      "D26",
+      "D30"
+    ],
+    "latency_ms": 2.2259000106714666,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "C_Hybrid_RRF",
+    "id": "Q02",
+    "question": "领电脑一般几天能批下来？",
+    "expected_doc_ids": [
+      "D03"
+    ],
+    "ranked_doc_ids": [
+      "D03",
+      "D31",
+      "D21",
+      "D25",
+      "D22",
+      "D06",
+      "D09",
+      "D01",
+      "D02",
+      "D24"
+    ],
+    "latency_ms": 2.03200000396464,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "C_Hybrid_RRF",
+    "id": "Q03",
+    "question": "差旅报销期限是多久？",
+    "expected_doc_ids": [
+      "D01",
+      "D02"
+    ],
+    "ranked_doc_ids": [
+      "D01",
+      "D02",
+      "D22",
+      "D21",
+      "D29",
+      "D16",
+      "D17",
+      "D24",
+      "D19",
+      "D30"
+    ],
+    "latency_ms": 1.9252999918535352,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "C_Hybrid_RRF",
+    "id": "Q04",
+    "question": "出差费用最晚何时递交？",
+    "expected_doc_ids": [
+      "D01",
+      "D02"
+    ],
+    "ranked_doc_ids": [
+      "D29",
+      "D30",
+      "D01",
+      "D02",
+      "D17",
+      "D16",
+      "D22",
+      "D21",
+      "D28",
+      "D18"
+    ],
+    "latency_ms": 2.0155999955022708,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "C_Hybrid_RRF",
+    "id": "Q05",
+    "question": "电脑坏了找谁维修？",
+    "expected_doc_ids": [
+      "D04"
+    ],
+    "ranked_doc_ids": [
+      "D04",
+      "D31",
+      "D03",
+      "D23",
+      "D25",
+      "D14",
+      "D15",
+      "D12",
+      "D26",
+      "D07"
+    ],
+    "latency_ms": 1.782799998181872,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "C_Hybrid_RRF",
+    "id": "Q06",
+    "question": "IT设备维修走什么流程？",
+    "expected_doc_ids": [
+      "D04"
+    ],
+    "ranked_doc_ids": [
+      "D04",
+      "D31",
+      "D03",
+      "D26",
+      "D15",
+      "D25",
+      "D06",
+      "D23",
+      "D12",
+      "D14"
+    ],
+    "latency_ms": 1.745200002915226,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "C_Hybrid_RRF",
+    "id": "Q07",
+    "question": "如何请假？",
+    "expected_doc_ids": [
+      "D05"
+    ],
+    "ranked_doc_ids": [
+      "D05",
+      "D22",
+      "D01",
+      "D19",
+      "D30",
+      "D02",
+      "D32",
+      "D07",
+      "D09",
+      "D10"
+    ],
+    "latency_ms": 1.7296000005444512,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "C_Hybrid_RRF",
+    "id": "Q08",
+    "question": "新员工信息安全培训什么时候完成？",
+    "expected_doc_ids": [
+      "D06"
+    ],
+    "ranked_doc_ids": [
+      "D06",
+      "D21",
+      "D03",
+      "D05",
+      "D07",
+      "D30",
+      "D18",
+      "D11",
+      "D22",
+      "D32"
+    ],
+    "latency_ms": 1.9541999936336651,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "C_Hybrid_RRF",
+    "id": "Q09",
+    "question": "访客到访要提前登记吗？",
+    "expected_doc_ids": [
+      "D07"
+    ],
+    "ranked_doc_ids": [
+      "D07",
+      "D24",
+      "D29",
+      "D30",
+      "D01",
+      "D02",
+      "D03",
+      "D22",
+      "D09",
+      "D11"
+    ],
+    "latency_ms": 2.144300000509247,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "C_Hybrid_RRF",
+    "id": "Q10",
+    "question": "采购申请谁审批？",
+    "expected_doc_ids": [
+      "D08"
+    ],
+    "ranked_doc_ids": [
+      "D08",
+      "D05",
+      "D27",
+      "D03",
+      "D30",
+      "D15",
+      "D11",
+      "D01",
+      "D26",
+      "D02"
+    ],
+    "latency_ms": 1.6619999951217324,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "C_Hybrid_RRF",
+    "id": "Q11",
+    "question": "会议室一次最多可以使用多久？",
+    "expected_doc_ids": [
+      "D09"
+    ],
+    "ranked_doc_ids": [
+      "D09",
+      "D10",
+      "D25",
+      "D27",
+      "D13",
+      "D22",
+      "D03",
+      "D11",
+      "D21",
+      "D06"
+    ],
+    "latency_ms": 1.8091999954776838,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "C_Hybrid_RRF",
+    "id": "Q12",
+    "question": "怎么预订会议室？",
+    "expected_doc_ids": [
+      "D09"
+    ],
+    "ranked_doc_ids": [
+      "D09",
+      "D10",
+      "D30",
+      "D22",
+      "D03",
+      "D11",
+      "D07",
+      "D05",
+      "D26",
+      "D27"
+    ],
+    "latency_ms": 1.6217999946093187,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "C_Hybrid_RRF",
+    "id": "Q13",
+    "question": "远程会议外部人员怎么加入？",
+    "expected_doc_ids": [
+      "D10"
+    ],
+    "ranked_doc_ids": [
+      "D10",
+      "D09",
+      "D13",
+      "D23",
+      "D07",
+      "D24",
+      "D22",
+      "D05",
+      "D15",
+      "D11"
+    ],
+    "latency_ms": 1.7782000068109483,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "C_Hybrid_RRF",
+    "id": "Q14",
+    "question": "加班需要提前批准吗？",
+    "expected_doc_ids": [
+      "D11"
+    ],
+    "ranked_doc_ids": [
+      "D11",
+      "D22",
+      "D21",
+      "D01",
+      "D02",
+      "D09",
+      "D03",
+      "D05",
+      "D06",
+      "D07"
+    ],
+    "latency_ms": 1.6610000020591542,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "C_Hybrid_RRF",
+    "id": "Q15",
+    "question": "印制名片需要哪些信息？",
+    "expected_doc_ids": [
+      "D12"
+    ],
+    "ranked_doc_ids": [
+      "D12",
+      "D06",
+      "D27",
+      "D28",
+      "D08",
+      "D02",
+      "D03",
+      "D07",
+      "D31",
+      "D01"
+    ],
+    "latency_ms": 1.8092999962391332,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "C_Hybrid_RRF",
+    "id": "Q16",
+    "question": "在家如何访问内网？",
+    "expected_doc_ids": [
+      "D13"
+    ],
+    "ranked_doc_ids": [
+      "D13",
+      "D26",
+      "D24",
+      "D23",
+      "D10",
+      "D29",
+      "D31",
+      "D09",
+      "D16",
+      "D32"
+    ],
+    "latency_ms": 1.6535000031581149,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "C_Hybrid_RRF",
+    "id": "Q17",
+    "question": "VPN需要多因素认证吗？",
+    "expected_doc_ids": [
+      "D13"
+    ],
+    "ranked_doc_ids": [
+      "D13",
+      "D24",
+      "D23",
+      "D30",
+      "D10",
+      "D26",
+      "D28",
+      "D03",
+      "D07",
+      "D05"
+    ],
+    "latency_ms": 1.6118999919854105,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "C_Hybrid_RRF",
+    "id": "Q18",
+    "question": "忘记密码怎么重置？",
+    "expected_doc_ids": [
+      "D14"
+    ],
+    "ranked_doc_ids": [
+      "D14",
+      "D31",
+      "D04",
+      "D03",
+      "D25",
+      "D09",
+      "D07",
+      "D24",
+      "D15",
+      "D23"
+    ],
+    "latency_ms": 1.8083999893860891,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "C_Hybrid_RRF",
+    "id": "Q19",
+    "question": "部门邮件别名找谁创建？",
+    "expected_doc_ids": [
+      "D15"
+    ],
+    "ranked_doc_ids": [
+      "D15",
+      "D20",
+      "D12",
+      "D05",
+      "D28",
+      "D27",
+      "D23",
+      "D29",
+      "D10",
+      "D32"
+    ],
+    "latency_ms": 1.9412999972701073,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "C_Hybrid_RRF",
+    "id": "Q20",
+    "question": "国内出差一天补贴多少？",
+    "expected_doc_ids": [
+      "D16"
+    ],
+    "ranked_doc_ids": [
+      "D16",
+      "D17",
+      "D01",
+      "D02",
+      "D30",
+      "D18",
+      "D19",
+      "D29",
+      "D21",
+      "D24"
+    ],
+    "latency_ms": 1.7202000017277896,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "C_Hybrid_RRF",
+    "id": "Q21",
+    "question": "海外商务旅行每日津贴多少？",
+    "expected_doc_ids": [
+      "D17"
+    ],
+    "ranked_doc_ids": [
+      "D17",
+      "D16",
+      "D01",
+      "D02",
+      "D18",
+      "D19",
+      "D30",
+      "D29",
+      "D24",
+      "D22"
+    ],
+    "latency_ms": 1.8863000004785135,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "C_Hybrid_RRF",
+    "id": "Q22",
+    "question": "正式员工每天餐补多少钱？",
+    "expected_doc_ids": [
+      "D18"
+    ],
+    "ranked_doc_ids": [
+      "D18",
+      "D19",
+      "D21",
+      "D16",
+      "D17",
+      "D25",
+      "D06",
+      "D07",
+      "D05",
+      "D22"
+    ],
+    "latency_ms": 1.7955999937839806,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "C_Hybrid_RRF",
+    "id": "Q23",
+    "question": "实习生餐补是多少？",
+    "expected_doc_ids": [
+      "D19"
+    ],
+    "ranked_doc_ids": [
+      "D19",
+      "D18",
+      "D22",
+      "D09",
+      "D10",
+      "D17",
+      "D11",
+      "D20",
+      "D21",
+      "D16"
+    ],
+    "latency_ms": 1.7767999961506575,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "C_Hybrid_RRF",
+    "id": "Q24",
+    "question": "节假日值班表谁发布？",
+    "expected_doc_ids": [
+      "D20"
+    ],
+    "ranked_doc_ids": [
+      "D20",
+      "D32",
+      "D01",
+      "D19",
+      "D22",
+      "D18",
+      "D21",
+      "D02",
+      "D28",
+      "D16"
+    ],
+    "latency_ms": 1.8756000063149258,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "C_Hybrid_RRF",
+    "id": "Q25",
+    "question": "正式员工年假几天？",
+    "expected_doc_ids": [
+      "D21"
+    ],
+    "ranked_doc_ids": [
+      "D21",
+      "D06",
+      "D18",
+      "D05",
+      "D07",
+      "D22",
+      "D11",
+      "D01",
+      "D09",
+      "D25"
+    ],
+    "latency_ms": 1.6754999960539863,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "C_Hybrid_RRF",
+    "id": "Q26",
+    "question": "实习生每年休假几天？",
+    "expected_doc_ids": [
+      "D22"
+    ],
+    "ranked_doc_ids": [
+      "D22",
+      "D19",
+      "D21",
+      "D11",
+      "D09",
+      "D06",
+      "D25",
+      "D01",
+      "D18",
+      "D20"
+    ],
+    "latency_ms": 1.776000004610978,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "C_Hybrid_RRF",
+    "id": "Q27",
+    "question": "办公室断网应该怎么办？",
+    "expected_doc_ids": [
+      "D23"
+    ],
+    "ranked_doc_ids": [
+      "D23",
+      "D03",
+      "D09",
+      "D32",
+      "D31",
+      "D21",
+      "D11",
+      "D24",
+      "D26",
+      "D22"
+    ],
+    "latency_ms": 1.6940000059548765,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "C_Hybrid_RRF",
+    "id": "Q28",
+    "question": "访客无线网络密码从哪里拿？",
+    "expected_doc_ids": [
+      "D24"
+    ],
+    "ranked_doc_ids": [
+      "D24",
+      "D13",
+      "D14",
+      "D07",
+      "D23",
+      "D26",
+      "D10",
+      "D31",
+      "D29",
+      "D01"
+    ],
+    "latency_ms": 1.9238999957451597,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "C_Hybrid_RRF",
+    "id": "Q29",
+    "question": "工作文件应该保存在哪里？",
+    "expected_doc_ids": [
+      "D25"
+    ],
+    "ranked_doc_ids": [
+      "D25",
+      "D27",
+      "D29",
+      "D03",
+      "D23",
+      "D31",
+      "D12",
+      "D09",
+      "D26",
+      "D04"
+    ],
+    "latency_ms": 1.6636999935144559,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "C_Hybrid_RRF",
+    "id": "Q30",
+    "question": "团队网盘多久备份？",
+    "expected_doc_ids": [
+      "D25"
+    ],
+    "ranked_doc_ids": [
+      "D25",
+      "D31",
+      "D06",
+      "D01",
+      "D02",
+      "D22",
+      "D03",
+      "D04",
+      "D19",
+      "D21"
+    ],
+    "latency_ms": 1.700000007986091,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "C_Hybrid_RRF",
+    "id": "Q31",
+    "question": "代码仓库权限如何申请？",
+    "expected_doc_ids": [
+      "D26"
+    ],
+    "ranked_doc_ids": [
+      "D26",
+      "D08",
+      "D11",
+      "D05",
+      "D15",
+      "D27",
+      "D03",
+      "D13",
+      "D22",
+      "D21"
+    ],
+    "latency_ms": 1.6831000102683902,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "C_Hybrid_RRF",
+    "id": "Q32",
+    "question": "盖公章要哪些材料？",
+    "expected_doc_ids": [
+      "D27"
+    ],
+    "ranked_doc_ids": [
+      "D27",
+      "D31",
+      "D12",
+      "D20",
+      "D08",
+      "D25",
+      "D04",
+      "D28",
+      "D23",
+      "D26"
+    ],
+    "latency_ms": 1.909200000227429,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "C_Hybrid_RRF",
+    "id": "Q33",
+    "question": "公司的发票抬头和税号哪里查？",
+    "expected_doc_ids": [
+      "D28"
+    ],
+    "ranked_doc_ids": [
+      "D28",
+      "D01",
+      "D02",
+      "D10",
+      "D29",
+      "D12",
+      "D05",
+      "D15",
+      "D20",
+      "D27"
+    ],
+    "latency_ms": 2.124500009813346,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "C_Hybrid_RRF",
+    "id": "Q34",
+    "question": "私人快递费用谁付？",
+    "expected_doc_ids": [
+      "D29"
+    ],
+    "ranked_doc_ids": [
+      "D29",
+      "D17",
+      "D01",
+      "D16",
+      "D02",
+      "D28",
+      "D30",
+      "D05",
+      "D24",
+      "D08"
+    ],
+    "latency_ms": 1.6086999967228621,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "C_Hybrid_RRF",
+    "id": "Q35",
+    "question": "出差交通票先审批还是先预订？",
+    "expected_doc_ids": [
+      "D30"
+    ],
+    "ranked_doc_ids": [
+      "D30",
+      "D01",
+      "D02",
+      "D09",
+      "D08",
+      "D17",
+      "D16",
+      "D26",
+      "D05",
+      "D03"
+    ],
+    "latency_ms": 2.205500000854954,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "C_Hybrid_RRF",
+    "id": "Q36",
+    "question": "离职电脑配件交给谁？",
+    "expected_doc_ids": [
+      "D31"
+    ],
+    "ranked_doc_ids": [
+      "D31",
+      "D03",
+      "D25",
+      "D23",
+      "D05",
+      "D04",
+      "D11",
+      "D19",
+      "D29",
+      "D10"
+    ],
+    "latency_ms": 1.9586999987950549,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "C_Hybrid_RRF",
+    "id": "Q37",
+    "question": "办公区紧急事件联系谁？",
+    "expected_doc_ids": [
+      "D32"
+    ],
+    "ranked_doc_ids": [
+      "D32",
+      "D23",
+      "D09",
+      "D03",
+      "D15",
+      "D05",
+      "D20",
+      "D10",
+      "D07",
+      "D11"
+    ],
+    "latency_ms": 1.8580000032670796,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "C_Hybrid_RRF",
+    "id": "Q38",
+    "question": "我不能登录账户了，怎么恢复口令？",
+    "expected_doc_ids": [
+      "D14"
+    ],
+    "ranked_doc_ids": [
+      "D14",
+      "D02",
+      "D31",
+      "D01",
+      "D03",
+      "D09",
+      "D28",
+      "D04",
+      "D07",
+      "D29"
+    ],
+    "latency_ms": 2.2640999959548935,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "C_Hybrid_RRF",
+    "id": "Q39",
+    "question": "新同事入职第一周要完成什么学习？",
+    "expected_doc_ids": [
+      "D06"
+    ],
+    "ranked_doc_ids": [
+      "D06",
+      "D03",
+      "D30",
+      "D22",
+      "D19",
+      "D07",
+      "D21",
+      "D11",
+      "D25",
+      "D08"
+    ],
+    "latency_ms": 2.2382000024663284,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "C_Hybrid_RRF",
+    "id": "Q40",
+    "question": "外部客人来访由谁验明身份？",
+    "expected_doc_ids": [
+      "D07"
+    ],
+    "ranked_doc_ids": [
+      "D07",
+      "D10",
+      "D14",
+      "D30",
+      "D05",
+      "D24",
+      "D01",
+      "D19",
+      "D02",
+      "D15"
+    ],
+    "latency_ms": 2.1932000090600923,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "C_Hybrid_RRF",
+    "id": "Q41",
+    "question": "公司的年终奖金是多少？",
+    "expected_doc_ids": [],
+    "ranked_doc_ids": [
+      "D28",
+      "D10",
+      "D18",
+      "D21",
+      "D01",
+      "D19",
+      "D02",
+      "D03",
+      "D11",
+      "D31"
+    ],
+    "latency_ms": 1.8678000051295385,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "C_Hybrid_RRF",
+    "id": "Q42",
+    "question": "股票期权授予数量是多少？",
+    "expected_doc_ids": [],
+    "ranked_doc_ids": [
+      "D28",
+      "D02",
+      "D01",
+      "D08",
+      "D21",
+      "D03",
+      "D29",
+      "D15",
+      "D27",
+      "D05"
+    ],
+    "latency_ms": 1.9291000062366948,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "C_Hybrid_RRF",
+    "id": "Q43",
+    "question": "火星殖民火箭发射日期？",
+    "expected_doc_ids": [],
+    "ranked_doc_ids": [
+      "D22",
+      "D21",
+      "D08",
+      "D03",
+      "D20",
+      "D02",
+      "D06",
+      "D32",
+      "D31",
+      "D01"
+    ],
+    "latency_ms": 1.8444000015733764,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "C_Hybrid_RRF",
+    "id": "Q44",
+    "question": "董事长私人银行余额？",
+    "expected_doc_ids": [],
+    "ranked_doc_ids": [
+      "D29",
+      "D28",
+      "D02",
+      "D05",
+      "D08",
+      "D01",
+      "D15",
+      "D26",
+      "D03",
+      "D18"
+    ],
+    "latency_ms": 1.7066999862436205,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "D_Hybrid_AgentRewrite",
+    "id": "Q01",
+    "question": "办公电脑申领审批需要多久？",
+    "expected_doc_ids": [
+      "D03"
+    ],
+    "ranked_doc_ids": [
+      "D03",
+      "D09",
+      "D02",
+      "D05",
+      "D27",
+      "D31",
+      "D01",
+      "D23",
+      "D26",
+      "D30"
+    ],
+    "latency_ms": 826.2157999997726,
+    "model_calls": 1,
+    "tool_calls": 1,
+    "usage": {
+      "prompt_tokens": 1323,
+      "completion_tokens": 14,
+      "total_tokens": 1337
+    },
+    "trace": "reports/retrieval_traces/live/da37898f500d4382b085db9c826c9f42.json",
+    "error": null,
+    "cost_usd": null
+  },
+  {
+    "strategy": "D_Hybrid_AgentRewrite",
+    "id": "Q02",
+    "question": "领电脑一般几天能批下来？",
+    "expected_doc_ids": [
+      "D03"
+    ],
+    "ranked_doc_ids": [
+      "D03",
+      "D31",
+      "D21",
+      "D25",
+      "D22",
+      "D06",
+      "D09",
+      "D01",
+      "D02",
+      "D24"
+    ],
+    "latency_ms": 579.1950999991968,
+    "model_calls": 1,
+    "tool_calls": 1,
+    "usage": {
+      "prompt_tokens": 1319,
+      "completion_tokens": 14,
+      "total_tokens": 1333
+    },
+    "trace": "reports/retrieval_traces/live/f7d20c6deb17469c8826ba3f780ffcb1.json",
+    "error": null,
+    "cost_usd": null
+  },
+  {
+    "strategy": "D_Hybrid_AgentRewrite",
+    "id": "Q03",
+    "question": "差旅报销期限是多久？",
+    "expected_doc_ids": [
+      "D01",
+      "D02"
+    ],
+    "ranked_doc_ids": [
+      "D01",
+      "D02",
+      "D22",
+      "D21",
+      "D29",
+      "D16",
+      "D17",
+      "D24",
+      "D19",
+      "D30"
+    ],
+    "latency_ms": 723.4842000034405,
+    "model_calls": 1,
+    "tool_calls": 1,
+    "usage": {
+      "prompt_tokens": 1296,
+      "completion_tokens": 14,
+      "total_tokens": 1310
+    },
+    "trace": "reports/retrieval_traces/live/67d6789860c54e0fb617ec2d7f4b0e07.json",
+    "error": null,
+    "cost_usd": null
+  },
+  {
+    "strategy": "D_Hybrid_AgentRewrite",
+    "id": "Q04",
+    "question": "出差费用最晚何时递交？",
+    "expected_doc_ids": [
+      "D01",
+      "D02"
+    ],
+    "ranked_doc_ids": [
+      "D29",
+      "D30",
+      "D01",
+      "D02",
+      "D17",
+      "D16",
+      "D22",
+      "D21",
+      "D28",
+      "D18"
+    ],
+    "latency_ms": 720.4478000057861,
+    "model_calls": 1,
+    "tool_calls": 1,
+    "usage": {
+      "prompt_tokens": 1305,
+      "completion_tokens": 14,
+      "total_tokens": 1319
+    },
+    "trace": "reports/retrieval_traces/live/6f99e3c889bb43d5b7fdd0917f630abb.json",
+    "error": null,
+    "cost_usd": null
+  },
+  {
+    "strategy": "D_Hybrid_AgentRewrite",
+    "id": "Q05",
+    "question": "电脑坏了找谁维修？",
+    "expected_doc_ids": [
+      "D04"
+    ],
+    "ranked_doc_ids": [
+      "D04",
+      "D31",
+      "D03",
+      "D23",
+      "D25",
+      "D15",
+      "D26",
+      "D12",
+      "D14",
+      "D06",
+      "D07",
+      "D27"
+    ],
+    "latency_ms": 1442.0435000065481,
+    "model_calls": 2,
+    "tool_calls": 2,
+    "usage": {
+      "prompt_tokens": 3665,
+      "completion_tokens": 33,
+      "total_tokens": 3698
+    },
+    "trace": "reports/retrieval_traces/live/c1f7655f7c8540ccb84bab6c07d5b7e5.json",
+    "error": null,
+    "cost_usd": null
+  },
+  {
+    "strategy": "D_Hybrid_AgentRewrite",
+    "id": "Q06",
+    "question": "IT设备维修走什么流程？",
+    "expected_doc_ids": [
+      "D04"
+    ],
+    "ranked_doc_ids": [
+      "D04",
+      "D31",
+      "D03",
+      "D26",
+      "D15",
+      "D25",
+      "D06",
+      "D23",
+      "D12",
+      "D14",
+      "D27"
+    ],
+    "latency_ms": 1450.987599993823,
+    "model_calls": 2,
+    "tool_calls": 2,
+    "usage": {
+      "prompt_tokens": 3661,
+      "completion_tokens": 33,
+      "total_tokens": 3694
+    },
+    "trace": "reports/retrieval_traces/live/9858364b5382411e8b232a722ccc5297.json",
+    "error": null,
+    "cost_usd": null
+  },
+  {
+    "strategy": "D_Hybrid_AgentRewrite",
+    "id": "Q07",
+    "question": "如何请假？",
+    "expected_doc_ids": [
+      "D05"
+    ],
+    "ranked_doc_ids": [
+      "D05",
+      "D01",
+      "D02",
+      "D32",
+      "D22",
+      "D28",
+      "D03",
+      "D19",
+      "D30",
+      "D12",
+      "D07",
+      "D14",
+      "D09",
+      "D23",
+      "D10",
+      "D27"
+    ],
+    "latency_ms": 1460.9284000034677,
+    "model_calls": 2,
+    "tool_calls": 2,
+    "usage": {
+      "prompt_tokens": 3608,
+      "completion_tokens": 31,
+      "total_tokens": 3639
+    },
+    "trace": "reports/retrieval_traces/live/7d7325a6bc90428587c1c4f55af8220e.json",
+    "error": null,
+    "cost_usd": null
+  },
+  {
+    "strategy": "D_Hybrid_AgentRewrite",
+    "id": "Q08",
+    "question": "新员工信息安全培训什么时候完成？",
+    "expected_doc_ids": [
+      "D06"
+    ],
+    "ranked_doc_ids": [
+      "D06",
+      "D21",
+      "D03",
+      "D05",
+      "D07",
+      "D30",
+      "D18",
+      "D11",
+      "D22",
+      "D32"
+    ],
+    "latency_ms": 719.3351999885635,
+    "model_calls": 1,
+    "tool_calls": 1,
+    "usage": {
+      "prompt_tokens": 1291,
+      "completion_tokens": 14,
+      "total_tokens": 1305
+    },
+    "trace": "reports/retrieval_traces/live/0c2ff1cb005243a4a317a75bcea0b3ee.json",
+    "error": null,
+    "cost_usd": null
+  },
+  {
+    "strategy": "D_Hybrid_AgentRewrite",
+    "id": "Q09",
+    "question": "访客到访要提前登记吗？",
+    "expected_doc_ids": [
+      "D07"
+    ],
+    "ranked_doc_ids": [
+      "D07",
+      "D24",
+      "D29",
+      "D30",
+      "D01",
+      "D02",
+      "D03",
+      "D22",
+      "D09",
+      "D11"
+    ],
+    "latency_ms": 1274.6926999971038,
+    "model_calls": 1,
+    "tool_calls": 1,
+    "usage": {
+      "prompt_tokens": 1311,
+      "completion_tokens": 14,
+      "total_tokens": 1325
+    },
+    "trace": "reports/retrieval_traces/live/cbaf160843a3441288ec60966c8e0de3.json",
+    "error": null,
+    "cost_usd": null
+  },
+  {
+    "strategy": "D_Hybrid_AgentRewrite",
+    "id": "Q10",
+    "question": "采购申请谁审批？",
+    "expected_doc_ids": [
+      "D08"
+    ],
+    "ranked_doc_ids": [
+      "D08",
+      "D05",
+      "D27",
+      "D03",
+      "D30",
+      "D11",
+      "D15",
+      "D01",
+      "D02",
+      "D26"
+    ],
+    "latency_ms": 1776.825099994312,
+    "model_calls": 2,
+    "tool_calls": 2,
+    "usage": {
+      "prompt_tokens": 3655,
+      "completion_tokens": 35,
+      "total_tokens": 3690
+    },
+    "trace": "reports/retrieval_traces/live/3103031759e046afbc94fc427b45260f.json",
+    "error": null,
+    "cost_usd": null
+  },
+  {
+    "strategy": "D_Hybrid_AgentRewrite",
+    "id": "Q11",
+    "question": "会议室一次最多可以使用多久？",
+    "expected_doc_ids": [
+      "D09"
+    ],
+    "ranked_doc_ids": [
+      "D09",
+      "D10",
+      "D25",
+      "D27",
+      "D13",
+      "D22",
+      "D03",
+      "D11",
+      "D21",
+      "D06"
+    ],
+    "latency_ms": 605.0737000041408,
+    "model_calls": 1,
+    "tool_calls": 1,
+    "usage": {
+      "prompt_tokens": 1289,
+      "completion_tokens": 14,
+      "total_tokens": 1303
+    },
+    "trace": "reports/retrieval_traces/live/5f54d39553544a0195dbbc3e9a509409.json",
+    "error": null,
+    "cost_usd": null
+  },
+  {
+    "strategy": "D_Hybrid_AgentRewrite",
+    "id": "Q12",
+    "question": "怎么预订会议室？",
+    "expected_doc_ids": [
+      "D09"
+    ],
+    "ranked_doc_ids": [
+      "D09",
+      "D10",
+      "D30",
+      "D22",
+      "D07",
+      "D03",
+      "D11",
+      "D05",
+      "D27",
+      "D26",
+      "D01"
+    ],
+    "latency_ms": 1405.9283999959007,
+    "model_calls": 2,
+    "tool_calls": 2,
+    "usage": {
+      "prompt_tokens": 3566,
+      "completion_tokens": 32,
+      "total_tokens": 3598
+    },
+    "trace": "reports/retrieval_traces/live/a15af25f8ee24794aa4821b7016aa576.json",
+    "error": null,
+    "cost_usd": null
+  },
+  {
+    "strategy": "D_Hybrid_AgentRewrite",
+    "id": "Q13",
+    "question": "远程会议外部人员怎么加入？",
+    "expected_doc_ids": [
+      "D10"
+    ],
+    "ranked_doc_ids": [
+      "D10",
+      "D09",
+      "D13",
+      "D23",
+      "D24",
+      "D07",
+      "D15",
+      "D05",
+      "D22",
+      "D32",
+      "D11"
+    ],
+    "latency_ms": 1602.583500003675,
+    "model_calls": 2,
+    "tool_calls": 2,
+    "usage": {
+      "prompt_tokens": 3594,
+      "completion_tokens": 40,
+      "total_tokens": 3634
+    },
+    "trace": "reports/retrieval_traces/live/7291f5e73e54494599c383bc8528d673.json",
+    "error": null,
+    "cost_usd": null
+  },
+  {
+    "strategy": "D_Hybrid_AgentRewrite",
+    "id": "Q14",
+    "question": "加班需要提前批准吗？",
+    "expected_doc_ids": [
+      "D11"
+    ],
+    "ranked_doc_ids": [
+      "D11",
+      "D22",
+      "D21",
+      "D01",
+      "D02",
+      "D09",
+      "D03",
+      "D05",
+      "D06",
+      "D07"
+    ],
+    "latency_ms": 544.8183000116842,
+    "model_calls": 1,
+    "tool_calls": 1,
+    "usage": {
+      "prompt_tokens": 1304,
+      "completion_tokens": 14,
+      "total_tokens": 1318
+    },
+    "trace": "reports/retrieval_traces/live/c60b92ce4e604590a3bdbc8b48704232.json",
+    "error": null,
+    "cost_usd": null
+  },
+  {
+    "strategy": "D_Hybrid_AgentRewrite",
+    "id": "Q15",
+    "question": "印制名片需要哪些信息？",
+    "expected_doc_ids": [
+      "D12"
+    ],
+    "ranked_doc_ids": [
+      "D12",
+      "D27",
+      "D08",
+      "D28",
+      "D07",
+      "D03",
+      "D06",
+      "D30",
+      "D02",
+      "D26",
+      "D20",
+      "D04",
+      "D31",
+      "D01"
+    ],
+    "latency_ms": 1357.875099987723,
+    "model_calls": 2,
+    "tool_calls": 2,
+    "usage": {
+      "prompt_tokens": 3643,
+      "completion_tokens": 32,
+      "total_tokens": 3675
+    },
+    "trace": "reports/retrieval_traces/live/25c3fbff051d4890a436c8b34b6b489f.json",
+    "error": null,
+    "cost_usd": null
+  },
+  {
+    "strategy": "D_Hybrid_AgentRewrite",
+    "id": "Q16",
+    "question": "在家如何访问内网？",
+    "expected_doc_ids": [
+      "D13"
+    ],
+    "ranked_doc_ids": [
+      "D13",
+      "D26",
+      "D10",
+      "D24",
+      "D23",
+      "D29",
+      "D31",
+      "D09",
+      "D14",
+      "D16",
+      "D30",
+      "D32"
+    ],
+    "latency_ms": 1477.5004999974044,
+    "model_calls": 2,
+    "tool_calls": 2,
+    "usage": {
+      "prompt_tokens": 3596,
+      "completion_tokens": 37,
+      "total_tokens": 3633
+    },
+    "trace": "reports/retrieval_traces/live/6fe44d56a1964e8aaafe95de7774a6b6.json",
+    "error": null,
+    "cost_usd": null
+  },
+  {
+    "strategy": "D_Hybrid_AgentRewrite",
+    "id": "Q17",
+    "question": "VPN需要多因素认证吗？",
+    "expected_doc_ids": [
+      "D13"
+    ],
+    "ranked_doc_ids": [
+      "D13",
+      "D24",
+      "D23",
+      "D30",
+      "D10",
+      "D26",
+      "D28",
+      "D03",
+      "D07",
+      "D05"
+    ],
+    "latency_ms": 592.2200999921188,
+    "model_calls": 1,
+    "tool_calls": 1,
+    "usage": {
+      "prompt_tokens": 1299,
+      "completion_tokens": 14,
+      "total_tokens": 1313
+    },
+    "trace": "reports/retrieval_traces/live/85684b5358fd4653a1fb77b1d94efa8b.json",
+    "error": null,
+    "cost_usd": null
+  },
+  {
+    "strategy": "D_Hybrid_AgentRewrite",
+    "id": "Q18",
+    "question": "忘记密码怎么重置？",
+    "expected_doc_ids": [
+      "D14"
+    ],
+    "ranked_doc_ids": [
+      "D14",
+      "D31",
+      "D04",
+      "D03",
+      "D25",
+      "D24",
+      "D23",
+      "D06",
+      "D09",
+      "D07",
+      "D26",
+      "D15",
+      "D27"
+    ],
+    "latency_ms": 1363.3668999973452,
+    "model_calls": 2,
+    "tool_calls": 2,
+    "usage": {
+      "prompt_tokens": 3676,
+      "completion_tokens": 33,
+      "total_tokens": 3709
+    },
+    "trace": "reports/retrieval_traces/live/b5afa150bcd84b05a6ffa1111001541f.json",
+    "error": null,
+    "cost_usd": null
+  },
+  {
+    "strategy": "D_Hybrid_AgentRewrite",
+    "id": "Q19",
+    "question": "部门邮件别名找谁创建？",
+    "expected_doc_ids": [
+      "D15"
+    ],
+    "ranked_doc_ids": [
+      "D15",
+      "D20",
+      "D12",
+      "D05",
+      "D28",
+      "D27",
+      "D23",
+      "D29",
+      "D10",
+      "D32"
+    ],
+    "latency_ms": 639.5348999940325,
+    "model_calls": 1,
+    "tool_calls": 1,
+    "usage": {
+      "prompt_tokens": 1289,
+      "completion_tokens": 14,
+      "total_tokens": 1303
+    },
+    "trace": "reports/retrieval_traces/live/1a8eb0d571ea4f26bcce71076d598539.json",
+    "error": null,
+    "cost_usd": null
+  },
+  {
+    "strategy": "D_Hybrid_AgentRewrite",
+    "id": "Q20",
+    "question": "国内出差一天补贴多少？",
+    "expected_doc_ids": [
+      "D16"
+    ],
+    "ranked_doc_ids": [
+      "D16",
+      "D17",
+      "D01",
+      "D02",
+      "D30",
+      "D18",
+      "D19",
+      "D29",
+      "D21",
+      "D24"
+    ],
+    "latency_ms": 568.0107999942265,
+    "model_calls": 1,
+    "tool_calls": 1,
+    "usage": {
+      "prompt_tokens": 1290,
+      "completion_tokens": 14,
+      "total_tokens": 1304
+    },
+    "trace": "reports/retrieval_traces/live/d751816b00bc47179043659fd3d59393.json",
+    "error": null,
+    "cost_usd": null
+  },
+  {
+    "strategy": "D_Hybrid_AgentRewrite",
+    "id": "Q21",
+    "question": "海外商务旅行每日津贴多少？",
+    "expected_doc_ids": [
+      "D17"
+    ],
+    "ranked_doc_ids": [
+      "D17",
+      "D16",
+      "D01",
+      "D02",
+      "D18",
+      "D19",
+      "D30",
+      "D29",
+      "D24",
+      "D22"
+    ],
+    "latency_ms": 552.7984000073047,
+    "model_calls": 1,
+    "tool_calls": 1,
+    "usage": {
+      "prompt_tokens": 1292,
+      "completion_tokens": 14,
+      "total_tokens": 1306
+    },
+    "trace": "reports/retrieval_traces/live/c4c847b85a5c4db9b0f727d688f1e29b.json",
+    "error": null,
+    "cost_usd": null
+  },
+  {
+    "strategy": "D_Hybrid_AgentRewrite",
+    "id": "Q22",
+    "question": "正式员工每天餐补多少钱？",
+    "expected_doc_ids": [
+      "D18"
+    ],
+    "ranked_doc_ids": [
+      "D18",
+      "D19",
+      "D21",
+      "D16",
+      "D17",
+      "D25",
+      "D06",
+      "D07",
+      "D05",
+      "D22"
+    ],
+    "latency_ms": 778.3798000018578,
+    "model_calls": 1,
+    "tool_calls": 1,
+    "usage": {
+      "prompt_tokens": 1287,
+      "completion_tokens": 14,
+      "total_tokens": 1301
+    },
+    "trace": "reports/retrieval_traces/live/8e959a89fcc74e4bb07324b363a2d145.json",
+    "error": null,
+    "cost_usd": null
+  },
+  {
+    "strategy": "D_Hybrid_AgentRewrite",
+    "id": "Q23",
+    "question": "实习生餐补是多少？",
+    "expected_doc_ids": [
+      "D19"
+    ],
+    "ranked_doc_ids": [
+      "D19",
+      "D18",
+      "D22",
+      "D09",
+      "D10",
+      "D17",
+      "D11",
+      "D20",
+      "D21",
+      "D16"
+    ],
+    "latency_ms": 675.483200000599,
+    "model_calls": 1,
+    "tool_calls": 1,
+    "usage": {
+      "prompt_tokens": 1262,
+      "completion_tokens": 14,
+      "total_tokens": 1276
+    },
+    "trace": "reports/retrieval_traces/live/b8ee7814f56e4345bc18336fbc95cbe0.json",
+    "error": null,
+    "cost_usd": null
+  },
+  {
+    "strategy": "D_Hybrid_AgentRewrite",
+    "id": "Q24",
+    "question": "节假日值班表谁发布？",
+    "expected_doc_ids": [
+      "D20"
+    ],
+    "ranked_doc_ids": [
+      "D20",
+      "D32",
+      "D01",
+      "D19",
+      "D22",
+      "D18",
+      "D21",
+      "D02",
+      "D28",
+      "D16"
+    ],
+    "latency_ms": 556.8156999943312,
+    "model_calls": 1,
+    "tool_calls": 1,
+    "usage": {
+      "prompt_tokens": 1292,
+      "completion_tokens": 14,
+      "total_tokens": 1306
+    },
+    "trace": "reports/retrieval_traces/live/27d8848d97c04d00b424de0ab3c5302a.json",
+    "error": null,
+    "cost_usd": null
+  },
+  {
+    "strategy": "D_Hybrid_AgentRewrite",
+    "id": "Q25",
+    "question": "正式员工年假几天？",
+    "expected_doc_ids": [
+      "D21"
+    ],
+    "ranked_doc_ids": [
+      "D21",
+      "D06",
+      "D18",
+      "D05",
+      "D07",
+      "D22",
+      "D11",
+      "D01",
+      "D09",
+      "D25"
+    ],
+    "latency_ms": 685.0648999970872,
+    "model_calls": 1,
+    "tool_calls": 1,
+    "usage": {
+      "prompt_tokens": 1295,
+      "completion_tokens": 14,
+      "total_tokens": 1309
+    },
+    "trace": "reports/retrieval_traces/live/c3fc6ad9a8ac4082aea6622066b5d6fd.json",
+    "error": null,
+    "cost_usd": null
+  },
+  {
+    "strategy": "D_Hybrid_AgentRewrite",
+    "id": "Q26",
+    "question": "实习生每年休假几天？",
+    "expected_doc_ids": [
+      "D22"
+    ],
+    "ranked_doc_ids": [
+      "D22",
+      "D19",
+      "D21",
+      "D11",
+      "D09",
+      "D06",
+      "D25",
+      "D01",
+      "D18",
+      "D20"
+    ],
+    "latency_ms": 590.6744000094477,
+    "model_calls": 1,
+    "tool_calls": 1,
+    "usage": {
+      "prompt_tokens": 1275,
+      "completion_tokens": 14,
+      "total_tokens": 1289
+    },
+    "trace": "reports/retrieval_traces/live/0fc1c722c88448c5a32666593af5387a.json",
+    "error": null,
+    "cost_usd": null
+  },
+  {
+    "strategy": "D_Hybrid_AgentRewrite",
+    "id": "Q27",
+    "question": "办公室断网应该怎么办？",
+    "expected_doc_ids": [
+      "D23"
+    ],
+    "ranked_doc_ids": [
+      "D23",
+      "D03",
+      "D32",
+      "D09",
+      "D24",
+      "D31",
+      "D04",
+      "D21",
+      "D11",
+      "D13",
+      "D05",
+      "D26",
+      "D15",
+      "D22"
+    ],
+    "latency_ms": 1529.2455000017071,
+    "model_calls": 2,
+    "tool_calls": 2,
+    "usage": {
+      "prompt_tokens": 3636,
+      "completion_tokens": 34,
+      "total_tokens": 3670
+    },
+    "trace": "reports/retrieval_traces/live/f7cb7b5873fb4f17a674784a58a814ef.json",
+    "error": null,
+    "cost_usd": null
+  },
+  {
+    "strategy": "D_Hybrid_AgentRewrite",
+    "id": "Q28",
+    "question": "访客无线网络密码从哪里拿？",
+    "expected_doc_ids": [
+      "D24"
+    ],
+    "ranked_doc_ids": [
+      "D24",
+      "D14",
+      "D13",
+      "D07",
+      "D23",
+      "D26",
+      "D10",
+      "D31",
+      "D29",
+      "D30",
+      "D01",
+      "D03"
+    ],
+    "latency_ms": 1399.7025999997277,
+    "model_calls": 2,
+    "tool_calls": 2,
+    "usage": {
+      "prompt_tokens": 3708,
+      "completion_tokens": 35,
+      "total_tokens": 3743
+    },
+    "trace": "reports/retrieval_traces/live/f093ea97d5f5465b8f9199277546b037.json",
+    "error": null,
+    "cost_usd": null
+  },
+  {
+    "strategy": "D_Hybrid_AgentRewrite",
+    "id": "Q29",
+    "question": "工作文件应该保存在哪里？",
+    "expected_doc_ids": [
+      "D25"
+    ],
+    "ranked_doc_ids": [
+      "D25",
+      "D27",
+      "D29",
+      "D03",
+      "D23",
+      "D31",
+      "D12",
+      "D09",
+      "D26",
+      "D04"
+    ],
+    "latency_ms": 602.9774000053294,
+    "model_calls": 1,
+    "tool_calls": 1,
+    "usage": {
+      "prompt_tokens": 1300,
+      "completion_tokens": 14,
+      "total_tokens": 1314
+    },
+    "trace": "reports/retrieval_traces/live/44623ed3c2ff4343a1dfa058d1ea537a.json",
+    "error": null,
+    "cost_usd": null
+  },
+  {
+    "strategy": "D_Hybrid_AgentRewrite",
+    "id": "Q30",
+    "question": "团队网盘多久备份？",
+    "expected_doc_ids": [
+      "D25"
+    ],
+    "ranked_doc_ids": [
+      "D25",
+      "D31",
+      "D06",
+      "D01",
+      "D02",
+      "D22",
+      "D03",
+      "D04",
+      "D19",
+      "D21"
+    ],
+    "latency_ms": 701.8108000047505,
+    "model_calls": 1,
+    "tool_calls": 1,
+    "usage": {
+      "prompt_tokens": 1318,
+      "completion_tokens": 14,
+      "total_tokens": 1332
+    },
+    "trace": "reports/retrieval_traces/live/a507910f55f647058aa27db487edac03.json",
+    "error": null,
+    "cost_usd": null
+  },
+  {
+    "strategy": "D_Hybrid_AgentRewrite",
+    "id": "Q31",
+    "question": "代码仓库权限如何申请？",
+    "expected_doc_ids": [
+      "D26"
+    ],
+    "ranked_doc_ids": [
+      "D26",
+      "D08",
+      "D11",
+      "D15",
+      "D05",
+      "D27",
+      "D03",
+      "D13",
+      "D22",
+      "D21"
+    ],
+    "latency_ms": 1600.08070000913,
+    "model_calls": 2,
+    "tool_calls": 2,
+    "usage": {
+      "prompt_tokens": 3601,
+      "completion_tokens": 39,
+      "total_tokens": 3640
+    },
+    "trace": "reports/retrieval_traces/live/92dd8e3d7bfc46e09fac2b981e5efb97.json",
+    "error": null,
+    "cost_usd": null
+  },
+  {
+    "strategy": "D_Hybrid_AgentRewrite",
+    "id": "Q32",
+    "question": "盖公章要哪些材料？",
+    "expected_doc_ids": [
+      "D27"
+    ],
+    "ranked_doc_ids": [
+      "D27",
+      "D12",
+      "D08",
+      "D31",
+      "D25",
+      "D04",
+      "D23",
+      "D26",
+      "D09",
+      "D10",
+      "D20",
+      "D28"
+    ],
+    "latency_ms": 1327.0221999991918,
+    "model_calls": 2,
+    "tool_calls": 2,
+    "usage": {
+      "prompt_tokens": 3599,
+      "completion_tokens": 33,
+      "total_tokens": 3632
+    },
+    "trace": "reports/retrieval_traces/live/225eaf4051ff4313a2732b5d3aee4eab.json",
+    "error": null,
+    "cost_usd": null
+  },
+  {
+    "strategy": "D_Hybrid_AgentRewrite",
+    "id": "Q33",
+    "question": "公司的发票抬头和税号哪里查？",
+    "expected_doc_ids": [
+      "D28"
+    ],
+    "ranked_doc_ids": [
+      "D28",
+      "D10",
+      "D15",
+      "D05",
+      "D27",
+      "D01",
+      "D02",
+      "D06",
+      "D07",
+      "D29",
+      "D12",
+      "D30",
+      "D08",
+      "D03",
+      "D20"
+    ],
+    "latency_ms": 1435.322700010147,
+    "model_calls": 2,
+    "tool_calls": 2,
+    "usage": {
+      "prompt_tokens": 3634,
+      "completion_tokens": 35,
+      "total_tokens": 3669
+    },
+    "trace": "reports/retrieval_traces/live/2a97e485a1ea4a52941c177ab15f5c06.json",
+    "error": null,
+    "cost_usd": null
+  },
+  {
+    "strategy": "D_Hybrid_AgentRewrite",
+    "id": "Q34",
+    "question": "私人快递费用谁付？",
+    "expected_doc_ids": [
+      "D29"
+    ],
+    "ranked_doc_ids": [
+      "D29",
+      "D17",
+      "D01",
+      "D16",
+      "D02",
+      "D28",
+      "D30",
+      "D05",
+      "D24",
+      "D08"
+    ],
+    "latency_ms": 562.0019000052707,
+    "model_calls": 1,
+    "tool_calls": 1,
+    "usage": {
+      "prompt_tokens": 1289,
+      "completion_tokens": 14,
+      "total_tokens": 1303
+    },
+    "trace": "reports/retrieval_traces/live/c32ac96814464cb4beab8570bfc913b6.json",
+    "error": null,
+    "cost_usd": null
+  },
+  {
+    "strategy": "D_Hybrid_AgentRewrite",
+    "id": "Q35",
+    "question": "出差交通票先审批还是先预订？",
+    "expected_doc_ids": [
+      "D30"
+    ],
+    "ranked_doc_ids": [
+      "D30",
+      "D01",
+      "D02",
+      "D09",
+      "D08",
+      "D17",
+      "D16",
+      "D26",
+      "D05",
+      "D03"
+    ],
+    "latency_ms": 595.2068000042345,
+    "model_calls": 1,
+    "tool_calls": 1,
+    "usage": {
+      "prompt_tokens": 1302,
+      "completion_tokens": 14,
+      "total_tokens": 1316
+    },
+    "trace": "reports/retrieval_traces/live/611d5515fb1b4b3c88a3f17c8ac487e3.json",
+    "error": null,
+    "cost_usd": null
+  },
+  {
+    "strategy": "D_Hybrid_AgentRewrite",
+    "id": "Q36",
+    "question": "离职电脑配件交给谁？",
+    "expected_doc_ids": [
+      "D31"
+    ],
+    "ranked_doc_ids": [
+      "D31",
+      "D03",
+      "D25",
+      "D23",
+      "D05",
+      "D04",
+      "D11",
+      "D19",
+      "D29",
+      "D10"
+    ],
+    "latency_ms": 723.3627000096021,
+    "model_calls": 1,
+    "tool_calls": 1,
+    "usage": {
+      "prompt_tokens": 1308,
+      "completion_tokens": 14,
+      "total_tokens": 1322
+    },
+    "trace": "reports/retrieval_traces/live/4eb0f41500fa4447934b8ce62dbb5c91.json",
+    "error": null,
+    "cost_usd": null
+  },
+  {
+    "strategy": "D_Hybrid_AgentRewrite",
+    "id": "Q37",
+    "question": "办公区紧急事件联系谁？",
+    "expected_doc_ids": [
+      "D32"
+    ],
+    "ranked_doc_ids": [
+      "D32",
+      "D23",
+      "D09",
+      "D03",
+      "D15",
+      "D05",
+      "D20",
+      "D10",
+      "D07",
+      "D11"
+    ],
+    "latency_ms": 625.1004000077955,
+    "model_calls": 1,
+    "tool_calls": 1,
+    "usage": {
+      "prompt_tokens": 1293,
+      "completion_tokens": 14,
+      "total_tokens": 1307
+    },
+    "trace": "reports/retrieval_traces/live/4366ac055d1f41d89a8914d64a555e68.json",
+    "error": null,
+    "cost_usd": null
+  },
+  {
+    "strategy": "D_Hybrid_AgentRewrite",
+    "id": "Q38",
+    "question": "我不能登录账户了，怎么恢复口令？",
+    "expected_doc_ids": [
+      "D14"
+    ],
+    "ranked_doc_ids": [
+      "D14",
+      "D31",
+      "D02",
+      "D03",
+      "D07",
+      "D04",
+      "D28",
+      "D01",
+      "D25",
+      "D09",
+      "D24",
+      "D27",
+      "D29"
+    ],
+    "latency_ms": 1513.6375000001863,
+    "model_calls": 2,
+    "tool_calls": 2,
+    "usage": {
+      "prompt_tokens": 3723,
+      "completion_tokens": 34,
+      "total_tokens": 3757
+    },
+    "trace": "reports/retrieval_traces/live/71e3c57761b146dc9330f6c5bfc8199c.json",
+    "error": null,
+    "cost_usd": null
+  },
+  {
+    "strategy": "D_Hybrid_AgentRewrite",
+    "id": "Q39",
+    "question": "新同事入职第一周要完成什么学习？",
+    "expected_doc_ids": [
+      "D06"
+    ],
+    "ranked_doc_ids": [
+      "D06",
+      "D21",
+      "D07",
+      "D22",
+      "D03",
+      "D19",
+      "D11",
+      "D25",
+      "D05",
+      "D30",
+      "D18",
+      "D08"
+    ],
+    "latency_ms": 2005.7171000080416,
+    "model_calls": 2,
+    "tool_calls": 2,
+    "usage": {
+      "prompt_tokens": 3616,
+      "completion_tokens": 36,
+      "total_tokens": 3652
+    },
+    "trace": "reports/retrieval_traces/live/5ebf8128b26846b1ba9d41f5b8c7b6f0.json",
+    "error": null,
+    "cost_usd": null
+  },
+  {
+    "strategy": "D_Hybrid_AgentRewrite",
+    "id": "Q40",
+    "question": "外部客人来访由谁验明身份？",
+    "expected_doc_ids": [
+      "D07"
+    ],
+    "ranked_doc_ids": [
+      "D07",
+      "D10",
+      "D14",
+      "D30",
+      "D05",
+      "D24",
+      "D01",
+      "D19",
+      "D02",
+      "D15"
+    ],
+    "latency_ms": 580.4683000023942,
+    "model_calls": 1,
+    "tool_calls": 1,
+    "usage": {
+      "prompt_tokens": 1323,
+      "completion_tokens": 14,
+      "total_tokens": 1337
+    },
+    "trace": "reports/retrieval_traces/live/d9de32f766f74292bd6274a25d6a4f92.json",
+    "error": null,
+    "cost_usd": null
+  },
+  {
+    "strategy": "D_Hybrid_AgentRewrite",
+    "id": "Q41",
+    "question": "公司的年终奖金是多少？",
+    "expected_doc_ids": [],
+    "ranked_doc_ids": [
+      "D28",
+      "D21",
+      "D01",
+      "D18",
+      "D02",
+      "D11",
+      "D24",
+      "D10",
+      "D20",
+      "D19",
+      "D03",
+      "D27",
+      "D22",
+      "D31"
+    ],
+    "latency_ms": 1534.7082999942359,
+    "model_calls": 2,
+    "tool_calls": 2,
+    "usage": {
+      "prompt_tokens": 3626,
+      "completion_tokens": 34,
+      "total_tokens": 3660
+    },
+    "trace": "reports/retrieval_traces/live/99714f7bb565494a8344da0ca54ddc84.json",
+    "error": null,
+    "cost_usd": null
+  },
+  {
+    "strategy": "D_Hybrid_AgentRewrite",
+    "id": "Q42",
+    "question": "股票期权授予数量是多少？",
+    "expected_doc_ids": [],
+    "ranked_doc_ids": [
+      "D28",
+      "D02",
+      "D08",
+      "D01",
+      "D21",
+      "D29",
+      "D03",
+      "D27",
+      "D15",
+      "D05"
+    ],
+    "latency_ms": 1483.329099995899,
+    "model_calls": 2,
+    "tool_calls": 2,
+    "usage": {
+      "prompt_tokens": 3652,
+      "completion_tokens": 36,
+      "total_tokens": 3688
+    },
+    "trace": "reports/retrieval_traces/live/b5a8e6630fc947b28ea41f7b9b799bce.json",
+    "error": null,
+    "cost_usd": null
+  },
+  {
+    "strategy": "D_Hybrid_AgentRewrite",
+    "id": "Q43",
+    "question": "火星殖民火箭发射日期？",
+    "expected_doc_ids": [],
+    "ranked_doc_ids": [
+      "D22",
+      "D03",
+      "D06",
+      "D08",
+      "D02",
+      "D31",
+      "D32",
+      "D01",
+      "D21",
+      "D25",
+      "D20",
+      "D09"
+    ],
+    "latency_ms": 1639.1292999906,
+    "model_calls": 2,
+    "tool_calls": 2,
+    "usage": {
+      "prompt_tokens": 3672,
+      "completion_tokens": 42,
+      "total_tokens": 3714
+    },
+    "trace": "reports/retrieval_traces/live/ac8fa1aa775f486ca629551f32e1d2b8.json",
+    "error": null,
+    "cost_usd": null
+  },
+  {
+    "strategy": "D_Hybrid_AgentRewrite",
+    "id": "Q44",
+    "question": "董事长私人银行余额？",
+    "expected_doc_ids": [],
+    "ranked_doc_ids": [
+      "D28",
+      "D02",
+      "D29",
+      "D01",
+      "D18",
+      "D05",
+      "D03",
+      "D08",
+      "D07",
+      "D15",
+      "D26",
+      "D19",
+      "D31"
+    ],
+    "latency_ms": 1479.1963000025135,
+    "model_calls": 2,
+    "tool_calls": 2,
+    "usage": {
+      "prompt_tokens": 3635,
+      "completion_tokens": 37,
+      "total_tokens": 3672
+    },
+    "trace": "reports/retrieval_traces/live/6d84ddb17db148dc94efffe87c120e35.json",
+    "error": null,
+    "cost_usd": null
+  }
+]

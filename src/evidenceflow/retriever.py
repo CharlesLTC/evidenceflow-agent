@@ -8,7 +8,7 @@ def tokenize(text):
     # CJK bigrams keep compounds and avoid an external segmentation dictionary.
     words = re.findall(r"[a-z0-9]+", text)
     for span in re.findall(r"[\u4e00-\u9fff]+", text):
-        words.extend(span[i:i+2] for i in range(len(span) - 1))
+        words.extend(span[i : i + 2] for i in range(len(span) - 1))
         if len(span) == 1:
             words.append(span)
     return words
@@ -29,7 +29,7 @@ class Retriever:
     def bm25(self, query):
         n = len(self.counts)
         scores = []
-        for counts, length in zip(self.counts, self.lengths):
+        for counts, length in zip(self.counts, self.lengths, strict=True):
             score = 0.0
             for token in set(tokenize(query)):
                 freq = counts.get(token, 0)
@@ -43,6 +43,7 @@ class Retriever:
         if self.encoder is None:
             raise RuntimeError("DENSE_UNAVAILABLE: configure a semantic embedding backend")
         import numpy as np
+
         if self.vectors is None:
             self.vectors = np.asarray(self.encoder.encode(self.texts), dtype=float)
             self.vectors /= np.maximum(np.linalg.norm(self.vectors, axis=1, keepdims=True), 1e-12)
@@ -52,9 +53,19 @@ class Retriever:
 
     def search(self, query, top_k=5, strategy="bm25"):
         if strategy not in ("bm25", "dense", "hybrid"):
-            return {"query": query, "strategy": strategy, "hits": [], "error": {"code": "INVALID_STRATEGY"}}
+            return {
+                "query": query,
+                "strategy": strategy,
+                "hits": [],
+                "error": {"code": "INVALID_STRATEGY"},
+            }
         if not isinstance(query, str) or not query.strip() or not 1 <= top_k <= 20:
-            return {"query": query, "strategy": strategy, "hits": [], "error": {"code": "INVALID_SEARCH_ARGUMENTS"}}
+            return {
+                "query": query,
+                "strategy": strategy,
+                "hits": [],
+                "error": {"code": "INVALID_SEARCH_ARGUMENTS"},
+            }
         try:
             lexical = self.bm25(query)
             scores = lexical
@@ -64,7 +75,9 @@ class Retriever:
                 if strategy == "hybrid":
                     scores = [0.0] * len(lexical)
                     for values in (lexical, semantic):
-                        for rank, idx in enumerate(sorted(range(len(values)), key=lambda x: (-values[x], x)), 1):
+                        for rank, idx in enumerate(
+                            sorted(range(len(values)), key=lambda x: (-values[x], x)), 1
+                        ):
                             if values[idx] > 0:
                                 scores[idx] += 1 / (60 + rank)
             ranked = sorted(range(len(scores)), key=lambda i: (-scores[i], i))
@@ -74,13 +87,24 @@ class Retriever:
                     continue
                 c = self.chunks[i]
                 d = self.store.documents[c["doc_id"]]
-                hits.append({"doc_id": d["doc_id"], "chunk_id": c["chunk_id"], "title": d["title"],
-                             "topic": d["topic"], "version_date": d["version_date"],
-                             "score": float(scores[i]), "preview": c["text"][:160]})
+                hits.append(
+                    {
+                        "doc_id": d["doc_id"],
+                        "chunk_id": c["chunk_id"],
+                        "title": d["title"],
+                        "topic": d["topic"],
+                        "version_date": d["version_date"],
+                        "score": float(scores[i]),
+                        "preview": c["text"][:160],
+                    }
+                )
                 if len(hits) >= top_k:
                     break
             return {"query": query, "strategy": strategy, "hits": hits}
         except Exception as exc:
-            return {"query": query, "strategy": strategy, "hits": [],
-                    "error": {"code": "RETRIEVAL_UNAVAILABLE", "type": type(exc).__name__}}
-
+            return {
+                "query": query,
+                "strategy": strategy,
+                "hits": [],
+                "error": {"code": "RETRIEVAL_UNAVAILABLE", "type": type(exc).__name__},
+            }

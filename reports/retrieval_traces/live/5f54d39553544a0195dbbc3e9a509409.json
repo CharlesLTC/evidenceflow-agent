@@ -1,0 +1,158 @@
+{
+  "mode": "live",
+  "model_name": "qwen-plus",
+  "question": "会议室一次最多可以使用多久？",
+  "events": [
+    {
+      "kind": "tool_observation",
+      "tool_name": "search_documents",
+      "timestamp": "2026-11-10T04:51:22.606681+00:00",
+      "arguments": {
+        "query": "会议室一次最多可以使用多久？",
+        "strategy": "hybrid",
+        "top_k": 10
+      },
+      "observation": {
+        "query": "会议室一次最多可以使用多久？",
+        "strategy": "hybrid",
+        "hits": [
+          {
+            "doc_id": "D09",
+            "chunk_id": "D09-C01",
+            "title": "会议室预订",
+            "topic": "会议室",
+            "version_date": "2025-09-01",
+            "score": 0.03278688524590164,
+            "preview": "会议室须通过办公系统预订，连续使用不得超过2小时。"
+          },
+          {
+            "doc_id": "D10",
+            "chunk_id": "D10-C01",
+            "title": "远程会议",
+            "topic": "远程会议",
+            "version_date": "2025-09-01",
+            "score": 0.03200204813108039,
+            "preview": "远程会议使用公司会议平台，外部参会人须由主持人发送邀请。"
+          },
+          {
+            "doc_id": "D25",
+            "chunk_id": "D25-C01",
+            "title": "工作文件备份",
+            "topic": "备份",
+            "version_date": "2025-09-01",
+            "score": 0.030090497737556562,
+            "preview": "工作文件应保存在团队网盘，系统每天执行一次备份。"
+          },
+          {
+            "doc_id": "D27",
+            "chunk_id": "D27-C01",
+            "title": "公章使用",
+            "topic": "公章",
+            "version_date": "2025-09-01",
+            "score": 0.029206349206349208,
+            "preview": "使用公章须在行政系统提交用印申请并附审批文件。"
+          },
+          {
+            "doc_id": "D13",
+            "chunk_id": "D13-C01",
+            "title": "远程网络接入",
+            "topic": "VPN",
+            "version_date": "2025-09-01",
+            "score": 0.027820121951219513,
+            "preview": "在家访问内部系统须申请VPN，并启用多因素认证。"
+          },
+          {
+            "doc_id": "D22",
+            "chunk_id": "D22-C01",
+            "title": "实习生休假",
+            "topic": "年假",
+            "version_date": "2025-09-01",
+            "score": 0.016129032258064516,
+            "preview": "实习生每年可申请2天休假，具体日期需经主管批准。"
+          },
+          {
+            "doc_id": "D03",
+            "chunk_id": "D03-C01",
+            "title": "办公电脑申领",
+            "topic": "电脑申领",
+            "version_date": "2025-01-01",
+            "score": 0.015625,
+            "preview": "办公电脑申领须在IT门户填写申请，经主管审批后3个工作日内完成。"
+          },
+          {
+            "doc_id": "D11",
+            "chunk_id": "D11-C01",
+            "title": "加班申请",
+            "topic": "加班",
+            "version_date": "2025-09-01",
+            "score": 0.015384615384615385,
+            "preview": "加班须事先在HR系统申请并经主管批准。"
+          },
+          {
+            "doc_id": "D21",
+            "chunk_id": "D21-C01",
+            "title": "正式员工年假",
+            "topic": "年假",
+            "version_date": "2025-09-01",
+            "score": 0.015151515151515152,
+            "preview": "正式员工每年可申请5天年假，具体日期需经主管批准。"
+          },
+          {
+            "doc_id": "D06",
+            "chunk_id": "D06-C01",
+            "title": "新员工培训",
+            "topic": "入职培训",
+            "version_date": "2025-01-01",
+            "score": 0.014925373134328358,
+            "preview": "新员工应在入职后7天内完成信息安全培训。"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "model_decision",
+      "tool_calls": [
+        {
+          "id": "call_19ad1d84c13e477da5cfa7",
+          "name": "finish_retrieval",
+          "arguments": {}
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1289,
+        "total_tokens": 1303,
+        "completion_tokens": 14,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "timestamp": "2026-11-10T04:51:23.207023+00:00"
+    },
+    {
+      "kind": "tool_observation",
+      "tool_name": "finish_retrieval",
+      "arguments": {},
+      "observation": {
+        "finished": true
+      },
+      "timestamp": "2026-11-10T04:51:23.207023+00:00"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1289,
+    "completion_tokens": 14,
+    "total_tokens": 1303
+  },
+  "ranked_doc_ids": [
+    "D09",
+    "D10",
+    "D25",
+    "D27",
+    "D13",
+    "D22",
+    "D03",
+    "D11",
+    "D21",
+    "D06"
+  ]
+}

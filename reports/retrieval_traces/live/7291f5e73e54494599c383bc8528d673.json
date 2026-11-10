@@ -1,0 +1,284 @@
+{
+  "mode": "live",
+  "model_name": "qwen-plus",
+  "question": "远程会议外部人员怎么加入？",
+  "events": [
+    {
+      "kind": "tool_observation",
+      "tool_name": "search_documents",
+      "timestamp": "2026-11-10T04:51:24.617936+00:00",
+      "arguments": {
+        "query": "远程会议外部人员怎么加入？",
+        "strategy": "hybrid",
+        "top_k": 10
+      },
+      "observation": {
+        "query": "远程会议外部人员怎么加入？",
+        "strategy": "hybrid",
+        "hits": [
+          {
+            "doc_id": "D10",
+            "chunk_id": "D10-C01",
+            "title": "远程会议",
+            "topic": "远程会议",
+            "version_date": "2025-09-01",
+            "score": 0.03278688524590164,
+            "preview": "远程会议使用公司会议平台，外部参会人须由主持人发送邀请。"
+          },
+          {
+            "doc_id": "D09",
+            "chunk_id": "D09-C01",
+            "title": "会议室预订",
+            "topic": "会议室",
+            "version_date": "2025-09-01",
+            "score": 0.03225806451612903,
+            "preview": "会议室须通过办公系统预订，连续使用不得超过2小时。"
+          },
+          {
+            "doc_id": "D13",
+            "chunk_id": "D13-C01",
+            "title": "远程网络接入",
+            "topic": "VPN",
+            "version_date": "2025-09-01",
+            "score": 0.03125763125763126,
+            "preview": "在家访问内部系统须申请VPN，并启用多因素认证。"
+          },
+          {
+            "doc_id": "D23",
+            "chunk_id": "D23-C01",
+            "title": "办公网络报障",
+            "topic": "网络故障",
+            "version_date": "2025-09-01",
+            "score": 0.015873015873015872,
+            "preview": "办公室网络无法连接时应提交网络报障工单并注明工位。"
+          },
+          {
+            "doc_id": "D07",
+            "chunk_id": "D07-C01",
+            "title": "访客管理",
+            "topic": "访客",
+            "version_date": "2025-01-01",
+            "score": 0.015625,
+            "preview": "访客到访前须由接待员工登记并由前台核验身份。"
+          },
+          {
+            "doc_id": "D24",
+            "chunk_id": "D24-C01",
+            "title": "访客无线网络",
+            "topic": "访客网络",
+            "version_date": "2025-09-01",
+            "score": 0.015151515151515152,
+            "preview": "访客无线网络由前台发放临时凭证，当日有效。"
+          },
+          {
+            "doc_id": "D22",
+            "chunk_id": "D22-C01",
+            "title": "实习生休假",
+            "topic": "年假",
+            "version_date": "2025-09-01",
+            "score": 0.014925373134328358,
+            "preview": "实习生每年可申请2天休假，具体日期需经主管批准。"
+          },
+          {
+            "doc_id": "D05",
+            "chunk_id": "D05-C01",
+            "title": "员工请假制度",
+            "topic": "请假",
+            "version_date": "2025-01-01",
+            "score": 0.014705882352941176,
+            "preview": "请假应在HR系统提交申请，由直属主管审批。"
+          },
+          {
+            "doc_id": "D15",
+            "chunk_id": "D15-C01",
+            "title": "邮件别名申请",
+            "topic": "邮件别名",
+            "version_date": "2025-09-01",
+            "score": 0.014492753623188406,
+            "preview": "部门邮件别名由部门负责人提交申请，IT支持组创建。"
+          },
+          {
+            "doc_id": "D11",
+            "chunk_id": "D11-C01",
+            "title": "加班申请",
+            "topic": "加班",
+            "version_date": "2025-09-01",
+            "score": 0.014285714285714285,
+            "preview": "加班须事先在HR系统申请并经主管批准。"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "model_decision",
+      "tool_calls": [
+        {
+          "id": "call_26741139b85849fba701ef",
+          "name": "search_documents",
+          "arguments": {
+            "query": "远程会议 外部人员 邀请链接"
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1287,
+        "total_tokens": 1313,
+        "completion_tokens": 26,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "timestamp": "2026-11-10T04:51:25.542787+00:00"
+    },
+    {
+      "kind": "tool_observation",
+      "tool_name": "search_documents",
+      "arguments": {
+        "query": "远程会议 外部人员 邀请链接"
+      },
+      "observation": {
+        "query": "远程会议 外部人员 邀请链接",
+        "strategy": "hybrid",
+        "hits": [
+          {
+            "doc_id": "D10",
+            "chunk_id": "D10-C01",
+            "title": "远程会议",
+            "topic": "远程会议",
+            "version_date": "2025-09-01",
+            "score": 0.03278688524590164,
+            "preview": "远程会议使用公司会议平台，外部参会人须由主持人发送邀请。"
+          },
+          {
+            "doc_id": "D13",
+            "chunk_id": "D13-C01",
+            "title": "远程网络接入",
+            "topic": "VPN",
+            "version_date": "2025-09-01",
+            "score": 0.03200204813108039,
+            "preview": "在家访问内部系统须申请VPN，并启用多因素认证。"
+          },
+          {
+            "doc_id": "D09",
+            "chunk_id": "D09-C01",
+            "title": "会议室预订",
+            "topic": "会议室",
+            "version_date": "2025-09-01",
+            "score": 0.030834914611005692,
+            "preview": "会议室须通过办公系统预订，连续使用不得超过2小时。"
+          },
+          {
+            "doc_id": "D24",
+            "chunk_id": "D24-C01",
+            "title": "访客无线网络",
+            "topic": "访客网络",
+            "version_date": "2025-09-01",
+            "score": 0.015873015873015872,
+            "preview": "访客无线网络由前台发放临时凭证，当日有效。"
+          },
+          {
+            "doc_id": "D07",
+            "chunk_id": "D07-C01",
+            "title": "访客管理",
+            "topic": "访客",
+            "version_date": "2025-01-01",
+            "score": 0.015625,
+            "preview": "访客到访前须由接待员工登记并由前台核验身份。"
+          },
+          {
+            "doc_id": "D23",
+            "chunk_id": "D23-C01",
+            "title": "办公网络报障",
+            "topic": "网络故障",
+            "version_date": "2025-09-01",
+            "score": 0.015384615384615385,
+            "preview": "办公室网络无法连接时应提交网络报障工单并注明工位。"
+          },
+          {
+            "doc_id": "D15",
+            "chunk_id": "D15-C01",
+            "title": "邮件别名申请",
+            "topic": "邮件别名",
+            "version_date": "2025-09-01",
+            "score": 0.015151515151515152,
+            "preview": "部门邮件别名由部门负责人提交申请，IT支持组创建。"
+          },
+          {
+            "doc_id": "D05",
+            "chunk_id": "D05-C01",
+            "title": "员工请假制度",
+            "topic": "请假",
+            "version_date": "2025-01-01",
+            "score": 0.014925373134328358,
+            "preview": "请假应在HR系统提交申请，由直属主管审批。"
+          },
+          {
+            "doc_id": "D32",
+            "chunk_id": "D32-C01",
+            "title": "紧急事件联系",
+            "topic": "紧急联系",
+            "version_date": "2025-09-01",
+            "score": 0.014492753623188406,
+            "preview": "办公区发生紧急事件时应立即联系现场安保和值班行政。"
+          },
+          {
+            "doc_id": "D22",
+            "chunk_id": "D22-C01",
+            "title": "实习生休假",
+            "topic": "年假",
+            "version_date": "2025-09-01",
+            "score": 0.014285714285714285,
+            "preview": "实习生每年可申请2天休假，具体日期需经主管批准。"
+          }
+        ]
+      },
+      "timestamp": "2026-11-10T04:51:25.545791+00:00"
+    },
+    {
+      "kind": "model_decision",
+      "tool_calls": [
+        {
+          "id": "call_5f18d5c63261404894f055",
+          "name": "finish_retrieval",
+          "arguments": {}
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 2307,
+        "total_tokens": 2321,
+        "completion_tokens": 14,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "timestamp": "2026-11-10T04:51:26.215505+00:00"
+    },
+    {
+      "kind": "tool_observation",
+      "tool_name": "finish_retrieval",
+      "arguments": {},
+      "observation": {
+        "finished": true
+      },
+      "timestamp": "2026-11-10T04:51:26.215505+00:00"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3594,
+    "completion_tokens": 40,
+    "total_tokens": 3634
+  },
+  "ranked_doc_ids": [
+    "D10",
+    "D09",
+    "D13",
+    "D23",
+    "D24",
+    "D07",
+    "D15",
+    "D05",
+    "D22",
+    "D32",
+    "D11"
+  ]
+}

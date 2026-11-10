@@ -1,0 +1,158 @@
+{
+  "mode": "live",
+  "model_name": "qwen-plus",
+  "question": "新员工信息安全培训什么时候完成？",
+  "events": [
+    {
+      "kind": "tool_observation",
+      "tool_name": "search_documents",
+      "timestamp": "2026-11-10T04:51:18.835482+00:00",
+      "arguments": {
+        "query": "新员工信息安全培训什么时候完成？",
+        "strategy": "hybrid",
+        "top_k": 10
+      },
+      "observation": {
+        "query": "新员工信息安全培训什么时候完成？",
+        "strategy": "hybrid",
+        "hits": [
+          {
+            "doc_id": "D06",
+            "chunk_id": "D06-C01",
+            "title": "新员工培训",
+            "topic": "入职培训",
+            "version_date": "2025-01-01",
+            "score": 0.03278688524590164,
+            "preview": "新员工应在入职后7天内完成信息安全培训。"
+          },
+          {
+            "doc_id": "D21",
+            "chunk_id": "D21-C01",
+            "title": "正式员工年假",
+            "topic": "年假",
+            "version_date": "2025-09-01",
+            "score": 0.03200204813108039,
+            "preview": "正式员工每年可申请5天年假，具体日期需经主管批准。"
+          },
+          {
+            "doc_id": "D03",
+            "chunk_id": "D03-C01",
+            "title": "办公电脑申领",
+            "topic": "电脑申领",
+            "version_date": "2025-01-01",
+            "score": 0.03076923076923077,
+            "preview": "办公电脑申领须在IT门户填写申请，经主管审批后3个工作日内完成。"
+          },
+          {
+            "doc_id": "D05",
+            "chunk_id": "D05-C01",
+            "title": "员工请假制度",
+            "topic": "请假",
+            "version_date": "2025-01-01",
+            "score": 0.03007688828584351,
+            "preview": "请假应在HR系统提交申请，由直属主管审批。"
+          },
+          {
+            "doc_id": "D07",
+            "chunk_id": "D07-C01",
+            "title": "访客管理",
+            "topic": "访客",
+            "version_date": "2025-01-01",
+            "score": 0.029211087420042643,
+            "preview": "访客到访前须由接待员工登记并由前台核验身份。"
+          },
+          {
+            "doc_id": "D30",
+            "chunk_id": "D30-C01",
+            "title": "出差交通预订",
+            "topic": "交通预订",
+            "version_date": "2025-09-01",
+            "score": 0.027252906976744186,
+            "preview": "出差交通须先完成出差审批，再通过指定平台预订。"
+          },
+          {
+            "doc_id": "D18",
+            "chunk_id": "D18-C01",
+            "title": "正式员工餐补",
+            "topic": "餐补",
+            "version_date": "2025-09-01",
+            "score": 0.02724014336917563,
+            "preview": "正式员工每个出勤日餐补30元。"
+          },
+          {
+            "doc_id": "D11",
+            "chunk_id": "D11-C01",
+            "title": "加班申请",
+            "topic": "加班",
+            "version_date": "2025-09-01",
+            "score": 0.015873015873015872,
+            "preview": "加班须事先在HR系统申请并经主管批准。"
+          },
+          {
+            "doc_id": "D22",
+            "chunk_id": "D22-C01",
+            "title": "实习生休假",
+            "topic": "年假",
+            "version_date": "2025-09-01",
+            "score": 0.015625,
+            "preview": "实习生每年可申请2天休假，具体日期需经主管批准。"
+          },
+          {
+            "doc_id": "D32",
+            "chunk_id": "D32-C01",
+            "title": "紧急事件联系",
+            "topic": "紧急联系",
+            "version_date": "2025-09-01",
+            "score": 0.015151515151515152,
+            "preview": "办公区发生紧急事件时应立即联系现场安保和值班行政。"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "model_decision",
+      "tool_calls": [
+        {
+          "id": "call_ddd059b5f4f649e689318c",
+          "name": "finish_retrieval",
+          "arguments": {}
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1291,
+        "total_tokens": 1305,
+        "completion_tokens": 14,
+        "prompt_tokens_details": {
+          "cached_tokens": 192
+        }
+      },
+      "timestamp": "2026-11-10T04:51:19.550610+00:00"
+    },
+    {
+      "kind": "tool_observation",
+      "tool_name": "finish_retrieval",
+      "arguments": {},
+      "observation": {
+        "finished": true
+      },
+      "timestamp": "2026-11-10T04:51:19.550610+00:00"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1291,
+    "completion_tokens": 14,
+    "total_tokens": 1305
+  },
+  "ranked_doc_ids": [
+    "D06",
+    "D21",
+    "D03",
+    "D05",
+    "D07",
+    "D30",
+    "D18",
+    "D11",
+    "D22",
+    "D32"
+  ]
+}

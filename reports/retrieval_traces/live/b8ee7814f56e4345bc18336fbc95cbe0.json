@@ -1,0 +1,158 @@
+{
+  "mode": "live",
+  "model_name": "qwen-plus",
+  "question": "实习生餐补是多少？",
+  "events": [
+    {
+      "kind": "tool_observation",
+      "tool_name": "search_documents",
+      "timestamp": "2026-11-10T04:51:34.094217+00:00",
+      "arguments": {
+        "query": "实习生餐补是多少？",
+        "strategy": "hybrid",
+        "top_k": 10
+      },
+      "observation": {
+        "query": "实习生餐补是多少？",
+        "strategy": "hybrid",
+        "hits": [
+          {
+            "doc_id": "D19",
+            "chunk_id": "D19-C01",
+            "title": "实习生餐补",
+            "topic": "餐补",
+            "version_date": "2025-09-01",
+            "score": 0.03278688524590164,
+            "preview": "实习生每个出勤日餐补20元。"
+          },
+          {
+            "doc_id": "D18",
+            "chunk_id": "D18-C01",
+            "title": "正式员工餐补",
+            "topic": "餐补",
+            "version_date": "2025-09-01",
+            "score": 0.03200204813108039,
+            "preview": "正式员工每个出勤日餐补30元。"
+          },
+          {
+            "doc_id": "D22",
+            "chunk_id": "D22-C01",
+            "title": "实习生休假",
+            "topic": "年假",
+            "version_date": "2025-09-01",
+            "score": 0.03200204813108039,
+            "preview": "实习生每年可申请2天休假，具体日期需经主管批准。"
+          },
+          {
+            "doc_id": "D09",
+            "chunk_id": "D09-C01",
+            "title": "会议室预订",
+            "topic": "会议室",
+            "version_date": "2025-09-01",
+            "score": 0.015625,
+            "preview": "会议室须通过办公系统预订，连续使用不得超过2小时。"
+          },
+          {
+            "doc_id": "D10",
+            "chunk_id": "D10-C01",
+            "title": "远程会议",
+            "topic": "远程会议",
+            "version_date": "2025-09-01",
+            "score": 0.015384615384615385,
+            "preview": "远程会议使用公司会议平台，外部参会人须由主持人发送邀请。"
+          },
+          {
+            "doc_id": "D17",
+            "chunk_id": "D17-C01",
+            "title": "境外出差补贴",
+            "topic": "差旅补贴",
+            "version_date": "2025-09-01",
+            "score": 0.015151515151515152,
+            "preview": "境外出差每天补贴200元。"
+          },
+          {
+            "doc_id": "D11",
+            "chunk_id": "D11-C01",
+            "title": "加班申请",
+            "topic": "加班",
+            "version_date": "2025-09-01",
+            "score": 0.014925373134328358,
+            "preview": "加班须事先在HR系统申请并经主管批准。"
+          },
+          {
+            "doc_id": "D20",
+            "chunk_id": "D20-C01",
+            "title": "节假日值班",
+            "topic": "值班",
+            "version_date": "2025-09-01",
+            "score": 0.014705882352941176,
+            "preview": "节假日值班安排由部门负责人在节前发布。"
+          },
+          {
+            "doc_id": "D21",
+            "chunk_id": "D21-C01",
+            "title": "正式员工年假",
+            "topic": "年假",
+            "version_date": "2025-09-01",
+            "score": 0.014492753623188406,
+            "preview": "正式员工每年可申请5天年假，具体日期需经主管批准。"
+          },
+          {
+            "doc_id": "D16",
+            "chunk_id": "D16-C01",
+            "title": "国内出差补贴",
+            "topic": "差旅补贴",
+            "version_date": "2025-09-01",
+            "score": 0.014285714285714285,
+            "preview": "国内出差每天补贴100元。"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "model_decision",
+      "tool_calls": [
+        {
+          "id": "call_968d21d349544e2fb049d9",
+          "name": "finish_retrieval",
+          "arguments": {}
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1262,
+        "total_tokens": 1276,
+        "completion_tokens": 14,
+        "prompt_tokens_details": {
+          "cached_tokens": 192
+        }
+      },
+      "timestamp": "2026-11-10T04:51:34.766201+00:00"
+    },
+    {
+      "kind": "tool_observation",
+      "tool_name": "finish_retrieval",
+      "arguments": {},
+      "observation": {
+        "finished": true
+      },
+      "timestamp": "2026-11-10T04:51:34.766201+00:00"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1262,
+    "completion_tokens": 14,
+    "total_tokens": 1276
+  },
+  "ranked_doc_ids": [
+    "D19",
+    "D18",
+    "D22",
+    "D09",
+    "D10",
+    "D17",
+    "D11",
+    "D20",
+    "D21",
+    "D16"
+  ]
+}

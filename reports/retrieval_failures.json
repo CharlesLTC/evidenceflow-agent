@@ -1,0 +1,145 @@
+[
+  {
+    "strategy": "A_BM25",
+    "id": "Q04",
+    "question": "出差费用最晚何时递交？",
+    "expected_doc_ids": [
+      "D01",
+      "D02"
+    ],
+    "ranked_doc_ids": [
+      "D29",
+      "D30",
+      "D16",
+      "D17",
+      "D01",
+      "D02"
+    ],
+    "latency_ms": 0.13590000162366778,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "A_BM25",
+    "id": "Q21",
+    "question": "海外商务旅行每日津贴多少？",
+    "expected_doc_ids": [
+      "D17"
+    ],
+    "ranked_doc_ids": [],
+    "latency_ms": 0.13630000466946512,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "A_BM25",
+    "id": "Q38",
+    "question": "我不能登录账户了，怎么恢复口令？",
+    "expected_doc_ids": [
+      "D14"
+    ],
+    "ranked_doc_ids": [],
+    "latency_ms": 0.15859999984968454,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "B_Dense",
+    "id": "Q07",
+    "question": "如何请假？",
+    "expected_doc_ids": [
+      "D05"
+    ],
+    "ranked_doc_ids": [
+      "D22",
+      "D01",
+      "D19",
+      "D30",
+      "D02",
+      "D32",
+      "D07",
+      "D09",
+      "D10",
+      "D24"
+    ],
+    "latency_ms": 2.2669000027235597,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "C_Hybrid_RRF",
+    "id": "Q04",
+    "question": "出差费用最晚何时递交？",
+    "expected_doc_ids": [
+      "D01",
+      "D02"
+    ],
+    "ranked_doc_ids": [
+      "D29",
+      "D30",
+      "D01",
+      "D02",
+      "D17",
+      "D16",
+      "D22",
+      "D21",
+      "D28",
+      "D18"
+    ],
+    "latency_ms": 2.0155999955022708,
+    "model_calls": 0,
+    "tool_calls": 1,
+    "usage": {},
+    "trace": null,
+    "error": null,
+    "cost_usd": 0.0
+  },
+  {
+    "strategy": "D_Hybrid_AgentRewrite",
+    "id": "Q04",
+    "question": "出差费用最晚何时递交？",
+    "expected_doc_ids": [
+      "D01",
+      "D02"
+    ],
+    "ranked_doc_ids": [
+      "D29",
+      "D30",
+      "D01",
+      "D02",
+      "D17",
+      "D16",
+      "D22",
+      "D21",
+      "D28",
+      "D18"
+    ],
+    "latency_ms": 720.4478000057861,
+    "model_calls": 1,
+    "tool_calls": 1,
+    "usage": {
+      "prompt_tokens": 1305,
+      "completion_tokens": 14,
+      "total_tokens": 1319
+    },
+    "trace": "reports/retrieval_traces/live/6f99e3c889bb43d5b7fdd0917f630abb.json",
+    "error": null,
+    "cost_usd": null
+  }
+]
