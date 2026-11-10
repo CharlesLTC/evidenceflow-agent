@@ -44,3 +44,21 @@ Status: PASS; checks: 4; pytest: {'tests': 9, 'failures': 0, 'errors': 0, 'skipp
 - Editable reinstall failed on sandbox redirected TEMP; fixed by using project-local .cache/tmp. Failed attempt is preserved in reports/logs/attempts.
 
 Evidence: reports/gates/P0.json and reports/logs/P0-*.
+
+## P2 — 2026-11-10T04:43:44.050716+00:00 → 2026-11-10T04:43:46.884843+00:00 UTC
+
+Status: BLOCKED; checks: 1; pytest: {'tests': 10, 'failures': 0, 'errors': 0, 'skipped': 0, 'passed': 10}.
+
+- StateGraph routes model-selected tools and observations. Independent live/mock/fake_model adapters, strict budgets, persistent sessions and actual JSON traces.
+- Offline adapter HTTP tests use MockTransport and do not constitute live evidence.
+- BLOCKED_LIVE: Missing LLM_API_KEY, LLM_MODEL_NAME
+
+Evidence: reports/gates/P2.json and reports/logs/P2-*.
+
+## P3 — 2026-11-10T04:44:42.310595+00:00 → 2026-11-10T04:44:44.595287+00:00 UTC
+
+Status: PASS; checks: 1; pytest: {'tests': 16, 'failures': 0, 'errors': 0, 'skipped': 0, 'passed': 16}.
+
+- Enforce exact quote, read-before-cite, document version, extractive claims and unresolved conflict abstention. Numeric claim comparison respects known disjoint scopes.
+
+Evidence: reports/gates/P3.json and reports/logs/P3-*.

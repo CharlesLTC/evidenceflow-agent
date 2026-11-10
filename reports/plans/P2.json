@@ -1,0 +1,24 @@
+{
+  "commands": [
+    [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "tests/test_agent_graph.py",
+      "--junitxml=reports/logs/P2-pytest.xml"
+    ]
+  ],
+  "blockers": [
+    "BLOCKED_LIVE: Missing LLM_API_KEY, LLM_MODEL_NAME"
+  ],
+  "evidence": [
+    "src/evidenceflow/agent_graph.py",
+    "src/evidenceflow/llm_client.py",
+    "tests/test_agent_graph.py"
+  ],
+  "changes": [
+    "StateGraph routes model-selected tools and observations. Independent live/mock/fake_model adapters, strict budgets, persistent sessions and actual JSON traces.",
+    "Offline adapter HTTP tests use MockTransport and do not constitute live evidence."
+  ]
+}
