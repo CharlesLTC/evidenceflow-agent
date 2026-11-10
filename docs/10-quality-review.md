@@ -1,3 +1,5 @@
+> 2026-11-11: Current final acceptance is DELIVERY_BLOCKED (historical path privacy awaits authorization); reviewer access is PENDING_REVIEWER_ACCESS. See [current report](../FINAL_ACCEPTANCE/FINAL_REPORT.md). The following is preserved historical evidence.
+
 # 最后一轮质量优化与实际验证
 
 生成于 2026-11-10T07:35:06.409745+00:00；结果：PASS。

@@ -42,6 +42,8 @@
     "FINAL_ACCEPTANCE/F6_documentation_check.json",
     "FINAL_ACCEPTANCE/F7_security_audit.initial.json",
     "FINAL_ACCEPTANCE/F7_security_audit.json",
+    "FINAL_ACCEPTANCE/F8_github_delivery.json",
+    "FINAL_ACCEPTANCE/F9_archive_snapshot.json",
     "FINAL_ACCEPTANCE/FINAL_REPORT.md",
     "FINAL_ACCEPTANCE/final_checks.json"
   ]

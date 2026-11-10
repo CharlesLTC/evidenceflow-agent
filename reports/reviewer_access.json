@@ -1,5 +1,5 @@
 {
-  "verified_at": "2026-11-10T07:48:08.831147+00:00",
+  "verified_at": "2026-11-10T20:08:26.517051+00:00",
   "status": "CHECKED",
   "private": true,
   "collaborators": [
@@ -11,5 +11,6 @@
   ],
   "pending_invitations": [],
   "intended_reviewer": null,
-  "conclusion": "No intended reviewer account supplied; do not infer their access from repository visibility."
+  "conclusion": "No intended reviewer account supplied; do not infer their access from repository visibility.",
+  "reviewer_status": "PENDING_REVIEWER_ACCESS"
 }

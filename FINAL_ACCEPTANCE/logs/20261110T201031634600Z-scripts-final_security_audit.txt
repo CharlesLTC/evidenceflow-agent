@@ -1,0 +1,39 @@
+{
+  "timestamp": "2026-11-10T20:10:37.307611+00:00",
+  "status": "BLOCKED",
+  "scanned_deliverable_files": 1254,
+  "current_findings": [],
+  "reachable_commit_and_blob_objects": 1195,
+  "history_findings": [
+    {
+      "object": "acb0516e539891ac41913312e095eedffb357b2c",
+      "path": "reports/logs/attempts/P0-1794285668763432800/P0-0.txt",
+      "type": "private_local_path"
+    }
+  ],
+  "sensitive_tracked_names": [],
+  "ignore_checks": {
+    ".env": true,
+    ".venv/": true,
+    ".cache/": true,
+    ".tools/": true
+  },
+  "credential_leak_found": false,
+  "known_path_privacy_issue": true,
+  "history_rewrite_authorization": "Not assumed; explicit approval required before any rewrite or force push",
+  "protected_historical_files": 655,
+  "changed_historical_files": [
+    "reports/logs/attempts/P0-1794285668763432800/P0-0.txt"
+  ],
+  "unexpected_historical_changes": [],
+  "privacy_redaction_evidence": "FINAL_ACCEPTANCE/privacy_redaction.json",
+  "existing_credential_scanner": {
+    "status": "PASS",
+    "scanned_text_files": 1252,
+    "findings": [],
+    "scope": "deliverable files, excluding ignored environments/cache and local .env"
+  },
+  "limitations": "Pattern and configured-value scan, not a proof against every possible secret. Local .env, credential manager and ignored backups are intentionally never printed or packaged."
+}
+
+STDERR:

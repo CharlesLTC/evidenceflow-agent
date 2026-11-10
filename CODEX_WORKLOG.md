@@ -177,3 +177,6 @@ Final commands: main and existing isolated environment 75/75, BM25 official 6/6,
 README Windows Streamlit default 18501 with STREAMLIT_SERVER_PORT / CLI override; report-generation text synchronized. Application, data, dependencies, existing tests and acceptance assertions unchanged.
 
 Actual final run: pytest 75/75, qwen-plus official live 6/6, quote/artifact/security and dependency checks passed. Complete reachable Git history scanned (909 commit/blob objects); no findings. 611 prior evidence/failure files kept byte-identical. Details: reports/handoff/20261110T074943Z/summary.json. Private reviewer access pending because no account supplied; no invitations or visibility changes issued.
+
+
+Final acceptance 2026-11-11: actual pytest 75/75 (no skip), official BM25 live 6/6, Hybrid live 6/6, TC02 five consecutive 5/5, Critic four injected corrections 4/4 with no new errors, UI actual HTTP plus AppTest live. No business code, tests, labels or framework dependency changes. Current P0 log private paths redacted, original ignored backup retained; historical cleanup needs explicit authorization. FINAL_ACCEPTANCE contains fresh evidence; overall DELIVERY_BLOCKED and PENDING_REVIEWER_ACCESS remain truthful.

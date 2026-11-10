@@ -1,0 +1,15 @@
+{
+  "status": "FAIL",
+  "command": [
+    "git",
+    "diff",
+    "HEAD^",
+    "HEAD",
+    "--check"
+  ],
+  "exit_code": 2,
+  "scope": "Supplemental whitespace check only; not a pytest or acceptance condition",
+  "explanation": "Raw netsh aligned output has trailing spaces; CSV writer emits CRLF. Original evidence retained, no data or acceptance criteria changed.",
+  "log": "FINAL_ACCEPTANCE/logs/supplemental-whitespace-check.txt",
+  "blocking": false
+}

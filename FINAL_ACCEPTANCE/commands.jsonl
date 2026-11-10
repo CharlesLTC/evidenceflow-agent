@@ -22,3 +22,6 @@
 {"command": [".venv\\Scripts\\python.exe", "-m", "streamlit", "--version"], "exit_code": 0, "seconds": 0.9598648999817669, "status": "PASS", "log": "FINAL_ACCEPTANCE/logs/20261110T200618122386Z-streamlit.txt"}
 {"command": [".venv\\Scripts\\python.exe", "-m", "scripts.verify_artifacts"], "exit_code": 0, "seconds": 8.998916699987603, "status": "PASS", "log": "FINAL_ACCEPTANCE/logs/20261110T200732840010Z-scripts-verify_artifacts.txt"}
 {"command": [".venv\\Scripts\\python.exe", "-m", "scripts.final_security_audit"], "exit_code": 2, "seconds": 14.097192599991104, "status": "FAIL", "log": "FINAL_ACCEPTANCE/logs/20261110T200741841849Z-scripts-final_security_audit.txt"}
+{"command": [".venv\\Scripts\\python.exe", "-m", "scripts.verify_artifacts"], "exit_code": 0, "seconds": 6.444707499991637, "status": "PASS", "log": "FINAL_ACCEPTANCE/logs/20261110T201025187585Z-scripts-verify_artifacts.txt"}
+{"command": [".venv\\Scripts\\python.exe", "-m", "scripts.final_security_audit"], "exit_code": 2, "seconds": 9.950761500018416, "status": "FAIL", "log": "FINAL_ACCEPTANCE/logs/20261110T201031634600Z-scripts-final_security_audit.txt"}
+{"command": [".venv\\Scripts\\python.exe", "-m", "ruff", "check", "src", "scripts", "tests", "ui"], "exit_code": 0, "seconds": 0.1287341999995988, "status": "PASS", "log": "FINAL_ACCEPTANCE/logs/20261110T201041586365Z-ruff.txt"}

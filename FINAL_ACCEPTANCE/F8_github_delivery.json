@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "timestamp": "2026-11-10T20:08:26.517051+00:00",
+  "github_url": "https://github.com/CharlesLTC/evidenceflow-agent",
+  "private": true,
+  "local_commit_sha": "82df75cd40defbe9208cf755e921d13d9442bd67",
+  "remote_head": "82df75cd40defbe9208cf755e921d13d9442bd67",
+  "github_api_head": "82df75cd40defbe9208cf755e921d13d9442bd67",
+  "readme_blob_readable": "63bdefcf576a59a4b85fcda09ba57d63fb0fcb2a",
+  "worktree_clean": true,
+  "reviewer_access": {
+    "status": "CHECKED",
+    "private": true,
+    "collaborators": [
+      {
+        "login": "CharlesLTC",
+        "role": "admin",
+        "read": true
+      }
+    ],
+    "pending_invitations": [],
+    "intended_reviewer": null,
+    "conclusion": "No intended reviewer account supplied; do not infer their access from repository visibility."
+  },
+  "branch": "main",
+  "scope": "Verified published acceptance snapshot. A following metadata-only commit records these checks; final exact HEAD is in the ignored final receipt and Git archive comment.",
+  "verified_published_snapshot_sha": "82df75cd40defbe9208cf755e921d13d9442bd67",
+  "remote_tree": {
+    "status": "PASS",
+    "commit_sha": "82df75cd40defbe9208cf755e921d13d9442bd67",
+    "local_files": 1248,
+    "remote_files": 1248,
+    "all_blob_paths_and_shas_match": true,
+    "truncated": false
+  },
+  "final_receipt": "reports/delivery_verification.local.json",
+  "reviewer_status": "PENDING_REVIEWER_ACCESS",
+  "security_release_status": "BLOCKED_HISTORY_PATH_PRIVACY",
+  "force_push_used": false
+}

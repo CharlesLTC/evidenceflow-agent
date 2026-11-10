@@ -2,11 +2,11 @@
   "url": "https://github.com/CharlesLTC/evidenceflow-agent",
   "private": true,
   "verified_initial_commit_sha": "d4689fe7d1862f9549b45f7789f2651c2cf6a32c",
-  "verified_pre_audit_commit_sha": "1ee65427e1982d75e8bc71232dba872b69411906",
-  "remote_head": "1ee65427e1982d75e8bc71232dba872b69411906",
-  "github_api_head": "1ee65427e1982d75e8bc71232dba872b69411906",
-  "verified_at": "2026-11-10T07:48:08.831147+00:00",
-  "readme_blob_readable": "b0a275c79fafd44b81eb279fb8e558f2e109eca2",
+  "verified_pre_audit_commit_sha": "82df75cd40defbe9208cf755e921d13d9442bd67",
+  "remote_head": "82df75cd40defbe9208cf755e921d13d9442bd67",
+  "github_api_head": "82df75cd40defbe9208cf755e921d13d9442bd67",
+  "verified_at": "2026-11-10T20:08:26.517051+00:00",
+  "scope": "Verified published acceptance snapshot. A following metadata-only commit records these checks; final exact HEAD is in the ignored final receipt and Git archive comment.",
   "final_commit_receipt": "reports/delivery_verification.local.json",
   "reviewer_access": {
     "status": "CHECKED",
@@ -21,5 +21,7 @@
     "pending_invitations": [],
     "intended_reviewer": null,
     "conclusion": "No intended reviewer account supplied; do not infer their access from repository visibility."
-  }
+  },
+  "reviewer_status": "PENDING_REVIEWER_ACCESS",
+  "security_release_status": "BLOCKED_HISTORY_PATH_PRIVACY"
 }

@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "timestamp": "2026-11-10T20:09:55.524480+00:00",
+  "archive_file": "E:\\秋招笔试\\EvidenceFlow\\evidenceflow-agent\\.cache\\final-source-snapshot.zip",
+  "archive_sha256": "12858b5c48603ae8ab2c301689fbe6ad32d89414011b0c19ffa5f42fc9321fa3",
+  "archive_commit_sha": "82df75cd40defbe9208cf755e921d13d9442bd67",
+  "crc": "PASS",
+  "all_git_file_bytes_match": true,
+  "files": 1248,
+  "dataset_hashes_match": true,
+  "excluded_secrets_env_cache_and_weights": true,
+  "scope": "Current committed tree only; private original log and Git bundle remain ignored locally, never archived."
+}

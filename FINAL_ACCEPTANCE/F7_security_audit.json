@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-11-10T20:07:50.242344+00:00",
+  "timestamp": "2026-11-10T20:10:37.307611+00:00",
   "status": "BLOCKED",
-  "scanned_deliverable_files": 1248,
+  "scanned_deliverable_files": 1254,
   "current_findings": [],
-  "reachable_commit_and_blob_objects": 954,
+  "reachable_commit_and_blob_objects": 1195,
   "history_findings": [
     {
       "object": "acb0516e539891ac41913312e095eedffb357b2c",
@@ -29,7 +29,7 @@
   "privacy_redaction_evidence": "FINAL_ACCEPTANCE/privacy_redaction.json",
   "existing_credential_scanner": {
     "status": "PASS",
-    "scanned_text_files": 1246,
+    "scanned_text_files": 1252,
     "findings": [],
     "scope": "deliverable files, excluding ignored environments/cache and local .env"
   },

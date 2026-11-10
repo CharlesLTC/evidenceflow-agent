@@ -126,3 +126,7 @@ git ls-remote origin refs/heads/main
 README、五份考核文档、当前证据索引见 [F6](F6_documentation_check.json)。文档中的历史表格明确标注历史，不合并为本轮通过次数。最终总判定遵循当前证据，历史FAIL不删除、不改写为PASS。
 
 文档初次检查为 FAIL：README 缺少明确的局限说明。补充栏目后按同一判据通过；首次结果见 F6_documentation_check.initial_FAIL.json。
+
+实际发布快照：`82df75cd40defbe9208cf755e921d13d9442bd67`（本地HEAD、远程main和GitHub API一致，工作区干净）；GitHub递归树1248个文件的路径和blob SHA全部一致。该快照ZIP CRC和全部文件字节比对通过，见 F8_github_delivery.json / F9_archive_snapshot.json。记录本说明的后续提交为交付元数据；最终精确SHA及最终ZIP的再次核验见忽略的最终回执，不能把本快照SHA冒充最终SHA。
+
+补充 Git 空白检查为 FAIL（不属于测试或验收判据）：netsh 原始对齐输出含行尾空格，CSV 原始输出使用 CRLF。保留原始工件，不修改指标或数据；详见 supplemental_checks.json 和原始日志。

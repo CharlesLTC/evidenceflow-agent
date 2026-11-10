@@ -1,0 +1,921 @@
+FINAL_ACCEPTANCE/F5_port_exclusions.txt:4: trailing whitespace.
++Start Port    End Port      
+FINAL_ACCEPTANCE/F5_port_exclusions.txt:5: trailing whitespace.
++----------    --------      
+FINAL_ACCEPTANCE/F5_port_exclusions.txt:6: trailing whitespace.
++      8494        8593      
+FINAL_ACCEPTANCE/F5_port_exclusions.txt:7: trailing whitespace.
++      8694        8793      
+FINAL_ACCEPTANCE/F5_port_exclusions.txt:8: trailing whitespace.
++      8854        8953      
+FINAL_ACCEPTANCE/F5_port_exclusions.txt:9: trailing whitespace.
++      8954        9053      
+FINAL_ACCEPTANCE/F5_port_exclusions.txt:10: trailing whitespace.
++      9152        9251      
+FINAL_ACCEPTANCE/F5_port_exclusions.txt:11: trailing whitespace.
++      9252        9351      
+FINAL_ACCEPTANCE/F5_port_exclusions.txt:12: trailing whitespace.
++      9616        9715      
+FINAL_ACCEPTANCE/F5_port_exclusions.txt:13: trailing whitespace.
++      9742        9841      
+FINAL_ACCEPTANCE/F5_port_exclusions.txt:14: trailing whitespace.
++      9842        9941      
+FINAL_ACCEPTANCE/F5_port_exclusions.txt:15: trailing whitespace.
++     10516       10615      
+FINAL_ACCEPTANCE/F5_port_exclusions.txt:19: new blank line at EOF.
+reports/retrieval_details.csv:2: trailing whitespace.
++A_BM25,Q01,办公电脑申领审批需要多久？,['D03'],"['D03', 'D23', 'D31', 'D09', 'D32', 'D05', 'D27', 'D30', 'D26', 'D01']",0.3147000097669661,0,1,0.0,,
+reports/retrieval_details.csv:3: trailing whitespace.
++A_BM25,Q02,领电脑一般几天能批下来？,['D03'],"['D03', 'D31']",0.21739999647252262,0,1,0.0,,
+reports/retrieval_details.csv:4: trailing whitespace.
++A_BM25,Q03,差旅报销期限是多久？,"['D01', 'D02']","['D01', 'D02']",0.18350000027567148,0,1,0.0,,
+reports/retrieval_details.csv:5: trailing whitespace.
++A_BM25,Q04,出差费用最晚何时递交？,"['D01', 'D02']","['D29', 'D30', 'D16', 'D17', 'D01', 'D02']",0.19829999655485153,0,1,0.0,,
+reports/retrieval_details.csv:6: trailing whitespace.
++A_BM25,Q05,电脑坏了找谁维修？,['D04'],"['D04', 'D03', 'D31']",0.17260000458918512,0,1,0.0,,
+reports/retrieval_details.csv:7: trailing whitespace.
++A_BM25,Q06,IT设备维修走什么流程？,['D04'],"['D04', 'D31', 'D15', 'D26', 'D03']",0.20330000552348793,0,1,0.0,,
+reports/retrieval_details.csv:8: trailing whitespace.
++A_BM25,Q07,如何请假？,['D05'],['D05'],0.12959999730810523,0,1,0.0,,
+reports/retrieval_details.csv:9: trailing whitespace.
++A_BM25,Q08,新员工信息安全培训什么时候完成？,['D06'],"['D06', 'D18', 'D21', 'D30', 'D03', 'D05', 'D07']",0.24449999909847975,0,1,0.0,,
+reports/retrieval_details.csv:10: trailing whitespace.
++A_BM25,Q09,访客到访要提前登记吗？,['D07'],"['D07', 'D24', 'D29']",0.19039999460801482,0,1,0.0,,
+reports/retrieval_details.csv:11: trailing whitespace.
++A_BM25,Q10,采购申请谁审批？,['D08'],"['D08', 'D05', 'D27', 'D03', 'D11', 'D15', 'D30', 'D26', 'D01', 'D02']",0.17660000594332814,0,1,0.0,,
+reports/retrieval_details.csv:12: trailing whitespace.
++A_BM25,Q11,会议室一次最多可以使用多久？,['D09'],"['D09', 'D10', 'D27', 'D13', 'D25']",0.2258999738842249,0,1,0.0,,
+reports/retrieval_details.csv:13: trailing whitespace.
++A_BM25,Q12,怎么预订会议室？,['D09'],"['D09', 'D10', 'D30']",0.17330000991933048,0,1,0.0,,
+reports/retrieval_details.csv:14: trailing whitespace.
++A_BM25,Q13,远程会议外部人员怎么加入？,['D10'],"['D10', 'D09', 'D13']",0.2099999983329326,0,1,0.0,,
+reports/retrieval_details.csv:15: trailing whitespace.
++A_BM25,Q14,加班需要提前批准吗？,['D11'],"['D11', 'D22', 'D21']",0.18090000958181918,0,1,0.0,,
+reports/retrieval_details.csv:16: trailing whitespace.
++A_BM25,Q15,印制名片需要哪些信息？,['D12'],"['D12', 'D06']",0.18950001685880125,0,1,0.0,,
+reports/retrieval_details.csv:17: trailing whitespace.
++A_BM25,Q16,在家如何访问内网？,['D13'],"['D13', 'D26']",0.18159998580813408,0,1,0.0,,
+reports/retrieval_details.csv:18: trailing whitespace.
++A_BM25,Q17,VPN需要多因素认证吗？,['D13'],['D13'],0.19079999765381217,0,1,0.0,,
+reports/retrieval_details.csv:19: trailing whitespace.
++A_BM25,Q18,忘记密码怎么重置？,['D14'],['D14'],0.172999978531152,0,1,0.0,,
+reports/retrieval_details.csv:20: trailing whitespace.
++A_BM25,Q19,部门邮件别名找谁创建？,['D15'],"['D15', 'D20']",0.1942999952007085,0,1,0.0,,
+reports/retrieval_details.csv:21: trailing whitespace.
++A_BM25,Q20,国内出差一天补贴多少？,['D16'],"['D16', 'D17', 'D30', 'D01', 'D02']",0.19859999883919954,0,1,0.0,,
+reports/retrieval_details.csv:22: trailing whitespace.
++A_BM25,Q21,海外商务旅行每日津贴多少？,['D17'],[],0.2145000034943223,0,1,0.0,,
+reports/retrieval_details.csv:23: trailing whitespace.
++A_BM25,Q22,正式员工每天餐补多少钱？,['D18'],"['D18', 'D21', 'D19', 'D16', 'D17', 'D06', 'D25', 'D05', 'D07']",0.2212999970652163,0,1,0.0,,
+reports/retrieval_details.csv:24: trailing whitespace.
++A_BM25,Q23,实习生餐补是多少？,['D19'],"['D19', 'D22', 'D18']",0.18549998640082777,0,1,0.0,,
+reports/retrieval_details.csv:25: trailing whitespace.
++A_BM25,Q24,节假日值班表谁发布？,['D20'],"['D20', 'D32']",0.18480001017451286,0,1,0.0,,
+reports/retrieval_details.csv:26: trailing whitespace.
++A_BM25,Q25,正式员工年假几天？,['D21'],"['D21', 'D18', 'D06', 'D05', 'D07']",0.18970001838169992,0,1,0.0,,
+reports/retrieval_details.csv:27: trailing whitespace.
++A_BM25,Q26,实习生每年休假几天？,['D22'],"['D22', 'D19', 'D21']",0.1875000016298145,0,1,0.0,,
+reports/retrieval_details.csv:28: trailing whitespace.
++A_BM25,Q27,办公室断网应该怎么办？,['D23'],"['D23', 'D03', 'D09', 'D32']",0.19669998437166214,0,1,0.0,,
+reports/retrieval_details.csv:29: trailing whitespace.
++A_BM25,Q28,访客无线网络密码从哪里拿？,['D24'],"['D24', 'D14', 'D07', 'D23', 'D13']",0.218400004087016,0,1,0.0,,
+reports/retrieval_details.csv:30: trailing whitespace.
++A_BM25,Q29,工作文件应该保存在哪里？,['D25'],"['D25', 'D27', 'D29', 'D03']",0.218400004087016,0,1,0.0,,
+reports/retrieval_details.csv:31: trailing whitespace.
++A_BM25,Q30,团队网盘多久备份？,['D25'],['D25'],0.17340001068077981,0,1,0.0,,
+reports/retrieval_details.csv:32: trailing whitespace.
++A_BM25,Q31,代码仓库权限如何申请？,['D26'],"['D26', 'D11', 'D15', 'D08', 'D05', 'D13', 'D22', 'D27', 'D21', 'D03']",0.20559999393299222,0,1,0.0,,
+reports/retrieval_details.csv:33: trailing whitespace.
++A_BM25,Q32,盖公章要哪些材料？,['D27'],['D27'],0.1799999736249447,0,1,0.0,,
+reports/retrieval_details.csv:34: trailing whitespace.
++A_BM25,Q33,公司的发票抬头和税号哪里查？,['D28'],"['D28', 'D10', 'D01', 'D02']",0.22789998911321163,0,1,0.0,,
+reports/retrieval_details.csv:35: trailing whitespace.
++A_BM25,Q34,私人快递费用谁付？,['D29'],['D29'],0.17270000535063446,0,1,0.0,,
+reports/retrieval_details.csv:36: trailing whitespace.
++A_BM25,Q35,出差交通票先审批还是先预订？,['D30'],"['D30', 'D09', 'D01', 'D02', 'D16', 'D17', 'D05', 'D27', 'D26', 'D08']",0.23499998496845365,0,1,0.0,,
+reports/retrieval_details.csv:37: trailing whitespace.
++A_BM25,Q36,离职电脑配件交给谁？,['D31'],"['D31', 'D03']",0.18850000924430788,0,1,0.0,,
+reports/retrieval_details.csv:38: trailing whitespace.
++A_BM25,Q37,办公区紧急事件联系谁？,['D32'],"['D32', 'D23', 'D03', 'D09']",0.1984999980777502,0,1,0.0,,
+reports/retrieval_details.csv:39: trailing whitespace.
++A_BM25,Q38,我不能登录账户了，怎么恢复口令？,['D14'],[],0.23880001390352845,0,1,0.0,,
+reports/retrieval_details.csv:40: trailing whitespace.
++A_BM25,Q39,新同事入职第一周要完成什么学习？,['D06'],"['D06', 'D30', 'D03']",0.24029999622143805,0,1,0.0,,
+reports/retrieval_details.csv:41: trailing whitespace.
++A_BM25,Q40,外部客人来访由谁验明身份？,['D07'],"['D10', 'D07', 'D14']",0.21529998048208654,0,1,0.0,,
+reports/retrieval_details.csv:42: trailing whitespace.
++A_BM25,Q41,公司的年终奖金是多少？,[],"['D28', 'D10']",0.19540000357665122,0,1,0.0,,
+reports/retrieval_details.csv:43: trailing whitespace.
++A_BM25,Q42,股票期权授予数量是多少？,[],[],0.1973999897018075,0,1,0.0,,
+reports/retrieval_details.csv:44: trailing whitespace.
++A_BM25,Q43,火星殖民火箭发射日期？,[],"['D22', 'D21']",0.19069999689236283,0,1,0.0,,
+reports/retrieval_details.csv:45: trailing whitespace.
++A_BM25,Q44,董事长私人银行余额？,[],['D29'],0.1810999820008874,0,1,0.0,,
+reports/retrieval_details.csv:46: trailing whitespace.
++B_Dense,Q01,办公电脑申领审批需要多久？,['D03'],"['D03', 'D02', 'D11', 'D21', 'D01', 'D27', 'D05', 'D09', 'D06', 'D22']",4.329999996116385,0,1,0.0,,
+reports/retrieval_details.csv:47: trailing whitespace.
++B_Dense,Q02,领电脑一般几天能批下来？,['D03'],"['D03', 'D21', 'D25', 'D22', 'D31', 'D06', 'D09', 'D01', 'D02', 'D24']",3.0806999711785465,0,1,0.0,,
+reports/retrieval_details.csv:48: trailing whitespace.
++B_Dense,Q03,差旅报销期限是多久？,"['D01', 'D02']","['D01', 'D02', 'D22', 'D21', 'D29', 'D16', 'D17', 'D24', 'D19', 'D30']",2.8550999995786697,0,1,0.0,,
+reports/retrieval_details.csv:49: trailing whitespace.
++B_Dense,Q04,出差费用最晚何时递交？,"['D01', 'D02']","['D01', 'D02', 'D30', 'D29', 'D17', 'D22', 'D21', 'D28', 'D18', 'D08']",3.104400006122887,0,1,0.0,,
+reports/retrieval_details.csv:50: trailing whitespace.
++B_Dense,Q05,电脑坏了找谁维修？,['D04'],"['D04', 'D31', 'D23', 'D25', 'D03', 'D14', 'D15', 'D12', 'D26', 'D07']",2.578999992692843,0,1,0.0,,
+reports/retrieval_details.csv:51: trailing whitespace.
++B_Dense,Q06,IT设备维修走什么流程？,['D04'],"['D04', 'D31', 'D03', 'D25', 'D26', 'D06', 'D23', 'D12', 'D15', 'D14']",2.4049000057857484,0,1,0.0,,
+reports/retrieval_details.csv:52: trailing whitespace.
++B_Dense,Q07,如何请假？,['D05'],"['D22', 'D01', 'D19', 'D30', 'D02', 'D32', 'D07', 'D09', 'D10', 'D24']",2.157599985366687,0,1,0.0,,
+reports/retrieval_details.csv:53: trailing whitespace.
++B_Dense,Q08,新员工信息安全培训什么时候完成？,['D06'],"['D06', 'D21', 'D11', 'D22', 'D03', 'D32', 'D05', 'D26', 'D31', 'D07']",2.3310999968089163,0,1,0.0,,
+reports/retrieval_details.csv:54: trailing whitespace.
++B_Dense,Q09,访客到访要提前登记吗？,['D07'],"['D07', 'D30', 'D01', 'D02', 'D24', 'D03', 'D22', 'D09', 'D11', 'D05']",2.586200018413365,0,1,0.0,,
+reports/retrieval_details.csv:55: trailing whitespace.
++B_Dense,Q10,采购申请谁审批？,['D08'],"['D08', 'D05', 'D27', 'D30', 'D15', 'D07', 'D03', 'D11', 'D12', 'D01']",2.1074000105727464,0,1,0.0,,
+reports/retrieval_details.csv:56: trailing whitespace.
++B_Dense,Q11,会议室一次最多可以使用多久？,['D09'],"['D09', 'D22', 'D10', 'D03', 'D11', 'D21', 'D06', 'D25', 'D01', 'D02']",2.3003999958746135,0,1,0.0,,
+reports/retrieval_details.csv:57: trailing whitespace.
++B_Dense,Q12,怎么预订会议室？,['D09'],"['D09', 'D10', 'D22', 'D03', 'D11', 'D07', 'D05', 'D26', 'D27', 'D23']",1.9963000086136162,0,1,0.0,,
+reports/retrieval_details.csv:58: trailing whitespace.
++B_Dense,Q13,远程会议外部人员怎么加入？,['D10'],"['D10', 'D09', 'D23', 'D07', 'D13', 'D24', 'D22', 'D05', 'D15', 'D11']",2.261100016767159,0,1,0.0,,
+reports/retrieval_details.csv:59: trailing whitespace.
++B_Dense,Q14,加班需要提前批准吗？,['D11'],"['D11', 'D22', 'D21', 'D01', 'D02', 'D09', 'D03', 'D05', 'D06', 'D07']",2.1022000000812113,0,1,0.0,,
+reports/retrieval_details.csv:60: trailing whitespace.
++B_Dense,Q15,印制名片需要哪些信息？,['D12'],"['D27', 'D12', 'D28', 'D08', 'D02', 'D03', 'D07', 'D31', 'D01', 'D30']",2.3723999911453575,0,1,0.0,,
+reports/retrieval_details.csv:61: trailing whitespace.
++B_Dense,Q16,在家如何访问内网？,['D13'],"['D13', 'D24', 'D23', 'D10', 'D29', 'D31', 'D09', 'D16', 'D32', 'D17']",2.122100006090477,0,1,0.0,,
+reports/retrieval_details.csv:62: trailing whitespace.
++B_Dense,Q17,VPN需要多因素认证吗？,['D13'],"['D13', 'D24', 'D23', 'D30', 'D10', 'D26', 'D28', 'D03', 'D07', 'D05']",2.2035999863874167,0,1,0.0,,
+reports/retrieval_details.csv:63: trailing whitespace.
++B_Dense,Q18,忘记密码怎么重置？,['D14'],"['D14', 'D31', 'D04', 'D03', 'D25', 'D09', 'D07', 'D24', 'D15', 'D23']",2.097799995681271,0,1,0.0,,
+reports/retrieval_details.csv:64: trailing whitespace.
++B_Dense,Q19,部门邮件别名找谁创建？,['D15'],"['D15', 'D12', 'D05', 'D28', 'D27', 'D23', 'D29', 'D10', 'D32', 'D07']",2.369399997405708,0,1,0.0,,
+reports/retrieval_details.csv:65: trailing whitespace.
++B_Dense,Q20,国内出差一天补贴多少？,['D16'],"['D16', 'D17', 'D18', 'D01', 'D19', 'D29', 'D02', 'D21', 'D24', 'D22']",2.119300013873726,0,1,0.0,,
+reports/retrieval_details.csv:66: trailing whitespace.
++B_Dense,Q21,海外商务旅行每日津贴多少？,['D17'],"['D17', 'D16', 'D01', 'D02', 'D18', 'D19', 'D30', 'D29', 'D24', 'D22']",2.6283000188414007,0,1,0.0,,
+reports/retrieval_details.csv:67: trailing whitespace.
++B_Dense,Q22,正式员工每天餐补多少钱？,['D18'],"['D18', 'D19', 'D16', 'D21', 'D17', 'D22', 'D25', 'D29', 'D11', 'D20']",2.3031000164337456,0,1,0.0,,
+reports/retrieval_details.csv:68: trailing whitespace.
++B_Dense,Q23,实习生餐补是多少？,['D19'],"['D19', 'D18', 'D22', 'D09', 'D10', 'D17', 'D11', 'D20', 'D21', 'D16']",2.259600005345419,0,1,0.0,,
+reports/retrieval_details.csv:69: trailing whitespace.
++B_Dense,Q24,节假日值班表谁发布？,['D20'],"['D20', 'D01', 'D19', 'D22', 'D18', 'D21', 'D02', 'D28', 'D16', 'D12']",2.8061999764759094,0,1,0.0,,
+reports/retrieval_details.csv:70: trailing whitespace.
++B_Dense,Q25,正式员工年假几天？,['D21'],"['D21', 'D22', 'D11', 'D06', 'D01', 'D09', 'D18', 'D25', 'D02', 'D19']",2.0343000069260597,0,1,0.0,,
+reports/retrieval_details.csv:71: trailing whitespace.
++B_Dense,Q26,实习生每年休假几天？,['D22'],"['D22', 'D21', 'D19', 'D11', 'D09', 'D06', 'D25', 'D01', 'D18', 'D20']",2.101199992466718,0,1,0.0,,
+reports/retrieval_details.csv:72: trailing whitespace.
++B_Dense,Q27,办公室断网应该怎么办？,['D23'],"['D23', 'D09', 'D03', 'D32', 'D31', 'D21', 'D11', 'D24', 'D26', 'D22']",2.1966999920550734,0,1,0.0,,
+reports/retrieval_details.csv:73: trailing whitespace.
++B_Dense,Q28,访客无线网络密码从哪里拿？,['D24'],"['D24', 'D13', 'D23', 'D07', 'D14', 'D26', 'D10', 'D31', 'D29', 'D01']",2.3729000240564346,0,1,0.0,,
+reports/retrieval_details.csv:74: trailing whitespace.
++B_Dense,Q29,工作文件应该保存在哪里？,['D25'],"['D25', 'D23', 'D27', 'D31', 'D29', 'D12', 'D09', 'D26', 'D04', 'D11']",2.0246999920345843,0,1,0.0,,
+reports/retrieval_details.csv:75: trailing whitespace.
++B_Dense,Q30,团队网盘多久备份？,['D25'],"['D25', 'D31', 'D06', 'D01', 'D02', 'D22', 'D03', 'D04', 'D19', 'D21']",2.289399999426678,0,1,0.0,,
+reports/retrieval_details.csv:76: trailing whitespace.
++B_Dense,Q31,代码仓库权限如何申请？,['D26'],"['D26', 'D03', 'D27', 'D08', 'D05', 'D23', 'D11', 'D15', 'D30', 'D04']",2.289399999426678,0,1,0.0,,
+reports/retrieval_details.csv:77: trailing whitespace.
++B_Dense,Q32,盖公章要哪些材料？,['D27'],"['D27', 'D31', 'D12', 'D20', 'D08', 'D25', 'D04', 'D28', 'D23', 'D26']",2.1140000026207417,0,1,0.0,,
+reports/retrieval_details.csv:78: trailing whitespace.
++B_Dense,Q33,公司的发票抬头和税号哪里查？,['D28'],"['D28', 'D29', 'D02', 'D01', 'D12', 'D05', 'D15', 'D20', 'D27', 'D03']",2.9959999956190586,0,1,0.0,,
+reports/retrieval_details.csv:79: trailing whitespace.
++B_Dense,Q34,私人快递费用谁付？,['D29'],"['D29', 'D17', 'D01', 'D16', 'D02', 'D28', 'D30', 'D05', 'D24', 'D08']",2.0964999857824296,0,1,0.0,,
+reports/retrieval_details.csv:80: trailing whitespace.
++B_Dense,Q35,出差交通票先审批还是先预订？,['D30'],"['D30', 'D01', 'D07', 'D02', 'D29', 'D08', 'D28', 'D24', 'D22', 'D11']",2.4843999999575317,0,1,0.0,,
+reports/retrieval_details.csv:81: trailing whitespace.
++B_Dense,Q36,离职电脑配件交给谁？,['D31'],"['D31', 'D25', 'D23', 'D03', 'D05', 'D04', 'D11', 'D19', 'D29', 'D10']",2.223500021500513,0,1,0.0,,
+reports/retrieval_details.csv:82: trailing whitespace.
++B_Dense,Q37,办公区紧急事件联系谁？,['D32'],"['D32', 'D23', 'D15', 'D05', 'D20', 'D10', 'D07', 'D09', 'D11', 'D12']",2.2388999932445586,0,1,0.0,,
+reports/retrieval_details.csv:83: trailing whitespace.
++B_Dense,Q38,我不能登录账户了，怎么恢复口令？,['D14'],"['D14', 'D02', 'D31', 'D01', 'D03', 'D09', 'D28', 'D04', 'D07', 'D29']",2.992699999595061,0,1,0.0,,
+reports/retrieval_details.csv:84: trailing whitespace.
++B_Dense,Q39,新同事入职第一周要完成什么学习？,['D06'],"['D06', 'D22', 'D19', 'D07', 'D21', 'D11', 'D25', 'D08', 'D03', 'D09']",2.8925999940838665,0,1,0.0,,
+reports/retrieval_details.csv:85: trailing whitespace.
++B_Dense,Q40,外部客人来访由谁验明身份？,['D07'],"['D07', 'D10', 'D30', 'D05', 'D24', 'D01', 'D19', 'D02', 'D15', 'D12']",2.777699992293492,0,1,0.0,,
+reports/retrieval_details.csv:86: trailing whitespace.
++B_Dense,Q41,公司的年终奖金是多少？,[],"['D18', 'D21', 'D28', 'D01', 'D19', 'D02', 'D03', 'D11', 'D31', 'D16']",2.3914999910630286,0,1,0.0,,
+reports/retrieval_details.csv:87: trailing whitespace.
++B_Dense,Q42,股票期权授予数量是多少？,[],"['D28', 'D02', 'D01', 'D08', 'D21', 'D03', 'D29', 'D15', 'D27', 'D05']",2.4213999859057367,0,1,0.0,,
+reports/retrieval_details.csv:88: trailing whitespace.
++B_Dense,Q43,火星殖民火箭发射日期？,[],"['D08', 'D03', 'D20', 'D02', 'D06', 'D32', 'D31', 'D22', 'D01', 'D25']",2.288100018631667,0,1,0.0,,
+reports/retrieval_details.csv:89: trailing whitespace.
++B_Dense,Q44,董事长私人银行余额？,[],"['D28', 'D29', 'D02', 'D05', 'D08', 'D01', 'D15', 'D26', 'D03', 'D18']",2.1047999907750636,0,1,0.0,,
+reports/retrieval_details.csv:90: trailing whitespace.
++C_Hybrid_RRF,Q01,办公电脑申领审批需要多久？,['D03'],"['D03', 'D09', 'D02', 'D05', 'D27', 'D31', 'D01', 'D23', 'D26', 'D30']",2.482600015355274,0,1,0.0,,
+reports/retrieval_details.csv:91: trailing whitespace.
++C_Hybrid_RRF,Q02,领电脑一般几天能批下来？,['D03'],"['D03', 'D31', 'D21', 'D25', 'D22', 'D06', 'D09', 'D01', 'D02', 'D24']",2.3785000084899366,0,1,0.0,,
+reports/retrieval_details.csv:92: trailing whitespace.
++C_Hybrid_RRF,Q03,差旅报销期限是多久？,"['D01', 'D02']","['D01', 'D02', 'D22', 'D21', 'D29', 'D16', 'D17', 'D24', 'D19', 'D30']",2.3375999880954623,0,1,0.0,,
+reports/retrieval_details.csv:93: trailing whitespace.
++C_Hybrid_RRF,Q04,出差费用最晚何时递交？,"['D01', 'D02']","['D29', 'D30', 'D01', 'D02', 'D17', 'D16', 'D22', 'D21', 'D28', 'D18']",2.511600003344938,0,1,0.0,,
+reports/retrieval_details.csv:94: trailing whitespace.
++C_Hybrid_RRF,Q05,电脑坏了找谁维修？,['D04'],"['D04', 'D31', 'D03', 'D23', 'D25', 'D14', 'D15', 'D12', 'D26', 'D07']",2.3548000026494265,0,1,0.0,,
+reports/retrieval_details.csv:95: trailing whitespace.
++C_Hybrid_RRF,Q06,IT设备维修走什么流程？,['D04'],"['D04', 'D31', 'D03', 'D26', 'D15', 'D25', 'D06', 'D23', 'D12', 'D14']",2.147899998817593,0,1,0.0,,
+reports/retrieval_details.csv:96: trailing whitespace.
++C_Hybrid_RRF,Q07,如何请假？,['D05'],"['D05', 'D22', 'D01', 'D19', 'D30', 'D02', 'D32', 'D07', 'D09', 'D10']",2.0056999928783625,0,1,0.0,,
+reports/retrieval_details.csv:97: trailing whitespace.
++C_Hybrid_RRF,Q08,新员工信息安全培训什么时候完成？,['D06'],"['D06', 'D21', 'D03', 'D05', 'D07', 'D30', 'D18', 'D11', 'D22', 'D32']",2.3123999999370426,0,1,0.0,,
+reports/retrieval_details.csv:98: trailing whitespace.
++C_Hybrid_RRF,Q09,访客到访要提前登记吗？,['D07'],"['D07', 'D24', 'D29', 'D30', 'D01', 'D02', 'D03', 'D22', 'D09', 'D11']",2.4745000118855387,0,1,0.0,,
+reports/retrieval_details.csv:99: trailing whitespace.
++C_Hybrid_RRF,Q10,采购申请谁审批？,['D08'],"['D08', 'D05', 'D27', 'D03', 'D30', 'D15', 'D11', 'D01', 'D26', 'D02']",2.0275999850127846,0,1,0.0,,
+reports/retrieval_details.csv:100: trailing whitespace.
++C_Hybrid_RRF,Q11,会议室一次最多可以使用多久？,['D09'],"['D09', 'D10', 'D25', 'D27', 'D13', 'D22', 'D03', 'D11', 'D21', 'D06']",2.43429999682121,0,1,0.0,,
+reports/retrieval_details.csv:101: trailing whitespace.
++C_Hybrid_RRF,Q12,怎么预订会议室？,['D09'],"['D09', 'D10', 'D30', 'D22', 'D03', 'D11', 'D07', 'D05', 'D26', 'D27']",2.0896000205539167,0,1,0.0,,
+reports/retrieval_details.csv:102: trailing whitespace.
++C_Hybrid_RRF,Q13,远程会议外部人员怎么加入？,['D10'],"['D10', 'D09', 'D13', 'D23', 'D07', 'D24', 'D22', 'D05', 'D15', 'D11']",2.2647999867331237,0,1,0.0,,
+reports/retrieval_details.csv:103: trailing whitespace.
++C_Hybrid_RRF,Q14,加班需要提前批准吗？,['D11'],"['D11', 'D22', 'D21', 'D01', 'D02', 'D09', 'D03', 'D05', 'D06', 'D07']",2.127999992808327,0,1,0.0,,
+reports/retrieval_details.csv:104: trailing whitespace.
++C_Hybrid_RRF,Q15,印制名片需要哪些信息？,['D12'],"['D12', 'D06', 'D27', 'D28', 'D08', 'D02', 'D03', 'D07', 'D31', 'D01']",2.37649999326095,0,1,0.0,,
+reports/retrieval_details.csv:105: trailing whitespace.
++C_Hybrid_RRF,Q16,在家如何访问内网？,['D13'],"['D13', 'D26', 'D24', 'D23', 'D10', 'D29', 'D31', 'D09', 'D16', 'D32']",2.0911000028718263,0,1,0.0,,
+reports/retrieval_details.csv:106: trailing whitespace.
++C_Hybrid_RRF,Q17,VPN需要多因素认证吗？,['D13'],"['D13', 'D24', 'D23', 'D30', 'D10', 'D26', 'D28', 'D03', 'D07', 'D05']",2.0985000010114163,0,1,0.0,,
+reports/retrieval_details.csv:107: trailing whitespace.
++C_Hybrid_RRF,Q18,忘记密码怎么重置？,['D14'],"['D14', 'D31', 'D04', 'D03', 'D25', 'D09', 'D07', 'D24', 'D15', 'D23']",2.099300007103011,0,1,0.0,,
+reports/retrieval_details.csv:108: trailing whitespace.
++C_Hybrid_RRF,Q19,部门邮件别名找谁创建？,['D15'],"['D15', 'D20', 'D12', 'D05', 'D28', 'D27', 'D23', 'D29', 'D10', 'D32']",2.4280000070575625,0,1,0.0,,
+reports/retrieval_details.csv:109: trailing whitespace.
++C_Hybrid_RRF,Q20,国内出差一天补贴多少？,['D16'],"['D16', 'D17', 'D01', 'D02', 'D30', 'D18', 'D19', 'D29', 'D21', 'D24']",2.1627999958582222,0,1,0.0,,
+reports/retrieval_details.csv:110: trailing whitespace.
++C_Hybrid_RRF,Q21,海外商务旅行每日津贴多少？,['D17'],"['D17', 'D16', 'D01', 'D02', 'D18', 'D19', 'D30', 'D29', 'D24', 'D22']",2.409700013231486,0,1,0.0,,
+reports/retrieval_details.csv:111: trailing whitespace.
++C_Hybrid_RRF,Q22,正式员工每天餐补多少钱？,['D18'],"['D18', 'D19', 'D21', 'D16', 'D17', 'D25', 'D06', 'D07', 'D05', 'D22']",2.3446999839507043,0,1,0.0,,
+reports/retrieval_details.csv:112: trailing whitespace.
++C_Hybrid_RRF,Q23,实习生餐补是多少？,['D19'],"['D19', 'D18', 'D22', 'D09', 'D10', 'D17', 'D11', 'D20', 'D21', 'D16']",2.1773999906145036,0,1,0.0,,
+reports/retrieval_details.csv:113: trailing whitespace.
++C_Hybrid_RRF,Q24,节假日值班表谁发布？,['D20'],"['D20', 'D32', 'D01', 'D19', 'D22', 'D18', 'D21', 'D02', 'D28', 'D16']",2.329400012968108,0,1,0.0,,
+reports/retrieval_details.csv:114: trailing whitespace.
++C_Hybrid_RRF,Q25,正式员工年假几天？,['D21'],"['D21', 'D06', 'D18', 'D05', 'D07', 'D22', 'D11', 'D01', 'D09', 'D25']",2.280599990626797,0,1,0.0,,
+reports/retrieval_details.csv:115: trailing whitespace.
++C_Hybrid_RRF,Q26,实习生每年休假几天？,['D22'],"['D22', 'D19', 'D21', 'D11', 'D09', 'D06', 'D25', 'D01', 'D18', 'D20']",2.272400015499443,0,1,0.0,,
+reports/retrieval_details.csv:116: trailing whitespace.
++C_Hybrid_RRF,Q27,办公室断网应该怎么办？,['D23'],"['D23', 'D03', 'D09', 'D32', 'D31', 'D21', 'D11', 'D24', 'D26', 'D22']",2.1400999976322055,0,1,0.0,,
+reports/retrieval_details.csv:117: trailing whitespace.
++C_Hybrid_RRF,Q28,访客无线网络密码从哪里拿？,['D24'],"['D24', 'D13', 'D14', 'D07', 'D23', 'D26', 'D10', 'D31', 'D29', 'D01']",2.5575000036042184,0,1,0.0,,
+reports/retrieval_details.csv:118: trailing whitespace.
++C_Hybrid_RRF,Q29,工作文件应该保存在哪里？,['D25'],"['D25', 'D27', 'D29', 'D03', 'D23', 'D31', 'D12', 'D09', 'D26', 'D04']",2.134000009391457,0,1,0.0,,
+reports/retrieval_details.csv:119: trailing whitespace.
++C_Hybrid_RRF,Q30,团队网盘多久备份？,['D25'],"['D25', 'D31', 'D06', 'D01', 'D02', 'D22', 'D03', 'D04', 'D19', 'D21']",2.1930999937467277,0,1,0.0,,
+reports/retrieval_details.csv:120: trailing whitespace.
++C_Hybrid_RRF,Q31,代码仓库权限如何申请？,['D26'],"['D26', 'D08', 'D11', 'D05', 'D15', 'D27', 'D03', 'D13', 'D22', 'D21']",2.2758999839425087,0,1,0.0,,
+reports/retrieval_details.csv:121: trailing whitespace.
++C_Hybrid_RRF,Q32,盖公章要哪些材料？,['D27'],"['D27', 'D31', 'D12', 'D20', 'D08', 'D25', 'D04', 'D28', 'D23', 'D26']",2.506200020434335,0,1,0.0,,
+reports/retrieval_details.csv:122: trailing whitespace.
++C_Hybrid_RRF,Q33,公司的发票抬头和税号哪里查？,['D28'],"['D28', 'D01', 'D02', 'D10', 'D29', 'D12', 'D05', 'D15', 'D20', 'D27']",2.823400020133704,0,1,0.0,,
+reports/retrieval_details.csv:123: trailing whitespace.
++C_Hybrid_RRF,Q34,私人快递费用谁付？,['D29'],"['D29', 'D17', 'D01', 'D16', 'D02', 'D28', 'D30', 'D05', 'D24', 'D08']",2.0969000179320574,0,1,0.0,,
+reports/retrieval_details.csv:124: trailing whitespace.
++C_Hybrid_RRF,Q35,出差交通票先审批还是先预订？,['D30'],"['D30', 'D01', 'D02', 'D09', 'D08', 'D17', 'D16', 'D26', 'D05', 'D03']",2.507199998944998,0,1,0.0,,
+reports/retrieval_details.csv:125: trailing whitespace.
++C_Hybrid_RRF,Q36,离职电脑配件交给谁？,['D31'],"['D31', 'D03', 'D25', 'D23', 'D05', 'D04', 'D11', 'D19', 'D29', 'D10']",2.3101000115275383,0,1,0.0,,
+reports/retrieval_details.csv:126: trailing whitespace.
++C_Hybrid_RRF,Q37,办公区紧急事件联系谁？,['D32'],"['D32', 'D23', 'D09', 'D03', 'D15', 'D05', 'D20', 'D10', 'D07', 'D11']",2.251300000352785,0,1,0.0,,
+reports/retrieval_details.csv:127: trailing whitespace.
++C_Hybrid_RRF,Q38,我不能登录账户了，怎么恢复口令？,['D14'],"['D14', 'D02', 'D31', 'D01', 'D03', 'D09', 'D28', 'D04', 'D07', 'D29']",2.967200009152293,0,1,0.0,,
+reports/retrieval_details.csv:128: trailing whitespace.
++C_Hybrid_RRF,Q39,新同事入职第一周要完成什么学习？,['D06'],"['D06', 'D03', 'D30', 'D22', 'D19', 'D07', 'D21', 'D11', 'D25', 'D08']",2.966699976241216,0,1,0.0,,
+reports/retrieval_details.csv:129: trailing whitespace.
++C_Hybrid_RRF,Q40,外部客人来访由谁验明身份？,['D07'],"['D07', 'D10', 'D14', 'D30', 'D05', 'D24', 'D01', 'D19', 'D02', 'D15']",2.8303000144660473,0,1,0.0,,
+reports/retrieval_details.csv:130: trailing whitespace.
++C_Hybrid_RRF,Q41,公司的年终奖金是多少？,[],"['D28', 'D10', 'D18', 'D21', 'D01', 'D19', 'D02', 'D03', 'D11', 'D31']",2.3692999966442585,0,1,0.0,,
+reports/retrieval_details.csv:131: trailing whitespace.
++C_Hybrid_RRF,Q42,股票期权授予数量是多少？,[],"['D28', 'D02', 'D01', 'D08', 'D21', 'D03', 'D29', 'D15', 'D27', 'D05']",2.360500016948208,0,1,0.0,,
+reports/retrieval_details.csv:132: trailing whitespace.
++C_Hybrid_RRF,Q43,火星殖民火箭发射日期？,[],"['D22', 'D21', 'D08', 'D03', 'D20', 'D02', 'D06', 'D32', 'D31', 'D01']",2.2743000008631498,0,1,0.0,,
+reports/retrieval_details.csv:133: trailing whitespace.
++C_Hybrid_RRF,Q44,董事长私人银行余额？,[],"['D29', 'D28', 'D02', 'D05', 'D08', 'D01', 'D15', 'D26', 'D03', 'D18']",2.1456000104080886,0,1,0.0,,
+reports/retrieval_details.csv:134: trailing whitespace.
++D_Hybrid_AgentRewrite,Q01,办公电脑申领审批需要多久？,['D03'],"['D03', 'D09', 'D02', 'D05', 'D27', 'D31', 'D01', 'D23', 'D26', 'D30']",646.9779000035487,1,1,,,reports/retrieval_traces/live/200b523f6bfb4fbe9439e06dfcecf8d3.json
+reports/retrieval_details.csv:135: trailing whitespace.
++D_Hybrid_AgentRewrite,Q02,领电脑一般几天能批下来？,['D03'],"['D03', 'D31', 'D21', 'D25', 'D22', 'D06', 'D09', 'D01', 'D02', 'D24']",636.9807999872137,1,1,,,reports/retrieval_traces/live/ca92890fc28a4af58f1d7441c29fa267.json
+reports/retrieval_details.csv:136: trailing whitespace.
++D_Hybrid_AgentRewrite,Q03,差旅报销期限是多久？,"['D01', 'D02']","['D01', 'D02', 'D22', 'D21', 'D29', 'D16', 'D17', 'D24', 'D19', 'D30']",552.3843000119086,1,1,,,reports/retrieval_traces/live/7f39c1a076ba46a484e96263aa70bc05.json
+reports/retrieval_details.csv:137: trailing whitespace.
++D_Hybrid_AgentRewrite,Q04,出差费用最晚何时递交？,"['D01', 'D02']","['D29', 'D30', 'D01', 'D02', 'D17', 'D16', 'D22', 'D21', 'D28', 'D18']",565.7806000090204,1,1,,,reports/retrieval_traces/live/96ad716e4e1941948ddec55fe49bc1bc.json
+reports/retrieval_details.csv:138: trailing whitespace.
++D_Hybrid_AgentRewrite,Q05,电脑坏了找谁维修？,['D04'],"['D04', 'D31', 'D03', 'D23', 'D25', 'D15', 'D26', 'D12', 'D14', 'D06', 'D07', 'D27']",1392.6204000017606,2,2,,,reports/retrieval_traces/live/bde737609b4f45bfb73e6d7a693e4a6d.json
+reports/retrieval_details.csv:139: trailing whitespace.
++D_Hybrid_AgentRewrite,Q06,IT设备维修走什么流程？,['D04'],"['D04', 'D31', 'D03', 'D26', 'D15', 'D25', 'D06', 'D23', 'D12', 'D14', 'D27']",1344.1720000118949,2,2,,,reports/retrieval_traces/live/b50830188168458fb4fffe2c297c4a8b.json
+reports/retrieval_details.csv:140: trailing whitespace.
++D_Hybrid_AgentRewrite,Q07,如何请假？,['D05'],"['D05', 'D01', 'D02', 'D32', 'D22', 'D28', 'D03', 'D19', 'D30', 'D12', 'D07', 'D14', 'D09', 'D23', 'D10', 'D27']",1263.2444000046235,2,2,,,reports/retrieval_traces/live/4c82aa557e1a47e3993ec93a3bb486f4.json
+reports/retrieval_details.csv:141: trailing whitespace.
++D_Hybrid_AgentRewrite,Q08,新员工信息安全培训什么时候完成？,['D06'],"['D06', 'D21', 'D03', 'D05', 'D07', 'D30', 'D18', 'D11', 'D22', 'D32']",548.9074000215624,1,1,,,reports/retrieval_traces/live/9a9ec16eb2864212bebd15d36ac1f920.json
+reports/retrieval_details.csv:142: trailing whitespace.
++D_Hybrid_AgentRewrite,Q09,访客到访要提前登记吗？,['D07'],"['D07', 'D24', 'D29', 'D30', 'D01', 'D02', 'D03', 'D22', 'D09', 'D11']",584.8754000035115,1,1,,,reports/retrieval_traces/live/bad9159726c64f13b38a1e85a20f9ba1.json
+reports/retrieval_details.csv:143: trailing whitespace.
++D_Hybrid_AgentRewrite,Q10,采购申请谁审批？,['D08'],"['D08', 'D05', 'D27', 'D03', 'D30', 'D11', 'D15', 'D01', 'D02', 'D26']",1987.7228999976069,2,2,,,reports/retrieval_traces/live/0b175ad0195e4b9a91c63d7c319352ba.json
+reports/retrieval_details.csv:144: trailing whitespace.
++D_Hybrid_AgentRewrite,Q11,会议室一次最多可以使用多久？,['D09'],"['D09', 'D10', 'D25', 'D27', 'D13', 'D22', 'D03', 'D11', 'D21', 'D06']",529.1843999875709,1,1,,,reports/retrieval_traces/live/3bd2431ffbd74d51bf87c0e5405c2084.json
+reports/retrieval_details.csv:145: trailing whitespace.
++D_Hybrid_AgentRewrite,Q12,怎么预订会议室？,['D09'],"['D09', 'D10', 'D30', 'D22', 'D07', 'D03', 'D11', 'D05', 'D27', 'D26', 'D01']",1230.041499977233,2,2,,,reports/retrieval_traces/live/dc87d4c00336414b935fd6668de4044a.json
+reports/retrieval_details.csv:146: trailing whitespace.
++D_Hybrid_AgentRewrite,Q13,远程会议外部人员怎么加入？,['D10'],"['D10', 'D09', 'D13', 'D23', 'D24', 'D07', 'D15', 'D05', 'D22', 'D32', 'D11']",1456.1607000068761,2,2,,,reports/retrieval_traces/live/e29d7f86a4694b46a2d82e6432823e45.json
+reports/retrieval_details.csv:147: trailing whitespace.
++D_Hybrid_AgentRewrite,Q14,加班需要提前批准吗？,['D11'],"['D11', 'D22', 'D21', 'D01', 'D02', 'D09', 'D03', 'D05', 'D06', 'D07']",541.0305999976117,1,1,,,reports/retrieval_traces/live/0dd9ec06313a456b845b2378485315da.json
+reports/retrieval_details.csv:148: trailing whitespace.
++D_Hybrid_AgentRewrite,Q15,印制名片需要哪些信息？,['D12'],"['D12', 'D27', 'D08', 'D28', 'D07', 'D03', 'D06', 'D30', 'D02', 'D26', 'D20', 'D04', 'D31', 'D01']",1336.294100008672,2,2,,,reports/retrieval_traces/live/b6b6e9632e0446c39ff63a6534d64133.json
+reports/retrieval_details.csv:149: trailing whitespace.
++D_Hybrid_AgentRewrite,Q16,在家如何访问内网？,['D13'],"['D13', 'D26', 'D10', 'D24', 'D23', 'D29', 'D31', 'D09', 'D14', 'D16', 'D30', 'D32']",1435.8110000030138,2,2,,,reports/retrieval_traces/live/6414f9ea323d41e7ae8391d7cb403575.json
+reports/retrieval_details.csv:150: trailing whitespace.
++D_Hybrid_AgentRewrite,Q17,VPN需要多因素认证吗？,['D13'],"['D13', 'D24', 'D23', 'D30', 'D10', 'D26', 'D28', 'D03', 'D07', 'D05']",543.4167999774218,1,1,,,reports/retrieval_traces/live/c77a30fa57734acba828a93b758c12ef.json
+reports/retrieval_details.csv:151: trailing whitespace.
++D_Hybrid_AgentRewrite,Q18,忘记密码怎么重置？,['D14'],"['D14', 'D31', 'D04', 'D03', 'D25', 'D24', 'D23', 'D06', 'D09', 'D07', 'D26', 'D15', 'D27']",1424.2881999816746,2,2,,,reports/retrieval_traces/live/280a35e55aa341038c082d7580b34ed3.json
+reports/retrieval_details.csv:152: trailing whitespace.
++D_Hybrid_AgentRewrite,Q19,部门邮件别名找谁创建？,['D15'],"['D15', 'D20', 'D12', 'D05', 'D28', 'D27', 'D23', 'D29', 'D10', 'D32']",607.4309000105131,1,1,,,reports/retrieval_traces/live/2d22bf7c0cad4708b3b7ff05e99659ea.json
+reports/retrieval_details.csv:153: trailing whitespace.
++D_Hybrid_AgentRewrite,Q20,国内出差一天补贴多少？,['D16'],"['D16', 'D17', 'D01', 'D02', 'D30', 'D18', 'D19', 'D29', 'D21', 'D24']",557.9326000006404,1,1,,,reports/retrieval_traces/live/d129ed0d5c594c659ed4d78cb846369a.json
+reports/retrieval_details.csv:154: trailing whitespace.
++D_Hybrid_AgentRewrite,Q21,海外商务旅行每日津贴多少？,['D17'],"['D17', 'D16', 'D01', 'D02', 'D18', 'D19', 'D30', 'D29', 'D24', 'D22']",545.6965000194032,1,1,,,reports/retrieval_traces/live/bd3ce3937a904673ba617264aa867429.json
+reports/retrieval_details.csv:155: trailing whitespace.
++D_Hybrid_AgentRewrite,Q22,正式员工每天餐补多少钱？,['D18'],"['D18', 'D19', 'D21', 'D16', 'D17', 'D25', 'D06', 'D07', 'D05', 'D22']",624.0012000198476,1,1,,,reports/retrieval_traces/live/69532af7d19d49bb8a384d6fc0f3ecc8.json
+reports/retrieval_details.csv:156: trailing whitespace.
++D_Hybrid_AgentRewrite,Q23,实习生餐补是多少？,['D19'],"['D19', 'D18', 'D22', 'D09', 'D10', 'D17', 'D11', 'D20', 'D21', 'D16']",559.2916999885347,1,1,,,reports/retrieval_traces/live/f12796d30c86450fa8c56fc9903bee43.json
+reports/retrieval_details.csv:157: trailing whitespace.
++D_Hybrid_AgentRewrite,Q24,节假日值班表谁发布？,['D20'],"['D20', 'D32', 'D01', 'D19', 'D22', 'D18', 'D21', 'D02', 'D28', 'D16']",527.9127999965567,1,1,,,reports/retrieval_traces/live/5ccfcbfda4b045c580a7ca7f17135eb5.json
+reports/retrieval_details.csv:158: trailing whitespace.
++D_Hybrid_AgentRewrite,Q25,正式员工年假几天？,['D21'],"['D21', 'D06', 'D18', 'D05', 'D07', 'D22', 'D11', 'D01', 'D09', 'D25']",578.7270000146236,1,1,,,reports/retrieval_traces/live/22630d523ff84d6aa8a38c6e0ce3220b.json
+reports/retrieval_details.csv:159: trailing whitespace.
++D_Hybrid_AgentRewrite,Q26,实习生每年休假几天？,['D22'],"['D22', 'D19', 'D21', 'D11', 'D09', 'D06', 'D25', 'D01', 'D18', 'D20']",548.0905000003986,1,1,,,reports/retrieval_traces/live/3fb7283700f9469a9b0eec608cfa6ad5.json
+reports/retrieval_details.csv:160: trailing whitespace.
++D_Hybrid_AgentRewrite,Q27,办公室断网应该怎么办？,['D23'],"['D23', 'D03', 'D24', 'D09', 'D32', 'D31', 'D04', 'D13', 'D21', 'D11', 'D10', 'D26', 'D05', 'D22']",1356.7327000200748,2,2,,,reports/retrieval_traces/live/d101a9390ac34826a5bd0814b2520b33.json
+reports/retrieval_details.csv:161: trailing whitespace.
++D_Hybrid_AgentRewrite,Q28,访客无线网络密码从哪里拿？,['D24'],"['D24', 'D14', 'D13', 'D07', 'D23', 'D26', 'D10', 'D31', 'D29', 'D30', 'D01', 'D03']",1251.1204999755137,2,2,,,reports/retrieval_traces/live/b1a25d1487ea47509dccdb9820600a20.json
+reports/retrieval_details.csv:162: trailing whitespace.
++D_Hybrid_AgentRewrite,Q29,工作文件应该保存在哪里？,['D25'],"['D25', 'D27', 'D29', 'D03', 'D23', 'D31', 'D12', 'D09', 'D26', 'D04']",555.3861999942455,1,1,,,reports/retrieval_traces/live/9e8e26c222c04d008acf603a26fe4aba.json
+reports/retrieval_details.csv:163: trailing whitespace.
++D_Hybrid_AgentRewrite,Q30,团队网盘多久备份？,['D25'],"['D25', 'D31', 'D06', 'D01', 'D02', 'D22', 'D03', 'D04', 'D19', 'D21']",891.6873999987729,1,1,,,reports/retrieval_traces/live/c9c4424b6e614428bf2960dae84b5b24.json
+reports/retrieval_details.csv:164: trailing whitespace.
++D_Hybrid_AgentRewrite,Q31,代码仓库权限如何申请？,['D26'],"['D26', 'D08', 'D11', 'D15', 'D05', 'D27', 'D03', 'D13', 'D22', 'D21']",1474.3428000074346,2,2,,,reports/retrieval_traces/live/e34f8ffde7634c07a50be1008d7a2d08.json
+reports/retrieval_details.csv:165: trailing whitespace.
++D_Hybrid_AgentRewrite,Q32,盖公章要哪些材料？,['D27'],"['D27', 'D08', 'D31', 'D12', 'D15', 'D05', 'D20', 'D11', 'D03', 'D25', 'D04', 'D10', 'D09', 'D28', 'D13', 'D23', 'D22', 'D26']",1322.1861000056379,2,2,,,reports/retrieval_traces/live/320e6db9e13e424f8c13eebcfdf935eb.json
+reports/retrieval_details.csv:166: trailing whitespace.
++D_Hybrid_AgentRewrite,Q33,公司的发票抬头和税号哪里查？,['D28'],"['D28', 'D10', 'D15', 'D05', 'D27', 'D01', 'D02', 'D06', 'D07', 'D29', 'D12', 'D30', 'D08', 'D03', 'D20']",1353.0160000082105,2,2,,,reports/retrieval_traces/live/767c9347404c41d2bf2651211e9cfd5e.json
+reports/retrieval_details.csv:167: trailing whitespace.
++D_Hybrid_AgentRewrite,Q34,私人快递费用谁付？,['D29'],"['D29', 'D17', 'D01', 'D16', 'D02', 'D28', 'D30', 'D05', 'D24', 'D08']",638.5517000162508,1,1,,,reports/retrieval_traces/live/6bcef00c2f27455a87c768a2b8e5601a.json
+reports/retrieval_details.csv:168: trailing whitespace.
++D_Hybrid_AgentRewrite,Q35,出差交通票先审批还是先预订？,['D30'],"['D30', 'D01', 'D02', 'D09', 'D08', 'D17', 'D16', 'D26', 'D05', 'D03']",574.8516000167001,1,1,,,reports/retrieval_traces/live/edf2eb5d47e44cdc88241307a189752c.json
+reports/retrieval_details.csv:169: trailing whitespace.
++D_Hybrid_AgentRewrite,Q36,离职电脑配件交给谁？,['D31'],"['D31', 'D03', 'D25', 'D23', 'D05', 'D04', 'D11', 'D19', 'D29', 'D10']",536.1663000076078,1,1,,,reports/retrieval_traces/live/aa45d398d3d846339bf8e67638d16b1e.json
+reports/retrieval_details.csv:170: trailing whitespace.
++D_Hybrid_AgentRewrite,Q37,办公区紧急事件联系谁？,['D32'],"['D32', 'D23', 'D09', 'D03', 'D15', 'D05', 'D20', 'D10', 'D07', 'D11']",568.179300025804,1,1,,,reports/retrieval_traces/live/5f69c0cd423e4e2287f117279cc9703d.json
+reports/retrieval_details.csv:171: trailing whitespace.
++D_Hybrid_AgentRewrite,Q38,我不能登录账户了，怎么恢复口令？,['D14'],"['D14', 'D31', 'D02', 'D03', 'D07', 'D04', 'D28', 'D01', 'D25', 'D09', 'D24', 'D27', 'D29']",1370.410700008506,2,2,,,reports/retrieval_traces/live/241f47e5bdf14256a187f0fc3b8de4bb.json
+reports/retrieval_details.csv:172: trailing whitespace.
++D_Hybrid_AgentRewrite,Q39,新同事入职第一周要完成什么学习？,['D06'],"['D06', 'D21', 'D07', 'D22', 'D03', 'D19', 'D11', 'D25', 'D05', 'D30', 'D18', 'D08']",1283.1495999998879,2,2,,,reports/retrieval_traces/live/e2dc36d35fc04f4aac1ee5fa79e9fa15.json
+reports/retrieval_details.csv:173: trailing whitespace.
++D_Hybrid_AgentRewrite,Q40,外部客人来访由谁验明身份？,['D07'],"['D07', 'D10', 'D14', 'D30', 'D05', 'D24', 'D01', 'D19', 'D02', 'D15']",576.8241999903694,1,1,,,reports/retrieval_traces/live/4b770e2034284f89af6db95bb1c0e6cd.json
+reports/retrieval_details.csv:174: trailing whitespace.
++D_Hybrid_AgentRewrite,Q41,公司的年终奖金是多少？,[],"['D28', 'D21', 'D01', 'D18', 'D02', 'D11', 'D24', 'D10', 'D20', 'D19', 'D03', 'D27', 'D22', 'D31']",1420.792499993695,2,2,,,reports/retrieval_traces/live/560cf683db544cb19beae9454b2bcd8c.json
+reports/retrieval_details.csv:175: trailing whitespace.
++D_Hybrid_AgentRewrite,Q42,股票期权授予数量是多少？,[],"['D28', 'D02', 'D08', 'D01', 'D21', 'D29', 'D03', 'D27', 'D15', 'D05']",1618.4440999932121,2,2,,,reports/retrieval_traces/live/83f36fbd01864109b9147d764be90afb.json
+reports/retrieval_details.csv:176: trailing whitespace.
++D_Hybrid_AgentRewrite,Q43,火星殖民火箭发射日期？,[],"['D22', 'D03', 'D06', 'D08', 'D02', 'D31', 'D32', 'D01', 'D21', 'D25', 'D20', 'D09']",1625.0750999897718,2,2,,,reports/retrieval_traces/live/bed10e299fbc4d8582e940ff96e125c8.json
+reports/retrieval_details.csv:177: trailing whitespace.
++D_Hybrid_AgentRewrite,Q44,董事长私人银行余额？,[],"['D28', 'D02', 'D29', 'D01', 'D18', 'D05', 'D03', 'D08', 'D07', 'D15', 'D26', 'D19', 'D31']",1469.0498000127263,2,2,,,reports/retrieval_traces/live/e86174fc276e4616a5b1847480aa4223.json
+reports/retrieval_details.json:21: trailing whitespace.
++    "latency_ms": 0.3147000097669661,
+reports/retrieval_details.json:40: trailing whitespace.
++    "latency_ms": 0.21739999647252262,
+reports/retrieval_details.json:60: trailing whitespace.
++    "latency_ms": 0.18350000027567148,
+reports/retrieval_details.json:84: trailing whitespace.
++    "latency_ms": 0.19829999655485153,
+reports/retrieval_details.json:104: trailing whitespace.
++    "latency_ms": 0.17260000458918512,
+reports/retrieval_details.json:126: trailing whitespace.
++    "latency_ms": 0.20330000552348793,
+reports/retrieval_details.json:144: trailing whitespace.
++    "latency_ms": 0.12959999730810523,
+reports/retrieval_details.json:168: trailing whitespace.
++    "latency_ms": 0.24449999909847975,
+reports/retrieval_details.json:188: trailing whitespace.
++    "latency_ms": 0.19039999460801482,
+reports/retrieval_details.json:215: trailing whitespace.
++    "latency_ms": 0.17660000594332814,
+reports/retrieval_details.json:237: trailing whitespace.
++    "latency_ms": 0.2258999738842249,
+reports/retrieval_details.json:257: trailing whitespace.
++    "latency_ms": 0.17330000991933048,
+reports/retrieval_details.json:277: trailing whitespace.
++    "latency_ms": 0.2099999983329326,
+reports/retrieval_details.json:297: trailing whitespace.
++    "latency_ms": 0.18090000958181918,
+reports/retrieval_details.json:316: trailing whitespace.
++    "latency_ms": 0.18950001685880125,
+reports/retrieval_details.json:335: trailing whitespace.
++    "latency_ms": 0.18159998580813408,
+reports/retrieval_details.json:353: trailing whitespace.
++    "latency_ms": 0.19079999765381217,
+reports/retrieval_details.json:371: trailing whitespace.
++    "latency_ms": 0.172999978531152,
+reports/retrieval_details.json:390: trailing whitespace.
++    "latency_ms": 0.1942999952007085,
+reports/retrieval_details.json:412: trailing whitespace.
++    "latency_ms": 0.19859999883919954,
+reports/retrieval_details.json:428: trailing whitespace.
++    "latency_ms": 0.2145000034943223,
+reports/retrieval_details.json:454: trailing whitespace.
++    "latency_ms": 0.2212999970652163,
+reports/retrieval_details.json:474: trailing whitespace.
++    "latency_ms": 0.18549998640082777,
+reports/retrieval_details.json:493: trailing whitespace.
++    "latency_ms": 0.18480001017451286,
+reports/retrieval_details.json:515: trailing whitespace.
++    "latency_ms": 0.18970001838169992,
+reports/retrieval_details.json:535: trailing whitespace.
++    "latency_ms": 0.1875000016298145,
+reports/retrieval_details.json:556: trailing whitespace.
++    "latency_ms": 0.19669998437166214,
+reports/retrieval_details.json:578: trailing whitespace.
++    "latency_ms": 0.218400004087016,
+reports/retrieval_details.json:599: trailing whitespace.
++    "latency_ms": 0.218400004087016,
+reports/retrieval_details.json:617: trailing whitespace.
++    "latency_ms": 0.17340001068077981,
+reports/retrieval_details.json:644: trailing whitespace.
++    "latency_ms": 0.20559999393299222,
+reports/retrieval_details.json:662: trailing whitespace.
++    "latency_ms": 0.1799999736249447,
+reports/retrieval_details.json:683: trailing whitespace.
++    "latency_ms": 0.22789998911321163,
+reports/retrieval_details.json:701: trailing whitespace.
++    "latency_ms": 0.17270000535063446,
+reports/retrieval_details.json:728: trailing whitespace.
++    "latency_ms": 0.23499998496845365,
+reports/retrieval_details.json:747: trailing whitespace.
++    "latency_ms": 0.18850000924430788,
+reports/retrieval_details.json:768: trailing whitespace.
++    "latency_ms": 0.1984999980777502,
+reports/retrieval_details.json:784: trailing whitespace.
++    "latency_ms": 0.23880001390352845,
+reports/retrieval_details.json:804: trailing whitespace.
++    "latency_ms": 0.24029999622143805,
+reports/retrieval_details.json:824: trailing whitespace.
++    "latency_ms": 0.21529998048208654,
+reports/retrieval_details.json:841: trailing whitespace.
++    "latency_ms": 0.19540000357665122,
+reports/retrieval_details.json:855: trailing whitespace.
++    "latency_ms": 0.1973999897018075,
+reports/retrieval_details.json:872: trailing whitespace.
++    "latency_ms": 0.19069999689236283,
+reports/retrieval_details.json:888: trailing whitespace.
++    "latency_ms": 0.1810999820008874,
+reports/retrieval_details.json:915: trailing whitespace.
++    "latency_ms": 4.329999996116385,
+reports/retrieval_details.json:942: trailing whitespace.
++    "latency_ms": 3.0806999711785465,
+reports/retrieval_details.json:970: trailing whitespace.
++    "latency_ms": 2.8550999995786697,
+reports/retrieval_details.json:998: trailing whitespace.
++    "latency_ms": 3.104400006122887,
+reports/retrieval_details.json:1025: trailing whitespace.
++    "latency_ms": 2.578999992692843,
+reports/retrieval_details.json:1052: trailing whitespace.
++    "latency_ms": 2.4049000057857484,
+reports/retrieval_details.json:1079: trailing whitespace.
++    "latency_ms": 2.157599985366687,
+reports/retrieval_details.json:1106: trailing whitespace.
++    "latency_ms": 2.3310999968089163,
+reports/retrieval_details.json:1133: trailing whitespace.
++    "latency_ms": 2.586200018413365,
+reports/retrieval_details.json:1160: trailing whitespace.
++    "latency_ms": 2.1074000105727464,
+reports/retrieval_details.json:1187: trailing whitespace.
++    "latency_ms": 2.3003999958746135,
+reports/retrieval_details.json:1214: trailing whitespace.
++    "latency_ms": 1.9963000086136162,
+reports/retrieval_details.json:1241: trailing whitespace.
++    "latency_ms": 2.261100016767159,
+reports/retrieval_details.json:1268: trailing whitespace.
++    "latency_ms": 2.1022000000812113,
+reports/retrieval_details.json:1295: trailing whitespace.
++    "latency_ms": 2.3723999911453575,
+reports/retrieval_details.json:1322: trailing whitespace.
++    "latency_ms": 2.122100006090477,
+reports/retrieval_details.json:1349: trailing whitespace.
++    "latency_ms": 2.2035999863874167,
+reports/retrieval_details.json:1376: trailing whitespace.
++    "latency_ms": 2.097799995681271,
+reports/retrieval_details.json:1403: trailing whitespace.
++    "latency_ms": 2.369399997405708,
+reports/retrieval_details.json:1430: trailing whitespace.
++    "latency_ms": 2.119300013873726,
+reports/retrieval_details.json:1457: trailing whitespace.
++    "latency_ms": 2.6283000188414007,
+reports/retrieval_details.json:1484: trailing whitespace.
++    "latency_ms": 2.3031000164337456,
+reports/retrieval_details.json:1511: trailing whitespace.
++    "latency_ms": 2.259600005345419,
+reports/retrieval_details.json:1538: trailing whitespace.
++    "latency_ms": 2.8061999764759094,
+reports/retrieval_details.json:1565: trailing whitespace.
++    "latency_ms": 2.0343000069260597,
+reports/retrieval_details.json:1592: trailing whitespace.
++    "latency_ms": 2.101199992466718,
+reports/retrieval_details.json:1619: trailing whitespace.
++    "latency_ms": 2.1966999920550734,
+reports/retrieval_details.json:1646: trailing whitespace.
++    "latency_ms": 2.3729000240564346,
+reports/retrieval_details.json:1673: trailing whitespace.
++    "latency_ms": 2.0246999920345843,
+reports/retrieval_details.json:1700: trailing whitespace.
++    "latency_ms": 2.289399999426678,
+reports/retrieval_details.json:1727: trailing whitespace.
++    "latency_ms": 2.289399999426678,
+reports/retrieval_details.json:1754: trailing whitespace.
++    "latency_ms": 2.1140000026207417,
+reports/retrieval_details.json:1781: trailing whitespace.
++    "latency_ms": 2.9959999956190586,
+reports/retrieval_details.json:1808: trailing whitespace.
++    "latency_ms": 2.0964999857824296,
+reports/retrieval_details.json:1835: trailing whitespace.
++    "latency_ms": 2.4843999999575317,
+reports/retrieval_details.json:1862: trailing whitespace.
++    "latency_ms": 2.223500021500513,
+reports/retrieval_details.json:1889: trailing whitespace.
++    "latency_ms": 2.2388999932445586,
+reports/retrieval_details.json:1916: trailing whitespace.
++    "latency_ms": 2.992699999595061,
+reports/retrieval_details.json:1943: trailing whitespace.
++    "latency_ms": 2.8925999940838665,
+reports/retrieval_details.json:1970: trailing whitespace.
++    "latency_ms": 2.777699992293492,
+reports/retrieval_details.json:1995: trailing whitespace.
++    "latency_ms": 2.3914999910630286,
+reports/retrieval_details.json:2020: trailing whitespace.
++    "latency_ms": 2.4213999859057367,
+reports/retrieval_details.json:2045: trailing whitespace.
++    "latency_ms": 2.288100018631667,
+reports/retrieval_details.json:2070: trailing whitespace.
++    "latency_ms": 2.1047999907750636,
+reports/retrieval_details.json:2097: trailing whitespace.
++    "latency_ms": 2.482600015355274,
+reports/retrieval_details.json:2124: trailing whitespace.
++    "latency_ms": 2.3785000084899366,
+reports/retrieval_details.json:2152: trailing whitespace.
++    "latency_ms": 2.3375999880954623,
+reports/retrieval_details.json:2180: trailing whitespace.
++    "latency_ms": 2.511600003344938,
+reports/retrieval_details.json:2207: trailing whitespace.
++    "latency_ms": 2.3548000026494265,
+reports/retrieval_details.json:2234: trailing whitespace.
++    "latency_ms": 2.147899998817593,
+reports/retrieval_details.json:2261: trailing whitespace.
++    "latency_ms": 2.0056999928783625,
+reports/retrieval_details.json:2288: trailing whitespace.
++    "latency_ms": 2.3123999999370426,
+reports/retrieval_details.json:2315: trailing whitespace.
++    "latency_ms": 2.4745000118855387,
+reports/retrieval_details.json:2342: trailing whitespace.
++    "latency_ms": 2.0275999850127846,
+reports/retrieval_details.json:2369: trailing whitespace.
++    "latency_ms": 2.43429999682121,
+reports/retrieval_details.json:2396: trailing whitespace.
++    "latency_ms": 2.0896000205539167,
+reports/retrieval_details.json:2423: trailing whitespace.
++    "latency_ms": 2.2647999867331237,
+reports/retrieval_details.json:2450: trailing whitespace.
++    "latency_ms": 2.127999992808327,
+reports/retrieval_details.json:2477: trailing whitespace.
++    "latency_ms": 2.37649999326095,
+reports/retrieval_details.json:2504: trailing whitespace.
++    "latency_ms": 2.0911000028718263,
+reports/retrieval_details.json:2531: trailing whitespace.
++    "latency_ms": 2.0985000010114163,
+reports/retrieval_details.json:2558: trailing whitespace.
++    "latency_ms": 2.099300007103011,
+reports/retrieval_details.json:2585: trailing whitespace.
++    "latency_ms": 2.4280000070575625,
+reports/retrieval_details.json:2612: trailing whitespace.
++    "latency_ms": 2.1627999958582222,
+reports/retrieval_details.json:2639: trailing whitespace.
++    "latency_ms": 2.409700013231486,
+reports/retrieval_details.json:2666: trailing whitespace.
++    "latency_ms": 2.3446999839507043,
+reports/retrieval_details.json:2693: trailing whitespace.
++    "latency_ms": 2.1773999906145036,
+reports/retrieval_details.json:2720: trailing whitespace.
++    "latency_ms": 2.329400012968108,
+reports/retrieval_details.json:2747: trailing whitespace.
++    "latency_ms": 2.280599990626797,
+reports/retrieval_details.json:2774: trailing whitespace.
++    "latency_ms": 2.272400015499443,
+reports/retrieval_details.json:2801: trailing whitespace.
++    "latency_ms": 2.1400999976322055,
+reports/retrieval_details.json:2828: trailing whitespace.
++    "latency_ms": 2.5575000036042184,
+reports/retrieval_details.json:2855: trailing whitespace.
++    "latency_ms": 2.134000009391457,
+reports/retrieval_details.json:2882: trailing whitespace.
++    "latency_ms": 2.1930999937467277,
+reports/retrieval_details.json:2909: trailing whitespace.
++    "latency_ms": 2.2758999839425087,
+reports/retrieval_details.json:2936: trailing whitespace.
++    "latency_ms": 2.506200020434335,
+reports/retrieval_details.json:2963: trailing whitespace.
++    "latency_ms": 2.823400020133704,
+reports/retrieval_details.json:2990: trailing whitespace.
++    "latency_ms": 2.0969000179320574,
+reports/retrieval_details.json:3017: trailing whitespace.
++    "latency_ms": 2.507199998944998,
+reports/retrieval_details.json:3044: trailing whitespace.
++    "latency_ms": 2.3101000115275383,
+reports/retrieval_details.json:3071: trailing whitespace.
++    "latency_ms": 2.251300000352785,
+reports/retrieval_details.json:3098: trailing whitespace.
++    "latency_ms": 2.967200009152293,
+reports/retrieval_details.json:3125: trailing whitespace.
++    "latency_ms": 2.966699976241216,
+reports/retrieval_details.json:3152: trailing whitespace.
++    "latency_ms": 2.8303000144660473,
+reports/retrieval_details.json:3177: trailing whitespace.
++    "latency_ms": 2.3692999966442585,
+reports/retrieval_details.json:3202: trailing whitespace.
++    "latency_ms": 2.360500016948208,
+reports/retrieval_details.json:3227: trailing whitespace.
++    "latency_ms": 2.2743000008631498,
+reports/retrieval_details.json:3252: trailing whitespace.
++    "latency_ms": 2.1456000104080886,
+reports/retrieval_details.json:3279: trailing whitespace.
++    "latency_ms": 646.9779000035487,
+reports/retrieval_details.json:3287: trailing whitespace.
++    "trace": "reports/retrieval_traces/live/200b523f6bfb4fbe9439e06dfcecf8d3.json",
+reports/retrieval_details.json:3310: trailing whitespace.
++    "latency_ms": 636.9807999872137,
+reports/retrieval_details.json:3318: trailing whitespace.
++    "trace": "reports/retrieval_traces/live/ca92890fc28a4af58f1d7441c29fa267.json",
+reports/retrieval_details.json:3342: trailing whitespace.
++    "latency_ms": 552.3843000119086,
+reports/retrieval_details.json:3350: trailing whitespace.
++    "trace": "reports/retrieval_traces/live/7f39c1a076ba46a484e96263aa70bc05.json",
+reports/retrieval_details.json:3374: trailing whitespace.
++    "latency_ms": 565.7806000090204,
+reports/retrieval_details.json:3382: trailing whitespace.
++    "trace": "reports/retrieval_traces/live/96ad716e4e1941948ddec55fe49bc1bc.json",
+reports/retrieval_details.json:3407: trailing whitespace.
++    "latency_ms": 1392.6204000017606,
+reports/retrieval_details.json:3415: trailing whitespace.
++    "trace": "reports/retrieval_traces/live/bde737609b4f45bfb73e6d7a693e4a6d.json",
+reports/retrieval_details.json:3439: trailing whitespace.
++    "latency_ms": 1344.1720000118949,
+reports/retrieval_details.json:3447: trailing whitespace.
++    "trace": "reports/retrieval_traces/live/b50830188168458fb4fffe2c297c4a8b.json",
+reports/retrieval_details.json:3476: trailing whitespace.
++    "latency_ms": 1263.2444000046235,
+reports/retrieval_details.json:3484: trailing whitespace.
++    "trace": "reports/retrieval_traces/live/4c82aa557e1a47e3993ec93a3bb486f4.json",
+reports/retrieval_details.json:3507: trailing whitespace.
++    "latency_ms": 548.9074000215624,
+reports/retrieval_details.json:3515: trailing whitespace.
++    "trace": "reports/retrieval_traces/live/9a9ec16eb2864212bebd15d36ac1f920.json",
+reports/retrieval_details.json:3538: trailing whitespace.
++    "latency_ms": 584.8754000035115,
+reports/retrieval_details.json:3546: trailing whitespace.
++    "trace": "reports/retrieval_traces/live/bad9159726c64f13b38a1e85a20f9ba1.json",
+reports/retrieval_details.json:3569: trailing whitespace.
++    "latency_ms": 1987.7228999976069,
+reports/retrieval_details.json:3577: trailing whitespace.
++    "trace": "reports/retrieval_traces/live/0b175ad0195e4b9a91c63d7c319352ba.json",
+reports/retrieval_details.json:3600: trailing whitespace.
++    "latency_ms": 529.1843999875709,
+reports/retrieval_details.json:3608: trailing whitespace.
++    "trace": "reports/retrieval_traces/live/3bd2431ffbd74d51bf87c0e5405c2084.json",
+reports/retrieval_details.json:3632: trailing whitespace.
++    "latency_ms": 1230.041499977233,
+reports/retrieval_details.json:3640: trailing whitespace.
++    "trace": "reports/retrieval_traces/live/dc87d4c00336414b935fd6668de4044a.json",
+reports/retrieval_details.json:3664: trailing whitespace.
++    "latency_ms": 1456.1607000068761,
+reports/retrieval_details.json:3672: trailing whitespace.
++    "trace": "reports/retrieval_traces/live/e29d7f86a4694b46a2d82e6432823e45.json",
+reports/retrieval_details.json:3695: trailing whitespace.
++    "latency_ms": 541.0305999976117,
+reports/retrieval_details.json:3703: trailing whitespace.
++    "trace": "reports/retrieval_traces/live/0dd9ec06313a456b845b2378485315da.json",
+reports/retrieval_details.json:3730: trailing whitespace.
++    "latency_ms": 1336.294100008672,
+reports/retrieval_details.json:3738: trailing whitespace.
++    "trace": "reports/retrieval_traces/live/b6b6e9632e0446c39ff63a6534d64133.json",
+reports/retrieval_details.json:3763: trailing whitespace.
++    "latency_ms": 1435.8110000030138,
+reports/retrieval_details.json:3771: trailing whitespace.
++    "trace": "reports/retrieval_traces/live/6414f9ea323d41e7ae8391d7cb403575.json",
+reports/retrieval_details.json:3794: trailing whitespace.
++    "latency_ms": 543.4167999774218,
+reports/retrieval_details.json:3802: trailing whitespace.
++    "trace": "reports/retrieval_traces/live/c77a30fa57734acba828a93b758c12ef.json",
+reports/retrieval_details.json:3828: trailing whitespace.
++    "latency_ms": 1424.2881999816746,
+reports/retrieval_details.json:3836: trailing whitespace.
++    "trace": "reports/retrieval_traces/live/280a35e55aa341038c082d7580b34ed3.json",
+reports/retrieval_details.json:3859: trailing whitespace.
++    "latency_ms": 607.4309000105131,
+reports/retrieval_details.json:3867: trailing whitespace.
++    "trace": "reports/retrieval_traces/live/2d22bf7c0cad4708b3b7ff05e99659ea.json",
+reports/retrieval_details.json:3890: trailing whitespace.
++    "latency_ms": 557.9326000006404,
+reports/retrieval_details.json:3898: trailing whitespace.
++    "trace": "reports/retrieval_traces/live/d129ed0d5c594c659ed4d78cb846369a.json",
+reports/retrieval_details.json:3921: trailing whitespace.
++    "latency_ms": 545.6965000194032,
+reports/retrieval_details.json:3929: trailing whitespace.
++    "trace": "reports/retrieval_traces/live/bd3ce3937a904673ba617264aa867429.json",
+reports/retrieval_details.json:3952: trailing whitespace.
++    "latency_ms": 624.0012000198476,
+reports/retrieval_details.json:3960: trailing whitespace.
++    "trace": "reports/retrieval_traces/live/69532af7d19d49bb8a384d6fc0f3ecc8.json",
+reports/retrieval_details.json:3983: trailing whitespace.
++    "latency_ms": 559.2916999885347,
+reports/retrieval_details.json:3991: trailing whitespace.
++    "trace": "reports/retrieval_traces/live/f12796d30c86450fa8c56fc9903bee43.json",
+reports/retrieval_details.json:4014: trailing whitespace.
++    "latency_ms": 527.9127999965567,
+reports/retrieval_details.json:4022: trailing whitespace.
++    "trace": "reports/retrieval_traces/live/5ccfcbfda4b045c580a7ca7f17135eb5.json",
+reports/retrieval_details.json:4045: trailing whitespace.
++    "latency_ms": 578.7270000146236,
+reports/retrieval_details.json:4053: trailing whitespace.
++    "trace": "reports/retrieval_traces/live/22630d523ff84d6aa8a38c6e0ce3220b.json",
+reports/retrieval_details.json:4076: trailing whitespace.
++    "latency_ms": 548.0905000003986,
+reports/retrieval_details.json:4084: trailing whitespace.
++    "trace": "reports/retrieval_traces/live/3fb7283700f9469a9b0eec608cfa6ad5.json",
+reports/retrieval_details.json:4099: trailing whitespace.
++      "D09",
+reports/retrieval_details.json:4100: trailing whitespace.
++      "D32",
+reports/retrieval_details.json:4103: trailing whitespace.
++      "D13",
+reports/retrieval_details.json:4106: trailing whitespace.
++      "D10",
+reports/retrieval_details.json:4108: trailing whitespace.
++      "D05",
+reports/retrieval_details.json:4111: trailing whitespace.
++    "latency_ms": 1356.7327000200748,
+reports/retrieval_details.json:4115: trailing whitespace.
++      "prompt_tokens": 3632,
+reports/retrieval_details.json:4117: trailing whitespace.
++      "total_tokens": 3666
+reports/retrieval_details.json:4119: trailing whitespace.
++    "trace": "reports/retrieval_traces/live/d101a9390ac34826a5bd0814b2520b33.json",
+reports/retrieval_details.json:4144: trailing whitespace.
++    "latency_ms": 1251.1204999755137,
+reports/retrieval_details.json:4152: trailing whitespace.
++    "trace": "reports/retrieval_traces/live/b1a25d1487ea47509dccdb9820600a20.json",
+reports/retrieval_details.json:4175: trailing whitespace.
++    "latency_ms": 555.3861999942455,
+reports/retrieval_details.json:4183: trailing whitespace.
++    "trace": "reports/retrieval_traces/live/9e8e26c222c04d008acf603a26fe4aba.json",
+reports/retrieval_details.json:4206: trailing whitespace.
++    "latency_ms": 891.6873999987729,
+reports/retrieval_details.json:4214: trailing whitespace.
++    "trace": "reports/retrieval_traces/live/c9c4424b6e614428bf2960dae84b5b24.json",
+reports/retrieval_details.json:4237: trailing whitespace.
++    "latency_ms": 1474.3428000074346,
+reports/retrieval_details.json:4245: trailing whitespace.
++    "trace": "reports/retrieval_traces/live/e34f8ffde7634c07a50be1008d7a2d08.json",
+reports/retrieval_details.json:4260: trailing whitespace.
++      "D12",
+reports/retrieval_details.json:4261: trailing whitespace.
++      "D15",
+reports/retrieval_details.json:4262: trailing whitespace.
++      "D05",
+reports/retrieval_details.json:4263: trailing whitespace.
++      "D20",
+reports/retrieval_details.json:4264: trailing whitespace.
++      "D11",
+reports/retrieval_details.json:4265: trailing whitespace.
++      "D03",
+reports/retrieval_details.json:4269: trailing whitespace.
++      "D09",
+reports/retrieval_details.json:4270: trailing whitespace.
++      "D28",
+reports/retrieval_details.json:4271: trailing whitespace.
++      "D13",
+reports/retrieval_details.json:4272: trailing whitespace.
++      "D23",
+reports/retrieval_details.json:4273: trailing whitespace.
++      "D22",
+reports/retrieval_details.json:4274: trailing whitespace.
++      "D26"
+reports/retrieval_details.json:4276: trailing whitespace.
++    "latency_ms": 1322.1861000056379,
+reports/retrieval_details.json:4280: trailing whitespace.
++      "prompt_tokens": 3595,
+reports/retrieval_details.json:4282: trailing whitespace.
++      "total_tokens": 3628
+reports/retrieval_details.json:4284: trailing whitespace.
++    "trace": "reports/retrieval_traces/live/320e6db9e13e424f8c13eebcfdf935eb.json",
+reports/retrieval_details.json:4312: trailing whitespace.
++    "latency_ms": 1353.0160000082105,
+reports/retrieval_details.json:4320: trailing whitespace.
++    "trace": "reports/retrieval_traces/live/767c9347404c41d2bf2651211e9cfd5e.json",
+reports/retrieval_details.json:4343: trailing whitespace.
++    "latency_ms": 638.5517000162508,
+reports/retrieval_details.json:4351: trailing whitespace.
++    "trace": "reports/retrieval_traces/live/6bcef00c2f27455a87c768a2b8e5601a.json",
+reports/retrieval_details.json:4374: trailing whitespace.
++    "latency_ms": 574.8516000167001,
+reports/retrieval_details.json:4382: trailing whitespace.
++    "trace": "reports/retrieval_traces/live/edf2eb5d47e44cdc88241307a189752c.json",
+reports/retrieval_details.json:4405: trailing whitespace.
++    "latency_ms": 536.1663000076078,
+reports/retrieval_details.json:4413: trailing whitespace.
++    "trace": "reports/retrieval_traces/live/aa45d398d3d846339bf8e67638d16b1e.json",
+reports/retrieval_details.json:4436: trailing whitespace.
++    "latency_ms": 568.179300025804,
+reports/retrieval_details.json:4444: trailing whitespace.
++    "trace": "reports/retrieval_traces/live/5f69c0cd423e4e2287f117279cc9703d.json",
+reports/retrieval_details.json:4470: trailing whitespace.
++    "latency_ms": 1370.410700008506,
+reports/retrieval_details.json:4478: trailing whitespace.
++    "trace": "reports/retrieval_traces/live/241f47e5bdf14256a187f0fc3b8de4bb.json",
+reports/retrieval_details.json:4503: trailing whitespace.
++    "latency_ms": 1283.1495999998879,
+reports/retrieval_details.json:4511: trailing whitespace.
++    "trace": "reports/retrieval_traces/live/e2dc36d35fc04f4aac1ee5fa79e9fa15.json",
+reports/retrieval_details.json:4534: trailing whitespace.
++    "latency_ms": 576.8241999903694,
+reports/retrieval_details.json:4542: trailing whitespace.
++    "trace": "reports/retrieval_traces/live/4b770e2034284f89af6db95bb1c0e6cd.json",
+reports/retrieval_details.json:4567: trailing whitespace.
++    "latency_ms": 1420.792499993695,
+reports/retrieval_details.json:4575: trailing whitespace.
++    "trace": "reports/retrieval_traces/live/560cf683db544cb19beae9454b2bcd8c.json",
+reports/retrieval_details.json:4596: trailing whitespace.
++    "latency_ms": 1618.4440999932121,
+reports/retrieval_details.json:4604: trailing whitespace.
++    "trace": "reports/retrieval_traces/live/83f36fbd01864109b9147d764be90afb.json",
+reports/retrieval_details.json:4627: trailing whitespace.
++    "latency_ms": 1625.0750999897718,
+reports/retrieval_details.json:4635: trailing whitespace.
++    "trace": "reports/retrieval_traces/live/bed10e299fbc4d8582e940ff96e125c8.json",
+reports/retrieval_details.json:4659: trailing whitespace.
++    "latency_ms": 1469.0498000127263,
+reports/retrieval_details.json:4667: trailing whitespace.
++    "trace": "reports/retrieval_traces/live/e86174fc276e4616a5b1847480aa4223.json",
+reports/retrieval_failures.json:18: trailing whitespace.
++    "latency_ms": 0.19829999655485153,
+reports/retrieval_failures.json:34: trailing whitespace.
++    "latency_ms": 0.2145000034943223,
+reports/retrieval_failures.json:50: trailing whitespace.
++    "latency_ms": 0.23880001390352845,
+reports/retrieval_failures.json:77: trailing whitespace.
++    "latency_ms": 2.157599985366687,
+reports/retrieval_failures.json:105: trailing whitespace.
++    "latency_ms": 2.511600003344938,
+reports/retrieval_failures.json:133: trailing whitespace.
++    "latency_ms": 565.7806000090204,
+reports/retrieval_failures.json:141: trailing whitespace.
++    "trace": "reports/retrieval_traces/live/96ad716e4e1941948ddec55fe49bc1bc.json",
+reports/retrieval_metrics.json:2: trailing whitespace.
++  "timestamp": "2026-11-10T20:01:27.676089+00:00",
+reports/retrieval_metrics.json:40: trailing whitespace.
++        "mean_latency_ms": 0.20014090709578755,
+reports/retrieval_metrics.json:41: trailing whitespace.
++        "p95_latency_ms": 0.2400749988737516,
+reports/retrieval_metrics.json:76: trailing whitespace.
++        "mean_latency_ms": 2.4274749997527,
+reports/retrieval_metrics.json:77: trailing whitespace.
++        "p95_latency_ms": 3.0679949748446234,
+reports/retrieval_metrics.json:112: trailing whitespace.
++        "mean_latency_ms": 2.334770456813699,
+reports/retrieval_metrics.json:113: trailing whitespace.
++        "p95_latency_ms": 2.829265015316196,
+reports/retrieval_metrics.json:148: trailing whitespace.
++        "mean_latency_ms": 964.8850727297196,
+reports/retrieval_metrics.json:149: trailing whitespace.
++        "p95_latency_ms": 1596.8289049953457,
+reports/retrieval_metrics.json:156: trailing whitespace.
++        "prompt_tokens": 103910,
+reports/retrieval_metrics.json:158: trailing whitespace.
++        "total_tokens": 104947
+reports/retrieval_metrics.json:162: trailing whitespace.
++  "initialization_ms": 9623.660199984442,
+reports/retrieval_progress.json:2: trailing whitespace.
++  "timestamp": "2026-11-10T20:01:27.676089+00:00",
+reports/retrieval_progress.json:40: trailing whitespace.
++        "mean_latency_ms": 0.20014090709578755,
+reports/retrieval_progress.json:41: trailing whitespace.
++        "p95_latency_ms": 0.2400749988737516,
+reports/retrieval_progress.json:76: trailing whitespace.
++        "mean_latency_ms": 2.4274749997527,
+reports/retrieval_progress.json:77: trailing whitespace.
++        "p95_latency_ms": 3.0679949748446234,
+reports/retrieval_progress.json:112: trailing whitespace.
++        "mean_latency_ms": 2.334770456813699,
+reports/retrieval_progress.json:113: trailing whitespace.
++        "p95_latency_ms": 2.829265015316196,
+reports/retrieval_progress.json:148: trailing whitespace.
++        "mean_latency_ms": 964.8850727297196,
+reports/retrieval_progress.json:149: trailing whitespace.
++        "p95_latency_ms": 1596.8289049953457,
+reports/retrieval_progress.json:156: trailing whitespace.
++        "prompt_tokens": 103910,
+reports/retrieval_progress.json:158: trailing whitespace.
++        "total_tokens": 104947
+reports/retrieval_progress.json:162: trailing whitespace.
++  "initialization_ms": 9623.660199984442,
