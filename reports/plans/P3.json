@@ -1,0 +1,20 @@
+{
+  "commands": [
+    [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "tests/test_evidence_guard.py",
+      "tests/test_conflicts.py",
+      "--junitxml=reports/logs/P3-pytest.xml"
+    ]
+  ],
+  "evidence": [
+    "src/evidenceflow/evidence_guard.py",
+    "src/evidenceflow/claim_conflicts.py"
+  ],
+  "changes": [
+    "Enforce exact quote, read-before-cite, document version, extractive claims and unresolved conflict abstention. Numeric claim comparison respects known disjoint scopes."
+  ]
+}
