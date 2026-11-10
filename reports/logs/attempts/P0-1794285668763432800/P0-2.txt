@@ -1,0 +1,12 @@
+usage: cli.py [-h] {ask} ...
+
+EvidenceFlow enterprise policy agent
+
+positional arguments:
+  {ask}
+    ask       Ask with evidence; live requires configured credentials
+
+options:
+  -h, --help  show this help message and exit
+
+STDERR:

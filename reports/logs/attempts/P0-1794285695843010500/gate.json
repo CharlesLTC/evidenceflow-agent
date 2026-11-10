@@ -1,0 +1,64 @@
+{
+  "stage": "P0",
+  "started_at": "2026-11-10T04:41:08.763432+00:00",
+  "finished_at": "2026-11-10T04:41:16.083269+00:00",
+  "status": "PASS",
+  "commands": [
+    {
+      "argv": [
+        "python",
+        "-m",
+        "pip",
+        "install",
+        "--no-deps",
+        "--no-build-isolation",
+        "-e",
+        ".[dev]"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 4.960511199999019,
+      "log": "reports/logs/P0-0.txt"
+    },
+    {
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "tests/test_schemas.py",
+        "--junitxml=reports/logs/P0-pytest.xml"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 2.2025577000022167,
+      "log": "reports/logs/P0-1.txt"
+    },
+    {
+      "argv": [
+        "python",
+        "-m",
+        "evidenceflow.cli",
+        "--help"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 0.14270240000041667,
+      "log": "reports/logs/P0-2.txt"
+    }
+  ],
+  "test_counts": {
+    "tests": 9,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": 9
+  },
+  "metrics": {},
+  "evidence_paths": [
+    "reports/input_manifest.json",
+    "data/documents.json"
+  ],
+  "errors": [],
+  "changes_made": [
+    "Created isolated Python 3.12 venv, package, strict request/output schemas, environment template and 8 synthetic documents.",
+    "Initial sandbox download blocked; approved dependency download used official PyPI with PIP_CONFIG_FILE=nul to avoid failing global extra index."
+  ]
+}

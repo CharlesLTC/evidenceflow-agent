@@ -1,0 +1,21 @@
+Obtaining file:///E:/%E7%A7%8B%E6%8B%9B%E7%AC%94%E8%AF%95/EvidenceFlow/evidenceflow-agent
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Checking if build backend supports build_editable: started
+Checking if build backend supports build_editable: finished with status 'done'
+Building wheels for collected packages: evidenceflow-agent
+  Building editable for evidenceflow-agent (pyproject.toml): started
+  Building editable for evidenceflow-agent (pyproject.toml): finished with status 'done'
+  Created wheel for evidenceflow-agent: filename=evidenceflow_agent-0.1.0-0.editable-py3-none-any.whl size=1848 sha256=43455b7cf92c32a7927ceae2886915bb258e1d23988b589d14444cc963e29862
+  Stored in directory: E:\秋招笔试\EvidenceFlow\evidenceflow-agent\.cache\tmp\pip-ephem-wheel-cache-7wauonrh\wheels\73\f0\1d\042c6665b6822c1b42cf53529fe9a31bb0c54f2b983347cfaf
+Successfully built evidenceflow-agent
+Installing collected packages: evidenceflow-agent
+  Attempting uninstall: evidenceflow-agent
+    Found existing installation: evidenceflow-agent 0.1.0
+    Uninstalling evidenceflow-agent-0.1.0:
+      Successfully uninstalled evidenceflow-agent-0.1.0
+Successfully installed evidenceflow-agent-0.1.0
+
+STDERR:

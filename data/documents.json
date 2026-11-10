@@ -1,0 +1,82 @@
+[
+  {
+    "doc_id": "D01",
+    "title": "差旅报销制度 A",
+    "topic": "差旅报销",
+    "version_date": "2025-01-01",
+    "effective_date": null,
+    "scope": null,
+    "status": "published",
+    "content": "差旅报销应在30天内提交。报销须附发票和出差审批单。"
+  },
+  {
+    "doc_id": "D02",
+    "title": "差旅报销制度 B",
+    "topic": "差旅报销",
+    "version_date": "2025-07-01",
+    "effective_date": null,
+    "scope": null,
+    "status": "published",
+    "content": "差旅报销应在15天内提交。报销须附发票和出差审批单。"
+  },
+  {
+    "doc_id": "D03",
+    "title": "办公电脑申领",
+    "topic": "电脑申领",
+    "version_date": "2025-01-01",
+    "effective_date": null,
+    "scope": "全体员工",
+    "status": "published",
+    "content": "办公电脑申领须在IT门户填写申请，经主管审批后3个工作日内完成。"
+  },
+  {
+    "doc_id": "D04",
+    "title": "IT设备维修",
+    "topic": "设备维修",
+    "version_date": "2025-01-01",
+    "effective_date": null,
+    "scope": "全体员工",
+    "status": "published",
+    "content": "IT设备故障须在IT门户提交维修工单，由IT支持组受理。"
+  },
+  {
+    "doc_id": "D05",
+    "title": "员工请假制度",
+    "topic": "请假",
+    "version_date": "2025-01-01",
+    "effective_date": null,
+    "scope": "全体员工",
+    "status": "published",
+    "content": "请假应在HR系统提交申请，由直属主管审批。"
+  },
+  {
+    "doc_id": "D06",
+    "title": "新员工培训",
+    "topic": "入职培训",
+    "version_date": "2025-01-01",
+    "effective_date": null,
+    "scope": "新员工",
+    "status": "published",
+    "content": "新员工应在入职后7天内完成信息安全培训。"
+  },
+  {
+    "doc_id": "D07",
+    "title": "访客管理",
+    "topic": "访客",
+    "version_date": "2025-01-01",
+    "effective_date": null,
+    "scope": "访客",
+    "status": "published",
+    "content": "访客到访前须由接待员工登记并由前台核验身份。"
+  },
+  {
+    "doc_id": "D08",
+    "title": "采购申请",
+    "topic": "采购",
+    "version_date": "2025-01-01",
+    "effective_date": null,
+    "scope": "全体员工",
+    "status": "published",
+    "content": "采购须先提交采购申请，经预算负责人审批后由采购部执行。"
+  }
+]

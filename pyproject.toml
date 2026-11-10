@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "evidenceflow-agent"
+version = "0.1.0"
+description = "Evidence-bound enterprise policy ReAct agent"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+  "langgraph>=1.0,<2", "pydantic>=2.10,<3", "httpx==0.28.1",
+  "python-dotenv>=1.0,<2", "numpy>=1.26,<3", "fastapi>=0.115,<1",
+  "uvicorn>=0.32,<1", "streamlit>=1.40,<2", "matplotlib>=3.9,<4",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.3,<10", "ruff>=0.9,<1", "build>=1.2,<2"]
+embeddings = ["sentence-transformers>=3.4,<6"]
+
+[project.scripts]
+evidenceflow = "evidenceflow.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 100
+

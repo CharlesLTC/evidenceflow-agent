@@ -1,0 +1,33 @@
+{
+  "project": "EvidenceFlow",
+  "question_number": 3,
+  "hard_constraints": {
+    "requires_real_llm_tool_decision": true,
+    "max_model_steps": 8,
+    "max_tool_calls": 12,
+    "official_cases": ["TC01", "TC02", "TC03", "TC04", "TC05", "TC06"],
+    "min_real_live_branch_traces": 2,
+    "min_input_output_trace_triplets": 3,
+    "citation_validity_rate": 1.0,
+    "github_required": true,
+    "never_fake_results": true
+  },
+  "gates": [
+    {"stage": "P0", "required": true, "checks": ["install", "cli_help", "pytest_smoke", "no_secrets"]},
+    {"stage": "P1", "required": true, "checks": ["doc_loader", "search_and_read", "empty_error_schema", "tool_unit_tests"]},
+    {"stage": "P2", "required": true, "checks": ["llm_decides_tool", "observation_loop", "bounds_enforced", "trace_live_two_paths"]},
+    {"stage": "P3", "required": true, "checks": ["quote_exact_match", "read_before_cite", "unresolved_conflict_abstain", "no_hallucinated_refs"]},
+    {"stage": "P4", "required": true, "checks": ["TC01_TC06", "tool_failure_observation", "session_followup", "three_actual_triplets", "tests_all_green"]},
+    {"stage": "P5", "required": false, "checks": ["bm25_dense_hybrid_dynamic", "shared_gold_set", "recall_mrr_latency", "ablation_failures"]},
+    {"stage": "P6", "required": false, "checks": ["api_health", "ask_schema", "streamlit_real_backend", "api_tests"]},
+    {"stage": "P7", "required": false, "checks": ["critic_ablation", "no_harm_to_p0_p4", "cost_latency_tracking"]},
+    {"stage": "P8", "required": true, "checks": ["original_docs", "full_test_sweep", "final_report", "github_url", "final_sha", "remote_sha_verified"]}
+  ],
+  "statuses": ["PASS", "FAIL", "BLOCKED", "SKIPPED_OPTIONAL"],
+  "quality_targets_not_guarantees": {
+    "retrieval_labeled_queries_min": 30,
+    "hybrid_recall_at_3_target": 0.85,
+    "fact_supported_rate_target": 0.95,
+    "abstention_accuracy_target": 0.90
+  }
+}

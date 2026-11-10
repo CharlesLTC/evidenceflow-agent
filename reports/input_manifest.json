@@ -1,0 +1,26 @@
+[
+  {
+    "name": "01_EvidenceFlow_完整开发规格.md",
+    "bytes": 35066,
+    "sha256": "875c294a0ddae51c5df7c3be8df631c3ff1b5b5930d1204128654bb0a16c95db",
+    "read_completely": true
+  },
+  {
+    "name": "02_CODEX_总控执行提示词.md",
+    "bytes": 5618,
+    "sha256": "55c4ffd28dac731e96cc1a7120ce3135bce34fd7aab7516e92a84316037ca44c",
+    "read_completely": true
+  },
+  {
+    "name": "03_验收关卡清单.json",
+    "bytes": 1908,
+    "sha256": "361d15b62f1368b4a62a4a7521d6d961a1f0fd344a27340f47f3ebdbdc5350f4",
+    "read_completely": true
+  },
+  {
+    "name": "04_原始考核说明与题目.docx",
+    "bytes": 42440,
+    "sha256": "ee7c5147fe25131569ec053aa483822a6c4fe883ad1a15b3ff0274b637fb8610",
+    "read_completely": true
+  }
+]
