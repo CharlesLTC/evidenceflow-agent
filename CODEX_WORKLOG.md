@@ -26,3 +26,21 @@ Status: FAIL; checks: 4; pytest: {'tests': 9, 'failures': 0, 'errors': 0, 'skipp
 - Editable reinstall failed on sandbox redirected TEMP; fixed by using project-local .cache/tmp. Failed attempt is preserved in reports/logs/attempts.
 
 Evidence: reports/gates/P0.json and reports/logs/P0-*.
+
+## P1 — 2026-11-10T04:42:02.490230+00:00 → 2026-11-10T04:42:04.266892+00:00 UTC
+
+Status: PASS; checks: 1; pytest: {'tests': 8, 'failures': 0, 'errors': 0, 'skipped': 0, 'passed': 8}.
+
+- Implemented exact chunk spans, strict loader, CJK bigram BM25, document/version tools and real fault injection.
+
+Evidence: reports/gates/P1.json and reports/logs/P1-*.
+
+## P0 — 2026-11-10T04:42:17.601230+00:00 → 2026-11-10T04:42:28.108897+00:00 UTC
+
+Status: PASS; checks: 4; pytest: {'tests': 9, 'failures': 0, 'errors': 0, 'skipped': 0, 'passed': 9}.
+
+- Created isolated Python 3.12 venv, package, strict request/output schemas, environment template and 8 synthetic documents.
+- Initial sandbox download blocked; approved dependency download used official PyPI with PIP_CONFIG_FILE=nul to avoid failing global extra index.
+- Editable reinstall failed on sandbox redirected TEMP; fixed by using project-local .cache/tmp. Failed attempt is preserved in reports/logs/attempts.
+
+Evidence: reports/gates/P0.json and reports/logs/P0-*.

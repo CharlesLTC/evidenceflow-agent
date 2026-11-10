@@ -1,18 +1,7 @@
 {
-  "status": "FAIL",
-  "scanned_text_files": 46,
-  "findings": [
-    {
-      "path": ".env.example",
-      "line": 2,
-      "type": "credential_pattern"
-    },
-    {
-      "path": ".env.example",
-      "line": 12,
-      "type": "credential_pattern"
-    }
-  ],
+  "status": "PASS",
+  "scanned_text_files": 60,
+  "findings": [],
   "scope": "deliverable files, excluding ignored environments/cache and local .env"
 }
 

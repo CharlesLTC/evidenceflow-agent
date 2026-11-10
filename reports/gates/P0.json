@@ -1,8 +1,8 @@
 {
   "stage": "P0",
-  "started_at": "2026-11-10T04:41:35.843010+00:00",
-  "finished_at": "2026-11-10T04:41:46.093825+00:00",
-  "status": "FAIL",
+  "started_at": "2026-11-10T04:42:17.601230+00:00",
+  "finished_at": "2026-11-10T04:42:28.108897+00:00",
+  "status": "PASS",
   "commands": [
     {
       "argv": [
@@ -16,7 +16,7 @@
         ".[dev]"
       ],
       "exit_code": 0,
-      "duration_seconds": 4.715717200000654,
+      "duration_seconds": 4.7745796000090195,
       "log": "reports/logs/P0-0.txt"
     },
     {
@@ -29,7 +29,7 @@
         "--junitxml=reports/logs/P0-pytest.xml"
       ],
       "exit_code": 0,
-      "duration_seconds": 1.80355649998819,
+      "duration_seconds": 1.9724530999956187,
       "log": "reports/logs/P0-1.txt"
     },
     {
@@ -40,7 +40,7 @@
         "--help"
       ],
       "exit_code": 0,
-      "duration_seconds": 0.12044909999531228,
+      "duration_seconds": 0.15059490001294762,
       "log": "reports/logs/P0-2.txt"
     },
     {
@@ -49,8 +49,8 @@
         "-m",
         "scripts.security_scan"
       ],
-      "exit_code": 1,
-      "duration_seconds": 3.6034370999987004,
+      "exit_code": 0,
+      "duration_seconds": 3.6031027999997605,
       "log": "reports/logs/P0-3.txt"
     }
   ],

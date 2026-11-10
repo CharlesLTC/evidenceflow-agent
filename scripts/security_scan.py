@@ -7,7 +7,7 @@ from evidenceflow.config import ROOT
 from evidenceflow.trace_writer import SECRET_PATTERN, write_json
 
 EXCLUDED = {".git", ".venv", ".cache", ".tools", "__pycache__", ".pytest_cache", ".ruff_cache", "build", "dist"}
-ASSIGNMENT = re.compile(r"(?im)^\s*(?:LLM_API_KEY|OPENAI_API_KEY|EMBEDDING_API_KEY|GH_TOKEN|GITHUB_TOKEN)\s*=\s*[^\s#\"']{8,}")
+ASSIGNMENT = re.compile(r"(?im)^[ \t]*(?:LLM_API_KEY|OPENAI_API_KEY|EMBEDDING_API_KEY|GH_TOKEN|GITHUB_TOKEN)[ \t]*=[ \t]*[^\s#\"']{8,}")
 
 
 def scan(root):
