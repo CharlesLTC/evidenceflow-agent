@@ -1,0 +1,133 @@
+{
+  "trace_id": "887cdd13de054cc78716454cc9850ae0",
+  "mode": "mock",
+  "model_name": "offline-observation-simulator",
+  "events": [
+    {
+      "kind": "model_decision",
+      "step": 1,
+      "trace_id": "887cdd13de054cc78716454cc9850ae0",
+      "mode": "mock",
+      "model_name": "offline-observation-simulator",
+      "timestamp": "2026-11-10T04:44:58.839386+00:00",
+      "model_step": 1,
+      "tool_calls": [
+        {
+          "id": "call_3846bd1de2",
+          "name": "search_documents",
+          "arguments": {
+            "query": "公司的年终奖金是多少？",
+            "top_k": 5,
+            "strategy": "bm25"
+          }
+        }
+      ],
+      "usage": null,
+      "next_action": [
+        "search_documents"
+      ],
+      "decision_basis": "Model selected tools after receiving the preceding observations."
+    },
+    {
+      "kind": "tool_observation",
+      "step": 2,
+      "trace_id": "887cdd13de054cc78716454cc9850ae0",
+      "mode": "mock",
+      "model_name": "offline-observation-simulator",
+      "timestamp": "2026-11-10T04:44:58.840387+00:00",
+      "model_step": 1,
+      "tool_call_number": 1,
+      "tool_name": "search_documents",
+      "arguments": {
+        "query": "公司的年终奖金是多少？",
+        "top_k": 5,
+        "strategy": "bm25"
+      },
+      "observation": {
+        "query": "公司的年终奖金是多少？",
+        "strategy": "bm25",
+        "hits": []
+      },
+      "observation_summary": "{\"query\": \"公司的年终奖金是多少？\", \"strategy\": \"bm25\", \"hits\": []}",
+      "latency_ms": 0.06310000026132911,
+      "next_action": "agent_decide",
+      "decision_basis": "Tool output or Guard rejection returned to the model."
+    },
+    {
+      "kind": "model_decision",
+      "step": 3,
+      "trace_id": "887cdd13de054cc78716454cc9850ae0",
+      "mode": "mock",
+      "model_name": "offline-observation-simulator",
+      "timestamp": "2026-11-10T04:44:58.841386+00:00",
+      "model_step": 2,
+      "tool_calls": [
+        {
+          "id": "call_c77deff9c5",
+          "name": "submit_answer",
+          "arguments": {
+            "answer": "当前资料不足，无法依据知识库回答。",
+            "status": "INSUFFICIENT_EVIDENCE",
+            "citations": [],
+            "missing_info": [
+              "知识库未包含该问题的依据"
+            ]
+          }
+        }
+      ],
+      "usage": null,
+      "next_action": [
+        "submit_answer"
+      ],
+      "decision_basis": "Model selected tools after receiving the preceding observations."
+    },
+    {
+      "kind": "tool_observation",
+      "step": 4,
+      "trace_id": "887cdd13de054cc78716454cc9850ae0",
+      "mode": "mock",
+      "model_name": "offline-observation-simulator",
+      "timestamp": "2026-11-10T04:44:58.841386+00:00",
+      "model_step": 2,
+      "tool_call_number": 2,
+      "tool_name": "submit_answer",
+      "arguments": {
+        "answer": "当前资料不足，无法依据知识库回答。",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "citations": [],
+        "missing_info": [
+          "知识库未包含该问题的依据"
+        ]
+      },
+      "observation": {
+        "valid": true,
+        "errors": [],
+        "conflicts": [],
+        "expected_answer_format": null
+      },
+      "observation_summary": "{\"valid\": true, \"errors\": [], \"conflicts\": [], \"expected_answer_format\": null}",
+      "latency_ms": 0.019700004486367106,
+      "next_action": "finalize",
+      "decision_basis": "Tool output or Guard rejection returned to the model."
+    }
+  ],
+  "result": {
+    "question": "公司的年终奖金是多少？",
+    "answer": "当前资料不足，无法依据知识库回答。",
+    "status": "INSUFFICIENT_EVIDENCE",
+    "citations": [],
+    "missing_info": [
+      "知识库未包含该问题的依据"
+    ],
+    "conflicts": [],
+    "steps_used": 2,
+    "tool_calls_used": 2,
+    "trace_id": "887cdd13de054cc78716454cc9850ae0",
+    "session_id": "accept_835883d7fbc84957aa7f02d302fb883e",
+    "mode": "mock",
+    "model_name": "offline-observation-simulator",
+    "latency_ms": 6.560699999681674,
+    "usage": {},
+    "error_code": null
+  }
+}

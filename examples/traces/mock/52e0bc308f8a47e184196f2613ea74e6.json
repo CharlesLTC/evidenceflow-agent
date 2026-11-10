@@ -1,0 +1,415 @@
+{
+  "trace_id": "52e0bc308f8a47e184196f2613ea74e6",
+  "mode": "mock",
+  "model_name": "offline-observation-simulator",
+  "events": [
+    {
+      "kind": "model_decision",
+      "step": 1,
+      "trace_id": "52e0bc308f8a47e184196f2613ea74e6",
+      "mode": "mock",
+      "model_name": "offline-observation-simulator",
+      "timestamp": "2026-11-10T04:44:58.816843+00:00",
+      "model_step": 1,
+      "tool_calls": [
+        {
+          "id": "call_5ecc25b469",
+          "name": "search_documents",
+          "arguments": {
+            "query": "差旅报销期限是多久？",
+            "top_k": 5,
+            "strategy": "bm25"
+          }
+        }
+      ],
+      "usage": null,
+      "next_action": [
+        "search_documents"
+      ],
+      "decision_basis": "Model selected tools after receiving the preceding observations."
+    },
+    {
+      "kind": "tool_observation",
+      "step": 2,
+      "trace_id": "52e0bc308f8a47e184196f2613ea74e6",
+      "mode": "mock",
+      "model_name": "offline-observation-simulator",
+      "timestamp": "2026-11-10T04:44:58.816843+00:00",
+      "model_step": 1,
+      "tool_call_number": 1,
+      "tool_name": "search_documents",
+      "arguments": {
+        "query": "差旅报销期限是多久？",
+        "top_k": 5,
+        "strategy": "bm25"
+      },
+      "observation": {
+        "query": "差旅报销期限是多久？",
+        "strategy": "bm25",
+        "hits": [
+          {
+            "doc_id": "D01",
+            "chunk_id": "D01-C01",
+            "title": "差旅报销制度 A",
+            "topic": "差旅报销",
+            "version_date": "2025-01-01",
+            "score": 5.691883941161059,
+            "preview": "差旅报销应在30天内提交。报销须附发票和出差审批单。"
+          },
+          {
+            "doc_id": "D02",
+            "chunk_id": "D02-C01",
+            "title": "差旅报销制度 B",
+            "topic": "差旅报销",
+            "version_date": "2025-07-01",
+            "score": 5.691883941161059,
+            "preview": "差旅报销应在15天内提交。报销须附发票和出差审批单。"
+          }
+        ]
+      },
+      "observation_summary": "{\"query\": \"差旅报销期限是多久？\", \"strategy\": \"bm25\", \"hits\": [{\"doc_id\": \"D01\", \"chunk_id\": \"D01-C01\", \"title\": \"差旅报销制度 A\", \"topic\": \"差旅报销\", \"version_date\": \"2025-01-01\", \"score\": 5.691883941161059, \"preview\": \"差旅报销应在30天内提交。报销须附发票和出差审批单。\"}, {\"doc_id\": \"D02\", \"chunk_id\": \"D02-C01\", \"title\": \"差旅报销制度 B\", \"topic\": \"差旅报销\", \"version_date\": \"2025-07-01\", \"score\": 5.691883941161059, \"preview\": \"差旅报销应在15天内提交。报销须附发票和出差审批单。\"}]}",
+      "latency_ms": 0.07310000364668667,
+      "next_action": "agent_decide",
+      "decision_basis": "Tool output or Guard rejection returned to the model."
+    },
+    {
+      "kind": "model_decision",
+      "step": 3,
+      "trace_id": "52e0bc308f8a47e184196f2613ea74e6",
+      "mode": "mock",
+      "model_name": "offline-observation-simulator",
+      "timestamp": "2026-11-10T04:44:58.817843+00:00",
+      "model_step": 2,
+      "tool_calls": [
+        {
+          "id": "call_3040f48c8f",
+          "name": "read_document",
+          "arguments": {
+            "doc_id": "D01"
+          }
+        }
+      ],
+      "usage": null,
+      "next_action": [
+        "read_document"
+      ],
+      "decision_basis": "Model selected tools after receiving the preceding observations."
+    },
+    {
+      "kind": "tool_observation",
+      "step": 4,
+      "trace_id": "52e0bc308f8a47e184196f2613ea74e6",
+      "mode": "mock",
+      "model_name": "offline-observation-simulator",
+      "timestamp": "2026-11-10T04:44:58.818843+00:00",
+      "model_step": 2,
+      "tool_call_number": 2,
+      "tool_name": "read_document",
+      "arguments": {
+        "doc_id": "D01"
+      },
+      "observation": {
+        "doc_id": "D01",
+        "title": "差旅报销制度 A",
+        "version_date": "2025-01-01",
+        "effective_date": null,
+        "scope": null,
+        "status": "published",
+        "topic": "差旅报销",
+        "content": "差旅报销应在30天内提交。报销须附发票和出差审批单。",
+        "chunks": [
+          {
+            "doc_id": "D01",
+            "chunk_id": "D01-C01",
+            "start": 0,
+            "end": 26,
+            "text": "差旅报销应在30天内提交。报销须附发票和出差审批单。"
+          }
+        ],
+        "trust": "untrusted_document_data"
+      },
+      "observation_summary": "{\"doc_id\": \"D01\", \"title\": \"差旅报销制度 A\", \"version_date\": \"2025-01-01\", \"effective_date\": null, \"scope\": null, \"status\": \"published\", \"topic\": \"差旅报销\", \"content\": \"差旅报销应在30天内提交。报销须附发票和出差审批单。\", \"chunks\": [{\"doc_id\": \"D01\", \"chunk_id\": \"D01-C01\", \"start\": 0, \"end\": 26, \"text\": \"差旅报销应在30天内提交。报销须附发票和出差审批单。\"}], \"trust\": \"untrusted_document_data\"}",
+      "latency_ms": 0.015199999324977398,
+      "next_action": "agent_decide",
+      "decision_basis": "Tool output or Guard rejection returned to the model."
+    },
+    {
+      "kind": "model_decision",
+      "step": 5,
+      "trace_id": "52e0bc308f8a47e184196f2613ea74e6",
+      "mode": "mock",
+      "model_name": "offline-observation-simulator",
+      "timestamp": "2026-11-10T04:44:58.819843+00:00",
+      "model_step": 3,
+      "tool_calls": [
+        {
+          "id": "call_df37b299f7",
+          "name": "read_document",
+          "arguments": {
+            "doc_id": "D02"
+          }
+        }
+      ],
+      "usage": null,
+      "next_action": [
+        "read_document"
+      ],
+      "decision_basis": "Model selected tools after receiving the preceding observations."
+    },
+    {
+      "kind": "tool_observation",
+      "step": 6,
+      "trace_id": "52e0bc308f8a47e184196f2613ea74e6",
+      "mode": "mock",
+      "model_name": "offline-observation-simulator",
+      "timestamp": "2026-11-10T04:44:58.820843+00:00",
+      "model_step": 3,
+      "tool_call_number": 3,
+      "tool_name": "read_document",
+      "arguments": {
+        "doc_id": "D02"
+      },
+      "observation": {
+        "doc_id": "D02",
+        "title": "差旅报销制度 B",
+        "version_date": "2025-07-01",
+        "effective_date": null,
+        "scope": null,
+        "status": "published",
+        "topic": "差旅报销",
+        "content": "差旅报销应在15天内提交。报销须附发票和出差审批单。",
+        "chunks": [
+          {
+            "doc_id": "D02",
+            "chunk_id": "D02-C01",
+            "start": 0,
+            "end": 26,
+            "text": "差旅报销应在15天内提交。报销须附发票和出差审批单。"
+          }
+        ],
+        "trust": "untrusted_document_data"
+      },
+      "observation_summary": "{\"doc_id\": \"D02\", \"title\": \"差旅报销制度 B\", \"version_date\": \"2025-07-01\", \"effective_date\": null, \"scope\": null, \"status\": \"published\", \"topic\": \"差旅报销\", \"content\": \"差旅报销应在15天内提交。报销须附发票和出差审批单。\", \"chunks\": [{\"doc_id\": \"D02\", \"chunk_id\": \"D02-C01\", \"start\": 0, \"end\": 26, \"text\": \"差旅报销应在15天内提交。报销须附发票和出差审批单。\"}], \"trust\": \"untrusted_document_data\"}",
+      "latency_ms": 0.013600001693703234,
+      "next_action": "agent_decide",
+      "decision_basis": "Tool output or Guard rejection returned to the model."
+    },
+    {
+      "kind": "model_decision",
+      "step": 7,
+      "trace_id": "52e0bc308f8a47e184196f2613ea74e6",
+      "mode": "mock",
+      "model_name": "offline-observation-simulator",
+      "timestamp": "2026-11-10T04:44:58.822348+00:00",
+      "model_step": 4,
+      "tool_calls": [
+        {
+          "id": "call_3b7988b52b",
+          "name": "inspect_versions",
+          "arguments": {
+            "topic": "差旅报销"
+          }
+        }
+      ],
+      "usage": null,
+      "next_action": [
+        "inspect_versions"
+      ],
+      "decision_basis": "Model selected tools after receiving the preceding observations."
+    },
+    {
+      "kind": "tool_observation",
+      "step": 8,
+      "trace_id": "52e0bc308f8a47e184196f2613ea74e6",
+      "mode": "mock",
+      "model_name": "offline-observation-simulator",
+      "timestamp": "2026-11-10T04:44:58.822348+00:00",
+      "model_step": 4,
+      "tool_call_number": 4,
+      "tool_name": "inspect_versions",
+      "arguments": {
+        "topic": "差旅报销"
+      },
+      "observation": {
+        "topic": "差旅报销",
+        "versions": [
+          {
+            "doc_id": "D01",
+            "title": "差旅报销制度 A",
+            "topic": "差旅报销",
+            "version_date": "2025-01-01",
+            "scope": null,
+            "effective_date": null,
+            "status": "published"
+          },
+          {
+            "doc_id": "D02",
+            "title": "差旅报销制度 B",
+            "topic": "差旅报销",
+            "version_date": "2025-07-01",
+            "scope": null,
+            "effective_date": null,
+            "status": "published"
+          }
+        ],
+        "precedence": null,
+        "note": "Newer version alone does not establish precedence."
+      },
+      "observation_summary": "{\"topic\": \"差旅报销\", \"versions\": [{\"doc_id\": \"D01\", \"title\": \"差旅报销制度 A\", \"topic\": \"差旅报销\", \"version_date\": \"2025-01-01\", \"scope\": null, \"effective_date\": null, \"status\": \"published\"}, {\"doc_id\": \"D02\", \"title\": \"差旅报销制度 B\", \"topic\": \"差旅报销\", \"version_date\": \"2025-07-01\", \"scope\": null, \"effective_date\": null, \"status\": \"published\"}], \"precedence\": null, \"note\": \"Newer version alone does not establish precedence.\"}",
+      "latency_ms": 0.017400001524947584,
+      "next_action": "agent_decide",
+      "decision_basis": "Tool output or Guard rejection returned to the model."
+    },
+    {
+      "kind": "model_decision",
+      "step": 9,
+      "trace_id": "52e0bc308f8a47e184196f2613ea74e6",
+      "mode": "mock",
+      "model_name": "offline-observation-simulator",
+      "timestamp": "2026-11-10T04:44:58.823357+00:00",
+      "model_step": 5,
+      "tool_calls": [
+        {
+          "id": "call_12cd9ead1e",
+          "name": "submit_answer",
+          "arguments": {
+            "answer": "D01：差旅报销应在30天内提交。\nD02：差旅报销应在15天内提交。\n适用范围及优先级尚待确认，当前无法确定唯一规则。",
+            "status": "NEEDS_CLARIFICATION",
+            "citations": [
+              {
+                "doc_id": "D01",
+                "version_date": "2025-01-01",
+                "quote": "差旅报销应在30天内提交。",
+                "chunk_id": "D01-C01"
+              },
+              {
+                "doc_id": "D02",
+                "version_date": "2025-07-01",
+                "quote": "差旅报销应在15天内提交。",
+                "chunk_id": "D02-C01"
+              }
+            ],
+            "missing_info": [
+              "两份制度的适用范围及优先级"
+            ]
+          }
+        }
+      ],
+      "usage": null,
+      "next_action": [
+        "submit_answer"
+      ],
+      "decision_basis": "Model selected tools after receiving the preceding observations."
+    },
+    {
+      "kind": "tool_observation",
+      "step": 10,
+      "trace_id": "52e0bc308f8a47e184196f2613ea74e6",
+      "mode": "mock",
+      "model_name": "offline-observation-simulator",
+      "timestamp": "2026-11-10T04:44:58.824355+00:00",
+      "model_step": 5,
+      "tool_call_number": 5,
+      "tool_name": "submit_answer",
+      "arguments": {
+        "answer": "D01：差旅报销应在30天内提交。\nD02：差旅报销应在15天内提交。\n适用范围及优先级尚待确认，当前无法确定唯一规则。",
+        "status": "NEEDS_CLARIFICATION",
+        "citations": [
+          {
+            "doc_id": "D01",
+            "version_date": "2025-01-01",
+            "quote": "差旅报销应在30天内提交。",
+            "chunk_id": "D01-C01"
+          },
+          {
+            "doc_id": "D02",
+            "version_date": "2025-07-01",
+            "quote": "差旅报销应在15天内提交。",
+            "chunk_id": "D02-C01"
+          }
+        ],
+        "missing_info": [
+          "两份制度的适用范围及优先级"
+        ]
+      },
+      "observation": {
+        "valid": true,
+        "errors": [],
+        "conflicts": [
+          {
+            "topic": "差旅报销",
+            "field": "提交期限",
+            "documents": [
+              "D02",
+              "D01"
+            ],
+            "values": [
+              "15天",
+              "30天"
+            ],
+            "resolution": "UNRESOLVED",
+            "scope": [
+              null,
+              null
+            ]
+          }
+        ],
+        "expected_answer_format": null
+      },
+      "observation_summary": "{\"valid\": true, \"errors\": [], \"conflicts\": [{\"topic\": \"差旅报销\", \"field\": \"提交期限\", \"documents\": [\"D02\", \"D01\"], \"values\": [\"15天\", \"30天\"], \"resolution\": \"UNRESOLVED\", \"scope\": [null, null]}], \"expected_answer_format\": null}",
+      "latency_ms": 0.04700000863522291,
+      "next_action": "finalize",
+      "decision_basis": "Tool output or Guard rejection returned to the model."
+    }
+  ],
+  "result": {
+    "question": "差旅报销期限是多久？",
+    "answer": "D01：差旅报销应在30天内提交。\nD02：差旅报销应在15天内提交。\n适用范围及优先级尚待确认，当前无法确定唯一规则。",
+    "status": "NEEDS_CLARIFICATION",
+    "citations": [
+      {
+        "doc_id": "D01",
+        "version_date": "2025-01-01",
+        "quote": "差旅报销应在30天内提交。",
+        "chunk_id": "D01-C01"
+      },
+      {
+        "doc_id": "D02",
+        "version_date": "2025-07-01",
+        "quote": "差旅报销应在15天内提交。",
+        "chunk_id": "D02-C01"
+      }
+    ],
+    "missing_info": [
+      "两份制度的适用范围及优先级"
+    ],
+    "conflicts": [
+      {
+        "topic": "差旅报销",
+        "field": "提交期限",
+        "documents": [
+          "D02",
+          "D01"
+        ],
+        "values": [
+          "15天",
+          "30天"
+        ],
+        "resolution": "UNRESOLVED",
+        "scope": [
+          null,
+          null
+        ]
+      }
+    ],
+    "steps_used": 5,
+    "tool_calls_used": 5,
+    "trace_id": "52e0bc308f8a47e184196f2613ea74e6",
+    "session_id": "accept_9016bbae302240baa98ca2af0bfcdae8",
+    "mode": "mock",
+    "model_name": "offline-observation-simulator",
+    "latency_ms": 12.392700009513646,
+    "usage": {},
+    "error_code": null
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "question": "领电脑一般几天能批下来？",
+  "answer": "工具或模型服务不可用，本次未能完成核验。",
+  "status": "FAILED",
+  "citations": [],
+  "missing_info": [
+    "模型调用失败，请检查配置和服务状态"
+  ],
+  "conflicts": [],
+  "steps_used": 1,
+  "tool_calls_used": 0,
+  "trace_id": "a3027135d3a449249f23b7f8673867d9",
+  "session_id": "accept_2aa2707210604e51bc05aa538fec868e",
+  "mode": "live",
+  "model_name": "",
+  "latency_ms": 5.048999999416992,
+  "usage": {},
+  "error_code": "BLOCKED_LIVE"
+}

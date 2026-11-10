@@ -1,0 +1,19 @@
+{
+  "question": "公司的年终奖金是多少？",
+  "answer": "工具或模型服务不可用，本次未能完成核验。",
+  "status": "FAILED",
+  "citations": [],
+  "missing_info": [
+    "模型调用失败，请检查配置和服务状态"
+  ],
+  "conflicts": [],
+  "steps_used": 1,
+  "tool_calls_used": 0,
+  "trace_id": "73373cf4b13443a98e4bacbcde7e2072",
+  "session_id": "accept_28e8eff713254f80a74e1cfb54f09df2",
+  "mode": "live",
+  "model_name": "",
+  "latency_ms": 4.861499997787178,
+  "usage": {},
+  "error_code": "BLOCKED_LIVE"
+}

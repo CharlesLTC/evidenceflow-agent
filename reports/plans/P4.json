@@ -1,0 +1,44 @@
+{
+  "commands": [
+    [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "--junitxml=reports/logs/P4-pytest.xml"
+    ],
+    [
+      "python",
+      "-m",
+      "scripts.run_acceptance",
+      "--mode",
+      "mock"
+    ],
+    {
+      "argv": [
+        "python",
+        "-m",
+        "scripts.run_acceptance",
+        "--mode",
+        "live"
+      ],
+      "allowed_exit_codes": [
+        0,
+        2
+      ]
+    }
+  ],
+  "blockers": [
+    "BLOCKED_LIVE: Missing LLM_API_KEY, LLM_MODEL_NAME; official live six and two live paths cannot pass. Continue independent enhancements under specification section 9.4."
+  ],
+  "evidence": [
+    "reports/acceptance_results.mock.json",
+    "reports/acceptance_results.live.json",
+    "examples/traces/mock",
+    "examples/traces/live"
+  ],
+  "changes": [
+    "Persistent session follow-up, isolated histories, timeout recovery and repeated-failure handling. All 12 scenarios covered by executable tests.",
+    "Saved actual offline triplets and blocked live attempts; blocked attempts contain zero successful model decisions."
+  ]
+}

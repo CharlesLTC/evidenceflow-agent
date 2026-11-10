@@ -1,0 +1,19 @@
+{
+  "question": "那多久批下来？",
+  "answer": "工具或模型服务不可用，本次未能完成核验。",
+  "status": "FAILED",
+  "citations": [],
+  "missing_info": [
+    "模型调用失败，请检查配置和服务状态"
+  ],
+  "conflicts": [],
+  "steps_used": 1,
+  "tool_calls_used": 0,
+  "trace_id": "f13fa09f9c854db18420742702578dc8",
+  "session_id": "accept_6344863ea7214c359f35cdd843e9d0d5",
+  "mode": "live",
+  "model_name": "",
+  "latency_ms": 4.2905000009341165,
+  "usage": {},
+  "error_code": "BLOCKED_LIVE"
+}

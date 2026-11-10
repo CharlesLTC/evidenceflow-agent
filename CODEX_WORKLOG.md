@@ -62,3 +62,13 @@ Status: PASS; checks: 1; pytest: {'tests': 16, 'failures': 0, 'errors': 0, 'skip
 - Enforce exact quote, read-before-cite, document version, extractive claims and unresolved conflict abstention. Numeric claim comparison respects known disjoint scopes.
 
 Evidence: reports/gates/P3.json and reports/logs/P3-*.
+
+## P4 — 2026-11-10T04:45:20.084244+00:00 → 2026-11-10T04:45:26.843450+00:00 UTC
+
+Status: BLOCKED; checks: 3; pytest: {'tests': 50, 'failures': 0, 'errors': 0, 'skipped': 0, 'passed': 50}.
+
+- Persistent session follow-up, isolated histories, timeout recovery and repeated-failure handling. All 12 scenarios covered by executable tests.
+- Saved actual offline triplets and blocked live attempts; blocked attempts contain zero successful model decisions.
+- BLOCKED_LIVE: Missing LLM_API_KEY, LLM_MODEL_NAME; official live six and two live paths cannot pass. Continue independent enhancements under specification section 9.4.
+
+Evidence: reports/gates/P4.json and reports/logs/P4-*.

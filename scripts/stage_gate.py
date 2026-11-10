@@ -29,7 +29,9 @@ def run_stage(stage, commands, *, blockers=None, evidence=None, changes=None):
     temp = ROOT / ".cache/tmp"
     temp.mkdir(parents=True, exist_ok=True)
     records = []
-    for index, args in enumerate(commands):
+    for index, command in enumerate(commands):
+        args = command["argv"] if isinstance(command, dict) else command
+        allowed = command.get("allowed_exit_codes", [0]) if isinstance(command, dict) else [0]
         argv = [sys.executable if x == "python" else x for x in args]
         begin = time.perf_counter()
         proc = subprocess.run(argv, cwd=ROOT, capture_output=True, encoding="utf-8",
@@ -40,6 +42,7 @@ def run_stage(stage, commands, *, blockers=None, evidence=None, changes=None):
         log.parent.mkdir(parents=True, exist_ok=True)
         log.write_text(proc.stdout + "\nSTDERR:\n" + proc.stderr, encoding="utf-8")
         records.append({"argv": args, "exit_code": proc.returncode,
+                        "allowed_exit_codes": allowed,
                         "duration_seconds": time.perf_counter() - begin,
                         "log": str(log.relative_to(ROOT)).replace("\\", "/")})
         print(f"{stage} check {index}: exit={proc.returncode}; {log.name}", flush=True)
@@ -50,7 +53,7 @@ def run_stage(stage, commands, *, blockers=None, evidence=None, changes=None):
             for key in counts:
                 counts[key] += int(suite.get(key, 0))
         counts["passed"] = counts["tests"] - sum(counts[k] for k in ("failures", "errors", "skipped"))
-    failed = [r for r in records if r["exit_code"] != 0]
+    failed = [r for r in records if r["exit_code"] not in r["allowed_exit_codes"]]
     report = {"stage": stage, "started_at": started, "finished_at": now(),
               "status": "FAIL" if failed else "BLOCKED" if blockers else "PASS",
               "commands": records, "test_counts": counts, "metrics": {},
