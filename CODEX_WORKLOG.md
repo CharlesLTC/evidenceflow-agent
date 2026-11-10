@@ -143,3 +143,9 @@ Final P8 sweep: 63/63 pytest, real qwen-plus six 6/6, extended live five 5/5, ac
 Real extended failures were retained and fixed: TC11 copied instruction text; TC12 confused all-tool outage with knowledge absence. Guard now rejects both and returns feedback; fixed live results passed.
 
 GitHub CLI official download checksum verified. Two actual gh auth status checks reported not logged in. User login requested. No remote repository, URL or remote SHA is claimed; P8 remains BLOCKED_GITHUB. Final local SHA is recorded out of band to avoid self-reference.
+
+## P8 publication completed — 2026-11-10T05:11:54.642446+00:00
+
+User completed GitHub CLI login. gh auth status confirmed CharlesLTC and repo scope; same-name repository did not exist. Created https://github.com/CharlesLTC/evidenceflow-agent with --private --source=. --remote=origin --push.
+
+Initial push verified local HEAD = git ls-remote origin HEAD = GitHub API main SHA = d4689fe7d1862f9549b45f7789f2651c2cf6a32c. Remote README read succeeded. Final audit commit is verified again into ignored reports/delivery_verification.local.json to avoid SHA self-reference. Reviewer account was not supplied; repository remains private.

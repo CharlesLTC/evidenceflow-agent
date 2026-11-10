@@ -4,6 +4,8 @@
 
 实际结果：qwen-plus 官方六项 live **6/6**；32 篇合成制度、44 个固定检索问题（40 个有答案）；Hybrid Recall@3 **0.9875**。最终测试数、阶段及 GitHub 状态以 [最终验收报告](reports/final_acceptance.md) 为准。历史失败和阻塞保留。
 
+已实际创建并推送的私有仓库：[CharlesLTC/evidenceflow-agent](https://github.com/CharlesLTC/evidenceflow-agent)。本次全量与干净环境均通过 63/63 项测试。
+
 ## 安装与运行：Windows PowerShell
 
 本机验证 Python 3.12.3，支持 Python >=3.11,<3.14。锁定文件包含实际运行版本及嵌入推理依赖。
@@ -125,5 +127,5 @@ flowchart LR
 
 `examples/inputs`、`outputs/{mode}`、`traces/{mode}` 为实际执行材料。早期 live 阻塞尝试没有成功模型决策，不计入达标证据。原始输入哈希在 `reports/input_manifest.json`，规格和 Word 原文文字在 `docs/source`。P7 独立 Critic 为可选项，本次跳过，强制 Guard 保持生效。
 
-真实建仓后才生成 `reports/github_delivery.json`。commit 不能将自身 SHA 嵌入自身内容，交付后通过 `git rev-parse HEAD` 与 `git ls-remote origin HEAD` 核对；本机忽略的 `reports/delivery_verification.local.json` 保存最后实际对照。私有仓库仍需给评审账号授权，本次尚未提供评审账号。
+实际建仓和首次三方 SHA 核对记录在 `reports/github_delivery.json`。commit 不能将自身 SHA 嵌入自身内容；`python -m scripts.verify_delivery` 核对本地 HEAD、git ls-remote HEAD、GitHub API SHA 和远程 README。本机忽略的 `reports/delivery_verification.local.json` 保存最后实际对照。私有仓库仍需给评审账号授权，本次尚未提供评审账号。
 

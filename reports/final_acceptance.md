@@ -1,10 +1,10 @@
 # EvidenceFlow 最终验收
 
-状态：PARTIAL。生成于 2026-11-10T05:08:39.060246+00:00。
+状态：COMPLETE。生成于 2026-11-10T05:11:54.805974+00:00。
 
 项目路径：E:\秋招笔试\EvidenceFlow\evidenceflow-agent；题号：3；实测模型：qwen-plus。
 
-GitHub：BLOCKED_GITHUB：本机 GitHub CLI 尚未登录或尚未完成远程交付；不能声称已建仓/推送。
+GitHub：https://github.com/CharlesLTC/evidenceflow-agent
 
 最终 SHA：交付完成后由忽略的本机收据 reports/delivery_verification.local.json 记录，须与 git rev-parse HEAD、git ls-remote origin HEAD 一致。版本化报告不能嵌入自身 commit SHA。
 
@@ -18,7 +18,7 @@ GitHub：BLOCKED_GITHUB：本机 GitHub CLI 尚未登录或尚未完成远程交
 | P5 | PASS |
 | P6 | PASS |
 | P7 | SKIPPED_OPTIONAL |
-| P8 | BLOCKED |
+| P8 | PASS |
 
 pytest 实际统计：{'tests': 63, 'failures': 0, 'errors': 0, 'skipped': 0, 'passed': 63}。命令：python -m pytest -q；最新 JUnit 为 reports/logs/P8-pytest.xml（未产生前引用 P4）。
 
@@ -32,4 +32,4 @@ pytest 实际统计：{'tests': 63, 'failures': 0, 'errors': 0, 'skipped': 0, 'p
 
 局限：小型合成标注集；摘录式回答；受控数值/范围/提示模式；未独立人工测量事实支持率；未实现 P7 Critic、生产鉴权与跨进程锁；私有仓库需另授评审访问权。
 
-可核验开发区间：目录创建后至本报告 35.2 分钟；详见 docs/09-time-log.md。
+可核验开发区间：目录创建后至本报告 38.4 分钟；详见 docs/09-time-log.md。

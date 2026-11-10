@@ -1,11 +1,11 @@
 {
   "status": "PASS",
   "errors": [],
-  "json_files_checked": 369,
+  "json_files_checked": 372,
   "actual_triplets": 92,
   "security": {
     "status": "PASS",
-    "scanned_text_files": 509,
+    "scanned_text_files": 513,
     "findings": [],
     "scope": "deliverable files, excluding ignored environments/cache and local .env"
   },

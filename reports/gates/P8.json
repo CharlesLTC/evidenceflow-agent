@@ -1,8 +1,8 @@
 {
   "stage": "P8",
   "started_at": "2026-11-10T05:05:58.253410+00:00",
-  "finished_at": "2026-11-10T05:07:21.986306+00:00",
-  "status": "BLOCKED",
+  "finished_at": "2026-11-10T05:11:54.642446+00:00",
+  "status": "PASS",
   "commands": [
     {
       "argv": [
@@ -145,6 +145,39 @@
       ],
       "duration_seconds": 6.061260000002221,
       "log": "reports/logs/P8-9.txt"
+    },
+    {
+      "argv": [
+        "gh",
+        "auth",
+        "status"
+      ],
+      "exit_code": 0,
+      "log": "reports/github_delivery.json"
+    },
+    {
+      "argv": [
+        "gh",
+        "repo",
+        "create",
+        "evidenceflow-agent",
+        "--private",
+        "--source=.",
+        "--remote=origin",
+        "--push"
+      ],
+      "exit_code": 0,
+      "log": "reports/github_delivery.json"
+    },
+    {
+      "argv": [
+        "python",
+        "-m",
+        "scripts.verify_delivery",
+        "--record-publication"
+      ],
+      "exit_code": 0,
+      "log": "reports/github_delivery.json"
     }
   ],
   "test_counts": {
@@ -168,7 +201,11 @@
     },
     "extended_live_cases": 5,
     "fresh_environment": "PASS",
-    "ui_actual_http_cases": 5
+    "ui_actual_http_cases": 5,
+    "github_url": "https://github.com/CharlesLTC/evidenceflow-agent",
+    "verified_initial_commit_sha": "d4689fe7d1862f9549b45f7789f2651c2cf6a32c",
+    "remote_head_verified": true,
+    "final_sha_receipt": "reports/delivery_verification.local.json"
   },
   "evidence_paths": [
     "reports/logs/P8-pytest.xml",
@@ -177,14 +214,15 @@
     "reports/retrieval_metrics.json",
     "reports/artifact_verification.json",
     "reports/clean_environment.json",
-    "reports/final_acceptance.md"
+    "reports/final_acceptance.md",
+    "reports/github_delivery.json",
+    "reports/delivery_verification.local.json"
   ],
-  "errors": [
-    "BLOCKED_GITHUB: gh auth status reported not logged into any GitHub hosts. User login requested; no repository URL or remote SHA claimed."
-  ],
+  "errors": [],
   "changes_made": [
     "Final full regression after real adversarial failures: reject instruction text in policy citations and distinguish all-tool failure from knowledge absence.",
     "Complete requirements, solution, evaluation, AI usage, retrospective, architecture, test plan, experiments and measured time log.",
-    "Pinned actual environment, verified official portable gh download, secret scan and actual trace triplets. P7 explicitly optional and skipped."
+    "Pinned actual environment, verified official portable gh download, secret scan and actual trace triplets. P7 explicitly optional and skipped.",
+    "User completed GitHub CLI login. Created private CharlesLTC/evidenceflow-agent, pushed main, verified local HEAD == ls-remote HEAD == GitHub API SHA and read remote README. Final audit commit is reverified out of band."
   ]
 }

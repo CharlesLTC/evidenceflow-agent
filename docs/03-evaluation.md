@@ -1,6 +1,6 @@
 # 实际评估结果
 
-生成时间：2026-11-10T05:08:39.060246+00:00。所有表格读取实际 JSON/JUnit。
+生成时间：2026-11-10T05:11:54.805974+00:00。所有表格读取实际 JSON/JUnit。
 
 pytest：{'tests': 63, 'failures': 0, 'errors': 0, 'skipped': 0, 'passed': 63}。mock：6/6；live：6/6（qwen-plus）。
 

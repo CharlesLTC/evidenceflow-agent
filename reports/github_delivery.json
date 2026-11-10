@@ -1,0 +1,11 @@
+{
+  "url": "https://github.com/CharlesLTC/evidenceflow-agent",
+  "private": true,
+  "verified_initial_commit_sha": "d4689fe7d1862f9549b45f7789f2651c2cf6a32c",
+  "remote_head": "d4689fe7d1862f9549b45f7789f2651c2cf6a32c",
+  "github_api_head": "d4689fe7d1862f9549b45f7789f2651c2cf6a32c",
+  "verified_at": "2026-11-10T05:11:27.640677+00:00",
+  "readme_blob_readable": "7da9cce3b7245692fa60f88aee878e85d3eaabbf",
+  "final_commit_receipt": "reports/delivery_verification.local.json",
+  "reviewer_access": "Private repository; reviewer account not supplied, access must be granted separately."
+}

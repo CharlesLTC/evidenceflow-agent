@@ -1,0 +1,190 @@
+{
+  "stage": "P8",
+  "started_at": "2026-11-10T05:05:58.253410+00:00",
+  "finished_at": "2026-11-10T05:07:21.986306+00:00",
+  "status": "BLOCKED",
+  "commands": [
+    {
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "--junitxml=reports/logs/P8-pytest.xml"
+      ],
+      "exit_code": 0,
+      "allowed_exit_codes": [
+        0
+      ],
+      "duration_seconds": 4.265596400000504,
+      "log": "reports/logs/P8-0.txt"
+    },
+    {
+      "argv": [
+        "python",
+        "-m",
+        "ruff",
+        "check",
+        "src",
+        "scripts",
+        "tests",
+        "ui"
+      ],
+      "exit_code": 0,
+      "allowed_exit_codes": [
+        0
+      ],
+      "duration_seconds": 0.1170882000005804,
+      "log": "reports/logs/P8-1.txt"
+    },
+    {
+      "argv": [
+        "python",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "exit_code": 0,
+      "allowed_exit_codes": [
+        0
+      ],
+      "duration_seconds": 1.4609172999917064,
+      "log": "reports/logs/P8-2.txt"
+    },
+    {
+      "argv": [
+        "python",
+        "-m",
+        "scripts.run_acceptance",
+        "--mode",
+        "mock"
+      ],
+      "exit_code": 0,
+      "allowed_exit_codes": [
+        0
+      ],
+      "duration_seconds": 1.5116992000112077,
+      "log": "reports/logs/P8-3.txt"
+    },
+    {
+      "argv": [
+        "python",
+        "-m",
+        "scripts.run_acceptance",
+        "--mode",
+        "live"
+      ],
+      "exit_code": 0,
+      "allowed_exit_codes": [
+        0
+      ],
+      "duration_seconds": 63.25878200000443,
+      "log": "reports/logs/P8-4.txt"
+    },
+    {
+      "argv": [
+        "python",
+        "-m",
+        "scripts.validate_live_evidence"
+      ],
+      "exit_code": 0,
+      "allowed_exit_codes": [
+        0
+      ],
+      "duration_seconds": 0.23949540000467096,
+      "log": "reports/logs/P8-5.txt"
+    },
+    {
+      "argv": [
+        "python",
+        "-m",
+        "scripts.verify_retrieval_results"
+      ],
+      "exit_code": 0,
+      "allowed_exit_codes": [
+        0
+      ],
+      "duration_seconds": 0.6406895999971312,
+      "log": "reports/logs/P8-6.txt"
+    },
+    {
+      "argv": [
+        "python",
+        "-m",
+        "scripts.smoke_ui"
+      ],
+      "exit_code": 0,
+      "allowed_exit_codes": [
+        0
+      ],
+      "duration_seconds": 6.008329499993124,
+      "log": "reports/logs/P8-7.txt"
+    },
+    {
+      "argv": [
+        "python",
+        "-m",
+        "scripts.build_reports"
+      ],
+      "exit_code": 0,
+      "allowed_exit_codes": [
+        0
+      ],
+      "duration_seconds": 0.16681660000176635,
+      "log": "reports/logs/P8-8.txt"
+    },
+    {
+      "argv": [
+        "python",
+        "-m",
+        "scripts.verify_artifacts"
+      ],
+      "exit_code": 0,
+      "allowed_exit_codes": [
+        0
+      ],
+      "duration_seconds": 6.061260000002221,
+      "log": "reports/logs/P8-9.txt"
+    }
+  ],
+  "test_counts": {
+    "tests": 63,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": 63
+  },
+  "metrics": {
+    "pytest": {
+      "tests": 63,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 63
+    },
+    "live_official": {
+      "passed": 6,
+      "total": 6
+    },
+    "extended_live_cases": 5,
+    "fresh_environment": "PASS",
+    "ui_actual_http_cases": 5
+  },
+  "evidence_paths": [
+    "reports/logs/P8-pytest.xml",
+    "reports/acceptance_results.live.json",
+    "reports/extended_live.json",
+    "reports/retrieval_metrics.json",
+    "reports/artifact_verification.json",
+    "reports/clean_environment.json",
+    "reports/final_acceptance.md"
+  ],
+  "errors": [
+    "BLOCKED_GITHUB: gh auth status reported not logged into any GitHub hosts. User login requested; no repository URL or remote SHA claimed."
+  ],
+  "changes_made": [
+    "Final full regression after real adversarial failures: reject instruction text in policy citations and distinguish all-tool failure from knowledge absence.",
+    "Complete requirements, solution, evaluation, AI usage, retrospective, architecture, test plan, experiments and measured time log.",
+    "Pinned actual environment, verified official portable gh download, secret scan and actual trace triplets. P7 explicitly optional and skipped."
+  ]
+}
