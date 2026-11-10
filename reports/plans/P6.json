@@ -1,0 +1,28 @@
+{
+  "commands": [
+    [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "tests/test_api.py",
+      "--junitxml=reports/logs/P6-pytest.xml"
+    ],
+    [
+      "python",
+      "-m",
+      "scripts.smoke_api"
+    ]
+  ],
+  "evidence": [
+    "reports/ui_smoke.json",
+    "reports/logs/P6-ui-smoke.txt",
+    "src/evidenceflow/api.py",
+    "ui/app.py"
+  ],
+  "changes": [
+    "Implemented five real FastAPI endpoints and Streamlit HTTP client with citations, conflicts, actual trace timeline, retrieval ranks, session history and experimental metrics.",
+    "Actual HTTP UI smoke covered completed, conflict, insufficient evidence, one timeout and repeated timeout; failure renders error without success.",
+    "Sandbox blocked Windows asyncio socketpair; tests run with approved loopback access. AppTest verifies interactions, not browser pixel layout."
+  ]
+}

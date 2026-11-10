@@ -1,0 +1,95 @@
+INFO:     127.0.0.1:14668 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:14669 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:14672 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:14675 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:14678 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:14681 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:14684 - "POST /ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:14685 - "GET /traces/67df09d0196840ffaf103d022ea92f96?mode=mock HTTP/1.1" 200 OK
+INFO:     127.0.0.1:14686 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:14669 - "GET /traces/67df09d0196840ffaf103d022ea92f96?mode=mock HTTP/1.1" 200 OK
+INFO:     127.0.0.1:14689 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:14692 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:14695 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:14698 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:14701 - "POST /ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:14702 - "GET /traces/11f0cd662f8f432a9595c4e467ae25f2?mode=mock HTTP/1.1" 200 OK
+INFO:     127.0.0.1:14703 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:14669 - "GET /traces/11f0cd662f8f432a9595c4e467ae25f2?mode=mock HTTP/1.1" 200 OK
+INFO:     127.0.0.1:14706 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:14709 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:14712 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:14715 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:14718 - "POST /ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:14719 - "GET /traces/f420ef09c10942e7b9c16c3caffa5d76?mode=mock HTTP/1.1" 200 OK
+INFO:     127.0.0.1:14720 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:14669 - "GET /traces/f420ef09c10942e7b9c16c3caffa5d76?mode=mock HTTP/1.1" 200 OK
+INFO:     127.0.0.1:14723 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:14726 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:14730 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:14733 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:14736 - "POST /ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:14737 - "GET /traces/431d5155a0d84589976d23eaadf9829d?mode=mock HTTP/1.1" 200 OK
+INFO:     127.0.0.1:14738 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:14669 - "GET /traces/431d5155a0d84589976d23eaadf9829d?mode=mock HTTP/1.1" 200 OK
+INFO:     127.0.0.1:14741 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:14744 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:14747 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:14750 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:14753 - "POST /ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:14754 - "GET /traces/a60841bcb1f5435499d80c151fda72ac?mode=mock HTTP/1.1" 200 OK
+INFO:     127.0.0.1:14755 - "GET /metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:14669 - "GET /traces/a60841bcb1f5435499d80c151fda72ac?mode=mock HTTP/1.1" 200 OK
+{
+  "timestamp": "2026-11-10T04:54:33.797308+00:00",
+  "status": "PASS",
+  "method": "Streamlit AppTest + actual loopback HTTP uvicorn API",
+  "cases": [
+    {
+      "question": "办公电脑申领审批需要多久？",
+      "fail_search_count": 0,
+      "expected": "COMPLETED",
+      "actual": "COMPLETED",
+      "mode": "mock",
+      "trace": "examples/traces/mock/67df09d0196840ffaf103d022ea92f96.json",
+      "status": "PASS"
+    },
+    {
+      "question": "差旅报销期限是多久？",
+      "fail_search_count": 0,
+      "expected": "NEEDS_CLARIFICATION",
+      "actual": "NEEDS_CLARIFICATION",
+      "mode": "mock",
+      "trace": "examples/traces/mock/11f0cd662f8f432a9595c4e467ae25f2.json",
+      "status": "PASS"
+    },
+    {
+      "question": "公司的年终奖金是多少？",
+      "fail_search_count": 0,
+      "expected": "INSUFFICIENT_EVIDENCE",
+      "actual": "INSUFFICIENT_EVIDENCE",
+      "mode": "mock",
+      "trace": "examples/traces/mock/f420ef09c10942e7b9c16c3caffa5d76.json",
+      "status": "PASS"
+    },
+    {
+      "question": "办公电脑申领审批需要多久？",
+      "fail_search_count": 1,
+      "expected": "COMPLETED",
+      "actual": "COMPLETED",
+      "mode": "mock",
+      "trace": "examples/traces/mock/431d5155a0d84589976d23eaadf9829d.json",
+      "status": "PASS"
+    },
+    {
+      "question": "办公电脑申领审批需要多久？",
+      "fail_search_count": 2,
+      "expected": "FAILED",
+      "actual": "FAILED",
+      "mode": "mock",
+      "trace": "examples/traces/mock/a60841bcb1f5435499d80c151fda72ac.json",
+      "status": "PASS"
+    }
+  ],
+  "limitations": "AppTest inspects widgets and state, not browser pixel layout. Model mode is explicitly mock for repeatability."
+}

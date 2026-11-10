@@ -1,0 +1,59 @@
+{
+  "stage": "P6",
+  "started_at": "2026-11-10T04:55:02.124472+00:00",
+  "finished_at": "2026-11-10T04:55:06.204485+00:00",
+  "status": "PASS",
+  "commands": [
+    {
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "tests/test_api.py",
+        "--junitxml=reports/logs/P6-pytest.xml"
+      ],
+      "exit_code": 0,
+      "allowed_exit_codes": [
+        0
+      ],
+      "duration_seconds": 2.5376155999983894,
+      "log": "reports/logs/P6-0.txt"
+    },
+    {
+      "argv": [
+        "python",
+        "-m",
+        "scripts.smoke_api"
+      ],
+      "exit_code": 0,
+      "allowed_exit_codes": [
+        0
+      ],
+      "duration_seconds": 1.5346934000117471,
+      "log": "reports/logs/P6-1.txt"
+    }
+  ],
+  "test_counts": {
+    "tests": 8,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": 8
+  },
+  "metrics": {
+    "actual_http_ui_cases": 5
+  },
+  "evidence_paths": [
+    "reports/ui_smoke.json",
+    "reports/logs/P6-ui-smoke.txt",
+    "src/evidenceflow/api.py",
+    "ui/app.py"
+  ],
+  "errors": [],
+  "changes_made": [
+    "Implemented five real FastAPI endpoints and Streamlit HTTP client with citations, conflicts, actual trace timeline, retrieval ranks, session history and experimental metrics.",
+    "Actual HTTP UI smoke covered completed, conflict, insufficient evidence, one timeout and repeated timeout; failure renders error without success.",
+    "Sandbox blocked Windows asyncio socketpair; tests run with approved loopback access. AppTest verifies interactions, not browser pixel layout."
+  ]
+}
