@@ -1,0 +1,8 @@
+{
+  "question": "我是谁",
+  "session_id": "4d2eac3f307a465594b025a5c1c0fb71",
+  "mode": "live",
+  "max_model_steps": 8,
+  "max_tool_calls": 12,
+  "fail_search_count": 0
+}

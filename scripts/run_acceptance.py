@@ -121,8 +121,19 @@ def run(mode="mock", service=None):
                 "output": f"examples/outputs/{mode}/{result.trace_id}.json",
                 "input": f"examples/inputs/{mode}-{result.trace_id}.json",
                 "model_decisions": actual_model_decisions,
+                "critic": result.critic,
                 "tools": [
                     e["tool_name"] for e in trace["events"] if e["kind"] == "tool_observation"
+                ],
+                "search_strategies": [
+                    e["observation"].get(
+                        "executed_strategy",
+                        e["observation"].get(
+                            "strategy", e["observation"].get("attempted_strategy")
+                        ),
+                    )
+                    for e in trace["events"]
+                    if e.get("tool_name") == "search_documents"
                 ],
                 "pre_trace": f"examples/traces/{mode}/{pre.trace_id}.json" if pre else None,
             }
@@ -132,6 +143,8 @@ def run(mode="mock", service=None):
         "timestamp": utc_now(),
         "mode": mode,
         "model_name": rows and result.model_name,
+        "retrieval_strategy": service.settings.strategy,
+        "critic_enabled": service.settings.critic_enabled,
         "status": "BLOCKED"
         if blocker
         else "PASS"

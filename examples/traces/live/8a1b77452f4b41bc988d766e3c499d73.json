@@ -1,0 +1,586 @@
+{
+  "trace_schema_version": 2,
+  "trace_id": "8a1b77452f4b41bc988d766e3c499d73",
+  "mode": "live",
+  "model_name": "qwen-plus",
+  "events": [
+    {
+      "kind": "model_decision",
+      "step": 1,
+      "trace_id": "8a1b77452f4b41bc988d766e3c499d73",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T07:19:57.245259+00:00",
+      "model_step": 1,
+      "tool_calls": [
+        {
+          "id": "call_10633b1563624cde8e4e70",
+          "name": "search_documents",
+          "arguments": {
+            "query": "差旅报销期限",
+            "top_k": 5,
+            "strategy": "bm25"
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1517,
+        "total_tokens": 1551,
+        "completion_tokens": 34,
+        "prompt_tokens_details": {
+          "cached_tokens": 1408
+        }
+      },
+      "next_action": [
+        "search_documents"
+      ],
+      "decision_basis": "当前轮尚无工具 Observation；模型选择 search_documents。",
+      "decision_basis_source": "observable_events",
+      "basis_event_steps": []
+    },
+    {
+      "kind": "tool_observation",
+      "step": 2,
+      "trace_id": "8a1b77452f4b41bc988d766e3c499d73",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T07:19:57.246262+00:00",
+      "model_step": 1,
+      "tool_call_number": 1,
+      "tool_name": "search_documents",
+      "arguments": {
+        "query": "差旅报销期限",
+        "top_k": 5,
+        "strategy": "bm25"
+      },
+      "observation": {
+        "query": "差旅报销期限",
+        "strategy": "bm25",
+        "hits": [
+          {
+            "doc_id": "D01",
+            "chunk_id": "D01-C01",
+            "title": "差旅报销制度 A",
+            "topic": "差旅报销",
+            "version_date": "2025-01-01",
+            "score": 11.283717542899904,
+            "preview": "差旅报销应在30天内提交。报销须附发票和出差审批单。"
+          },
+          {
+            "doc_id": "D02",
+            "chunk_id": "D02-C01",
+            "title": "差旅报销制度 B",
+            "topic": "差旅报销",
+            "version_date": "2025-07-01",
+            "score": 11.283717542899904,
+            "preview": "差旅报销应在15天内提交。报销须附发票和出差审批单。"
+          }
+        ],
+        "configured_strategy": "bm25",
+        "executed_strategy": "bm25"
+      },
+      "observation_summary": "{\"query\": \"差旅报销期限\", \"strategy\": \"bm25\", \"hits\": [{\"doc_id\": \"D01\", \"chunk_id\": \"D01-C01\", \"title\": \"差旅报销制度 A\", \"topic\": \"差旅报销\", \"version_date\": \"2025-01-01\", \"score\": 11.283717542899904, \"preview\": \"差旅报销应在30天内提交。报销须附发票和出差审批单。\"}, {\"doc_id\": \"D02\", \"chunk_id\": \"D02-C01\", \"title\": \"差旅报销制度 B\", \"topic\": \"差旅报销\", \"version_date\": \"2025-07-01\", \"score\": 11.283717542899904, \"preview\": \"差旅报销应在15天内提交。报销须附发票和出差审批单。\"}], \"configured_strategy\": \"bm25\", \"executed_strategy\": \"bm25\"}",
+      "latency_ms": 0.1598999951966107,
+      "next_action": "agent_decide",
+      "decision_basis": "bm25 检索返回 2 篇候选（D01, D02），尚不具备引用资格。",
+      "decision_basis_source": "current_observation"
+    },
+    {
+      "kind": "model_decision",
+      "step": 3,
+      "trace_id": "8a1b77452f4b41bc988d766e3c499d73",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T07:19:58.207582+00:00",
+      "model_step": 2,
+      "tool_calls": [
+        {
+          "id": "call_1d267234631c4917b0fdf2",
+          "name": "read_document",
+          "arguments": {
+            "doc_id": "D01",
+            "chunk_ids": [
+              "D01-C01"
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1811,
+        "total_tokens": 1843,
+        "completion_tokens": 32,
+        "prompt_tokens_details": {
+          "cached_tokens": 1728
+        }
+      },
+      "next_action": [
+        "read_document"
+      ],
+      "decision_basis": "bm25 检索返回 2 篇候选（D01, D02），尚不具备引用资格。本轮模型选择 read_document。",
+      "decision_basis_source": "observable_events",
+      "basis_event_steps": [
+        2
+      ]
+    },
+    {
+      "kind": "tool_observation",
+      "step": 4,
+      "trace_id": "8a1b77452f4b41bc988d766e3c499d73",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T07:19:58.208585+00:00",
+      "model_step": 2,
+      "tool_call_number": 2,
+      "tool_name": "read_document",
+      "arguments": {
+        "doc_id": "D01",
+        "chunk_ids": [
+          "D01-C01"
+        ]
+      },
+      "observation": {
+        "doc_id": "D01",
+        "title": "差旅报销制度 A",
+        "version_date": "2025-01-01",
+        "effective_date": null,
+        "scope": null,
+        "status": "published",
+        "topic": "差旅报销",
+        "content": "差旅报销应在30天内提交。报销须附发票和出差审批单。",
+        "chunks": [
+          {
+            "doc_id": "D01",
+            "chunk_id": "D01-C01",
+            "start": 0,
+            "end": 26,
+            "text": "差旅报销应在30天内提交。报销须附发票和出差审批单。"
+          }
+        ],
+        "trust": "untrusted_document_data",
+        "evidence_context": {
+          "read_doc_ids": [
+            "D01"
+          ],
+          "conflicts": []
+        }
+      },
+      "observation_summary": "{\"doc_id\": \"D01\", \"title\": \"差旅报销制度 A\", \"version_date\": \"2025-01-01\", \"effective_date\": null, \"scope\": null, \"status\": \"published\", \"topic\": \"差旅报销\", \"content\": \"差旅报销应在30天内提交。报销须附发票和出差审批单。\", \"chunks\": [{\"doc_id\": \"D01\", \"chunk_id\": \"D01-C01\", \"start\": 0, \"end\": 26, \"text\": \"差旅报销应在30天内提交。报销须附发票和出差审批单。\"}], \"trust\": \"untrusted_document_data\", \"evidence_context\": {\"read_doc_ids\": [\"D01\"], \"conflicts\": []}}",
+      "latency_ms": 0.06469999789260328,
+      "next_action": "agent_decide",
+      "decision_basis": "已读取 D01 的 1 个原文片段。",
+      "decision_basis_source": "current_observation"
+    },
+    {
+      "kind": "model_decision",
+      "step": 5,
+      "trace_id": "8a1b77452f4b41bc988d766e3c499d73",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T07:19:59.205215+00:00",
+      "model_step": 3,
+      "tool_calls": [
+        {
+          "id": "call_c5a2e7875dc44a1db3db44",
+          "name": "read_document",
+          "arguments": {
+            "doc_id": "D02",
+            "chunk_ids": [
+              "D02-C01"
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 2035,
+        "total_tokens": 2067,
+        "completion_tokens": 32,
+        "prompt_tokens_details": {
+          "cached_tokens": 1920
+        }
+      },
+      "next_action": [
+        "read_document"
+      ],
+      "decision_basis": "已读取 D01 的 1 个原文片段。本轮模型选择 read_document。",
+      "decision_basis_source": "observable_events",
+      "basis_event_steps": [
+        4
+      ]
+    },
+    {
+      "kind": "tool_observation",
+      "step": 6,
+      "trace_id": "8a1b77452f4b41bc988d766e3c499d73",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T07:19:59.206016+00:00",
+      "model_step": 3,
+      "tool_call_number": 3,
+      "tool_name": "read_document",
+      "arguments": {
+        "doc_id": "D02",
+        "chunk_ids": [
+          "D02-C01"
+        ]
+      },
+      "observation": {
+        "doc_id": "D02",
+        "title": "差旅报销制度 B",
+        "version_date": "2025-07-01",
+        "effective_date": null,
+        "scope": null,
+        "status": "published",
+        "topic": "差旅报销",
+        "content": "差旅报销应在15天内提交。报销须附发票和出差审批单。",
+        "chunks": [
+          {
+            "doc_id": "D02",
+            "chunk_id": "D02-C01",
+            "start": 0,
+            "end": 26,
+            "text": "差旅报销应在15天内提交。报销须附发票和出差审批单。"
+          }
+        ],
+        "trust": "untrusted_document_data",
+        "evidence_context": {
+          "read_doc_ids": [
+            "D01",
+            "D02"
+          ],
+          "conflicts": [
+            {
+              "topic": "差旅报销",
+              "field": "提交期限",
+              "documents": [
+                "D01",
+                "D02"
+              ],
+              "values": [
+                "30天",
+                "15天"
+              ],
+              "resolution": "UNRESOLVED",
+              "scope": [
+                null,
+                null
+              ]
+            }
+          ]
+        }
+      },
+      "observation_summary": "{\"doc_id\": \"D02\", \"title\": \"差旅报销制度 B\", \"version_date\": \"2025-07-01\", \"effective_date\": null, \"scope\": null, \"status\": \"published\", \"topic\": \"差旅报销\", \"content\": \"差旅报销应在15天内提交。报销须附发票和出差审批单。\", \"chunks\": [{\"doc_id\": \"D02\", \"chunk_id\": \"D02-C01\", \"start\": 0, \"end\": 26, \"text\": \"差旅报销应在15天内提交。报销须附发票和出差审批单。\"}], \"trust\": \"untrusted_document_data\", \"evidence_context\": {\"read_doc_ids\": [\"D01\", \"D02\"], \"conflicts\": [{\"topic\": \"差旅报销\", \"field\": \"提交期限\", \"documents\": [\"D01\", \"D02\"], \"values\": [\"30天\", \"15天\"], \"re",
+      "latency_ms": 0.07529999129474163,
+      "next_action": "agent_decide",
+      "decision_basis": "已读取 D02 原文，当前已读资料存在 30天/15天 的未解决冲突。",
+      "decision_basis_source": "current_observation"
+    },
+    {
+      "kind": "model_decision",
+      "step": 7,
+      "trace_id": "8a1b77452f4b41bc988d766e3c499d73",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T07:19:59.964387+00:00",
+      "model_step": 4,
+      "tool_calls": [
+        {
+          "id": "call_922b8d2ca516474bba286a",
+          "name": "inspect_versions",
+          "arguments": {
+            "topic": "差旅报销"
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 2322,
+        "total_tokens": 2340,
+        "completion_tokens": 18,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "next_action": [
+        "inspect_versions"
+      ],
+      "decision_basis": "已读取 D02 原文，当前已读资料存在 30天/15天 的未解决冲突。本轮选择补查版本的适用范围和效力。",
+      "decision_basis_source": "observable_events",
+      "basis_event_steps": [
+        6
+      ]
+    },
+    {
+      "kind": "tool_observation",
+      "step": 8,
+      "trace_id": "8a1b77452f4b41bc988d766e3c499d73",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T07:19:59.965390+00:00",
+      "model_step": 4,
+      "tool_call_number": 4,
+      "tool_name": "inspect_versions",
+      "arguments": {
+        "topic": "差旅报销"
+      },
+      "observation": {
+        "topic": "差旅报销",
+        "versions": [
+          {
+            "doc_id": "D01",
+            "title": "差旅报销制度 A",
+            "topic": "差旅报销",
+            "version_date": "2025-01-01",
+            "scope": null,
+            "effective_date": null,
+            "status": "published"
+          },
+          {
+            "doc_id": "D02",
+            "title": "差旅报销制度 B",
+            "topic": "差旅报销",
+            "version_date": "2025-07-01",
+            "scope": null,
+            "effective_date": null,
+            "status": "published"
+          }
+        ],
+        "precedence": null,
+        "note": "Newer version alone does not establish precedence."
+      },
+      "observation_summary": "{\"topic\": \"差旅报销\", \"versions\": [{\"doc_id\": \"D01\", \"title\": \"差旅报销制度 A\", \"topic\": \"差旅报销\", \"version_date\": \"2025-01-01\", \"scope\": null, \"effective_date\": null, \"status\": \"published\"}, {\"doc_id\": \"D02\", \"title\": \"差旅报销制度 B\", \"topic\": \"差旅报销\", \"version_date\": \"2025-07-01\", \"scope\": null, \"effective_date\": null, \"status\": \"published\"}], \"precedence\": null, \"note\": \"Newer version alone does not establish precedence.\"}",
+      "latency_ms": 0.04400001489557326,
+      "next_action": "agent_decide",
+      "decision_basis": "版本查询返回 2 个版本，2 个适用范围未知；优先级为 None。",
+      "decision_basis_source": "current_observation"
+    },
+    {
+      "kind": "model_decision",
+      "step": 9,
+      "trace_id": "8a1b77452f4b41bc988d766e3c499d73",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T07:20:04.296064+00:00",
+      "model_step": 5,
+      "tool_calls": [
+        {
+          "id": "call_b2c625e8b700445fa0ae3b",
+          "name": "submit_answer",
+          "arguments": {
+            "status": "NEEDS_CLARIFICATION",
+            "citations": [
+              {
+                "doc_id": "D01",
+                "version_date": "2025-01-01",
+                "quote": "差旅报销应在30天内提交。报销须附发票和出差审批单。",
+                "chunk_id": "D01-C01"
+              },
+              {
+                "doc_id": "D02",
+                "version_date": "2025-07-01",
+                "quote": "差旅报销应在15天内提交。报销须附发票和出差审批单。",
+                "chunk_id": "D02-C01"
+              }
+            ],
+            "missing_info": [
+              "D01与D02的适用范围（如部门、职级、差旅类型）未明确，无法判断何者优先适用。"
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 2508,
+        "total_tokens": 2694,
+        "completion_tokens": 186,
+        "prompt_tokens_details": {
+          "cached_tokens": 2432
+        }
+      },
+      "next_action": [
+        "submit_answer"
+      ],
+      "decision_basis": "版本查询返回 2 个版本，2 个适用范围未知；优先级为 None。本轮模型选择 submit_answer。",
+      "decision_basis_source": "observable_events",
+      "basis_event_steps": [
+        8
+      ]
+    },
+    {
+      "kind": "candidate_injection",
+      "step": 10,
+      "trace_id": "8a1b77452f4b41bc988d766e3c499d73",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T07:20:04.297069+00:00",
+      "model_step": 5,
+      "origin": "explicit_test_fixture",
+      "before": {
+        "answer": "D01：差旅报销应在30天内提交。报销须附发票和出差审批单。\nD02：差旅报销应在15天内提交。报销须附发票和出差审批单。\n适用范围及优先级尚待确认，当前无法确定唯一规则。",
+        "status": "NEEDS_CLARIFICATION",
+        "citations": [
+          {
+            "doc_id": "D01",
+            "version_date": "2025-01-01",
+            "quote": "差旅报销应在30天内提交。报销须附发票和出差审批单。",
+            "chunk_id": "D01-C01"
+          },
+          {
+            "doc_id": "D02",
+            "version_date": "2025-07-01",
+            "quote": "差旅报销应在15天内提交。报销须附发票和出差审批单。",
+            "chunk_id": "D02-C01"
+          }
+        ],
+        "facts": [],
+        "missing_info": [
+          "D01与D02的适用范围（如部门、职级、差旅类型）未明确，无法判断何者优先适用。"
+        ]
+      },
+      "reviewed_candidate": {
+        "answer": "D01：报销须附发票和出差审批单。\nD02：报销须附发票和出差审批单。\n适用范围及优先级尚待确认，当前无法确定唯一规则。",
+        "status": "NEEDS_CLARIFICATION",
+        "citations": [
+          {
+            "doc_id": "D01",
+            "version_date": "2025-01-01",
+            "quote": "报销须附发票和出差审批单。",
+            "chunk_id": "D01-C01"
+          },
+          {
+            "doc_id": "D02",
+            "version_date": "2025-07-01",
+            "quote": "报销须附发票和出差审批单。",
+            "chunk_id": "D02-C01"
+          }
+        ],
+        "facts": [],
+        "missing_info": [
+          "D01与D02的适用范围（如部门、职级、差旅类型）未明确，无法判断何者优先适用。"
+        ]
+      },
+      "decision_basis": "评测显式注入候选覆盖缺失；不把注入内容当作模型原始输出。"
+    },
+    {
+      "kind": "tool_observation",
+      "step": 11,
+      "trace_id": "8a1b77452f4b41bc988d766e3c499d73",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T07:20:04.297069+00:00",
+      "model_step": 5,
+      "tool_call_number": 5,
+      "tool_name": "submit_answer",
+      "arguments": {
+        "status": "NEEDS_CLARIFICATION",
+        "citations": [
+          {
+            "doc_id": "D01",
+            "version_date": "2025-01-01",
+            "quote": "差旅报销应在30天内提交。报销须附发票和出差审批单。",
+            "chunk_id": "D01-C01"
+          },
+          {
+            "doc_id": "D02",
+            "version_date": "2025-07-01",
+            "quote": "差旅报销应在15天内提交。报销须附发票和出差审批单。",
+            "chunk_id": "D02-C01"
+          }
+        ],
+        "missing_info": [
+          "D01与D02的适用范围（如部门、职级、差旅类型）未明确，无法判断何者优先适用。"
+        ]
+      },
+      "observation": {
+        "valid": true,
+        "errors": [],
+        "conflicts": [
+          {
+            "topic": "差旅报销",
+            "field": "提交期限",
+            "documents": [
+              "D01",
+              "D02"
+            ],
+            "values": [
+              "30天",
+              "15天"
+            ],
+            "resolution": "UNRESOLVED",
+            "scope": [
+              null,
+              null
+            ]
+          }
+        ],
+        "expected_answer_format": null
+      },
+      "observation_summary": "{\"valid\": true, \"errors\": [], \"conflicts\": [{\"topic\": \"差旅报销\", \"field\": \"提交期限\", \"documents\": [\"D01\", \"D02\"], \"values\": [\"30天\", \"15天\"], \"resolution\": \"UNRESOLVED\", \"scope\": [null, null]}], \"expected_answer_format\": null}",
+      "latency_ms": 0.16429999959655106,
+      "next_action": "finalize",
+      "decision_basis": "候选已通过原文、已读资格、版本、冲突及摘录格式校验。",
+      "decision_basis_source": "current_observation"
+    }
+  ],
+  "result": {
+    "question": "差旅报销期限是多久？",
+    "answer": "D01：报销须附发票和出差审批单。\nD02：报销须附发票和出差审批单。\n适用范围及优先级尚待确认，当前无法确定唯一规则。",
+    "status": "NEEDS_CLARIFICATION",
+    "citations": [
+      {
+        "doc_id": "D01",
+        "version_date": "2025-01-01",
+        "quote": "报销须附发票和出差审批单。",
+        "chunk_id": "D01-C01"
+      },
+      {
+        "doc_id": "D02",
+        "version_date": "2025-07-01",
+        "quote": "报销须附发票和出差审批单。",
+        "chunk_id": "D02-C01"
+      }
+    ],
+    "missing_info": [
+      "D01与D02的适用范围（如部门、职级、差旅类型）未明确，无法判断何者优先适用。"
+    ],
+    "conflicts": [
+      {
+        "topic": "差旅报销",
+        "field": "提交期限",
+        "documents": [
+          "D01",
+          "D02"
+        ],
+        "values": [
+          "30天",
+          "15天"
+        ],
+        "resolution": "UNRESOLVED",
+        "scope": [
+          null,
+          null
+        ]
+      }
+    ],
+    "steps_used": 5,
+    "tool_calls_used": 5,
+    "trace_id": "8a1b77452f4b41bc988d766e3c499d73",
+    "session_id": "dd667357dae046d3b553b3faeae5d825",
+    "mode": "live",
+    "model_name": "qwen-plus",
+    "latency_ms": 8075.41580000543,
+    "usage": {
+      "prompt_tokens": 10193,
+      "completion_tokens": 302,
+      "total_tokens": 10495
+    },
+    "error_code": null,
+    "critic": {
+      "enabled": false,
+      "reviews": 0,
+      "model_calls": 0,
+      "model_steps": 0,
+      "revisions_requested": 0,
+      "repair_limit": 1,
+      "latency_ms": 0.0,
+      "usage": {}
+    }
+  }
+}

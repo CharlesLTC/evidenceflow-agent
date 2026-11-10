@@ -1,0 +1,75 @@
+{
+  "timestamp": "2026-11-10T07:35:06.409745+00:00",
+  "status": "PASS",
+  "original_baseline_tests": {
+    "tests": 63,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": 63
+  },
+  "current_tests": {
+    "tests": 75,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": 75
+  },
+  "isolated_tests": {
+    "tests": 75,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": 75
+  },
+  "bm25_official": {
+    "passed": 6,
+    "total": 6,
+    "status": "PASS"
+  },
+  "hybrid_official": {
+    "passed": 6,
+    "total": 6,
+    "status": "PASS"
+  },
+  "critic_official": {
+    "passed": 6,
+    "total": 6,
+    "status": "PASS"
+  },
+  "tc02": {
+    "passed": 5,
+    "total": 5,
+    "success_rate": 1.0,
+    "mean_guard_rejections": 0.0,
+    "baseline_guard_rejections": 3
+  },
+  "critic": {
+    "correction_success": {
+      "numerator": 4,
+      "denominator": 4,
+      "rate": 1.0
+    },
+    "new_final_errors": 0,
+    "clean_control_false_revisions": 0,
+    "mean_api_calls": 1.6666666666666667,
+    "mean_extra_model_steps": 2.3333333333333335,
+    "mean_extra_latency_ms": 4222.620833335289,
+    "extra_tokens": 21994,
+    "cost_usd": null
+  },
+  "failed_critic_official_attempts": [
+    {
+      "path": "reports/quality/runs/48cfa25cfad845909579cb223bb7d4b4-bm25_critic_official.json",
+      "passed": 5,
+      "total": 6,
+      "status": "FAIL"
+    }
+  ],
+  "references": [
+    "reports/quality/final_validation.json",
+    "reports/quality/hybrid_execution.json",
+    "reports/quality/hybrid_fallback_live.json",
+    "reports/quality/verification_all.json"
+  ]
+}

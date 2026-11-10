@@ -1,0 +1,9 @@
+{
+  "question": "新员工需要在入职后多久完成信息安全培训？",
+  "session_id": null,
+  "mode": "live",
+  "max_model_steps": 8,
+  "max_tool_calls": 12,
+  "fail_search_count": 0,
+  "enable_critic": true
+}

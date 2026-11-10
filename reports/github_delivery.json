@@ -2,10 +2,24 @@
   "url": "https://github.com/CharlesLTC/evidenceflow-agent",
   "private": true,
   "verified_initial_commit_sha": "d4689fe7d1862f9549b45f7789f2651c2cf6a32c",
-  "remote_head": "d4689fe7d1862f9549b45f7789f2651c2cf6a32c",
-  "github_api_head": "d4689fe7d1862f9549b45f7789f2651c2cf6a32c",
-  "verified_at": "2026-11-10T05:11:27.640677+00:00",
-  "readme_blob_readable": "7da9cce3b7245692fa60f88aee878e85d3eaabbf",
+  "verified_pre_audit_commit_sha": "e14114ea14f46c1d0314af622cb3d69acfc642b9",
+  "remote_head": "e14114ea14f46c1d0314af622cb3d69acfc642b9",
+  "github_api_head": "e14114ea14f46c1d0314af622cb3d69acfc642b9",
+  "verified_at": "2026-11-10T07:34:38.162488+00:00",
+  "readme_blob_readable": "78ef5817cb4885d1f6fac430123a486c61a63a80",
   "final_commit_receipt": "reports/delivery_verification.local.json",
-  "reviewer_access": "Private repository; reviewer account not supplied, access must be granted separately."
+  "reviewer_access": {
+    "status": "CHECKED",
+    "private": true,
+    "collaborators": [
+      {
+        "login": "CharlesLTC",
+        "role": "admin",
+        "read": true
+      }
+    ],
+    "pending_invitations": [],
+    "intended_reviewer": null,
+    "conclusion": "No intended reviewer account supplied; do not infer their access from repository visibility."
+  }
 }

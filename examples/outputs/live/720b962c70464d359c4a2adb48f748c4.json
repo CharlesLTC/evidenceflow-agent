@@ -1,0 +1,37 @@
+{
+  "question": "公司的年终奖金是多少？",
+  "answer": "当前资料不足，无法依据知识库回答。",
+  "status": "INSUFFICIENT_EVIDENCE",
+  "citations": [],
+  "missing_info": [
+    "年终奖金的计算标准、发放条件及具体金额"
+  ],
+  "conflicts": [],
+  "steps_used": 5,
+  "tool_calls_used": 4,
+  "trace_id": "720b962c70464d359c4a2adb48f748c4",
+  "session_id": "accept_4b7dae35f86b40da8883fcd4e7760983",
+  "mode": "live",
+  "model_name": "qwen-plus",
+  "latency_ms": 4946.77199999569,
+  "usage": {
+    "prompt_tokens": 7224,
+    "completion_tokens": 151,
+    "total_tokens": 7375
+  },
+  "error_code": null,
+  "critic": {
+    "enabled": true,
+    "reviews": 1,
+    "model_calls": 1,
+    "model_steps": 1,
+    "revisions_requested": 0,
+    "repair_limit": 1,
+    "latency_ms": 908.3755000028759,
+    "usage": {
+      "prompt_tokens": 681,
+      "completion_tokens": 29,
+      "total_tokens": 710
+    }
+  }
+}

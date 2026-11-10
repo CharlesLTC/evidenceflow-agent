@@ -1,0 +1,14 @@
+{
+  "mock": {
+    "path": "reports/acceptance_results.mock.json",
+    "status": "PASS",
+    "passed": 6,
+    "total": 6
+  },
+  "live": {
+    "path": "reports/acceptance_results.live.json",
+    "status": "FAIL",
+    "passed": 5,
+    "total": 6
+  }
+}

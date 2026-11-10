@@ -1,7 +1,7 @@
 {
   "stage": "P8",
   "started_at": "2026-11-10T05:05:58.253410+00:00",
-  "finished_at": "2026-11-10T05:11:54.642446+00:00",
+  "finished_at": "2026-11-10T07:31:47.788920+00:00",
   "status": "PASS",
   "commands": [
     {
@@ -178,22 +178,31 @@
       ],
       "exit_code": 0,
       "log": "reports/github_delivery.json"
+    },
+    {
+      "argv": [
+        "python",
+        "-m",
+        "scripts.final_quality_validation"
+      ],
+      "exit_code": 0,
+      "log": "reports/quality/final_validation.json"
     }
   ],
   "test_counts": {
-    "tests": 63,
+    "tests": 75,
     "failures": 0,
     "errors": 0,
     "skipped": 0,
-    "passed": 63
+    "passed": 75
   },
   "metrics": {
     "pytest": {
-      "tests": 63,
+      "tests": 75,
       "failures": 0,
       "errors": 0,
       "skipped": 0,
-      "passed": 63
+      "passed": 75
     },
     "live_official": {
       "passed": 6,
@@ -205,7 +214,9 @@
     "github_url": "https://github.com/CharlesLTC/evidenceflow-agent",
     "verified_initial_commit_sha": "d4689fe7d1862f9549b45f7789f2651c2cf6a32c",
     "remote_head_verified": true,
-    "final_sha_receipt": "reports/delivery_verification.local.json"
+    "final_sha_receipt": "reports/delivery_verification.local.json",
+    "quality_final_validation": "PASS",
+    "critic_enabled_official": "6/6"
   },
   "evidence_paths": [
     "reports/logs/P8-pytest.xml",
@@ -216,13 +227,16 @@
     "reports/clean_environment.json",
     "reports/final_acceptance.md",
     "reports/github_delivery.json",
-    "reports/delivery_verification.local.json"
+    "reports/delivery_verification.local.json",
+    "reports/quality/summary.json",
+    "docs/10-quality-review.md"
   ],
   "errors": [],
   "changes_made": [
     "Final full regression after real adversarial failures: reject instruction text in policy citations and distinguish all-tool failure from knowledge absence.",
     "Complete requirements, solution, evaluation, AI usage, retrospective, architecture, test plan, experiments and measured time log.",
     "Pinned actual environment, verified official portable gh download, secret scan and actual trace triplets. P7 explicitly optional and skipped.",
-    "User completed GitHub CLI login. Created private CharlesLTC/evidenceflow-agent, pushed main, verified local HEAD == ls-remote HEAD == GitHub API SHA and read remote README. Final audit commit is reverified out of band."
+    "User completed GitHub CLI login. Created private CharlesLTC/evidenceflow-agent, pushed main, verified local HEAD == ls-remote HEAD == GitHub API SHA and read remote README. Final audit commit is reverified out of band.",
+    "Final incremental quality pass: observed basis, structured submission, five TC02 live runs, actual Hybrid/fallback, optional bounded Critic, all 75 tests and original live assertions preserved."
   ]
 }

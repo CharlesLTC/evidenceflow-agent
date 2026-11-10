@@ -1,0 +1,9 @@
+{
+  "question": "领电脑一般几天能批下来？",
+  "session_id": "accept_6fd5537de7f5472dbe4719a29c09d65f",
+  "mode": "live",
+  "max_model_steps": 8,
+  "max_tool_calls": 12,
+  "fail_search_count": 0,
+  "enable_critic": null
+}

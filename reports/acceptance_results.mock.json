@@ -1,7 +1,9 @@
 {
-  "timestamp": "2026-11-10T05:06:05.490874+00:00",
+  "timestamp": "2026-11-10T07:29:34.270291+00:00",
   "mode": "mock",
   "model_name": "offline-observation-simulator",
+  "retrieval_strategy": "bm25",
+  "critic_enabled": false,
   "status": "PASS",
   "blocker": null,
   "passed": 6,
@@ -26,14 +28,27 @@
         "expected_fact": true,
         "all_citations_valid": true
       },
-      "trace": "examples/traces/mock/ccb9667fff5d48e79ee6e889b2cef7e2.json",
-      "output": "examples/outputs/mock/ccb9667fff5d48e79ee6e889b2cef7e2.json",
-      "input": "examples/inputs/mock-ccb9667fff5d48e79ee6e889b2cef7e2.json",
+      "trace": "examples/traces/mock/5a3dbbc73377489fbb826d1d0df8f5bc.json",
+      "output": "examples/outputs/mock/5a3dbbc73377489fbb826d1d0df8f5bc.json",
+      "input": "examples/inputs/mock-5a3dbbc73377489fbb826d1d0df8f5bc.json",
       "model_decisions": 3,
+      "critic": {
+        "enabled": false,
+        "reviews": 0,
+        "model_calls": 0,
+        "model_steps": 0,
+        "revisions_requested": 0,
+        "repair_limit": 1,
+        "latency_ms": 0.0,
+        "usage": {}
+      },
       "tools": [
         "search_documents",
         "read_document",
         "submit_answer"
+      ],
+      "search_strategies": [
+        "bm25"
       ],
       "pre_trace": null
     },
@@ -52,16 +67,29 @@
         "asks_for_context": true,
         "all_citations_valid": true
       },
-      "trace": "examples/traces/mock/ab4f25def5f04104abc0d36e2009a14d.json",
-      "output": "examples/outputs/mock/ab4f25def5f04104abc0d36e2009a14d.json",
-      "input": "examples/inputs/mock-ab4f25def5f04104abc0d36e2009a14d.json",
+      "trace": "examples/traces/mock/b884d54819524a80b5ed7af6baa81650.json",
+      "output": "examples/outputs/mock/b884d54819524a80b5ed7af6baa81650.json",
+      "input": "examples/inputs/mock-b884d54819524a80b5ed7af6baa81650.json",
       "model_decisions": 5,
+      "critic": {
+        "enabled": false,
+        "reviews": 0,
+        "model_calls": 0,
+        "model_steps": 0,
+        "revisions_requested": 0,
+        "repair_limit": 1,
+        "latency_ms": 0.0,
+        "usage": {}
+      },
       "tools": [
         "search_documents",
         "read_document",
         "read_document",
         "inspect_versions",
         "submit_answer"
+      ],
+      "search_strategies": [
+        "bm25"
       ],
       "pre_trace": null
     },
@@ -77,13 +105,26 @@
         "no_false_citation": true,
         "all_citations_valid": true
       },
-      "trace": "examples/traces/mock/9717e1bd876349358049b2a2dc313a7a.json",
-      "output": "examples/outputs/mock/9717e1bd876349358049b2a2dc313a7a.json",
-      "input": "examples/inputs/mock-9717e1bd876349358049b2a2dc313a7a.json",
+      "trace": "examples/traces/mock/2a82c831f71e4786b285c1fee03fa674.json",
+      "output": "examples/outputs/mock/2a82c831f71e4786b285c1fee03fa674.json",
+      "input": "examples/inputs/mock-2a82c831f71e4786b285c1fee03fa674.json",
       "model_decisions": 2,
+      "critic": {
+        "enabled": false,
+        "reviews": 0,
+        "model_calls": 0,
+        "model_steps": 0,
+        "revisions_requested": 0,
+        "repair_limit": 1,
+        "latency_ms": 0.0,
+        "usage": {}
+      },
       "tools": [
         "search_documents",
         "submit_answer"
+      ],
+      "search_strategies": [
+        "bm25"
       ],
       "pre_trace": null
     },
@@ -100,14 +141,27 @@
         "expected_fact": true,
         "all_citations_valid": true
       },
-      "trace": "examples/traces/mock/a184d1f277174374bdc1301f792b8e1a.json",
-      "output": "examples/outputs/mock/a184d1f277174374bdc1301f792b8e1a.json",
-      "input": "examples/inputs/mock-a184d1f277174374bdc1301f792b8e1a.json",
+      "trace": "examples/traces/mock/a4721065ba604eb8a2ccc662bbfa2df0.json",
+      "output": "examples/outputs/mock/a4721065ba604eb8a2ccc662bbfa2df0.json",
+      "input": "examples/inputs/mock-a4721065ba604eb8a2ccc662bbfa2df0.json",
       "model_decisions": 3,
+      "critic": {
+        "enabled": false,
+        "reviews": 0,
+        "model_calls": 0,
+        "model_steps": 0,
+        "revisions_requested": 0,
+        "repair_limit": 1,
+        "latency_ms": 0.0,
+        "usage": {}
+      },
       "tools": [
         "search_documents",
         "read_document",
         "submit_answer"
+      ],
+      "search_strategies": [
+        "bm25"
       ],
       "pre_trace": null
     },
@@ -126,16 +180,29 @@
         "same_session": true,
         "all_citations_valid": true
       },
-      "trace": "examples/traces/mock/8169a68cae5e45d5a5cf61be7ded40de.json",
-      "output": "examples/outputs/mock/8169a68cae5e45d5a5cf61be7ded40de.json",
-      "input": "examples/inputs/mock-8169a68cae5e45d5a5cf61be7ded40de.json",
+      "trace": "examples/traces/mock/877f928aed8a40649587b20078712359.json",
+      "output": "examples/outputs/mock/877f928aed8a40649587b20078712359.json",
+      "input": "examples/inputs/mock-877f928aed8a40649587b20078712359.json",
       "model_decisions": 3,
+      "critic": {
+        "enabled": false,
+        "reviews": 0,
+        "model_calls": 0,
+        "model_steps": 0,
+        "revisions_requested": 0,
+        "repair_limit": 1,
+        "latency_ms": 0.0,
+        "usage": {}
+      },
       "tools": [
         "search_documents",
         "read_document",
         "submit_answer"
       ],
-      "pre_trace": "examples/traces/mock/b1f1e961448a4e29a5abd4f9417028c1.json"
+      "search_strategies": [
+        "bm25"
+      ],
+      "pre_trace": "examples/traces/mock/c49ff2ff0cdc405ebe817d3b4de1ae5c.json"
     },
     {
       "id": "TC06",
@@ -151,15 +218,29 @@
         "honest_success": true,
         "all_citations_valid": true
       },
-      "trace": "examples/traces/mock/c73d15e688714a5b953b9e892d4ee0ed.json",
-      "output": "examples/outputs/mock/c73d15e688714a5b953b9e892d4ee0ed.json",
-      "input": "examples/inputs/mock-c73d15e688714a5b953b9e892d4ee0ed.json",
+      "trace": "examples/traces/mock/58049789da0e496aaaf049a307c97e6b.json",
+      "output": "examples/outputs/mock/58049789da0e496aaaf049a307c97e6b.json",
+      "input": "examples/inputs/mock-58049789da0e496aaaf049a307c97e6b.json",
       "model_decisions": 4,
+      "critic": {
+        "enabled": false,
+        "reviews": 0,
+        "model_calls": 0,
+        "model_steps": 0,
+        "revisions_requested": 0,
+        "repair_limit": 1,
+        "latency_ms": 0.0,
+        "usage": {}
+      },
       "tools": [
         "search_documents",
         "search_documents",
         "read_document",
         "submit_answer"
+      ],
+      "search_strategies": [
+        "bm25",
+        "bm25"
       ],
       "pre_trace": null
     }

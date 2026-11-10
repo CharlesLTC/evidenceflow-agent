@@ -1,0 +1,9 @@
+{
+  "question": "IT设备故障应通过什么途径报修？",
+  "session_id": null,
+  "mode": "live",
+  "max_model_steps": 8,
+  "max_tool_calls": 12,
+  "fail_search_count": 0,
+  "enable_critic": true
+}

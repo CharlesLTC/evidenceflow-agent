@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-11-10T07:10:18.489229+00:00",
+  "commit": "e14114ea14f46c1d0314af622cb3d69acfc642b9",
+  "tc02_trace": "examples/traces/live/3408645f3b73421896b3fe948b941ce5.json",
+  "submit_attempts": 4,
+  "guard_rejections": 3,
+  "errors": [
+    [
+      "ANSWER_NOT_EXTRACTIVE: use exact Dxx：quote lines and the prescribed status suffix"
+    ],
+    [
+      "ANSWER_NOT_EXTRACTIVE: use exact Dxx：quote lines and the prescribed status suffix"
+    ],
+    [
+      "ANSWER_NOT_EXTRACTIVE: use exact Dxx：quote lines and the prescribed status suffix"
+    ],
+    []
+  ],
+  "analysis": "Three presentation-only errors: missing status suffix twice; missing newline before suffix once. Original strict Guard remains unchanged."
+}

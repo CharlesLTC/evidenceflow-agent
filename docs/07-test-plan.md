@@ -22,3 +22,7 @@ pytest 默认离线；HTTP MockTransport 仅验证适配，不计 live。官方�
 API 覆盖 health/ask/session/trace/metrics、无效输入、ID 约束、503 和业务失败。Streamlit AppTest 连接实际临时 HTTP API 检查五种状态和 Trace，不把截图当后端证明；不保证像素布局。
 
 检索指标用小样本独立核对宏 Recall、MRR、无答案排除，并从正式原始结果重算；数据哈希检查标签未被事后改变。密钥扫描不打印匹配值。
+
+本轮不修改以上官方断言及原 63 项测试。新增 structured submission、Hybrid 实际默认执行及自主回退、decision_basis 来源事件校验，以及 Critic 默认关闭、不能越过 Guard、一次修正、模型共享预算、格式错误诊断与用量保留测试。连续五次 TC02 不丢弃或外部重试任何运行。
+
+Critic 固定评测集 data/critic_eval.json 在运行前定义：4 个显式候选覆盖缺失、2 个干净对照；关闭/开启使用相同问题和期望事实。候选注入有独立事件，不伪装成模型原始输出；独立 Critic 和后续 Agent 都真实调用模型。除该受控实验外，另执行开启 Critic 的原样官方六项，检查自然流程不受损。

@@ -1,0 +1,60 @@
+{
+  "question": "差旅报销期限是多久？",
+  "answer": "D01：差旅报销应在30天内提交。\nD02：差旅报销应在15天内提交。\n适用范围及优先级尚待确认，当前无法确定唯一规则。",
+  "status": "NEEDS_CLARIFICATION",
+  "citations": [
+    {
+      "doc_id": "D01",
+      "version_date": "2025-01-01",
+      "quote": "差旅报销应在30天内提交。",
+      "chunk_id": "D01-C01"
+    },
+    {
+      "doc_id": "D02",
+      "version_date": "2025-07-01",
+      "quote": "差旅报销应在15天内提交。",
+      "chunk_id": "D02-C01"
+    }
+  ],
+  "missing_info": [
+    "两份制度的适用范围及优先级"
+  ],
+  "conflicts": [
+    {
+      "topic": "差旅报销",
+      "field": "提交期限",
+      "documents": [
+        "D02",
+        "D01"
+      ],
+      "values": [
+        "15天",
+        "30天"
+      ],
+      "resolution": "UNRESOLVED",
+      "scope": [
+        null,
+        null
+      ]
+    }
+  ],
+  "steps_used": 5,
+  "tool_calls_used": 5,
+  "trace_id": "b884d54819524a80b5ed7af6baa81650",
+  "session_id": "accept_23a4b5bb79284b7d8ba3fc742edd31a3",
+  "mode": "mock",
+  "model_name": "offline-observation-simulator",
+  "latency_ms": 13.698599999770522,
+  "usage": {},
+  "error_code": null,
+  "critic": {
+    "enabled": false,
+    "reviews": 0,
+    "model_calls": 0,
+    "model_steps": 0,
+    "revisions_requested": 0,
+    "repair_limit": 1,
+    "latency_ms": 0.0,
+    "usage": {}
+  }
+}

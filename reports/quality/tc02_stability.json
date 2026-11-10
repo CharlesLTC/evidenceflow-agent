@@ -1,0 +1,148 @@
+{
+  "timestamp": "2026-11-10T07:13:55.458895+00:00",
+  "status": "PASS",
+  "passed": 5,
+  "total": 5,
+  "success_rate": 1.0,
+  "first_submission_success_rate": 1.0,
+  "baseline_guard_rejections": 3,
+  "mean_guard_rejections": 0.0,
+  "runs": [
+    {
+      "status": "PASS",
+      "checks": {
+        "schema": true,
+        "mode_consistent": true,
+        "clarification": true,
+        "both_versions": true,
+        "both_values": true,
+        "unresolved": true,
+        "asks_for_context": true,
+        "all_citations_valid": true
+      },
+      "trace": "examples/traces/live/d4cb406a81fa4e4f8f4db9dc03d6d813.json",
+      "input": "examples/inputs/live-d4cb406a81fa4e4f8f4db9dc03d6d813.json",
+      "output": "examples/outputs/live/d4cb406a81fa4e4f8f4db9dc03d6d813.json",
+      "result_status": "NEEDS_CLARIFICATION",
+      "submission_attempts": 1,
+      "guard_rejections": 0,
+      "first_submission_valid": true,
+      "usage": {
+        "prompt_tokens": 10165,
+        "completion_tokens": 339,
+        "total_tokens": 10504
+      },
+      "latency_ms": 9422.168799996143,
+      "run": 1
+    },
+    {
+      "status": "PASS",
+      "checks": {
+        "schema": true,
+        "mode_consistent": true,
+        "clarification": true,
+        "both_versions": true,
+        "both_values": true,
+        "unresolved": true,
+        "asks_for_context": true,
+        "all_citations_valid": true
+      },
+      "trace": "examples/traces/live/7815dd28e7f74c2eb09d6b2636e6e162.json",
+      "input": "examples/inputs/live-7815dd28e7f74c2eb09d6b2636e6e162.json",
+      "output": "examples/outputs/live/7815dd28e7f74c2eb09d6b2636e6e162.json",
+      "result_status": "NEEDS_CLARIFICATION",
+      "submission_attempts": 1,
+      "guard_rejections": 0,
+      "first_submission_valid": true,
+      "usage": {
+        "prompt_tokens": 10193,
+        "completion_tokens": 320,
+        "total_tokens": 10513
+      },
+      "latency_ms": 8976.598399982322,
+      "run": 2
+    },
+    {
+      "status": "PASS",
+      "checks": {
+        "schema": true,
+        "mode_consistent": true,
+        "clarification": true,
+        "both_versions": true,
+        "both_values": true,
+        "unresolved": true,
+        "asks_for_context": true,
+        "all_citations_valid": true
+      },
+      "trace": "examples/traces/live/a6900ec3faca4826b5a9e53a114469ff.json",
+      "input": "examples/inputs/live-a6900ec3faca4826b5a9e53a114469ff.json",
+      "output": "examples/outputs/live/a6900ec3faca4826b5a9e53a114469ff.json",
+      "result_status": "NEEDS_CLARIFICATION",
+      "submission_attempts": 1,
+      "guard_rejections": 0,
+      "first_submission_valid": true,
+      "usage": {
+        "prompt_tokens": 10165,
+        "completion_tokens": 353,
+        "total_tokens": 10518
+      },
+      "latency_ms": 9834.67219999875,
+      "run": 3
+    },
+    {
+      "status": "PASS",
+      "checks": {
+        "schema": true,
+        "mode_consistent": true,
+        "clarification": true,
+        "both_versions": true,
+        "both_values": true,
+        "unresolved": true,
+        "asks_for_context": true,
+        "all_citations_valid": true
+      },
+      "trace": "examples/traces/live/491237b6c58d4a3a9ef8798cf4db6ea9.json",
+      "input": "examples/inputs/live-491237b6c58d4a3a9ef8798cf4db6ea9.json",
+      "output": "examples/outputs/live/491237b6c58d4a3a9ef8798cf4db6ea9.json",
+      "result_status": "NEEDS_CLARIFICATION",
+      "submission_attempts": 1,
+      "guard_rejections": 0,
+      "first_submission_valid": true,
+      "usage": {
+        "prompt_tokens": 8121,
+        "completion_tokens": 305,
+        "total_tokens": 8426
+      },
+      "latency_ms": 8711.219699995127,
+      "run": 4
+    },
+    {
+      "status": "PASS",
+      "checks": {
+        "schema": true,
+        "mode_consistent": true,
+        "clarification": true,
+        "both_versions": true,
+        "both_values": true,
+        "unresolved": true,
+        "asks_for_context": true,
+        "all_citations_valid": true
+      },
+      "trace": "examples/traces/live/a4a0a53303834359aa0ee4df02522ed0.json",
+      "input": "examples/inputs/live-a4a0a53303834359aa0ee4df02522ed0.json",
+      "output": "examples/outputs/live/a4a0a53303834359aa0ee4df02522ed0.json",
+      "result_status": "NEEDS_CLARIFICATION",
+      "submission_attempts": 1,
+      "guard_rejections": 0,
+      "first_submission_valid": true,
+      "usage": {
+        "prompt_tokens": 10165,
+        "completion_tokens": 335,
+        "total_tokens": 10500
+      },
+      "latency_ms": 10850.19949998241,
+      "run": 5
+    }
+  ],
+  "criteria": "Five consecutive live runs, unchanged TC02 assertions; no run discarded or retried externally."
+}

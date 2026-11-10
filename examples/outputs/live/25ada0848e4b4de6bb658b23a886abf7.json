@@ -1,0 +1,38 @@
+{
+  "question": "新员工需要在入职后多久完成信息安全培训？",
+  "answer": "D06：完成信息安全培训。",
+  "status": "COMPLETED",
+  "citations": [
+    {
+      "doc_id": "D06",
+      "version_date": "2025-01-01",
+      "quote": "完成信息安全培训。",
+      "chunk_id": "D06-C01"
+    }
+  ],
+  "missing_info": [],
+  "conflicts": [],
+  "steps_used": 3,
+  "tool_calls_used": 3,
+  "trace_id": "25ada0848e4b4de6bb658b23a886abf7",
+  "session_id": "074d1077f51e46e983d48380b5052eb0",
+  "mode": "live",
+  "model_name": "qwen-plus",
+  "latency_ms": 4186.407000001054,
+  "usage": {
+    "prompt_tokens": 5914,
+    "completion_tokens": 141,
+    "total_tokens": 6055
+  },
+  "error_code": null,
+  "critic": {
+    "enabled": false,
+    "reviews": 0,
+    "model_calls": 0,
+    "model_steps": 0,
+    "revisions_requested": 0,
+    "repair_limit": 1,
+    "latency_ms": 0.0,
+    "usage": {}
+  }
+}

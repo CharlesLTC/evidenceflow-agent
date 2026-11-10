@@ -13,3 +13,7 @@ DocumentStore 每个最多 500 字符的 chunk 保留 start/end。Guard 校验 I
 显式 sqlite3 WAL 存储最近历史，按 mode 隔离、会话串行锁；当前轮仍须重读原文。未启用 LangGraph checkpointer，以免把上轮完整图状态和已读证据混入本轮预算。该进程内锁不解决多进程并发。
 
 API/CLI/UI 共用 AgentService，UI 仅经真实 HTTP 取数。模型 API 不重试，HTTP 错误只记录安全错误码，不写供应商错误正文。Trace 不请求或保存隐藏思维链。达到 8/12 预算后明确返回 INCOMPLETE。
+
+本轮提交接口增加兼容的结构化入口：优先省略 answer，由服务端从 status/citations 生成固定摘录与后缀；显式提供 answer 仍按原 Guard 严格校验。没有放宽引用、已读、冲突或事实断言条件。策略配置同时进入工具 Schema 与运行默认值，真实 Trace 标记 executed_strategy。
+
+P7 在 Guard 通过后调用独立 Evidence Critic 检查相关性、关键事实覆盖和适用范围。只返回 PASS/REVISE 与枚举问题代码，无隐藏推理或替代答案。修正反馈携带已读原文引用及剩余预算，模型自主决定重交或补查；最多一次修正，Critic 与主 Agent 共享 8 次模型上限。默认关闭，任何 Critic 错误都受控返回，不能冒充已完成。实验注入只允许程序化评测钩子安装，API/CLI 无此入口。

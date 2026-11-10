@@ -1,0 +1,8 @@
+[
+  {"id":"CE01","question":"办公电脑申领审批需要多久？","expected_doc_ids":["D03"],"expected_status":"COMPLETED","expected_facts":["3个工作日"],"fault":"omit_duration"},
+  {"id":"CE02","question":"新员工需要在入职后多久完成信息安全培训？","expected_doc_ids":["D06"],"expected_status":"COMPLETED","expected_facts":["7天"],"fault":"omit_training_deadline"},
+  {"id":"CE03","question":"差旅报销期限是多久？","expected_doc_ids":["D01","D02"],"expected_status":"NEEDS_CLARIFICATION","expected_facts":["30天","15天"],"fault":"omit_conflicting_values"},
+  {"id":"CE04","question":"正式员工与实习生每天餐补各是多少？","expected_doc_ids":["D18","D19"],"expected_status":"COMPLETED","expected_facts":["30元","20元"],"fault":"omit_one_scope"},
+  {"id":"CE05","question":"IT设备故障应通过什么途径报修？","expected_doc_ids":["D04"],"expected_status":"COMPLETED","expected_facts":["IT门户","工单"],"fault":null},
+  {"id":"CE06","question":"访客到访需要登记和核验身份吗？","expected_doc_ids":["D07"],"expected_status":"COMPLETED","expected_facts":["登记","前台"],"fault":null}
+]

@@ -55,6 +55,7 @@ class TraceWriter:
 
     def finish(self, result):
         payload = {
+            "trace_schema_version": 2,
             "trace_id": self.trace_id,
             "mode": self.mode,
             "model_name": self.model_name,

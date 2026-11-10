@@ -1,0 +1,381 @@
+{
+  "trace_schema_version": 2,
+  "trace_id": "a4c1b057909c4bdbbf4090956ed1a153",
+  "mode": "live",
+  "model_name": "qwen-plus",
+  "events": [
+    {
+      "kind": "model_decision",
+      "step": 1,
+      "trace_id": "a4c1b057909c4bdbbf4090956ed1a153",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T07:24:27.509960+00:00",
+      "model_step": 1,
+      "tool_calls": [
+        {
+          "id": "call_5a1f39287dc4433b86a914",
+          "name": "search_documents",
+          "arguments": {
+            "query": "IT设备故障 报修 途径",
+            "strategy": "bm25"
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1520,
+        "total_tokens": 1551,
+        "completion_tokens": 31,
+        "prompt_tokens_details": {
+          "cached_tokens": 1408
+        }
+      },
+      "next_action": [
+        "search_documents"
+      ],
+      "decision_basis": "当前轮尚无工具 Observation；模型选择 search_documents。",
+      "decision_basis_source": "observable_events",
+      "basis_event_steps": []
+    },
+    {
+      "kind": "tool_observation",
+      "step": 2,
+      "trace_id": "a4c1b057909c4bdbbf4090956ed1a153",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T07:24:27.510963+00:00",
+      "model_step": 1,
+      "tool_call_number": 1,
+      "tool_name": "search_documents",
+      "arguments": {
+        "query": "IT设备故障 报修 途径",
+        "strategy": "bm25"
+      },
+      "observation": {
+        "query": "IT设备故障 报修 途径",
+        "strategy": "bm25",
+        "hits": [
+          {
+            "doc_id": "D04",
+            "chunk_id": "D04-C01",
+            "title": "IT设备维修",
+            "topic": "设备维修",
+            "version_date": "2025-01-01",
+            "score": 12.984483812334389,
+            "preview": "IT设备故障须在IT门户提交维修工单，由IT支持组受理。"
+          },
+          {
+            "doc_id": "D31",
+            "chunk_id": "D31-C01",
+            "title": "离职设备归还",
+            "topic": "设备归还",
+            "version_date": "2025-09-01",
+            "score": 5.163954532083039,
+            "preview": "离职前须向IT归还电脑和配件，由IT确认资产交接。"
+          },
+          {
+            "doc_id": "D15",
+            "chunk_id": "D15-C01",
+            "title": "邮件别名申请",
+            "topic": "邮件别名",
+            "version_date": "2025-09-01",
+            "score": 1.734148495712765,
+            "preview": "部门邮件别名由部门负责人提交申请，IT支持组创建。"
+          },
+          {
+            "doc_id": "D26",
+            "chunk_id": "D26-C01",
+            "title": "代码仓库权限",
+            "topic": "仓库权限",
+            "version_date": "2025-09-01",
+            "score": 1.734148495712765,
+            "preview": "代码仓库访问权限须经项目负责人审批后由IT开通。"
+          },
+          {
+            "doc_id": "D03",
+            "chunk_id": "D03-C01",
+            "title": "办公电脑申领",
+            "topic": "电脑申领",
+            "version_date": "2025-01-01",
+            "score": 1.5858162216512042,
+            "preview": "办公电脑申领须在IT门户填写申请，经主管审批后3个工作日内完成。"
+          }
+        ],
+        "configured_strategy": "bm25",
+        "executed_strategy": "bm25"
+      },
+      "observation_summary": "{\"query\": \"IT设备故障 报修 途径\", \"strategy\": \"bm25\", \"hits\": [{\"doc_id\": \"D04\", \"chunk_id\": \"D04-C01\", \"title\": \"IT设备维修\", \"topic\": \"设备维修\", \"version_date\": \"2025-01-01\", \"score\": 12.984483812334389, \"preview\": \"IT设备故障须在IT门户提交维修工单，由IT支持组受理。\"}, {\"doc_id\": \"D31\", \"chunk_id\": \"D31-C01\", \"title\": \"离职设备归还\", \"topic\": \"设备归还\", \"version_date\": \"2025-09-01\", \"score\": 5.163954532083039, \"preview\": \"离职前须向IT归还电脑和配件，由IT确认资产交接。\"}, {\"doc_id\": \"D15\", \"chunk_id\": \"D15-C01\", \"title\": \"邮件别名申请\", \"topic\": \"邮件别名\", \"version_dat",
+      "latency_ms": 0.20400001085363328,
+      "next_action": "agent_decide",
+      "decision_basis": "bm25 检索返回 5 篇候选（D04, D31, D15, D26, D03），尚不具备引用资格。",
+      "decision_basis_source": "current_observation"
+    },
+    {
+      "kind": "model_decision",
+      "step": 3,
+      "trace_id": "a4c1b057909c4bdbbf4090956ed1a153",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T07:24:28.565738+00:00",
+      "model_step": 2,
+      "tool_calls": [
+        {
+          "id": "call_b059ffce41c5444894162c",
+          "name": "read_document",
+          "arguments": {
+            "doc_id": "D04",
+            "chunk_ids": [
+              "D04-C01"
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 2098,
+        "total_tokens": 2130,
+        "completion_tokens": 32,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "next_action": [
+        "read_document"
+      ],
+      "decision_basis": "bm25 检索返回 5 篇候选（D04, D31, D15, D26, D03），尚不具备引用资格。本轮模型选择 read_document。",
+      "decision_basis_source": "observable_events",
+      "basis_event_steps": [
+        2
+      ]
+    },
+    {
+      "kind": "tool_observation",
+      "step": 4,
+      "trace_id": "a4c1b057909c4bdbbf4090956ed1a153",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T07:24:28.566741+00:00",
+      "model_step": 2,
+      "tool_call_number": 2,
+      "tool_name": "read_document",
+      "arguments": {
+        "doc_id": "D04",
+        "chunk_ids": [
+          "D04-C01"
+        ]
+      },
+      "observation": {
+        "doc_id": "D04",
+        "title": "IT设备维修",
+        "version_date": "2025-01-01",
+        "effective_date": null,
+        "scope": "全体员工",
+        "status": "published",
+        "topic": "设备维修",
+        "content": "IT设备故障须在IT门户提交维修工单，由IT支持组受理。",
+        "chunks": [
+          {
+            "doc_id": "D04",
+            "chunk_id": "D04-C01",
+            "start": 0,
+            "end": 28,
+            "text": "IT设备故障须在IT门户提交维修工单，由IT支持组受理。"
+          }
+        ],
+        "trust": "untrusted_document_data",
+        "evidence_context": {
+          "read_doc_ids": [
+            "D04"
+          ],
+          "conflicts": []
+        }
+      },
+      "observation_summary": "{\"doc_id\": \"D04\", \"title\": \"IT设备维修\", \"version_date\": \"2025-01-01\", \"effective_date\": null, \"scope\": \"全体员工\", \"status\": \"published\", \"topic\": \"设备维修\", \"content\": \"IT设备故障须在IT门户提交维修工单，由IT支持组受理。\", \"chunks\": [{\"doc_id\": \"D04\", \"chunk_id\": \"D04-C01\", \"start\": 0, \"end\": 28, \"text\": \"IT设备故障须在IT门户提交维修工单，由IT支持组受理。\"}], \"trust\": \"untrusted_document_data\", \"evidence_context\": {\"read_doc_ids\": [\"D04\"], \"conflicts\": []}}",
+      "latency_ms": 0.0610999995842576,
+      "next_action": "agent_decide",
+      "decision_basis": "已读取 D04 的 1 个原文片段。",
+      "decision_basis_source": "current_observation"
+    },
+    {
+      "kind": "model_decision",
+      "step": 5,
+      "trace_id": "a4c1b057909c4bdbbf4090956ed1a153",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T07:24:29.225028+00:00",
+      "model_step": 3,
+      "tool_calls": [
+        {
+          "id": "call_154c044e9e0340deb05e74",
+          "name": "inspect_versions",
+          "arguments": {
+            "topic": "设备维修"
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 2318,
+        "total_tokens": 2335,
+        "completion_tokens": 17,
+        "prompt_tokens_details": {
+          "cached_tokens": 1472
+        }
+      },
+      "next_action": [
+        "inspect_versions"
+      ],
+      "decision_basis": "已读取 D04 的 1 个原文片段。本轮模型选择 inspect_versions。",
+      "decision_basis_source": "observable_events",
+      "basis_event_steps": [
+        4
+      ]
+    },
+    {
+      "kind": "tool_observation",
+      "step": 6,
+      "trace_id": "a4c1b057909c4bdbbf4090956ed1a153",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T07:24:29.226031+00:00",
+      "model_step": 3,
+      "tool_call_number": 3,
+      "tool_name": "inspect_versions",
+      "arguments": {
+        "topic": "设备维修"
+      },
+      "observation": {
+        "topic": "设备维修",
+        "versions": [
+          {
+            "doc_id": "D04",
+            "title": "IT设备维修",
+            "topic": "设备维修",
+            "version_date": "2025-01-01",
+            "scope": "全体员工",
+            "effective_date": null,
+            "status": "published"
+          }
+        ],
+        "precedence": null,
+        "note": "Newer version alone does not establish precedence."
+      },
+      "observation_summary": "{\"topic\": \"设备维修\", \"versions\": [{\"doc_id\": \"D04\", \"title\": \"IT设备维修\", \"topic\": \"设备维修\", \"version_date\": \"2025-01-01\", \"scope\": \"全体员工\", \"effective_date\": null, \"status\": \"published\"}], \"precedence\": null, \"note\": \"Newer version alone does not establish precedence.\"}",
+      "latency_ms": 0.045900000259280205,
+      "next_action": "agent_decide",
+      "decision_basis": "版本查询返回 1 个版本，0 个适用范围未知；优先级为 None。",
+      "decision_basis_source": "current_observation"
+    },
+    {
+      "kind": "model_decision",
+      "step": 7,
+      "trace_id": "a4c1b057909c4bdbbf4090956ed1a153",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T07:24:31.373000+00:00",
+      "model_step": 4,
+      "tool_calls": [
+        {
+          "id": "call_ba1a3a7dd0aa43c791e759",
+          "name": "submit_answer",
+          "arguments": {
+            "status": "COMPLETED",
+            "citations": [
+              {
+                "doc_id": "D04",
+                "version_date": "2025-01-01",
+                "quote": "IT设备故障须在IT门户提交维修工单，由IT支持组受理。",
+                "chunk_id": "D04-C01"
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 2440,
+        "total_tokens": 2523,
+        "completion_tokens": 83,
+        "prompt_tokens_details": {
+          "cached_tokens": 1472
+        }
+      },
+      "next_action": [
+        "submit_answer"
+      ],
+      "decision_basis": "版本查询返回 1 个版本，0 个适用范围未知；优先级为 None。本轮模型选择 submit_answer。",
+      "decision_basis_source": "observable_events",
+      "basis_event_steps": [
+        6
+      ]
+    },
+    {
+      "kind": "tool_observation",
+      "step": 8,
+      "trace_id": "a4c1b057909c4bdbbf4090956ed1a153",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T07:24:31.374003+00:00",
+      "model_step": 4,
+      "tool_call_number": 4,
+      "tool_name": "submit_answer",
+      "arguments": {
+        "status": "COMPLETED",
+        "citations": [
+          {
+            "doc_id": "D04",
+            "version_date": "2025-01-01",
+            "quote": "IT设备故障须在IT门户提交维修工单，由IT支持组受理。",
+            "chunk_id": "D04-C01"
+          }
+        ]
+      },
+      "observation": {
+        "valid": true,
+        "errors": [],
+        "conflicts": [],
+        "expected_answer_format": null
+      },
+      "observation_summary": "{\"valid\": true, \"errors\": [], \"conflicts\": [], \"expected_answer_format\": null}",
+      "latency_ms": 0.07619999814778566,
+      "next_action": "finalize",
+      "decision_basis": "候选已通过原文、已读资格、版本、冲突及摘录格式校验。",
+      "decision_basis_source": "current_observation"
+    }
+  ],
+  "result": {
+    "question": "IT设备故障应通过什么途径报修？",
+    "answer": "D04：IT设备故障须在IT门户提交维修工单，由IT支持组受理。",
+    "status": "COMPLETED",
+    "citations": [
+      {
+        "doc_id": "D04",
+        "version_date": "2025-01-01",
+        "quote": "IT设备故障须在IT门户提交维修工单，由IT支持组受理。",
+        "chunk_id": "D04-C01"
+      }
+    ],
+    "missing_info": [],
+    "conflicts": [],
+    "steps_used": 4,
+    "tool_calls_used": 4,
+    "trace_id": "a4c1b057909c4bdbbf4090956ed1a153",
+    "session_id": "65160794a3fc4d52b05e6e42324e0f97",
+    "mode": "live",
+    "model_name": "qwen-plus",
+    "latency_ms": 5265.5881000100635,
+    "usage": {
+      "prompt_tokens": 8376,
+      "completion_tokens": 163,
+      "total_tokens": 8539
+    },
+    "error_code": null,
+    "critic": {
+      "enabled": false,
+      "reviews": 0,
+      "model_calls": 0,
+      "model_steps": 0,
+      "revisions_requested": 0,
+      "repair_limit": 1,
+      "latency_ms": 0.0,
+      "usage": {}
+    }
+  }
+}

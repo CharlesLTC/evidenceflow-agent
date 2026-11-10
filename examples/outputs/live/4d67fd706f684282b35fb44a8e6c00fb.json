@@ -1,0 +1,55 @@
+{
+  "question": "差旅报销期限是多久？",
+  "answer": "执行预算已用尽，本次核验未完成。",
+  "status": "INCOMPLETE",
+  "citations": [],
+  "missing_info": [
+    "Execution limit reached"
+  ],
+  "conflicts": [
+    {
+      "topic": "差旅报销",
+      "field": "提交期限",
+      "documents": [
+        "D01",
+        "D02"
+      ],
+      "values": [
+        "30天",
+        "15天"
+      ],
+      "resolution": "UNRESOLVED",
+      "scope": [
+        null,
+        null
+      ]
+    }
+  ],
+  "steps_used": 8,
+  "tool_calls_used": 7,
+  "trace_id": "4d67fd706f684282b35fb44a8e6c00fb",
+  "session_id": "21826af12ec44140923207e1351717f6",
+  "mode": "live",
+  "model_name": "qwen-plus",
+  "latency_ms": 13214.186199998949,
+  "usage": {
+    "prompt_tokens": 17548,
+    "completion_tokens": 459,
+    "total_tokens": 18007
+  },
+  "error_code": "BUDGET_EXHAUSTED",
+  "critic": {
+    "enabled": true,
+    "reviews": 1,
+    "model_calls": 1,
+    "model_steps": 1,
+    "revisions_requested": 1,
+    "repair_limit": 1,
+    "latency_ms": 1437.2512999980245,
+    "usage": {
+      "prompt_tokens": 1012,
+      "completion_tokens": 54,
+      "total_tokens": 1066
+    }
+  }
+}

@@ -1,16 +1,73 @@
 {
   "stage": "P7",
-  "started_at": "2026-11-10T04:56:50.360461+00:00",
-  "finished_at": "2026-11-10T04:56:50.360461+00:00",
-  "status": "SKIPPED_OPTIONAL",
-  "commands": [],
-  "test_counts": {},
-  "metrics": {},
+  "started_at": "2026-11-10T07:30:03.168009+00:00",
+  "finished_at": "2026-11-10T07:30:07.263614+00:00",
+  "status": "PASS",
+  "commands": [
+    {
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "tests/test_evidence_critic.py",
+        "--junitxml=reports/logs/P7-pytest.xml"
+      ],
+      "exit_code": 0,
+      "allowed_exit_codes": [
+        0
+      ],
+      "duration_seconds": 2.4697553000005428,
+      "log": "reports/logs/P7-0.txt"
+    },
+    {
+      "argv": [
+        "python",
+        "-m",
+        "scripts.verify_quality_results",
+        "--scope",
+        "critic"
+      ],
+      "exit_code": 0,
+      "allowed_exit_codes": [
+        0
+      ],
+      "duration_seconds": 1.6119897999742534,
+      "log": "reports/logs/P7-1.txt"
+    }
+  ],
+  "test_counts": {
+    "tests": 8,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": 8
+  },
+  "metrics": {
+    "correction_success": {
+      "numerator": 4,
+      "denominator": 4,
+      "rate": 1.0
+    },
+    "new_final_errors": 0,
+    "clean_control_false_revisions": 0,
+    "invalid_final_citations": 0,
+    "mean_extra_model_steps": 2.3333333333333335,
+    "mean_critic_api_calls": 1.6666666666666667,
+    "mean_extra_latency_ms": 4222.620833335289,
+    "extra_tokens": 21994,
+    "cost_usd": null
+  },
   "evidence_paths": [
-    "src/evidenceflow/evidence_guard.py"
+    "reports/critic_evaluation.json",
+    "reports/critic_eval_runs",
+    "reports/quality/bm25_critic_official.json",
+    "data/critic_eval.json"
   ],
   "errors": [],
   "changes_made": [
-    "Independent critic ablation intentionally not implemented; required evidence guard remains enabled. No unexecuted critic metrics are claimed."
+    "Implemented optional independent Evidence Critic after strict Guard, default disabled. One repair maximum, all real model decisions share original 8-step budget.",
+    "Frozen six-case omission/control protocol: first evaluation FAIL (3/4 repairs), recorded and retained; fixed feedback reused read citations and exposed remaining budget without changing criteria. Latest evaluation repaired 4/4 with two clean controls unchanged.",
+    "Critic-enabled official first run had controlled TC02 schema failure; consistency prompt and input-free validation diagnostics added, actual usage preserved. Unchanged official six rerun passed 6/6."
   ]
 }

@@ -1,0 +1,96 @@
+{
+  "trace_id": "5173305dd33e49fda7cb44a34bc973d9",
+  "mode": "live",
+  "model_name": "qwen-plus",
+  "events": [
+    {
+      "kind": "model_decision",
+      "step": 1,
+      "trace_id": "5173305dd33e49fda7cb44a34bc973d9",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T07:06:48.762388+00:00",
+      "model_step": 1,
+      "tool_calls": [
+        {
+          "id": "call_45a5995fc951445689babd",
+          "name": "submit_answer",
+          "arguments": {
+            "answer": "当前资料不足，无法依据知识库回答。",
+            "status": "INSUFFICIENT_EVIDENCE",
+            "citations": [],
+            "facts": [],
+            "missing_info": [
+              "用户身份信息未在知识库中提供"
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1336,
+        "total_tokens": 1397,
+        "completion_tokens": 61,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "next_action": [
+        "submit_answer"
+      ],
+      "decision_basis": "Model selected tools after receiving the preceding observations."
+    },
+    {
+      "kind": "tool_observation",
+      "step": 2,
+      "trace_id": "5173305dd33e49fda7cb44a34bc973d9",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T07:06:48.763943+00:00",
+      "model_step": 1,
+      "tool_call_number": 1,
+      "tool_name": "submit_answer",
+      "arguments": {
+        "answer": "当前资料不足，无法依据知识库回答。",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "citations": [],
+        "facts": [],
+        "missing_info": [
+          "用户身份信息未在知识库中提供"
+        ]
+      },
+      "observation": {
+        "valid": true,
+        "errors": [],
+        "conflicts": [],
+        "expected_answer_format": null
+      },
+      "observation_summary": "{\"valid\": true, \"errors\": [], \"conflicts\": [], \"expected_answer_format\": null}",
+      "latency_ms": 0.9700999944470823,
+      "next_action": "finalize",
+      "decision_basis": "Tool output or Guard rejection returned to the model."
+    }
+  ],
+  "result": {
+    "question": "我是谁",
+    "answer": "当前资料不足，无法依据知识库回答。",
+    "status": "INSUFFICIENT_EVIDENCE",
+    "citations": [],
+    "missing_info": [
+      "用户身份信息未在知识库中提供"
+    ],
+    "conflicts": [],
+    "steps_used": 1,
+    "tool_calls_used": 1,
+    "trace_id": "5173305dd33e49fda7cb44a34bc973d9",
+    "session_id": "4d2eac3f307a465594b025a5c1c0fb71",
+    "mode": "live",
+    "model_name": "qwen-plus",
+    "latency_ms": 1899.6161999821197,
+    "usage": {
+      "prompt_tokens": 1336,
+      "completion_tokens": 61,
+      "total_tokens": 1397
+    },
+    "error_code": null
+  }
+}

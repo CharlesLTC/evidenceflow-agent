@@ -12,6 +12,9 @@ def main():
     ask.add_argument("--fail-search-count", type=int, default=0)
     ask.add_argument("--max-model-steps", type=int, default=8)
     ask.add_argument("--max-tool-calls", type=int, default=12)
+    group = ask.add_mutually_exclusive_group()
+    group.add_argument("--critic", dest="enable_critic", action="store_true", default=None)
+    group.add_argument("--no-critic", dest="enable_critic", action="store_false")
     args = parser.parse_args()
     from evidenceflow.agent_graph import AgentService
     from evidenceflow.schemas import AskRequest

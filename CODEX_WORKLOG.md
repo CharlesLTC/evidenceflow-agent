@@ -149,3 +149,25 @@ GitHub CLI official download checksum verified. Two actual gh auth status checks
 User completed GitHub CLI login. gh auth status confirmed CharlesLTC and repo scope; same-name repository did not exist. Created https://github.com/CharlesLTC/evidenceflow-agent with --private --source=. --remote=origin --push.
 
 Initial push verified local HEAD = git ls-remote origin HEAD = GitHub API main SHA = d4689fe7d1862f9549b45f7789f2651c2cf6a32c. Remote README read succeeded. Final audit commit is verified again into ignored reports/delivery_verification.local.json to avoid SHA self-reference. Reviewer account was not supplied; repository remains private.
+
+## P7 — 2026-11-10T07:30:03.168009+00:00 → 2026-11-10T07:30:07.263614+00:00 UTC
+
+Status: PASS; checks: 2; pytest: {'tests': 8, 'failures': 0, 'errors': 0, 'skipped': 0, 'passed': 8}.
+
+- Implemented optional independent Evidence Critic after strict Guard, default disabled. One repair maximum, all real model decisions share original 8-step budget.
+- Frozen six-case omission/control protocol: first evaluation FAIL (3/4 repairs), recorded and retained; fixed feedback reused read citations and exposed remaining budget without changing criteria. Latest evaluation repaired 4/4 with two clean controls unchanged.
+- Critic-enabled official first run had controlled TC02 schema failure; consistency prompt and input-free validation diagnostics added, actual usage preserved. Unchanged official six rerun passed 6/6.
+
+Evidence: reports/gates/P7.json and reports/logs/P7-*.
+
+## Final incremental quality round — 2026-11-10T07:33:11.163760+00:00
+
+Original baseline: 63/63 tests. Original tests and official assertions unchanged. Observed-event decision_basis now includes source event steps, real error codes, retrieved/read IDs and conflict/version facts. Historical traces retain original content.
+
+TC02 baseline had three ANSWER_NOT_EXTRACTIVE rejections (missing suffix twice, missing newline once). Structured status/citations submission now renders in the service while strict Guard remains unchanged. Five consecutive live runs passed 5/5 with zero Guard rejections.
+
+Actual RETRIEVAL_STRATEGY=hybrid official six passed, executed_strategy recorded. Timeout and deliberately unavailable semantic backend led to model-chosen BM25 fallback. No fixed automatic tool retry.
+
+P7 developed only after core stability. Optional independent critic is off by default, one repair maximum, shares total eight model steps. Fixed four omission injections plus two clean controls: first attempt FAIL 3/4 repairs; after read-evidence/budget feedback same dataset passed 4/4 and 6/6 overall. First critic-enabled official run FAIL 5/6 on schema ValidationError; stricter consistency guidance/diagnostics added and same six passed 6/6. Every failed trial is retained.
+
+Final commands: main and existing isolated environment 75/75, BM25 official 6/6, Hybrid official 6/6, exceptional live suite, quote audit, secret scan, original retrieval recomputation and real HTTP UI all exit zero. No labels, case denominators, execution bounds or original assertions changed.

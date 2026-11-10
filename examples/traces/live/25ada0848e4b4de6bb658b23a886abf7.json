@@ -1,0 +1,351 @@
+{
+  "trace_schema_version": 2,
+  "trace_id": "25ada0848e4b4de6bb658b23a886abf7",
+  "mode": "live",
+  "model_name": "qwen-plus",
+  "events": [
+    {
+      "kind": "model_decision",
+      "step": 1,
+      "trace_id": "25ada0848e4b4de6bb658b23a886abf7",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T07:23:27.262328+00:00",
+      "model_step": 1,
+      "tool_calls": [
+        {
+          "id": "call_146bab1722514fd9be09bd",
+          "name": "search_documents",
+          "arguments": {
+            "query": "新员工 信息安全培训 完成时限",
+            "strategy": "bm25"
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1521,
+        "total_tokens": 1553,
+        "completion_tokens": 32,
+        "prompt_tokens_details": {
+          "cached_tokens": 1408
+        }
+      },
+      "next_action": [
+        "search_documents"
+      ],
+      "decision_basis": "当前轮尚无工具 Observation；模型选择 search_documents。",
+      "decision_basis_source": "observable_events",
+      "basis_event_steps": []
+    },
+    {
+      "kind": "tool_observation",
+      "step": 2,
+      "trace_id": "25ada0848e4b4de6bb658b23a886abf7",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T07:23:27.263331+00:00",
+      "model_step": 1,
+      "tool_call_number": 1,
+      "tool_name": "search_documents",
+      "arguments": {
+        "query": "新员工 信息安全培训 完成时限",
+        "strategy": "bm25"
+      },
+      "observation": {
+        "query": "新员工 信息安全培训 完成时限",
+        "strategy": "bm25",
+        "hits": [
+          {
+            "doc_id": "D06",
+            "chunk_id": "D06-C01",
+            "title": "新员工培训",
+            "topic": "入职培训",
+            "version_date": "2025-01-01",
+            "score": 27.043394548914993,
+            "preview": "新员工应在入职后7天内完成信息安全培训。"
+          },
+          {
+            "doc_id": "D18",
+            "chunk_id": "D18-C01",
+            "title": "正式员工餐补",
+            "topic": "餐补",
+            "version_date": "2025-09-01",
+            "score": 2.8027102085452746,
+            "preview": "正式员工每个出勤日餐补30元。"
+          },
+          {
+            "doc_id": "D21",
+            "chunk_id": "D21-C01",
+            "title": "正式员工年假",
+            "topic": "年假",
+            "version_date": "2025-09-01",
+            "score": 2.5003246163894186,
+            "preview": "正式员工每年可申请5天年假，具体日期需经主管批准。"
+          },
+          {
+            "doc_id": "D30",
+            "chunk_id": "D30-C01",
+            "title": "出差交通预订",
+            "topic": "交通预订",
+            "version_date": "2025-09-01",
+            "score": 2.2130002273958813,
+            "preview": "出差交通须先完成出差审批，再通过指定平台预订。"
+          },
+          {
+            "doc_id": "D03",
+            "chunk_id": "D03-C01",
+            "title": "办公电脑申领",
+            "topic": "电脑申领",
+            "version_date": "2025-01-01",
+            "score": 1.985850575305588,
+            "preview": "办公电脑申领须在IT门户填写申请，经主管审批后3个工作日内完成。"
+          }
+        ],
+        "configured_strategy": "bm25",
+        "executed_strategy": "bm25"
+      },
+      "observation_summary": "{\"query\": \"新员工 信息安全培训 完成时限\", \"strategy\": \"bm25\", \"hits\": [{\"doc_id\": \"D06\", \"chunk_id\": \"D06-C01\", \"title\": \"新员工培训\", \"topic\": \"入职培训\", \"version_date\": \"2025-01-01\", \"score\": 27.043394548914993, \"preview\": \"新员工应在入职后7天内完成信息安全培训。\"}, {\"doc_id\": \"D18\", \"chunk_id\": \"D18-C01\", \"title\": \"正式员工餐补\", \"topic\": \"餐补\", \"version_date\": \"2025-09-01\", \"score\": 2.8027102085452746, \"preview\": \"正式员工每个出勤日餐补30元。\"}, {\"doc_id\": \"D21\", \"chunk_id\": \"D21-C01\", \"title\": \"正式员工年假\", \"topic\": \"年假\", \"version_date\": \"2025-09-01\", \"",
+      "latency_ms": 0.23030000738799572,
+      "next_action": "agent_decide",
+      "decision_basis": "bm25 检索返回 5 篇候选（D06, D18, D21, D30, D03），尚不具备引用资格。",
+      "decision_basis_source": "current_observation"
+    },
+    {
+      "kind": "model_decision",
+      "step": 3,
+      "trace_id": "25ada0848e4b4de6bb658b23a886abf7",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T07:23:28.461535+00:00",
+      "model_step": 2,
+      "tool_calls": [
+        {
+          "id": "call_efa8543252ae448e96ae53",
+          "name": "read_document",
+          "arguments": {
+            "doc_id": "D06",
+            "chunk_ids": [
+              "D06-C01"
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 2092,
+        "total_tokens": 2124,
+        "completion_tokens": 32,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "next_action": [
+        "read_document"
+      ],
+      "decision_basis": "bm25 检索返回 5 篇候选（D06, D18, D21, D30, D03），尚不具备引用资格。本轮模型选择 read_document。",
+      "decision_basis_source": "observable_events",
+      "basis_event_steps": [
+        2
+      ]
+    },
+    {
+      "kind": "tool_observation",
+      "step": 4,
+      "trace_id": "25ada0848e4b4de6bb658b23a886abf7",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T07:23:28.462542+00:00",
+      "model_step": 2,
+      "tool_call_number": 2,
+      "tool_name": "read_document",
+      "arguments": {
+        "doc_id": "D06",
+        "chunk_ids": [
+          "D06-C01"
+        ]
+      },
+      "observation": {
+        "doc_id": "D06",
+        "title": "新员工培训",
+        "version_date": "2025-01-01",
+        "effective_date": null,
+        "scope": "新员工",
+        "status": "published",
+        "topic": "入职培训",
+        "content": "新员工应在入职后7天内完成信息安全培训。",
+        "chunks": [
+          {
+            "doc_id": "D06",
+            "chunk_id": "D06-C01",
+            "start": 0,
+            "end": 20,
+            "text": "新员工应在入职后7天内完成信息安全培训。"
+          }
+        ],
+        "trust": "untrusted_document_data",
+        "evidence_context": {
+          "read_doc_ids": [
+            "D06"
+          ],
+          "conflicts": []
+        }
+      },
+      "observation_summary": "{\"doc_id\": \"D06\", \"title\": \"新员工培训\", \"version_date\": \"2025-01-01\", \"effective_date\": null, \"scope\": \"新员工\", \"status\": \"published\", \"topic\": \"入职培训\", \"content\": \"新员工应在入职后7天内完成信息安全培训。\", \"chunks\": [{\"doc_id\": \"D06\", \"chunk_id\": \"D06-C01\", \"start\": 0, \"end\": 20, \"text\": \"新员工应在入职后7天内完成信息安全培训。\"}], \"trust\": \"untrusted_document_data\", \"evidence_context\": {\"read_doc_ids\": [\"D06\"], \"conflicts\": []}}",
+      "latency_ms": 0.07419998291879892,
+      "next_action": "agent_decide",
+      "decision_basis": "已读取 D06 的 1 个原文片段。",
+      "decision_basis_source": "current_observation"
+    },
+    {
+      "kind": "model_decision",
+      "step": 5,
+      "trace_id": "25ada0848e4b4de6bb658b23a886abf7",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T07:23:30.466993+00:00",
+      "model_step": 3,
+      "tool_calls": [
+        {
+          "id": "call_f4ae2067aab44896a9c1b0",
+          "name": "submit_answer",
+          "arguments": {
+            "status": "COMPLETED",
+            "citations": [
+              {
+                "doc_id": "D06",
+                "version_date": "2025-01-01",
+                "quote": "新员工应在入职后7天内完成信息安全培训。",
+                "chunk_id": "D06-C01"
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 2301,
+        "total_tokens": 2378,
+        "completion_tokens": 77,
+        "prompt_tokens_details": {
+          "cached_tokens": 1408
+        }
+      },
+      "next_action": [
+        "submit_answer"
+      ],
+      "decision_basis": "已读取 D06 的 1 个原文片段。本轮模型选择 submit_answer。",
+      "decision_basis_source": "observable_events",
+      "basis_event_steps": [
+        4
+      ]
+    },
+    {
+      "kind": "candidate_injection",
+      "step": 6,
+      "trace_id": "25ada0848e4b4de6bb658b23a886abf7",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T07:23:30.467996+00:00",
+      "model_step": 3,
+      "origin": "explicit_test_fixture",
+      "before": {
+        "answer": "D06：新员工应在入职后7天内完成信息安全培训。",
+        "status": "COMPLETED",
+        "citations": [
+          {
+            "doc_id": "D06",
+            "version_date": "2025-01-01",
+            "quote": "新员工应在入职后7天内完成信息安全培训。",
+            "chunk_id": "D06-C01"
+          }
+        ],
+        "facts": [],
+        "missing_info": []
+      },
+      "reviewed_candidate": {
+        "answer": "D06：完成信息安全培训。",
+        "status": "COMPLETED",
+        "citations": [
+          {
+            "doc_id": "D06",
+            "version_date": "2025-01-01",
+            "quote": "完成信息安全培训。",
+            "chunk_id": "D06-C01"
+          }
+        ],
+        "facts": [],
+        "missing_info": []
+      },
+      "decision_basis": "评测显式注入候选覆盖缺失；不把注入内容当作模型原始输出。"
+    },
+    {
+      "kind": "tool_observation",
+      "step": 7,
+      "trace_id": "25ada0848e4b4de6bb658b23a886abf7",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T07:23:30.467996+00:00",
+      "model_step": 3,
+      "tool_call_number": 3,
+      "tool_name": "submit_answer",
+      "arguments": {
+        "status": "COMPLETED",
+        "citations": [
+          {
+            "doc_id": "D06",
+            "version_date": "2025-01-01",
+            "quote": "新员工应在入职后7天内完成信息安全培训。",
+            "chunk_id": "D06-C01"
+          }
+        ]
+      },
+      "observation": {
+        "valid": true,
+        "errors": [],
+        "conflicts": [],
+        "expected_answer_format": null
+      },
+      "observation_summary": "{\"valid\": true, \"errors\": [], \"conflicts\": [], \"expected_answer_format\": null}",
+      "latency_ms": 0.12110001989640296,
+      "next_action": "finalize",
+      "decision_basis": "候选已通过原文、已读资格、版本、冲突及摘录格式校验。",
+      "decision_basis_source": "current_observation"
+    }
+  ],
+  "result": {
+    "question": "新员工需要在入职后多久完成信息安全培训？",
+    "answer": "D06：完成信息安全培训。",
+    "status": "COMPLETED",
+    "citations": [
+      {
+        "doc_id": "D06",
+        "version_date": "2025-01-01",
+        "quote": "完成信息安全培训。",
+        "chunk_id": "D06-C01"
+      }
+    ],
+    "missing_info": [],
+    "conflicts": [],
+    "steps_used": 3,
+    "tool_calls_used": 3,
+    "trace_id": "25ada0848e4b4de6bb658b23a886abf7",
+    "session_id": "074d1077f51e46e983d48380b5052eb0",
+    "mode": "live",
+    "model_name": "qwen-plus",
+    "latency_ms": 4186.407000001054,
+    "usage": {
+      "prompt_tokens": 5914,
+      "completion_tokens": 141,
+      "total_tokens": 6055
+    },
+    "error_code": null,
+    "critic": {
+      "enabled": false,
+      "reviews": 0,
+      "model_calls": 0,
+      "model_steps": 0,
+      "revisions_requested": 0,
+      "repair_limit": 1,
+      "latency_ms": 0.0,
+      "usage": {}
+    }
+  }
+}

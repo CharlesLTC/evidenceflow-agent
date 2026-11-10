@@ -6,4 +6,4 @@
 
 运行时 live 决策由 qwen-plus 完成；真实工具调用、Usage 和 Guard 修订见 Trace。Dense 为实际多语 MiniLM。MockModel/ScriptedModel 的离线结果不计为 live。
 
-验证使用实际 pip、pytest、HTTP、Streamlit AppTest、真实模型场景和检索消融；保留退出码、JUnit、JSON、数据哈希和失败修复。未执行 Critic、未标注事实支持率、未知 USD 单价均不填猜测值。
+验证使用实际 pip、pytest、HTTP、Streamlit AppTest、真实模型场景、检索消融和独立 Critic 对照；保留退出码、JUnit、JSON、数据哈希及全部失败。Critic 对照显式注入 4 个候选覆盖缺失并保留 2 个干净对照，不能当作模型自然错误率。未标注事实支持率、未知 USD 单价仍不填猜测值。

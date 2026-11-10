@@ -45,6 +45,22 @@ class Draft(StrictModel):
     missing_info: list[str] = Field(default_factory=list, max_length=20)
 
 
+class AnswerSubmission(Draft):
+    answer: str | None = Field(
+        default=None,
+        max_length=8000,
+        description="Normally omit. Server renders exact citations and status suffix. If supplied, strict extractive validation still applies.",
+    )
+
+    def to_draft(self):
+        from evidenceflow.evidence_guard import render_answer
+
+        payload = self.model_dump()
+        if self.answer is None:
+            payload["answer"] = render_answer(self.status, self.citations)
+        return Draft.model_validate(payload)
+
+
 class AskRequest(StrictModel):
     question: str = Field(min_length=1, max_length=2000)
     session_id: str | None = Field(default=None, pattern=r"^[a-zA-Z0-9_-]{1,80}$")
@@ -52,6 +68,7 @@ class AskRequest(StrictModel):
     max_model_steps: int = Field(default=8, ge=1, le=8)
     max_tool_calls: int = Field(default=12, ge=1, le=12)
     fail_search_count: int = Field(default=0, ge=0, le=12)
+    enable_critic: bool | None = None
 
     @field_validator("question")
     @classmethod
@@ -77,3 +94,4 @@ class Answer(StrictModel):
     latency_ms: float = 0
     usage: dict = Field(default_factory=dict)
     error_code: str | None = None
+    critic: dict = Field(default_factory=dict)

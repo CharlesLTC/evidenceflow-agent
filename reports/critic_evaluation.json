@@ -1,0 +1,468 @@
+{
+  "run_id": "f113b999cc7b496395f24e41464343b9",
+  "started_at": "2026-11-10T07:23:11.395435+00:00",
+  "fixture_sha256": "536a693905b5ea4f9145df64e78f25a37b17196aca3cbccc5643aa84086ac005",
+  "protocol": "6 fixed cases: 4 controlled omissions and 2 clean controls. Only the first real model submission is transformed, visibly labelled candidate_injection; this is not a natural error-rate estimate. Baseline and Critic use the same fixture and unchanged external criteria.",
+  "cases": [
+    {
+      "id": "CE01",
+      "question": "办公电脑申领审批需要多久？",
+      "fault": "omit_duration",
+      "baseline": {
+        "correct": false,
+        "checks": {
+          "status": true,
+          "documents": true,
+          "facts": false,
+          "bounded": true,
+          "citations": true
+        },
+        "result_status": "COMPLETED",
+        "trace": "examples/traces/live/01ea2cc9320b41899b2ec8c39f27b278.json",
+        "steps": 4,
+        "tool_calls": 4,
+        "usage": {
+          "prompt_tokens": 8360,
+          "completion_tokens": 164,
+          "total_tokens": 8524
+        },
+        "latency_ms": 4900.095899996813,
+        "critic": {
+          "enabled": false,
+          "reviews": 0,
+          "model_calls": 0,
+          "model_steps": 0,
+          "revisions_requested": 0,
+          "repair_limit": 1,
+          "latency_ms": 0.0,
+          "usage": {}
+        },
+        "invalid_citations": 0,
+        "injection_events": 1
+      },
+      "critic": {
+        "correct": true,
+        "checks": {
+          "status": true,
+          "documents": true,
+          "facts": true,
+          "bounded": true,
+          "citations": true
+        },
+        "result_status": "COMPLETED",
+        "trace": "examples/traces/live/a5689e71d2a74d36848307ef83979d95.json",
+        "steps": 7,
+        "tool_calls": 5,
+        "usage": {
+          "prompt_tokens": 12914,
+          "completion_tokens": 349,
+          "total_tokens": 13263
+        },
+        "latency_ms": 9939.673999993829,
+        "critic": {
+          "enabled": true,
+          "reviews": 2,
+          "model_calls": 2,
+          "model_steps": 2,
+          "revisions_requested": 1,
+          "repair_limit": 1,
+          "latency_ms": 2462.5506999727804,
+          "usage": {
+            "prompt_tokens": 1685,
+            "completion_tokens": 81,
+            "total_tokens": 1766
+          }
+        },
+        "invalid_citations": 0,
+        "injection_events": 1
+      }
+    },
+    {
+      "id": "CE02",
+      "question": "新员工需要在入职后多久完成信息安全培训？",
+      "fault": "omit_training_deadline",
+      "baseline": {
+        "correct": false,
+        "checks": {
+          "status": true,
+          "documents": true,
+          "facts": false,
+          "bounded": true,
+          "citations": true
+        },
+        "result_status": "COMPLETED",
+        "trace": "examples/traces/live/25ada0848e4b4de6bb658b23a886abf7.json",
+        "steps": 3,
+        "tool_calls": 3,
+        "usage": {
+          "prompt_tokens": 5914,
+          "completion_tokens": 141,
+          "total_tokens": 6055
+        },
+        "latency_ms": 4186.407000001054,
+        "critic": {
+          "enabled": false,
+          "reviews": 0,
+          "model_calls": 0,
+          "model_steps": 0,
+          "revisions_requested": 0,
+          "repair_limit": 1,
+          "latency_ms": 0.0,
+          "usage": {}
+        },
+        "invalid_citations": 0,
+        "injection_events": 1
+      },
+      "critic": {
+        "correct": true,
+        "checks": {
+          "status": true,
+          "documents": true,
+          "facts": true,
+          "bounded": true,
+          "citations": true
+        },
+        "result_status": "COMPLETED",
+        "trace": "examples/traces/live/2444e4210f5c4dc4a3ddd3328ad14f3a.json",
+        "steps": 6,
+        "tool_calls": 4,
+        "usage": {
+          "prompt_tokens": 10276,
+          "completion_tokens": 319,
+          "total_tokens": 10595
+        },
+        "latency_ms": 8844.958100002259,
+        "critic": {
+          "enabled": true,
+          "reviews": 2,
+          "model_calls": 2,
+          "model_steps": 2,
+          "revisions_requested": 1,
+          "repair_limit": 1,
+          "latency_ms": 2302.5440000055823,
+          "usage": {
+            "prompt_tokens": 1661,
+            "completion_tokens": 74,
+            "total_tokens": 1735
+          }
+        },
+        "invalid_citations": 0,
+        "injection_events": 1
+      }
+    },
+    {
+      "id": "CE03",
+      "question": "差旅报销期限是多久？",
+      "fault": "omit_conflicting_values",
+      "baseline": {
+        "correct": false,
+        "checks": {
+          "status": true,
+          "documents": true,
+          "facts": false,
+          "bounded": true,
+          "citations": true,
+          "unresolved": true
+        },
+        "result_status": "NEEDS_CLARIFICATION",
+        "trace": "examples/traces/live/a5cd50f5a8244e2186dcfb95deb437d9.json",
+        "steps": 5,
+        "tool_calls": 5,
+        "usage": {
+          "prompt_tokens": 10165,
+          "completion_tokens": 353,
+          "total_tokens": 10518
+        },
+        "latency_ms": 9270.678499975475,
+        "critic": {
+          "enabled": false,
+          "reviews": 0,
+          "model_calls": 0,
+          "model_steps": 0,
+          "revisions_requested": 0,
+          "repair_limit": 1,
+          "latency_ms": 0.0,
+          "usage": {}
+        },
+        "invalid_citations": 0,
+        "injection_events": 1
+      },
+      "critic": {
+        "correct": true,
+        "checks": {
+          "status": true,
+          "documents": true,
+          "facts": true,
+          "bounded": true,
+          "citations": true,
+          "unresolved": true
+        },
+        "result_status": "NEEDS_CLARIFICATION",
+        "trace": "examples/traces/live/784a8a67a7814fb8b635ce0f8ae035d8.json",
+        "steps": 8,
+        "tool_calls": 6,
+        "usage": {
+          "prompt_tokens": 15555,
+          "completion_tokens": 593,
+          "total_tokens": 16148
+        },
+        "latency_ms": 15715.794299991103,
+        "critic": {
+          "enabled": true,
+          "reviews": 2,
+          "model_calls": 2,
+          "model_steps": 2,
+          "revisions_requested": 1,
+          "repair_limit": 1,
+          "latency_ms": 2703.7063999741804,
+          "usage": {
+            "prompt_tokens": 2240,
+            "completion_tokens": 92,
+            "total_tokens": 2332
+          }
+        },
+        "invalid_citations": 0,
+        "injection_events": 1
+      }
+    },
+    {
+      "id": "CE04",
+      "question": "正式员工与实习生每天餐补各是多少？",
+      "fault": "omit_one_scope",
+      "baseline": {
+        "correct": false,
+        "checks": {
+          "status": true,
+          "documents": false,
+          "facts": false,
+          "bounded": true,
+          "citations": true
+        },
+        "result_status": "COMPLETED",
+        "trace": "examples/traces/live/1d63c7204249444f94a26b7b9b64c3a1.json",
+        "steps": 4,
+        "tool_calls": 4,
+        "usage": {
+          "prompt_tokens": 8393,
+          "completion_tokens": 227,
+          "total_tokens": 8620
+        },
+        "latency_ms": 7390.82669999334,
+        "critic": {
+          "enabled": false,
+          "reviews": 0,
+          "model_calls": 0,
+          "model_steps": 0,
+          "revisions_requested": 0,
+          "repair_limit": 1,
+          "latency_ms": 0.0,
+          "usage": {}
+        },
+        "invalid_citations": 0,
+        "injection_events": 1
+      },
+      "critic": {
+        "correct": true,
+        "checks": {
+          "status": true,
+          "documents": true,
+          "facts": true,
+          "bounded": true,
+          "citations": true
+        },
+        "result_status": "COMPLETED",
+        "trace": "examples/traces/live/cd96f366cb89452baa6ed4bee17cb091.json",
+        "steps": 7,
+        "tool_calls": 5,
+        "usage": {
+          "prompt_tokens": 13346,
+          "completion_tokens": 522,
+          "total_tokens": 13868
+        },
+        "latency_ms": 14306.17229998461,
+        "critic": {
+          "enabled": true,
+          "reviews": 2,
+          "model_calls": 2,
+          "model_steps": 2,
+          "revisions_requested": 1,
+          "repair_limit": 1,
+          "latency_ms": 2329.1113000013866,
+          "usage": {
+            "prompt_tokens": 1941,
+            "completion_tokens": 79,
+            "total_tokens": 2020
+          }
+        },
+        "invalid_citations": 0,
+        "injection_events": 1
+      }
+    },
+    {
+      "id": "CE05",
+      "question": "IT设备故障应通过什么途径报修？",
+      "fault": null,
+      "baseline": {
+        "correct": true,
+        "checks": {
+          "status": true,
+          "documents": true,
+          "facts": true,
+          "bounded": true,
+          "citations": true
+        },
+        "result_status": "COMPLETED",
+        "trace": "examples/traces/live/a4c1b057909c4bdbbf4090956ed1a153.json",
+        "steps": 4,
+        "tool_calls": 4,
+        "usage": {
+          "prompt_tokens": 8376,
+          "completion_tokens": 163,
+          "total_tokens": 8539
+        },
+        "latency_ms": 5265.5881000100635,
+        "critic": {
+          "enabled": false,
+          "reviews": 0,
+          "model_calls": 0,
+          "model_steps": 0,
+          "revisions_requested": 0,
+          "repair_limit": 1,
+          "latency_ms": 0.0,
+          "usage": {}
+        },
+        "invalid_citations": 0,
+        "injection_events": 0
+      },
+      "critic": {
+        "correct": true,
+        "checks": {
+          "status": true,
+          "documents": true,
+          "facts": true,
+          "bounded": true,
+          "citations": true
+        },
+        "result_status": "COMPLETED",
+        "trace": "examples/traces/live/c4ae04217332468e9329787150043bbf.json",
+        "steps": 5,
+        "tool_calls": 4,
+        "usage": {
+          "prompt_tokens": 9212,
+          "completion_tokens": 195,
+          "total_tokens": 9407
+        },
+        "latency_ms": 6706.5385000023525,
+        "critic": {
+          "enabled": true,
+          "reviews": 1,
+          "model_calls": 1,
+          "model_steps": 1,
+          "revisions_requested": 0,
+          "repair_limit": 1,
+          "latency_ms": 1059.5418000011705,
+          "usage": {
+            "prompt_tokens": 842,
+            "completion_tokens": 33,
+            "total_tokens": 875
+          }
+        },
+        "invalid_citations": 0,
+        "injection_events": 0
+      }
+    },
+    {
+      "id": "CE06",
+      "question": "访客到访需要登记和核验身份吗？",
+      "fault": null,
+      "baseline": {
+        "correct": true,
+        "checks": {
+          "status": true,
+          "documents": true,
+          "facts": true,
+          "bounded": true,
+          "citations": true
+        },
+        "result_status": "COMPLETED",
+        "trace": "examples/traces/live/f24f3f64f0204be6aaa7b56a49db0dd4.json",
+        "steps": 5,
+        "tool_calls": 5,
+        "usage": {
+          "prompt_tokens": 10777,
+          "completion_tokens": 195,
+          "total_tokens": 10972
+        },
+        "latency_ms": 6103.031899983762,
+        "critic": {
+          "enabled": false,
+          "reviews": 0,
+          "model_calls": 0,
+          "model_steps": 0,
+          "revisions_requested": 0,
+          "repair_limit": 1,
+          "latency_ms": 0.0,
+          "usage": {}
+        },
+        "invalid_citations": 0,
+        "injection_events": 0
+      },
+      "critic": {
+        "correct": true,
+        "checks": {
+          "status": true,
+          "documents": true,
+          "facts": true,
+          "bounded": true,
+          "citations": true
+        },
+        "result_status": "COMPLETED",
+        "trace": "examples/traces/live/9d14b5c6d33c49a48747cb92c1cdaf4a.json",
+        "steps": 6,
+        "tool_calls": 5,
+        "usage": {
+          "prompt_tokens": 11713,
+          "completion_tokens": 228,
+          "total_tokens": 11941
+        },
+        "latency_ms": 6939.215899998089,
+        "critic": {
+          "enabled": true,
+          "reviews": 1,
+          "model_calls": 1,
+          "model_steps": 1,
+          "revisions_requested": 0,
+          "repair_limit": 1,
+          "latency_ms": 1008.6069999961182,
+          "usage": {
+            "prompt_tokens": 936,
+            "completion_tokens": 33,
+            "total_tokens": 969
+          }
+        },
+        "invalid_citations": 0,
+        "injection_events": 0
+      }
+    }
+  ],
+  "finished_at": "2026-11-10T07:24:51.198235+00:00",
+  "total": 6,
+  "injected_cases": 4,
+  "baseline_correct": 2,
+  "critic_correct": 6,
+  "correction_success": {
+    "numerator": 4,
+    "denominator": 4,
+    "rate": 1.0
+  },
+  "new_final_errors": 0,
+  "clean_control_false_revisions": 0,
+  "invalid_final_citations": 0,
+  "mean_extra_model_steps": 2.3333333333333335,
+  "mean_critic_api_calls": 1.6666666666666667,
+  "mean_extra_latency_ms": 4222.620833335289,
+  "mean_critic_latency_ms": 1977.6768666585365,
+  "extra_tokens": 21994,
+  "cost_usd": null,
+  "status": "PASS"
+}

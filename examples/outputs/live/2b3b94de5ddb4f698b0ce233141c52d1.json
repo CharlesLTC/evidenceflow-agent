@@ -1,0 +1,51 @@
+{
+  "question": "差旅报销期限是多久？",
+  "answer": "工具或模型服务不可用，本次未能完成核验。",
+  "status": "FAILED",
+  "citations": [],
+  "missing_info": [
+    "Independent critic unavailable"
+  ],
+  "conflicts": [
+    {
+      "topic": "差旅报销",
+      "field": "提交期限",
+      "documents": [
+        "D02",
+        "D01"
+      ],
+      "values": [
+        "15天",
+        "30天"
+      ],
+      "resolution": "UNRESOLVED",
+      "scope": [
+        null,
+        null
+      ]
+    }
+  ],
+  "steps_used": 6,
+  "tool_calls_used": 5,
+  "trace_id": "2b3b94de5ddb4f698b0ce233141c52d1",
+  "session_id": "accept_eff1ee36b2894b00b77be6255c77a611",
+  "mode": "live",
+  "model_name": "qwen-plus",
+  "latency_ms": 9608.400900004199,
+  "usage": {
+    "prompt_tokens": 10165,
+    "completion_tokens": 306,
+    "total_tokens": 10471
+  },
+  "error_code": "CRITIC_UNAVAILABLE",
+  "critic": {
+    "enabled": true,
+    "reviews": 1,
+    "model_calls": 1,
+    "model_steps": 1,
+    "revisions_requested": 0,
+    "repair_limit": 1,
+    "latency_ms": 1231.2118000118062,
+    "usage": {}
+  }
+}

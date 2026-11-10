@@ -39,6 +39,60 @@ def verify(record_publication=False):
         ]
     )
     clean = not command(["git", "status", "--porcelain"])
+    try:
+        pages = json.loads(
+            command(
+                [
+                    gh,
+                    "api",
+                    "--paginate",
+                    "--slurp",
+                    f"repos/{metadata['nameWithOwner']}/collaborators",
+                ]
+            )
+        )
+        collaborators = [
+            {
+                "login": user["login"],
+                "role": user.get("role_name"),
+                "read": bool(user.get("permissions", {}).get("pull")),
+            }
+            for page in pages
+            for user in page
+        ]
+        invitations = json.loads(
+            command(
+                [
+                    gh,
+                    "api",
+                    "--paginate",
+                    "--slurp",
+                    f"repos/{metadata['nameWithOwner']}/invitations",
+                ]
+            )
+        )
+        invitations = [
+            {
+                "login": invitation.get("invitee", {}).get("login"),
+                "permissions": invitation.get("permissions"),
+            }
+            for page in invitations
+            for invitation in page
+        ]
+        access = {
+            "status": "CHECKED",
+            "private": metadata["isPrivate"],
+            "collaborators": collaborators,
+            "pending_invitations": invitations,
+            "intended_reviewer": None,
+            "conclusion": "No intended reviewer account supplied; do not infer their access from repository visibility.",
+        }
+    except subprocess.CalledProcessError as exc:
+        access = {
+            "status": "UNVERIFIED",
+            "exit_code": exc.returncode,
+            "conclusion": "GitHub did not permit access-list verification; reviewer authorization cannot be confirmed.",
+        }
     result = {
         "status": "PASS",
         "timestamp": utc_now(),
@@ -49,15 +103,23 @@ def verify(record_publication=False):
         "github_api_head": github,
         "readme_blob_readable": readme_blob,
         "worktree_clean": clean,
-        "reviewer_access": "Private repository; reviewer account not supplied, access must be granted separately.",
+        "reviewer_access": access,
     }
     if record_publication:
+        existing_path = ROOT / "reports/github_delivery.json"
+        existing = (
+            json.loads(existing_path.read_text(encoding="utf-8")) if existing_path.exists() else {}
+        )
+        write_json(
+            ROOT / "reports/reviewer_access.json", {"verified_at": result["timestamp"], **access}
+        )
         write_json(
             ROOT / "reports/github_delivery.json",
             {
                 "url": metadata["url"],
                 "private": metadata["isPrivate"],
-                "verified_initial_commit_sha": local,
+                "verified_initial_commit_sha": existing.get("verified_initial_commit_sha", local),
+                "verified_pre_audit_commit_sha": local,
                 "remote_head": remote,
                 "github_api_head": github,
                 "verified_at": result["timestamp"],

@@ -1,0 +1,42 @@
+{
+  "question": "访客到访需要登记和核验身份吗？",
+  "answer": "D07：访客到访前须由接待员工登记并由前台核验身份。",
+  "status": "COMPLETED",
+  "citations": [
+    {
+      "doc_id": "D07",
+      "version_date": "2025-01-01",
+      "quote": "访客到访前须由接待员工登记并由前台核验身份。",
+      "chunk_id": "D07-C01"
+    }
+  ],
+  "missing_info": [],
+  "conflicts": [],
+  "steps_used": 6,
+  "tool_calls_used": 5,
+  "trace_id": "9d14b5c6d33c49a48747cb92c1cdaf4a",
+  "session_id": "f84261fb29a74951999c10b22516ef7f",
+  "mode": "live",
+  "model_name": "qwen-plus",
+  "latency_ms": 6939.215899998089,
+  "usage": {
+    "prompt_tokens": 11713,
+    "completion_tokens": 228,
+    "total_tokens": 11941
+  },
+  "error_code": null,
+  "critic": {
+    "enabled": true,
+    "reviews": 1,
+    "model_calls": 1,
+    "model_steps": 1,
+    "revisions_requested": 0,
+    "repair_limit": 1,
+    "latency_ms": 1008.6069999961182,
+    "usage": {
+      "prompt_tokens": 936,
+      "completion_tokens": 33,
+      "total_tokens": 969
+    }
+  }
+}

@@ -79,5 +79,11 @@
       "log": "reports/logs/clean-5.txt"
     }
   ],
-  "note": "Fresh venv from frozen requirements; model weights remain in project ignored cache; pytest does not call external models."
+  "note": "Fresh venv from frozen requirements; model weights remain in project ignored cache; pytest does not call external models.",
+  "latest_source_regression": {
+    "timestamp": "2026-11-10T07:31:47.788920+00:00",
+    "report": "reports/quality/final_validation.json",
+    "junit": "reports/quality/isolated-pytest.xml",
+    "note": "Previously created locked isolated environment rerun on latest source; not a second fresh install."
+  }
 }

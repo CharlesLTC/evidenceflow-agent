@@ -7,6 +7,7 @@
 | document_store / tools | 精确原文区间、版本字段、受控错误、故障注入 |
 | retriever / embeddings / query_rewrite | BM25、实际 Dense、RRF、真实模型补查 |
 | claim_conflicts / evidence_guard | 数值制度冲突、已读/原文核验、摘录输出 |
+| evidence_critic / decision_basis | 独立覆盖审查、一次修正、共享预算；由实际 Observation 生成可追溯摘要 |
 | session_store / trace_writer | SQLite 隔离会话、真实步骤、脱敏与用量 |
 | api / ui | 同一后端与 HTTP 客户端，无硬编码成功数据 |
 | scripts | 验收、变异、消融、图表、扫描、阶段报告 |

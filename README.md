@@ -4,7 +4,7 @@
 
 实际结果：qwen-plus 官方六项 live **6/6**；32 篇合成制度、44 个固定检索问题（40 个有答案）；Hybrid Recall@3 **0.9875**。最终测试数、阶段及 GitHub 状态以 [最终验收报告](reports/final_acceptance.md) 为准。历史失败和阻塞保留。
 
-已实际创建并推送的私有仓库：[CharlesLTC/evidenceflow-agent](https://github.com/CharlesLTC/evidenceflow-agent)。本次全量与干净环境均通过 63/63 项测试。
+已实际创建并推送的私有仓库：[CharlesLTC/evidenceflow-agent](https://github.com/CharlesLTC/evidenceflow-agent)。原 63 项测试全部保留；本轮主环境与隔离环境均通过 75/75。BM25、Hybrid 以及开启 Critic 的官方六项均为 6/6；TC02 连续五次首次提交通过。
 
 ## 安装与运行：Windows PowerShell
 
@@ -114,7 +114,27 @@ flowchart LR
     Guard -->|通过| Result[结构化答案和 Trace]
 ```
 
-仅已读取 chunk 的精确原文可引用；ID、版本、chunk、quote 均由程序核验。回答采用原文摘录和固定状态提示，防止在真实引用旁添加编造断言。D01/D02 的 30/15 天冲突要求两份引用及待确认，较新日期不能裁定优先级。最多 8 次模型决策、12 次工具调用，耗尽返回 INCOMPLETE。
+仅已读取 chunk 的精确原文可引用，ID、版本、chunk、quote 均核验。模型优先提交状态、引用和缺失项，由服务端统一排版；若传入 answer，仍执行原有严格摘录校验。D01/D02 的 30/15 天冲突须两份引用及待确认，日期不能裁定优先级。最多 8 次模型决策（包含 Critic）、12 次业务工具，耗尽返回 INCOMPLETE。
+
+## 本轮质量优化和可选 Critic
+
+decision_basis 根据实际 Observation 和下一动作生成，附来源事件编号，是可观察事实摘要，不是隐藏推理。旧 Trace 保留原貌，新 Trace 标记 trace_schema_version=2。
+
+RETRIEVAL_STRATEGY=hybrid 同时设置提示词、工具 Schema 和省略参数时的实际执行默认值，Trace 记录 executed_strategy。后端不可用时返回错误和 BM25 选项，由模型自主选择回退。
+
+P7 独立 Evidence Critic 默认关闭，在 Guard 通过后用独立上下文检查覆盖和范围，只输出枚举问题代码，不生成答案或隐藏推理。最多一次修正，共享原 8 次模型上限；始终不可绕过 Guard。
+
+```powershell
+python -m evidenceflow.cli ask --mode live --critic --question "差旅报销期限是多久？"
+python -m evidenceflow.cli ask --mode live --no-critic --question "电脑申领审批多久？"
+python -m scripts.quality_core --strategy bm25 --conflict-repeats 5
+$env:RETRIEVAL_STRATEGY="hybrid"
+python -m scripts.quality_core --strategy hybrid --fallback-probe
+python -m scripts.evaluate_critic
+python -m scripts.verify_quality_results
+```
+
+API 使用 enable_critic:true/false；省略或 null 时尊重 EVIDENCE_CRITIC_ENABLED（默认 false）。离线 mock Critic 明确标为 guard_only_offline，不充当语义模型评审。独立评测固定 4 个覆盖缺失注入和 2 个干净对照，Trace 标记 candidate_injection，不当作模型自然错误。初轮 FAIL、修复和最终结果见 [质量报告](docs/10-quality-review.md)。
 
 冲突抽取针对合成制度的数值、单位、主题和范围，不能声称解决任意自然语言制度推理。Guard 证明引用确实被读过且来自原文，不证明任意文档真实或任意问题相关性；语义理解仍依赖模型。未做独立人工事实支持率标注，相关指标不填推测值。
 
@@ -125,7 +145,7 @@ flowchart LR
 - [需求](docs/01-requirements.md)、[方案](docs/02-solution.md)、[评估](docs/03-evaluation.md)、[AI 使用](docs/04-ai-usage.md)、[复盘](docs/05-retrospective.md)
 - [架构](docs/06-architecture.md)、[测试计划](docs/07-test-plan.md)、[实验](docs/08-experiments.md)、[时间日志](docs/09-time-log.md)
 
-`examples/inputs`、`outputs/{mode}`、`traces/{mode}` 为实际执行材料。早期 live 阻塞尝试没有成功模型决策，不计入达标证据。原始输入哈希在 `reports/input_manifest.json`，规格和 Word 原文文字在 `docs/source`。P7 独立 Critic 为可选项，本次跳过，强制 Guard 保持生效。
+`examples/inputs`、`outputs/{mode}`、`traces/{mode}` 为实际执行材料。早期阻塞和 Critic 初轮失败均保留，不计入通过次数。原始输入哈希在 reports/input_manifest.json，规格和 Word 原文在 docs/source。P7 本轮已实现并独立评估，强制 Guard 始终生效。
 
 实际建仓和首次三方 SHA 核对记录在 `reports/github_delivery.json`。commit 不能将自身 SHA 嵌入自身内容；`python -m scripts.verify_delivery` 核对本地 HEAD、git ls-remote HEAD、GitHub API SHA 和远程 README。本机忽略的 `reports/delivery_verification.local.json` 保存最后实际对照。私有仓库仍需给评审账号授权，本次尚未提供评审账号。
 

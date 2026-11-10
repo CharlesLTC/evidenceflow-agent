@@ -1,6 +1,6 @@
 # EvidenceFlow 最终验收
 
-状态：COMPLETE。生成于 2026-11-10T05:11:54.805974+00:00。
+状态：COMPLETE。生成于 2026-11-10T07:35:06.592579+00:00。
 
 项目路径：E:\秋招笔试\EvidenceFlow\evidenceflow-agent；题号：3；实测模型：qwen-plus。
 
@@ -17,10 +17,10 @@ GitHub：https://github.com/CharlesLTC/evidenceflow-agent
 | P4 | PASS |
 | P5 | PASS |
 | P6 | PASS |
-| P7 | SKIPPED_OPTIONAL |
+| P7 | PASS |
 | P8 | PASS |
 
-pytest 实际统计：{'tests': 63, 'failures': 0, 'errors': 0, 'skipped': 0, 'passed': 63}。命令：python -m pytest -q；最新 JUnit 为 reports/logs/P8-pytest.xml（未产生前引用 P4）。
+pytest 实际统计：{'tests': 75, 'failures': 0, 'errors': 0, 'skipped': 0, 'passed': 75}。本轮 JUnit：reports/quality/final-pytest.xml；原始交付 JUnit 保留在 reports/logs/P8-pytest.xml。
 
 官方 live：6/6，mock：6/6；live 差异工具路径见 reports/live_branch_evidence.json。
 
@@ -30,6 +30,7 @@ pytest 实际统计：{'tests': 63, 'failures': 0, 'errors': 0, 'skipped': 0, 'p
 
 运行：README 包含环境、CLI、API（8000/docs）、UI（8501）、完整评估和工件核验命令。API/UI 返回实际后端数据，界面五种交互状态已验证。
 
-局限：小型合成标注集；摘录式回答；受控数值/范围/提示模式；未独立人工测量事实支持率；未实现 P7 Critic、生产鉴权与跨进程锁；私有仓库需另授评审访问权。
+P7 独立 Critic 默认关闭，共享8次模型预算，最多一次修正且不可绕过 Guard。修正率仅针对显式注入缺失，不代表自然错误率，见 docs/10-quality-review.md。
+局限：合成标注集、摘录回答、受控范围与提示模式；未独立人工测量事实支持率；未实施生产鉴权及跨进程锁。实际仓库授权清单见 reports/reviewer_access.json。
 
-可核验开发区间：目录创建后至本报告 38.4 分钟；详见 docs/09-time-log.md。
+本轮质量墙钟用时 24.8 分钟；用户检查间隔单列，见 docs/09-time-log.md。

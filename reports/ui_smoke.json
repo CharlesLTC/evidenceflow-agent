@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-10T05:07:15.158340+00:00",
+  "timestamp": "2026-11-10T07:31:29.778928+00:00",
   "status": "PASS",
   "method": "Streamlit AppTest + actual loopback HTTP uvicorn API",
   "cases": [
@@ -9,7 +9,7 @@
       "expected": "COMPLETED",
       "actual": "COMPLETED",
       "mode": "mock",
-      "trace": "examples/traces/mock/c642600e8b0042b09ccdcd260d659c0a.json",
+      "trace": "examples/traces/mock/3604e8a200c84de8b90ff8caaa8c98df.json",
       "status": "PASS"
     },
     {
@@ -18,7 +18,7 @@
       "expected": "NEEDS_CLARIFICATION",
       "actual": "NEEDS_CLARIFICATION",
       "mode": "mock",
-      "trace": "examples/traces/mock/2486f0bb30db4db7bb531951a42eb767.json",
+      "trace": "examples/traces/mock/5eb64189f99947689385f4a8e9fc9faf.json",
       "status": "PASS"
     },
     {
@@ -27,7 +27,7 @@
       "expected": "INSUFFICIENT_EVIDENCE",
       "actual": "INSUFFICIENT_EVIDENCE",
       "mode": "mock",
-      "trace": "examples/traces/mock/655f8044da484a6f9efc87272dac85ed.json",
+      "trace": "examples/traces/mock/dd634b0a81164aa4ab47d9ed9d9d93f6.json",
       "status": "PASS"
     },
     {
@@ -36,7 +36,7 @@
       "expected": "COMPLETED",
       "actual": "COMPLETED",
       "mode": "mock",
-      "trace": "examples/traces/mock/8b9bbb076a86425298bacfadc5592bc2.json",
+      "trace": "examples/traces/mock/eec1d46b42c74f9380371a86ab572b86.json",
       "status": "PASS"
     },
     {
@@ -45,7 +45,7 @@
       "expected": "FAILED",
       "actual": "FAILED",
       "mode": "mock",
-      "trace": "examples/traces/mock/9e8e094fc4a346b0949eae96d61b3029.json",
+      "trace": "examples/traces/mock/944ea9d34690491d883bc7d3e0ce4e5b.json",
       "status": "PASS"
     }
   ],

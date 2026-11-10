@@ -17,6 +17,7 @@ class Settings:
     max_model_steps: int = 8
     max_tool_calls: int = 12
     strategy: str = "bm25"
+    critic_enabled: bool = False
 
     @classmethod
     def from_env(cls, root: Path = ROOT):
@@ -30,6 +31,7 @@ class Settings:
             max_model_steps=int(os.getenv("MAX_MODEL_STEPS", "8")),
             max_tool_calls=int(os.getenv("MAX_TOOL_CALLS", "12")),
             strategy=os.getenv("RETRIEVAL_STRATEGY", "bm25"),
+            critic_enabled=os.getenv("EVIDENCE_CRITIC_ENABLED", "false").lower() == "true",
         )
 
     def live_blocker(self):
