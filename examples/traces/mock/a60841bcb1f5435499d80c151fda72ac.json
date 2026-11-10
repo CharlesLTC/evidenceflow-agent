@@ -1,0 +1,187 @@
+{
+  "trace_id": "a60841bcb1f5435499d80c151fda72ac",
+  "mode": "mock",
+  "model_name": "offline-observation-simulator",
+  "events": [
+    {
+      "kind": "model_decision",
+      "step": 1,
+      "trace_id": "a60841bcb1f5435499d80c151fda72ac",
+      "mode": "mock",
+      "model_name": "offline-observation-simulator",
+      "timestamp": "2026-11-10T04:54:33.756289+00:00",
+      "model_step": 1,
+      "tool_calls": [
+        {
+          "id": "call_59e8eb874a",
+          "name": "search_documents",
+          "arguments": {
+            "query": "办公电脑申领审批需要多久？",
+            "top_k": 5,
+            "strategy": "bm25"
+          }
+        }
+      ],
+      "usage": null,
+      "next_action": [
+        "search_documents"
+      ],
+      "decision_basis": "Model selected tools after receiving the preceding observations."
+    },
+    {
+      "kind": "tool_observation",
+      "step": 2,
+      "trace_id": "a60841bcb1f5435499d80c151fda72ac",
+      "mode": "mock",
+      "model_name": "offline-observation-simulator",
+      "timestamp": "2026-11-10T04:54:33.756289+00:00",
+      "model_step": 1,
+      "tool_call_number": 1,
+      "tool_name": "search_documents",
+      "arguments": {
+        "query": "办公电脑申领审批需要多久？",
+        "top_k": 5,
+        "strategy": "bm25"
+      },
+      "observation": {
+        "error": {
+          "code": "TOOL_TIMEOUT",
+          "type": "TimeoutError",
+          "retryable": true
+        }
+      },
+      "observation_summary": "{\"error\": {\"code\": \"TOOL_TIMEOUT\", \"type\": \"TimeoutError\", \"retryable\": true}}",
+      "latency_ms": 0.03260000084992498,
+      "next_action": "agent_decide",
+      "decision_basis": "Tool output or Guard rejection returned to the model."
+    },
+    {
+      "kind": "model_decision",
+      "step": 3,
+      "trace_id": "a60841bcb1f5435499d80c151fda72ac",
+      "mode": "mock",
+      "model_name": "offline-observation-simulator",
+      "timestamp": "2026-11-10T04:54:33.758288+00:00",
+      "model_step": 2,
+      "tool_calls": [
+        {
+          "id": "call_47ded11891",
+          "name": "search_documents",
+          "arguments": {
+            "query": "办公电脑申领审批需要多久？ 制度",
+            "top_k": 8,
+            "strategy": "bm25"
+          }
+        }
+      ],
+      "usage": null,
+      "next_action": [
+        "search_documents"
+      ],
+      "decision_basis": "Model selected tools after receiving the preceding observations."
+    },
+    {
+      "kind": "tool_observation",
+      "step": 4,
+      "trace_id": "a60841bcb1f5435499d80c151fda72ac",
+      "mode": "mock",
+      "model_name": "offline-observation-simulator",
+      "timestamp": "2026-11-10T04:54:33.758288+00:00",
+      "model_step": 2,
+      "tool_call_number": 2,
+      "tool_name": "search_documents",
+      "arguments": {
+        "query": "办公电脑申领审批需要多久？ 制度",
+        "top_k": 8,
+        "strategy": "bm25"
+      },
+      "observation": {
+        "error": {
+          "code": "TOOL_TIMEOUT",
+          "type": "TimeoutError",
+          "retryable": true
+        }
+      },
+      "observation_summary": "{\"error\": {\"code\": \"TOOL_TIMEOUT\", \"type\": \"TimeoutError\", \"retryable\": true}}",
+      "latency_ms": 0.020899999071843922,
+      "next_action": "agent_decide",
+      "decision_basis": "Tool output or Guard rejection returned to the model."
+    },
+    {
+      "kind": "model_decision",
+      "step": 5,
+      "trace_id": "a60841bcb1f5435499d80c151fda72ac",
+      "mode": "mock",
+      "model_name": "offline-observation-simulator",
+      "timestamp": "2026-11-10T04:54:33.760288+00:00",
+      "model_step": 3,
+      "tool_calls": [
+        {
+          "id": "call_3caf83bb70",
+          "name": "submit_answer",
+          "arguments": {
+            "answer": "工具或模型服务不可用，本次未能完成核验。",
+            "status": "FAILED",
+            "citations": [],
+            "missing_info": [
+              "检索工具连续失败"
+            ]
+          }
+        }
+      ],
+      "usage": null,
+      "next_action": [
+        "submit_answer"
+      ],
+      "decision_basis": "Model selected tools after receiving the preceding observations."
+    },
+    {
+      "kind": "tool_observation",
+      "step": 6,
+      "trace_id": "a60841bcb1f5435499d80c151fda72ac",
+      "mode": "mock",
+      "model_name": "offline-observation-simulator",
+      "timestamp": "2026-11-10T04:54:33.760288+00:00",
+      "model_step": 3,
+      "tool_call_number": 3,
+      "tool_name": "submit_answer",
+      "arguments": {
+        "answer": "工具或模型服务不可用，本次未能完成核验。",
+        "status": "FAILED",
+        "citations": [],
+        "missing_info": [
+          "检索工具连续失败"
+        ]
+      },
+      "observation": {
+        "valid": true,
+        "errors": [],
+        "conflicts": [],
+        "expected_answer_format": null
+      },
+      "observation_summary": "{\"valid\": true, \"errors\": [], \"conflicts\": [], \"expected_answer_format\": null}",
+      "latency_ms": 0.022899999748915434,
+      "next_action": "finalize",
+      "decision_basis": "Tool output or Guard rejection returned to the model."
+    }
+  ],
+  "result": {
+    "question": "办公电脑申领审批需要多久？",
+    "answer": "工具或模型服务不可用，本次未能完成核验。",
+    "status": "FAILED",
+    "citations": [],
+    "missing_info": [
+      "检索工具连续失败"
+    ],
+    "conflicts": [],
+    "steps_used": 3,
+    "tool_calls_used": 3,
+    "trace_id": "a60841bcb1f5435499d80c151fda72ac",
+    "session_id": "4ef4f613ecf244328a433fce33b89bf3",
+    "mode": "mock",
+    "model_name": "offline-observation-simulator",
+    "latency_ms": 9.108199999900535,
+    "usage": {},
+    "error_code": null
+  }
+}

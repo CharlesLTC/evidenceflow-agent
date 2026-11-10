@@ -1,0 +1,382 @@
+{
+  "trace_id": "7305ed27dd2b4e6baa03f4c44e9ebb6c",
+  "mode": "live",
+  "model_name": "qwen-plus",
+  "events": [
+    {
+      "kind": "model_decision",
+      "step": 1,
+      "trace_id": "7305ed27dd2b4e6baa03f4c44e9ebb6c",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T04:57:57.834968+00:00",
+      "model_step": 1,
+      "tool_calls": [
+        {
+          "id": "call_6aae36de6b3442fe8334d3",
+          "name": "search_documents",
+          "arguments": {
+            "query": "办公电脑申领审批时限",
+            "top_k": 5,
+            "strategy": "bm25"
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1342,
+        "total_tokens": 1378,
+        "completion_tokens": 36,
+        "prompt_tokens_details": {
+          "cached_tokens": 1216
+        }
+      },
+      "next_action": [
+        "search_documents"
+      ],
+      "decision_basis": "Model selected tools after receiving the preceding observations."
+    },
+    {
+      "kind": "tool_observation",
+      "step": 2,
+      "trace_id": "7305ed27dd2b4e6baa03f4c44e9ebb6c",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T04:57:57.835971+00:00",
+      "model_step": 1,
+      "tool_call_number": 1,
+      "tool_name": "search_documents",
+      "arguments": {
+        "query": "办公电脑申领审批时限",
+        "top_k": 5,
+        "strategy": "bm25"
+      },
+      "observation": {
+        "error": {
+          "code": "TOOL_TIMEOUT",
+          "type": "TimeoutError",
+          "retryable": true
+        }
+      },
+      "observation_summary": "{\"error\": {\"code\": \"TOOL_TIMEOUT\", \"type\": \"TimeoutError\", \"retryable\": true}}",
+      "latency_ms": 0.031099989428184927,
+      "next_action": "agent_decide",
+      "decision_basis": "Tool output or Guard rejection returned to the model."
+    },
+    {
+      "kind": "model_decision",
+      "step": 3,
+      "trace_id": "7305ed27dd2b4e6baa03f4c44e9ebb6c",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T04:57:59.039245+00:00",
+      "model_step": 2,
+      "tool_calls": [
+        {
+          "id": "call_642760b9eda04aa2ade95e",
+          "name": "search_documents",
+          "arguments": {
+            "query": "办公电脑 申领 审批流程 时限",
+            "top_k": 5,
+            "strategy": "bm25"
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1418,
+        "total_tokens": 1459,
+        "completion_tokens": 41,
+        "prompt_tokens_details": {
+          "cached_tokens": 1216
+        }
+      },
+      "next_action": [
+        "search_documents"
+      ],
+      "decision_basis": "Model selected tools after receiving the preceding observations."
+    },
+    {
+      "kind": "tool_observation",
+      "step": 4,
+      "trace_id": "7305ed27dd2b4e6baa03f4c44e9ebb6c",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T04:57:59.040248+00:00",
+      "model_step": 2,
+      "tool_call_number": 2,
+      "tool_name": "search_documents",
+      "arguments": {
+        "query": "办公电脑 申领 审批流程 时限",
+        "top_k": 5,
+        "strategy": "bm25"
+      },
+      "observation": {
+        "error": {
+          "code": "TOOL_TIMEOUT",
+          "type": "TimeoutError",
+          "retryable": true
+        }
+      },
+      "observation_summary": "{\"error\": {\"code\": \"TOOL_TIMEOUT\", \"type\": \"TimeoutError\", \"retryable\": true}}",
+      "latency_ms": 0.03619999915827066,
+      "next_action": "agent_decide",
+      "decision_basis": "Tool output or Guard rejection returned to the model."
+    },
+    {
+      "kind": "model_decision",
+      "step": 5,
+      "trace_id": "7305ed27dd2b4e6baa03f4c44e9ebb6c",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T04:57:59.771050+00:00",
+      "model_step": 3,
+      "tool_calls": [
+        {
+          "id": "call_ebc19f78fe0344479b9ae8",
+          "name": "inspect_versions",
+          "arguments": {
+            "topic": "办公电脑申领"
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1499,
+        "total_tokens": 1518,
+        "completion_tokens": 19,
+        "prompt_tokens_details": {
+          "cached_tokens": 1216
+        }
+      },
+      "next_action": [
+        "inspect_versions"
+      ],
+      "decision_basis": "Model selected tools after receiving the preceding observations."
+    },
+    {
+      "kind": "tool_observation",
+      "step": 6,
+      "trace_id": "7305ed27dd2b4e6baa03f4c44e9ebb6c",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T04:57:59.772057+00:00",
+      "model_step": 3,
+      "tool_call_number": 3,
+      "tool_name": "inspect_versions",
+      "arguments": {
+        "topic": "办公电脑申领"
+      },
+      "observation": {
+        "error": {
+          "code": "VERSION_SERVICE_UNAVAILABLE",
+          "retryable": true
+        }
+      },
+      "observation_summary": "{\"error\": {\"code\": \"VERSION_SERVICE_UNAVAILABLE\", \"retryable\": true}}",
+      "latency_ms": 0.030199997127056122,
+      "next_action": "agent_decide",
+      "decision_basis": "Tool output or Guard rejection returned to the model."
+    },
+    {
+      "kind": "model_decision",
+      "step": 7,
+      "trace_id": "7305ed27dd2b4e6baa03f4c44e9ebb6c",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T04:58:00.937621+00:00",
+      "model_step": 4,
+      "tool_calls": [
+        {
+          "id": "call_08d047bfb70748c38dee22",
+          "name": "search_documents",
+          "arguments": {
+            "query": "电脑设备申领 审批时间",
+            "top_k": 5,
+            "strategy": "bm25"
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1552,
+        "total_tokens": 1590,
+        "completion_tokens": 38,
+        "prompt_tokens_details": {
+          "cached_tokens": 1216
+        }
+      },
+      "next_action": [
+        "search_documents"
+      ],
+      "decision_basis": "Model selected tools after receiving the preceding observations."
+    },
+    {
+      "kind": "tool_observation",
+      "step": 8,
+      "trace_id": "7305ed27dd2b4e6baa03f4c44e9ebb6c",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T04:58:00.937621+00:00",
+      "model_step": 4,
+      "tool_call_number": 4,
+      "tool_name": "search_documents",
+      "arguments": {
+        "query": "电脑设备申领 审批时间",
+        "top_k": 5,
+        "strategy": "bm25"
+      },
+      "observation": {
+        "error": {
+          "code": "TOOL_TIMEOUT",
+          "type": "TimeoutError",
+          "retryable": true
+        }
+      },
+      "observation_summary": "{\"error\": {\"code\": \"TOOL_TIMEOUT\", \"type\": \"TimeoutError\", \"retryable\": true}}",
+      "latency_ms": 0.0391000066883862,
+      "next_action": "agent_decide",
+      "decision_basis": "Tool output or Guard rejection returned to the model."
+    },
+    {
+      "kind": "model_decision",
+      "step": 9,
+      "trace_id": "7305ed27dd2b4e6baa03f4c44e9ebb6c",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T04:58:02.129634+00:00",
+      "model_step": 5,
+      "tool_calls": [
+        {
+          "id": "call_9dcefadfdb8f48d7825a49",
+          "name": "search_documents",
+          "arguments": {
+            "query": "办公电脑 申领 审批",
+            "top_k": 5,
+            "strategy": "bm25"
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1630,
+        "total_tokens": 1668,
+        "completion_tokens": 38,
+        "prompt_tokens_details": {
+          "cached_tokens": 1408
+        }
+      },
+      "next_action": [
+        "search_documents"
+      ],
+      "decision_basis": "Model selected tools after receiving the preceding observations."
+    },
+    {
+      "kind": "tool_observation",
+      "step": 10,
+      "trace_id": "7305ed27dd2b4e6baa03f4c44e9ebb6c",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T04:58:02.130638+00:00",
+      "model_step": 5,
+      "tool_call_number": 5,
+      "tool_name": "search_documents",
+      "arguments": {
+        "query": "办公电脑 申领 审批",
+        "top_k": 5,
+        "strategy": "bm25"
+      },
+      "observation": {
+        "error": {
+          "code": "TOOL_TIMEOUT",
+          "type": "TimeoutError",
+          "retryable": true
+        }
+      },
+      "observation_summary": "{\"error\": {\"code\": \"TOOL_TIMEOUT\", \"type\": \"TimeoutError\", \"retryable\": true}}",
+      "latency_ms": 0.04460000491235405,
+      "next_action": "agent_decide",
+      "decision_basis": "Tool output or Guard rejection returned to the model."
+    },
+    {
+      "kind": "model_decision",
+      "step": 11,
+      "trace_id": "7305ed27dd2b4e6baa03f4c44e9ebb6c",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T04:58:04.245287+00:00",
+      "model_step": 6,
+      "tool_calls": [
+        {
+          "id": "call_4d480e29d7184ef6bbc7a8",
+          "name": "submit_answer",
+          "arguments": {
+            "answer": "当前资料不足，无法依据知识库回答。",
+            "status": "INSUFFICIENT_EVIDENCE",
+            "missing_info": [
+              "办公电脑申领审批的具体时限"
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1708,
+        "total_tokens": 1758,
+        "completion_tokens": 50,
+        "prompt_tokens_details": {
+          "cached_tokens": 1216
+        }
+      },
+      "next_action": [
+        "submit_answer"
+      ],
+      "decision_basis": "Model selected tools after receiving the preceding observations."
+    },
+    {
+      "kind": "tool_observation",
+      "step": 12,
+      "trace_id": "7305ed27dd2b4e6baa03f4c44e9ebb6c",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T04:58:04.246293+00:00",
+      "model_step": 6,
+      "tool_call_number": 6,
+      "tool_name": "submit_answer",
+      "arguments": {
+        "answer": "当前资料不足，无法依据知识库回答。",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "missing_info": [
+          "办公电脑申领审批的具体时限"
+        ]
+      },
+      "observation": {
+        "valid": true,
+        "errors": [],
+        "conflicts": [],
+        "expected_answer_format": null
+      },
+      "observation_summary": "{\"valid\": true, \"errors\": [], \"conflicts\": [], \"expected_answer_format\": null}",
+      "latency_ms": 0.03919999289792031,
+      "next_action": "finalize",
+      "decision_basis": "Tool output or Guard rejection returned to the model."
+    }
+  ],
+  "result": {
+    "question": "办公电脑申领审批需要多久？",
+    "answer": "当前资料不足，无法依据知识库回答。",
+    "status": "INSUFFICIENT_EVIDENCE",
+    "citations": [],
+    "missing_info": [
+      "办公电脑申领审批的具体时限"
+    ],
+    "conflicts": [],
+    "steps_used": 6,
+    "tool_calls_used": 6,
+    "trace_id": "7305ed27dd2b4e6baa03f4c44e9ebb6c",
+    "session_id": "16723f19ab5342bd980e45ca553ca14e",
+    "mode": "live",
+    "model_name": "qwen-plus",
+    "latency_ms": 7515.675199989346,
+    "usage": {
+      "prompt_tokens": 9149,
+      "completion_tokens": 222,
+      "total_tokens": 9371
+    },
+    "error_code": null
+  }
+}

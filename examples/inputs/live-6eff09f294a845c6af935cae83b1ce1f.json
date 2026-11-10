@@ -1,0 +1,8 @@
+{
+  "question": "公司的年终奖金是多少？",
+  "session_id": "accept_d86cb3193abf452aaea4ecd5c98938ca",
+  "mode": "live",
+  "max_model_steps": 8,
+  "max_tool_calls": 12,
+  "fail_search_count": 0
+}

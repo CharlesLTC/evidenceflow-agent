@@ -1,0 +1,19 @@
+{
+  "question": "公司的年终奖金是多少？",
+  "answer": "当前资料不足，无法依据知识库回答。",
+  "status": "INSUFFICIENT_EVIDENCE",
+  "citations": [],
+  "missing_info": [
+    "知识库未包含该问题的依据"
+  ],
+  "conflicts": [],
+  "steps_used": 2,
+  "tool_calls_used": 2,
+  "trace_id": "37bc13f008b9475c95a35f256cf06116",
+  "session_id": "accept_e26112cb8da84ea084f1620ccf42a325",
+  "mode": "mock",
+  "model_name": "offline-observation-simulator",
+  "latency_ms": 7.040800002869219,
+  "usage": {},
+  "error_code": null
+}

@@ -13,15 +13,21 @@ def store():
     return DocumentStore(ROOT / "data/documents.json")
 
 
-@pytest.mark.parametrize("query,expected", [("办公电脑申领审批需要多久？", {"D03"}),
-    ("差旅报销期限是多久？", {"D01", "D02"}), ("领电脑一般几天能批下来？", {"D03"})])
+@pytest.mark.parametrize(
+    "query,expected",
+    [
+        ("办公电脑申领审批需要多久？", {"D03"}),
+        ("差旅报销期限是多久？", {"D01", "D02"}),
+        ("领电脑一般几天能批下来？", {"D03"}),
+    ],
+)
 def test_search_and_read(store, query, expected):
     hits = Retriever(store).search(query)["hits"]
     assert expected <= {h["doc_id"] for h in hits[:3]}
     for doc_id in expected:
         read = store.read(doc_id)
         for c in read["chunks"]:
-            assert read["content"][c["start"]:c["end"]] == c["text"]
+            assert read["content"][c["start"] : c["end"]] == c["text"]
 
 
 def test_empty_invalid_and_dense_unavailable(store):

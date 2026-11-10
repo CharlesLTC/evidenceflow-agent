@@ -101,22 +101,21 @@ def draw(report):
     fig.tight_layout()
     fig.savefig(charts / "recall_at_3.png", dpi=160)
     plt.close(fig)
-    fig, ax = plt.subplots(figsize=(7, 4))
+    fig, ax = plt.subplots(figsize=(9, 4.5))
     for (name, data), value in zip(completed, values, strict=True):
         calls = data["metrics"]["mean_model_calls"]
-        ax.scatter(calls, value, s=100)
-        ax.annotate(
-            f"{name}; {data['metrics']['mean_latency_ms']:.1f}ms",
-            (calls, value),
-            xytext=(5, 8 + labels.index(name) * 12),
-            textcoords="offset points",
+        ax.scatter(
+            calls, value, s=100,
+            label=f"{name}\n{data['metrics']['mean_latency_ms']:.1f} ms/query",
         )
     ax.set(
-        xlabel="Billed model calls per query (USD unknown unless configured)",
-        ylabel="Recall@3",
-        ylim=(0, 1.15),
-        title="Retrieval quality vs observed external-call cost",
+        xlabel="Model API calls per query",
+        ylabel="Macro Recall@3",
+        ylim=(0.85, 1.05),
+        title="Retrieval quality vs model calls",
     )
+    ax.grid(alpha=0.15)
+    ax.legend(loc="center left", bbox_to_anchor=(1.02, 0.5), frameon=False, fontsize=9)
     fig.tight_layout()
     fig.savefig(charts / "quality_cost.png", dpi=160)
     plt.close(fig)

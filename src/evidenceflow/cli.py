@@ -15,12 +15,13 @@ def main():
     args = parser.parse_args()
     from evidenceflow.agent_graph import AgentService
     from evidenceflow.schemas import AskRequest
-    result = AgentService().ask(AskRequest(**{k: v for k, v in vars(args).items()
-                                             if k != "command"}))
+
+    result = AgentService().ask(
+        AskRequest(**{k: v for k, v in vars(args).items() if k != "command"})
+    )
     print(json.dumps(result.model_dump(), ensure_ascii=False, indent=2))
     return 2 if result.status in ("FAILED", "INCOMPLETE") else 0
 
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

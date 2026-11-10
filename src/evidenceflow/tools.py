@@ -18,8 +18,12 @@ class VersionsArgs(StrictModel):
     topic: str = Field(min_length=1)
 
 
-TOOL_MODELS = {"search_documents": SearchArgs, "read_document": ReadArgs,
-               "inspect_versions": VersionsArgs, "submit_answer": Draft}
+TOOL_MODELS = {
+    "search_documents": SearchArgs,
+    "read_document": ReadArgs,
+    "inspect_versions": VersionsArgs,
+    "submit_answer": Draft,
+}
 TOOL_DESCRIPTIONS = {
     "search_documents": "Search untrusted previews; call read_document before citing. Supports bm25/dense/hybrid.",
     "read_document": "Read exact original chunks with version, scope and offsets. Only these quotes can be cited.",
@@ -29,9 +33,17 @@ TOOL_DESCRIPTIONS = {
 
 
 def tool_schemas():
-    return [{"type": "function", "function": {"name": name,
-             "description": TOOL_DESCRIPTIONS[name], "parameters": model.model_json_schema()}}
-            for name, model in TOOL_MODELS.items()]
+    return [
+        {
+            "type": "function",
+            "function": {
+                "name": name,
+                "description": TOOL_DESCRIPTIONS[name],
+                "parameters": model.model_json_schema(),
+            },
+        }
+        for name, model in TOOL_MODELS.items()
+    ]
 
 
 class Tools:
@@ -56,6 +68,10 @@ class Tools:
                 return self.store.read(**args)
             return self.store.versions(**args)
         except Exception as exc:
-            return {"error": {"code": "TOOL_TIMEOUT" if isinstance(exc, TimeoutError) else "TOOL_FAILURE",
-                              "type": type(exc).__name__, "retryable": True}}
-
+            return {
+                "error": {
+                    "code": "TOOL_TIMEOUT" if isinstance(exc, TimeoutError) else "TOOL_FAILURE",
+                    "type": type(exc).__name__,
+                    "retryable": True,
+                }
+            }

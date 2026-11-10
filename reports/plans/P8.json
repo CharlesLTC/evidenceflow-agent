@@ -1,0 +1,83 @@
+{
+  "commands": [
+    [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "--junitxml=reports/logs/P8-pytest.xml"
+    ],
+    [
+      "python",
+      "-m",
+      "ruff",
+      "check",
+      "src",
+      "scripts",
+      "tests",
+      "ui"
+    ],
+    [
+      "python",
+      "-m",
+      "pip",
+      "check"
+    ],
+    [
+      "python",
+      "-m",
+      "scripts.run_acceptance",
+      "--mode",
+      "mock"
+    ],
+    [
+      "python",
+      "-m",
+      "scripts.run_acceptance",
+      "--mode",
+      "live"
+    ],
+    [
+      "python",
+      "-m",
+      "scripts.validate_live_evidence"
+    ],
+    [
+      "python",
+      "-m",
+      "scripts.verify_retrieval_results"
+    ],
+    [
+      "python",
+      "-m",
+      "scripts.smoke_ui"
+    ],
+    [
+      "python",
+      "-m",
+      "scripts.build_reports"
+    ],
+    [
+      "python",
+      "-m",
+      "scripts.verify_artifacts"
+    ]
+  ],
+  "blockers": [
+    "BLOCKED_GITHUB: gh auth status reported not logged into any GitHub hosts. User login requested; no repository URL or remote SHA claimed."
+  ],
+  "evidence": [
+    "reports/logs/P8-pytest.xml",
+    "reports/acceptance_results.live.json",
+    "reports/extended_live.json",
+    "reports/retrieval_metrics.json",
+    "reports/artifact_verification.json",
+    "reports/clean_environment.json",
+    "reports/final_acceptance.md"
+  ],
+  "changes": [
+    "Final full regression after real adversarial failures: reject instruction text in policy citations and distinguish all-tool failure from knowledge absence.",
+    "Complete requirements, solution, evaluation, AI usage, retrospective, architecture, test plan, experiments and measured time log.",
+    "Pinned actual environment, verified official portable gh download, secret scan and actual trace triplets. P7 explicitly optional and skipped."
+  ]
+}

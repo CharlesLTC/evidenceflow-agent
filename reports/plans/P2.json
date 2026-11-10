@@ -7,18 +7,25 @@
       "-q",
       "tests/test_agent_graph.py",
       "--junitxml=reports/logs/P2-pytest.xml"
+    ],
+    [
+      "python",
+      "-m",
+      "scripts.validate_live_evidence"
     ]
   ],
-  "blockers": [
-    "BLOCKED_LIVE: Missing LLM_API_KEY, LLM_MODEL_NAME"
-  ],
+  "blockers": [],
   "evidence": [
     "src/evidenceflow/agent_graph.py",
     "src/evidenceflow/llm_client.py",
-    "tests/test_agent_graph.py"
+    "tests/test_agent_graph.py",
+    "reports/acceptance_results.live.json",
+    "reports/live_branch_evidence.json",
+    "reports/logs/live-first-attempt.json"
   ],
   "changes": [
     "StateGraph routes model-selected tools and observations. Independent live/mock/fake_model adapters, strict budgets, persistent sessions and actual JSON traces.",
-    "Offline adapter HTTP tests use MockTransport and do not constitute live evidence."
+    "Offline adapter HTTP tests use MockTransport and do not constitute live evidence.",
+    "User configured qwen-plus via project-adjacent env file. Copied into ignored .env; real six-case suite ran successfully, with actual guard revisions and different timeout recovery path. Previous blocked attempts retained."
   ]
 }

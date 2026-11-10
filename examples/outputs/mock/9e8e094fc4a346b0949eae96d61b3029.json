@@ -1,0 +1,19 @@
+{
+  "question": "办公电脑申领审批需要多久？",
+  "answer": "工具或模型服务不可用，本次未能完成核验。",
+  "status": "FAILED",
+  "citations": [],
+  "missing_info": [
+    "检索工具连续失败"
+  ],
+  "conflicts": [],
+  "steps_used": 3,
+  "tool_calls_used": 3,
+  "trace_id": "9e8e094fc4a346b0949eae96d61b3029",
+  "session_id": "256772678bc64149929e1e928a8928d0",
+  "mode": "mock",
+  "model_name": "offline-observation-simulator",
+  "latency_ms": 12.630700002773665,
+  "usage": {},
+  "error_code": null
+}

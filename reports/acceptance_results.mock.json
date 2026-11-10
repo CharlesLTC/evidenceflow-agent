@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-10T04:45:25.045989+00:00",
+  "timestamp": "2026-11-10T05:06:05.490874+00:00",
   "mode": "mock",
   "model_name": "offline-observation-simulator",
   "status": "PASS",
@@ -26,9 +26,9 @@
         "expected_fact": true,
         "all_citations_valid": true
       },
-      "trace": "examples/traces/mock/07a0231571944dfda4551d09e3cf93e9.json",
-      "output": "examples/outputs/mock/07a0231571944dfda4551d09e3cf93e9.json",
-      "input": "examples/inputs/mock-07a0231571944dfda4551d09e3cf93e9.json",
+      "trace": "examples/traces/mock/ccb9667fff5d48e79ee6e889b2cef7e2.json",
+      "output": "examples/outputs/mock/ccb9667fff5d48e79ee6e889b2cef7e2.json",
+      "input": "examples/inputs/mock-ccb9667fff5d48e79ee6e889b2cef7e2.json",
       "model_decisions": 3,
       "tools": [
         "search_documents",
@@ -52,9 +52,9 @@
         "asks_for_context": true,
         "all_citations_valid": true
       },
-      "trace": "examples/traces/mock/fffacdc72c4743c2ac2f077a635953f2.json",
-      "output": "examples/outputs/mock/fffacdc72c4743c2ac2f077a635953f2.json",
-      "input": "examples/inputs/mock-fffacdc72c4743c2ac2f077a635953f2.json",
+      "trace": "examples/traces/mock/ab4f25def5f04104abc0d36e2009a14d.json",
+      "output": "examples/outputs/mock/ab4f25def5f04104abc0d36e2009a14d.json",
+      "input": "examples/inputs/mock-ab4f25def5f04104abc0d36e2009a14d.json",
       "model_decisions": 5,
       "tools": [
         "search_documents",
@@ -77,9 +77,9 @@
         "no_false_citation": true,
         "all_citations_valid": true
       },
-      "trace": "examples/traces/mock/43059a61d77a469fb8f65e3b2abf25da.json",
-      "output": "examples/outputs/mock/43059a61d77a469fb8f65e3b2abf25da.json",
-      "input": "examples/inputs/mock-43059a61d77a469fb8f65e3b2abf25da.json",
+      "trace": "examples/traces/mock/9717e1bd876349358049b2a2dc313a7a.json",
+      "output": "examples/outputs/mock/9717e1bd876349358049b2a2dc313a7a.json",
+      "input": "examples/inputs/mock-9717e1bd876349358049b2a2dc313a7a.json",
       "model_decisions": 2,
       "tools": [
         "search_documents",
@@ -100,9 +100,9 @@
         "expected_fact": true,
         "all_citations_valid": true
       },
-      "trace": "examples/traces/mock/bfa2d4ed47044ca49933a6fa6e2942fd.json",
-      "output": "examples/outputs/mock/bfa2d4ed47044ca49933a6fa6e2942fd.json",
-      "input": "examples/inputs/mock-bfa2d4ed47044ca49933a6fa6e2942fd.json",
+      "trace": "examples/traces/mock/a184d1f277174374bdc1301f792b8e1a.json",
+      "output": "examples/outputs/mock/a184d1f277174374bdc1301f792b8e1a.json",
+      "input": "examples/inputs/mock-a184d1f277174374bdc1301f792b8e1a.json",
       "model_decisions": 3,
       "tools": [
         "search_documents",
@@ -126,16 +126,16 @@
         "same_session": true,
         "all_citations_valid": true
       },
-      "trace": "examples/traces/mock/4be9e25db41b4e868fa9e71a4f26dba6.json",
-      "output": "examples/outputs/mock/4be9e25db41b4e868fa9e71a4f26dba6.json",
-      "input": "examples/inputs/mock-4be9e25db41b4e868fa9e71a4f26dba6.json",
+      "trace": "examples/traces/mock/8169a68cae5e45d5a5cf61be7ded40de.json",
+      "output": "examples/outputs/mock/8169a68cae5e45d5a5cf61be7ded40de.json",
+      "input": "examples/inputs/mock-8169a68cae5e45d5a5cf61be7ded40de.json",
       "model_decisions": 3,
       "tools": [
         "search_documents",
         "read_document",
         "submit_answer"
       ],
-      "pre_trace": "examples/traces/mock/eb65db15091f4ad787911409a0bce642.json"
+      "pre_trace": "examples/traces/mock/b1f1e961448a4e29a5abd4f9417028c1.json"
     },
     {
       "id": "TC06",
@@ -151,9 +151,9 @@
         "honest_success": true,
         "all_citations_valid": true
       },
-      "trace": "examples/traces/mock/dd86ca33910a416f9b8acd10b3ee2d3b.json",
-      "output": "examples/outputs/mock/dd86ca33910a416f9b8acd10b3ee2d3b.json",
-      "input": "examples/inputs/mock-dd86ca33910a416f9b8acd10b3ee2d3b.json",
+      "trace": "examples/traces/mock/c73d15e688714a5b953b9e892d4ee0ed.json",
+      "output": "examples/outputs/mock/c73d15e688714a5b953b9e892d4ee0ed.json",
+      "input": "examples/inputs/mock-c73d15e688714a5b953b9e892d4ee0ed.json",
       "model_decisions": 4,
       "tools": [
         "search_documents",

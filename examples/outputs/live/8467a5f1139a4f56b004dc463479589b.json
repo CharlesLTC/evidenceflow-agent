@@ -1,0 +1,28 @@
+{
+  "question": "办公电脑申领审批需要多久？",
+  "answer": "D03：办公电脑申领须在IT门户填写申请，经主管审批后5个工作日内完成。",
+  "status": "COMPLETED",
+  "citations": [
+    {
+      "doc_id": "D03",
+      "version_date": "2025-01-01",
+      "quote": "办公电脑申领须在IT门户填写申请，经主管审批后5个工作日内完成。",
+      "chunk_id": "D03-C01"
+    }
+  ],
+  "missing_info": [],
+  "conflicts": [],
+  "steps_used": 4,
+  "tool_calls_used": 4,
+  "trace_id": "8467a5f1139a4f56b004dc463479589b",
+  "session_id": "242624a30e934534b2a8fbc0eee9d1b6",
+  "mode": "live",
+  "model_name": "qwen-plus",
+  "latency_ms": 6069.911899990984,
+  "usage": {
+    "prompt_tokens": 7578,
+    "completion_tokens": 200,
+    "total_tokens": 7778
+  },
+  "error_code": null
+}

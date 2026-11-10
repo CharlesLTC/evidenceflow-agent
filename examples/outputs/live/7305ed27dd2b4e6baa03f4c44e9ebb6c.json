@@ -1,0 +1,23 @@
+{
+  "question": "办公电脑申领审批需要多久？",
+  "answer": "当前资料不足，无法依据知识库回答。",
+  "status": "INSUFFICIENT_EVIDENCE",
+  "citations": [],
+  "missing_info": [
+    "办公电脑申领审批的具体时限"
+  ],
+  "conflicts": [],
+  "steps_used": 6,
+  "tool_calls_used": 6,
+  "trace_id": "7305ed27dd2b4e6baa03f4c44e9ebb6c",
+  "session_id": "16723f19ab5342bd980e45ca553ca14e",
+  "mode": "live",
+  "model_name": "qwen-plus",
+  "latency_ms": 7515.675199989346,
+  "usage": {
+    "prompt_tokens": 9149,
+    "completion_tokens": 222,
+    "total_tokens": 9371
+  },
+  "error_code": null
+}

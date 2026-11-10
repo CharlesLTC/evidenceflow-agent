@@ -1,0 +1,327 @@
+{
+  "trace_id": "27a4c53118f343f18c220173e655d1ba",
+  "mode": "live",
+  "model_name": "qwen-plus",
+  "events": [
+    {
+      "kind": "model_decision",
+      "step": 1,
+      "trace_id": "27a4c53118f343f18c220173e655d1ba",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T05:06:39.630901+00:00",
+      "model_step": 1,
+      "tool_calls": [
+        {
+          "id": "call_f0db8f8bf37541a4a47fb9",
+          "name": "search_documents",
+          "arguments": {
+            "query": "年终奖金 标准 金额",
+            "top_k": 5,
+            "strategy": "bm25"
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1339,
+        "total_tokens": 1376,
+        "completion_tokens": 37,
+        "prompt_tokens_details": {
+          "cached_tokens": 1216
+        }
+      },
+      "next_action": [
+        "search_documents"
+      ],
+      "decision_basis": "Model selected tools after receiving the preceding observations."
+    },
+    {
+      "kind": "tool_observation",
+      "step": 2,
+      "trace_id": "27a4c53118f343f18c220173e655d1ba",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T05:06:39.630901+00:00",
+      "model_step": 1,
+      "tool_call_number": 1,
+      "tool_name": "search_documents",
+      "arguments": {
+        "query": "年终奖金 标准 金额",
+        "top_k": 5,
+        "strategy": "bm25"
+      },
+      "observation": {
+        "query": "年终奖金 标准 金额",
+        "strategy": "bm25",
+        "hits": []
+      },
+      "observation_summary": "{\"query\": \"年终奖金 标准 金额\", \"strategy\": \"bm25\", \"hits\": []}",
+      "latency_ms": 0.20379999477881938,
+      "next_action": "agent_decide",
+      "decision_basis": "Tool output or Guard rejection returned to the model."
+    },
+    {
+      "kind": "model_decision",
+      "step": 3,
+      "trace_id": "27a4c53118f343f18c220173e655d1ba",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T05:06:40.337620+00:00",
+      "model_step": 2,
+      "tool_calls": [
+        {
+          "id": "call_313aea216d384302a6f0f4",
+          "name": "inspect_versions",
+          "arguments": {
+            "topic": "年终奖金"
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1417,
+        "total_tokens": 1434,
+        "completion_tokens": 17,
+        "prompt_tokens_details": {
+          "cached_tokens": 1216
+        }
+      },
+      "next_action": [
+        "inspect_versions"
+      ],
+      "decision_basis": "Model selected tools after receiving the preceding observations."
+    },
+    {
+      "kind": "tool_observation",
+      "step": 4,
+      "trace_id": "27a4c53118f343f18c220173e655d1ba",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T05:06:40.337620+00:00",
+      "model_step": 2,
+      "tool_call_number": 2,
+      "tool_name": "inspect_versions",
+      "arguments": {
+        "topic": "年终奖金"
+      },
+      "observation": {
+        "topic": "年终奖金",
+        "versions": [],
+        "precedence": null,
+        "note": "Newer version alone does not establish precedence."
+      },
+      "observation_summary": "{\"topic\": \"年终奖金\", \"versions\": [], \"precedence\": null, \"note\": \"Newer version alone does not establish precedence.\"}",
+      "latency_ms": 0.04609998723026365,
+      "next_action": "agent_decide",
+      "decision_basis": "Tool output or Guard rejection returned to the model."
+    },
+    {
+      "kind": "model_decision",
+      "step": 5,
+      "trace_id": "27a4c53118f343f18c220173e655d1ba",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T05:06:41.530333+00:00",
+      "model_step": 3,
+      "tool_calls": [
+        {
+          "id": "call_937f709e65ea42a0b1a8b0",
+          "name": "search_documents",
+          "arguments": {
+            "query": "奖金 发放 标准",
+            "top_k": 5,
+            "strategy": "bm25"
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1481,
+        "total_tokens": 1517,
+        "completion_tokens": 36,
+        "prompt_tokens_details": {
+          "cached_tokens": 1216
+        }
+      },
+      "next_action": [
+        "search_documents"
+      ],
+      "decision_basis": "Model selected tools after receiving the preceding observations."
+    },
+    {
+      "kind": "tool_observation",
+      "step": 6,
+      "trace_id": "27a4c53118f343f18c220173e655d1ba",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T05:06:41.531336+00:00",
+      "model_step": 3,
+      "tool_call_number": 3,
+      "tool_name": "search_documents",
+      "arguments": {
+        "query": "奖金 发放 标准",
+        "top_k": 5,
+        "strategy": "bm25"
+      },
+      "observation": {
+        "query": "奖金 发放 标准",
+        "strategy": "bm25",
+        "hits": [
+          {
+            "doc_id": "D24",
+            "chunk_id": "D24-C01",
+            "title": "访客无线网络",
+            "topic": "访客网络",
+            "version_date": "2025-09-01",
+            "score": 3.1695363398966974,
+            "preview": "访客无线网络由前台发放临时凭证，当日有效。"
+          }
+        ]
+      },
+      "observation_summary": "{\"query\": \"奖金 发放 标准\", \"strategy\": \"bm25\", \"hits\": [{\"doc_id\": \"D24\", \"chunk_id\": \"D24-C01\", \"title\": \"访客无线网络\", \"topic\": \"访客网络\", \"version_date\": \"2025-09-01\", \"score\": 3.1695363398966974, \"preview\": \"访客无线网络由前台发放临时凭证，当日有效。\"}]}",
+      "latency_ms": 0.2562000008765608,
+      "next_action": "agent_decide",
+      "decision_basis": "Tool output or Guard rejection returned to the model."
+    },
+    {
+      "kind": "model_decision",
+      "step": 7,
+      "trace_id": "27a4c53118f343f18c220173e655d1ba",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T05:06:42.717225+00:00",
+      "model_step": 4,
+      "tool_calls": [
+        {
+          "id": "call_4cb763ae44e1464eaf3311",
+          "name": "search_documents",
+          "arguments": {
+            "query": "年度绩效奖金",
+            "top_k": 5,
+            "strategy": "bm25"
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1651,
+        "total_tokens": 1684,
+        "completion_tokens": 33,
+        "prompt_tokens_details": {
+          "cached_tokens": 1216
+        }
+      },
+      "next_action": [
+        "search_documents"
+      ],
+      "decision_basis": "Model selected tools after receiving the preceding observations."
+    },
+    {
+      "kind": "tool_observation",
+      "step": 8,
+      "trace_id": "27a4c53118f343f18c220173e655d1ba",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T05:06:42.718227+00:00",
+      "model_step": 4,
+      "tool_call_number": 4,
+      "tool_name": "search_documents",
+      "arguments": {
+        "query": "年度绩效奖金",
+        "top_k": 5,
+        "strategy": "bm25"
+      },
+      "observation": {
+        "query": "年度绩效奖金",
+        "strategy": "bm25",
+        "hits": []
+      },
+      "observation_summary": "{\"query\": \"年度绩效奖金\", \"strategy\": \"bm25\", \"hits\": []}",
+      "latency_ms": 0.1604999997653067,
+      "next_action": "agent_decide",
+      "decision_basis": "Tool output or Guard rejection returned to the model."
+    },
+    {
+      "kind": "model_decision",
+      "step": 9,
+      "trace_id": "27a4c53118f343f18c220173e655d1ba",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T05:06:44.232501+00:00",
+      "model_step": 5,
+      "tool_calls": [
+        {
+          "id": "call_ffda2b6672f84fc4a6d097",
+          "name": "submit_answer",
+          "arguments": {
+            "answer": "当前资料不足，无法依据知识库回答。",
+            "status": "INSUFFICIENT_EVIDENCE",
+            "missing_info": [
+              "年终奖金的具体金额或计算标准未在现有文档中出现"
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1721,
+        "total_tokens": 1777,
+        "completion_tokens": 56,
+        "prompt_tokens_details": {
+          "cached_tokens": 1344
+        }
+      },
+      "next_action": [
+        "submit_answer"
+      ],
+      "decision_basis": "Model selected tools after receiving the preceding observations."
+    },
+    {
+      "kind": "tool_observation",
+      "step": 10,
+      "trace_id": "27a4c53118f343f18c220173e655d1ba",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T05:06:44.233506+00:00",
+      "model_step": 5,
+      "tool_call_number": 5,
+      "tool_name": "submit_answer",
+      "arguments": {
+        "answer": "当前资料不足，无法依据知识库回答。",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "missing_info": [
+          "年终奖金的具体金额或计算标准未在现有文档中出现"
+        ]
+      },
+      "observation": {
+        "valid": true,
+        "errors": [],
+        "conflicts": [],
+        "expected_answer_format": null
+      },
+      "observation_summary": "{\"valid\": true, \"errors\": [], \"conflicts\": [], \"expected_answer_format\": null}",
+      "latency_ms": 0.06249999569263309,
+      "next_action": "finalize",
+      "decision_basis": "Tool output or Guard rejection returned to the model."
+    }
+  ],
+  "result": {
+    "question": "公司的年终奖金是多少？",
+    "answer": "当前资料不足，无法依据知识库回答。",
+    "status": "INSUFFICIENT_EVIDENCE",
+    "citations": [],
+    "missing_info": [
+      "年终奖金的具体金额或计算标准未在现有文档中出现"
+    ],
+    "conflicts": [],
+    "steps_used": 5,
+    "tool_calls_used": 5,
+    "trace_id": "27a4c53118f343f18c220173e655d1ba",
+    "session_id": "accept_7150186b6f824f9baddf0b1ae74fe5cd",
+    "mode": "live",
+    "model_name": "qwen-plus",
+    "latency_ms": 5983.426799997687,
+    "usage": {
+      "prompt_tokens": 7609,
+      "completion_tokens": 179,
+      "total_tokens": 7788
+    },
+    "error_code": null
+  }
+}

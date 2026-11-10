@@ -1,8 +1,8 @@
 {
   "stage": "P2",
-  "started_at": "2026-11-10T04:43:44.050716+00:00",
-  "finished_at": "2026-11-10T04:43:46.884843+00:00",
-  "status": "BLOCKED",
+  "started_at": "2026-11-10T04:50:56.643170+00:00",
+  "finished_at": "2026-11-10T04:50:59.631150+00:00",
+  "status": "PASS",
   "commands": [
     {
       "argv": [
@@ -14,8 +14,24 @@
         "--junitxml=reports/logs/P2-pytest.xml"
       ],
       "exit_code": 0,
-      "duration_seconds": 2.8248977000039304,
+      "allowed_exit_codes": [
+        0
+      ],
+      "duration_seconds": 2.750174500004505,
       "log": "reports/logs/P2-0.txt"
+    },
+    {
+      "argv": [
+        "python",
+        "-m",
+        "scripts.validate_live_evidence"
+      ],
+      "exit_code": 0,
+      "allowed_exit_codes": [
+        0
+      ],
+      "duration_seconds": 0.22664559999248013,
+      "log": "reports/logs/P2-1.txt"
     }
   ],
   "test_counts": {
@@ -29,13 +45,15 @@
   "evidence_paths": [
     "src/evidenceflow/agent_graph.py",
     "src/evidenceflow/llm_client.py",
-    "tests/test_agent_graph.py"
+    "tests/test_agent_graph.py",
+    "reports/acceptance_results.live.json",
+    "reports/live_branch_evidence.json",
+    "reports/logs/live-first-attempt.json"
   ],
-  "errors": [
-    "BLOCKED_LIVE: Missing LLM_API_KEY, LLM_MODEL_NAME"
-  ],
+  "errors": [],
   "changes_made": [
     "StateGraph routes model-selected tools and observations. Independent live/mock/fake_model adapters, strict budgets, persistent sessions and actual JSON traces.",
-    "Offline adapter HTTP tests use MockTransport and do not constitute live evidence."
+    "Offline adapter HTTP tests use MockTransport and do not constitute live evidence.",
+    "User configured qwen-plus via project-adjacent env file. Copied into ignored .env; real six-case suite ran successfully, with actual guard revisions and different timeout recovery path. Previous blocked attempts retained."
   ]
 }

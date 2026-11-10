@@ -4,7 +4,6 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
-
 ROOT = Path(os.environ.get("EVIDENCEFLOW_ROOT", Path(__file__).resolve().parents[2]))
 
 
@@ -34,7 +33,9 @@ class Settings:
         )
 
     def live_blocker(self):
-        missing = [k for k, v in {"LLM_API_KEY": self.api_key,
-                                  "LLM_MODEL_NAME": self.model_name}.items() if not v]
+        missing = [
+            k
+            for k, v in {"LLM_API_KEY": self.api_key, "LLM_MODEL_NAME": self.model_name}.items()
+            if not v
+        ]
         return "Missing " + ", ".join(missing) if missing else None
-

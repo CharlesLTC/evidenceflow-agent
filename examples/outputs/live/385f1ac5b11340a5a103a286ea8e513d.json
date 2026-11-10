@@ -1,0 +1,19 @@
+{
+  "question": "电脑怎么申领？",
+  "answer": "工具或模型服务不可用，本次未能完成核验。",
+  "status": "FAILED",
+  "citations": [],
+  "missing_info": [
+    "模型调用失败，请检查配置和服务状态"
+  ],
+  "conflicts": [],
+  "steps_used": 1,
+  "tool_calls_used": 0,
+  "trace_id": "385f1ac5b11340a5a103a286ea8e513d",
+  "session_id": "accept_718054b9d4d7428b9539bf696ff5cc97",
+  "mode": "live",
+  "model_name": "",
+  "latency_ms": 4.237100001773797,
+  "usage": {},
+  "error_code": "BLOCKED_LIVE"
+}

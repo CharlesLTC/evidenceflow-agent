@@ -1,0 +1,348 @@
+{
+  "trace_id": "03ec06c28887493ebe7a23b775ada0c4",
+  "mode": "live",
+  "model_name": "qwen-plus",
+  "events": [
+    {
+      "kind": "model_decision",
+      "step": 1,
+      "trace_id": "03ec06c28887493ebe7a23b775ada0c4",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T05:06:56.750019+00:00",
+      "model_step": 1,
+      "tool_calls": [
+        {
+          "id": "call_34e9b2eaa01a4504a8ec0e",
+          "name": "search_documents",
+          "arguments": {
+            "query": "电脑申领审批时限",
+            "top_k": 5,
+            "strategy": "bm25"
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1386,
+        "total_tokens": 1421,
+        "completion_tokens": 35,
+        "prompt_tokens_details": {
+          "cached_tokens": 1216
+        }
+      },
+      "next_action": [
+        "search_documents"
+      ],
+      "decision_basis": "Model selected tools after receiving the preceding observations."
+    },
+    {
+      "kind": "tool_observation",
+      "step": 2,
+      "trace_id": "03ec06c28887493ebe7a23b775ada0c4",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T05:06:56.751020+00:00",
+      "model_step": 1,
+      "tool_call_number": 1,
+      "tool_name": "search_documents",
+      "arguments": {
+        "query": "电脑申领审批时限",
+        "top_k": 5,
+        "strategy": "bm25"
+      },
+      "observation": {
+        "query": "电脑申领审批时限",
+        "strategy": "bm25",
+        "hits": [
+          {
+            "doc_id": "D03",
+            "chunk_id": "D03-C01",
+            "title": "办公电脑申领",
+            "topic": "电脑申领",
+            "version_date": "2025-01-01",
+            "score": 12.655527378289918,
+            "preview": "办公电脑申领须在IT门户填写申请，经主管审批后3个工作日内完成。"
+          },
+          {
+            "doc_id": "D31",
+            "chunk_id": "D31-C01",
+            "title": "离职设备归还",
+            "topic": "设备归还",
+            "version_date": "2025-09-01",
+            "score": 2.5943201809113736,
+            "preview": "离职前须向IT归还电脑和配件，由IT确认资产交接。"
+          },
+          {
+            "doc_id": "D05",
+            "chunk_id": "D05-C01",
+            "title": "员工请假制度",
+            "topic": "请假",
+            "version_date": "2025-01-01",
+            "score": 1.4482964406847814,
+            "preview": "请假应在HR系统提交申请，由直属主管审批。"
+          },
+          {
+            "doc_id": "D27",
+            "chunk_id": "D27-C01",
+            "title": "公章使用",
+            "topic": "公章",
+            "version_date": "2025-09-01",
+            "score": 1.3378550890154317,
+            "preview": "使用公章须在行政系统提交用印申请并附审批文件。"
+          },
+          {
+            "doc_id": "D30",
+            "chunk_id": "D30-C01",
+            "title": "出差交通预订",
+            "topic": "交通预订",
+            "version_date": "2025-09-01",
+            "score": 1.3378550890154317,
+            "preview": "出差交通须先完成出差审批，再通过指定平台预订。"
+          }
+        ]
+      },
+      "observation_summary": "{\"query\": \"电脑申领审批时限\", \"strategy\": \"bm25\", \"hits\": [{\"doc_id\": \"D03\", \"chunk_id\": \"D03-C01\", \"title\": \"办公电脑申领\", \"topic\": \"电脑申领\", \"version_date\": \"2025-01-01\", \"score\": 12.655527378289918, \"preview\": \"办公电脑申领须在IT门户填写申请，经主管审批后3个工作日内完成。\"}, {\"doc_id\": \"D31\", \"chunk_id\": \"D31-C01\", \"title\": \"离职设备归还\", \"topic\": \"设备归还\", \"version_date\": \"2025-09-01\", \"score\": 2.5943201809113736, \"preview\": \"离职前须向IT归还电脑和配件，由IT确认资产交接。\"}, {\"doc_id\": \"D05\", \"chunk_id\": \"D05-C01\", \"title\": \"员工请假制度\", \"topic\": \"请假\", \"version_date",
+      "latency_ms": 0.338400001055561,
+      "next_action": "agent_decide",
+      "decision_basis": "Tool output or Guard rejection returned to the model."
+    },
+    {
+      "kind": "model_decision",
+      "step": 3,
+      "trace_id": "03ec06c28887493ebe7a23b775ada0c4",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T05:06:57.766022+00:00",
+      "model_step": 2,
+      "tool_calls": [
+        {
+          "id": "call_87bdb645305a4b6e9aa49a",
+          "name": "read_document",
+          "arguments": {
+            "doc_id": "D03",
+            "chunk_ids": [
+              "D03-C01"
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1938,
+        "total_tokens": 1970,
+        "completion_tokens": 32,
+        "prompt_tokens_details": {
+          "cached_tokens": 1216
+        }
+      },
+      "next_action": [
+        "read_document"
+      ],
+      "decision_basis": "Model selected tools after receiving the preceding observations."
+    },
+    {
+      "kind": "tool_observation",
+      "step": 4,
+      "trace_id": "03ec06c28887493ebe7a23b775ada0c4",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T05:06:57.767026+00:00",
+      "model_step": 2,
+      "tool_call_number": 2,
+      "tool_name": "read_document",
+      "arguments": {
+        "doc_id": "D03",
+        "chunk_ids": [
+          "D03-C01"
+        ]
+      },
+      "observation": {
+        "doc_id": "D03",
+        "title": "办公电脑申领",
+        "version_date": "2025-01-01",
+        "effective_date": null,
+        "scope": "全体员工",
+        "status": "published",
+        "topic": "电脑申领",
+        "content": "办公电脑申领须在IT门户填写申请，经主管审批后3个工作日内完成。",
+        "chunks": [
+          {
+            "doc_id": "D03",
+            "chunk_id": "D03-C01",
+            "start": 0,
+            "end": 32,
+            "text": "办公电脑申领须在IT门户填写申请，经主管审批后3个工作日内完成。"
+          }
+        ],
+        "trust": "untrusted_document_data"
+      },
+      "observation_summary": "{\"doc_id\": \"D03\", \"title\": \"办公电脑申领\", \"version_date\": \"2025-01-01\", \"effective_date\": null, \"scope\": \"全体员工\", \"status\": \"published\", \"topic\": \"电脑申领\", \"content\": \"办公电脑申领须在IT门户填写申请，经主管审批后3个工作日内完成。\", \"chunks\": [{\"doc_id\": \"D03\", \"chunk_id\": \"D03-C01\", \"start\": 0, \"end\": 32, \"text\": \"办公电脑申领须在IT门户填写申请，经主管审批后3个工作日内完成。\"}], \"trust\": \"untrusted_document_data\"}",
+      "latency_ms": 0.04810000245925039,
+      "next_action": "agent_decide",
+      "decision_basis": "Tool output or Guard rejection returned to the model."
+    },
+    {
+      "kind": "model_decision",
+      "step": 5,
+      "trace_id": "03ec06c28887493ebe7a23b775ada0c4",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T05:06:58.497060+00:00",
+      "model_step": 3,
+      "tool_calls": [
+        {
+          "id": "call_50de2c2f7ca04d7a85ca5f",
+          "name": "inspect_versions",
+          "arguments": {
+            "topic": "电脑申领"
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 2143,
+        "total_tokens": 2161,
+        "completion_tokens": 18,
+        "prompt_tokens_details": {
+          "cached_tokens": 1216
+        }
+      },
+      "next_action": [
+        "inspect_versions"
+      ],
+      "decision_basis": "Model selected tools after receiving the preceding observations."
+    },
+    {
+      "kind": "tool_observation",
+      "step": 6,
+      "trace_id": "03ec06c28887493ebe7a23b775ada0c4",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T05:06:58.497060+00:00",
+      "model_step": 3,
+      "tool_call_number": 3,
+      "tool_name": "inspect_versions",
+      "arguments": {
+        "topic": "电脑申领"
+      },
+      "observation": {
+        "topic": "电脑申领",
+        "versions": [
+          {
+            "doc_id": "D03",
+            "title": "办公电脑申领",
+            "topic": "电脑申领",
+            "version_date": "2025-01-01",
+            "scope": "全体员工",
+            "effective_date": null,
+            "status": "published"
+          }
+        ],
+        "precedence": null,
+        "note": "Newer version alone does not establish precedence."
+      },
+      "observation_summary": "{\"topic\": \"电脑申领\", \"versions\": [{\"doc_id\": \"D03\", \"title\": \"办公电脑申领\", \"topic\": \"电脑申领\", \"version_date\": \"2025-01-01\", \"scope\": \"全体员工\", \"effective_date\": null, \"status\": \"published\"}], \"precedence\": null, \"note\": \"Newer version alone does not establish precedence.\"}",
+      "latency_ms": 0.04539999645203352,
+      "next_action": "agent_decide",
+      "decision_basis": "Tool output or Guard rejection returned to the model."
+    },
+    {
+      "kind": "model_decision",
+      "step": 7,
+      "trace_id": "03ec06c28887493ebe7a23b775ada0c4",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T05:07:01.356299+00:00",
+      "model_step": 4,
+      "tool_calls": [
+        {
+          "id": "call_60234ea0c3ad4e09864058",
+          "name": "submit_answer",
+          "arguments": {
+            "answer": "D03：办公电脑申领须在IT门户填写申请，经主管审批后3个工作日内完成。",
+            "status": "COMPLETED",
+            "citations": [
+              {
+                "doc_id": "D03",
+                "version_date": "2025-01-01",
+                "quote": "办公电脑申领须在IT门户填写申请，经主管审批后3个工作日内完成。",
+                "chunk_id": "D03-C01"
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 2269,
+        "total_tokens": 2383,
+        "completion_tokens": 114,
+        "prompt_tokens_details": {
+          "cached_tokens": 1216
+        }
+      },
+      "next_action": [
+        "submit_answer"
+      ],
+      "decision_basis": "Model selected tools after receiving the preceding observations."
+    },
+    {
+      "kind": "tool_observation",
+      "step": 8,
+      "trace_id": "03ec06c28887493ebe7a23b775ada0c4",
+      "mode": "live",
+      "model_name": "qwen-plus",
+      "timestamp": "2026-11-10T05:07:01.357332+00:00",
+      "model_step": 4,
+      "tool_call_number": 4,
+      "tool_name": "submit_answer",
+      "arguments": {
+        "answer": "D03：办公电脑申领须在IT门户填写申请，经主管审批后3个工作日内完成。",
+        "status": "COMPLETED",
+        "citations": [
+          {
+            "doc_id": "D03",
+            "version_date": "2025-01-01",
+            "quote": "办公电脑申领须在IT门户填写申请，经主管审批后3个工作日内完成。",
+            "chunk_id": "D03-C01"
+          }
+        ]
+      },
+      "observation": {
+        "valid": true,
+        "errors": [],
+        "conflicts": [],
+        "expected_answer_format": null
+      },
+      "observation_summary": "{\"valid\": true, \"errors\": [], \"conflicts\": [], \"expected_answer_format\": null}",
+      "latency_ms": 0.08369999704882503,
+      "next_action": "finalize",
+      "decision_basis": "Tool output or Guard rejection returned to the model."
+    }
+  ],
+  "result": {
+    "question": "那多久批下来？",
+    "answer": "D03：办公电脑申领须在IT门户填写申请，经主管审批后3个工作日内完成。",
+    "status": "COMPLETED",
+    "citations": [
+      {
+        "doc_id": "D03",
+        "version_date": "2025-01-01",
+        "quote": "办公电脑申领须在IT门户填写申请，经主管审批后3个工作日内完成。",
+        "chunk_id": "D03-C01"
+      }
+    ],
+    "missing_info": [],
+    "conflicts": [],
+    "steps_used": 4,
+    "tool_calls_used": 4,
+    "trace_id": "03ec06c28887493ebe7a23b775ada0c4",
+    "session_id": "accept_f2c610fb821344efa2af4e4db594de22",
+    "mode": "live",
+    "model_name": "qwen-plus",
+    "latency_ms": 5671.99210000399,
+    "usage": {
+      "prompt_tokens": 7736,
+      "completion_tokens": 199,
+      "total_tokens": 7935
+    },
+    "error_code": null
+  }
+}

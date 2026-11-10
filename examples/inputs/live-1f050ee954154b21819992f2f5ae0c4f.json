@@ -1,0 +1,8 @@
+{
+  "question": "正式员工与实习生每天餐补各是多少？",
+  "session_id": null,
+  "mode": "live",
+  "max_model_steps": 8,
+  "max_tool_calls": 12,
+  "fail_search_count": 0
+}

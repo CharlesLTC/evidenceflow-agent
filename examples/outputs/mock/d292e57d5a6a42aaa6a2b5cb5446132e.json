@@ -1,0 +1,24 @@
+{
+  "question": "公司的年终奖金是多少？",
+  "answer": "D28：开具发票前应在财务门户核对公司抬头和税号。",
+  "status": "COMPLETED",
+  "citations": [
+    {
+      "doc_id": "D28",
+      "version_date": "2025-09-01",
+      "quote": "开具发票前应在财务门户核对公司抬头和税号。",
+      "chunk_id": "D28-C01"
+    }
+  ],
+  "missing_info": [],
+  "conflicts": [],
+  "steps_used": 3,
+  "tool_calls_used": 3,
+  "trace_id": "d292e57d5a6a42aaa6a2b5cb5446132e",
+  "session_id": "accept_ef998d5c89dc4b42a0f8bdf20e690ad9",
+  "mode": "mock",
+  "model_name": "offline-observation-simulator",
+  "latency_ms": 9.045300001162104,
+  "usage": {},
+  "error_code": null
+}

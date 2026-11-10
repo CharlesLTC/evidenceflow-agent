@@ -1,7 +1,7 @@
 {
   "stage": "P3",
-  "started_at": "2026-11-10T04:44:42.310595+00:00",
-  "finished_at": "2026-11-10T04:44:44.595287+00:00",
+  "started_at": "2026-11-10T05:05:11.963269+00:00",
+  "finished_at": "2026-11-10T05:05:15.053593+00:00",
   "status": "PASS",
   "commands": [
     {
@@ -15,24 +15,30 @@
         "--junitxml=reports/logs/P3-pytest.xml"
       ],
       "exit_code": 0,
-      "duration_seconds": 2.276275700001861,
+      "allowed_exit_codes": [
+        0
+      ],
+      "duration_seconds": 3.0726715000055265,
       "log": "reports/logs/P3-0.txt"
     }
   ],
   "test_counts": {
-    "tests": 16,
+    "tests": 18,
     "failures": 0,
     "errors": 0,
     "skipped": 0,
-    "passed": 16
+    "passed": 18
   },
   "metrics": {},
   "evidence_paths": [
     "src/evidenceflow/evidence_guard.py",
-    "src/evidenceflow/claim_conflicts.py"
+    "src/evidenceflow/claim_conflicts.py",
+    "reports/extended_live.json",
+    "reports/logs/extended-live-fixed.txt"
   ],
   "errors": [],
   "changes_made": [
-    "Enforce exact quote, read-before-cite, document version, extractive claims and unresolved conflict abstention. Numeric claim comparison respects known disjoint scopes."
+    "Enforce exact quote, read-before-cite, document version, extractive claims and unresolved conflict abstention. Numeric claim comparison respects known disjoint scopes.",
+    "Real adversarial runs exposed instruction quotation and service-outage classification gaps; Guard now rejects both, tests and live reruns passed."
   ]
 }

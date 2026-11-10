@@ -1,0 +1,181 @@
+{
+  "timestamp": "2026-11-10T04:49:31.791708+00:00",
+  "mode": "live",
+  "model_name": "qwen-plus",
+  "status": "PASS",
+  "blocker": null,
+  "passed": 6,
+  "total": 6,
+  "citation_validity": {
+    "numerator": 6,
+    "denominator": 6,
+    "rate": 1.0
+  },
+  "live_branch_count": 5,
+  "cases": [
+    {
+      "id": "TC01",
+      "question": "办公电脑申领审批需要多久？",
+      "status": "PASS",
+      "result_status": "COMPLETED",
+      "checks": {
+        "schema": true,
+        "mode_consistent": true,
+        "completed": true,
+        "correct_document": true,
+        "expected_fact": true,
+        "all_citations_valid": true
+      },
+      "trace": "examples/traces/live/525a580c08f14236ba7bd73c3ce55e52.json",
+      "output": "examples/outputs/live/525a580c08f14236ba7bd73c3ce55e52.json",
+      "input": "examples/inputs/live-525a580c08f14236ba7bd73c3ce55e52.json",
+      "model_decisions": 4,
+      "tools": [
+        "search_documents",
+        "read_document",
+        "inspect_versions",
+        "submit_answer"
+      ],
+      "pre_trace": null
+    },
+    {
+      "id": "TC02",
+      "question": "差旅报销期限是多久？",
+      "status": "PASS",
+      "result_status": "NEEDS_CLARIFICATION",
+      "checks": {
+        "schema": true,
+        "mode_consistent": true,
+        "clarification": true,
+        "both_versions": true,
+        "both_values": true,
+        "unresolved": true,
+        "asks_for_context": true,
+        "all_citations_valid": true
+      },
+      "trace": "examples/traces/live/3606a43a45544b98877f58b323f124e4.json",
+      "output": "examples/outputs/live/3606a43a45544b98877f58b323f124e4.json",
+      "input": "examples/inputs/live-3606a43a45544b98877f58b323f124e4.json",
+      "model_decisions": 7,
+      "tools": [
+        "search_documents",
+        "read_document",
+        "read_document",
+        "inspect_versions",
+        "submit_answer",
+        "submit_answer",
+        "submit_answer"
+      ],
+      "pre_trace": null
+    },
+    {
+      "id": "TC03",
+      "question": "公司的年终奖金是多少？",
+      "status": "PASS",
+      "result_status": "INSUFFICIENT_EVIDENCE",
+      "checks": {
+        "schema": true,
+        "mode_consistent": true,
+        "abstention": true,
+        "no_false_citation": true,
+        "all_citations_valid": true
+      },
+      "trace": "examples/traces/live/6eff09f294a845c6af935cae83b1ce1f.json",
+      "output": "examples/outputs/live/6eff09f294a845c6af935cae83b1ce1f.json",
+      "input": "examples/inputs/live-6eff09f294a845c6af935cae83b1ce1f.json",
+      "model_decisions": 6,
+      "tools": [
+        "search_documents",
+        "inspect_versions",
+        "search_documents",
+        "search_documents",
+        "submit_answer",
+        "submit_answer"
+      ],
+      "pre_trace": null
+    },
+    {
+      "id": "TC04",
+      "question": "领电脑一般几天能批下来？",
+      "status": "PASS",
+      "result_status": "COMPLETED",
+      "checks": {
+        "schema": true,
+        "mode_consistent": true,
+        "completed": true,
+        "correct_document": true,
+        "expected_fact": true,
+        "all_citations_valid": true
+      },
+      "trace": "examples/traces/live/6d87db389d5143a0846901f64437af9c.json",
+      "output": "examples/outputs/live/6d87db389d5143a0846901f64437af9c.json",
+      "input": "examples/inputs/live-6d87db389d5143a0846901f64437af9c.json",
+      "model_decisions": 4,
+      "tools": [
+        "search_documents",
+        "read_document",
+        "inspect_versions",
+        "submit_answer"
+      ],
+      "pre_trace": null
+    },
+    {
+      "id": "TC05",
+      "question": "那多久批下来？",
+      "status": "PASS",
+      "result_status": "COMPLETED",
+      "checks": {
+        "schema": true,
+        "mode_consistent": true,
+        "completed": true,
+        "correct_document": true,
+        "expected_fact": true,
+        "context_precondition": true,
+        "same_session": true,
+        "all_citations_valid": true
+      },
+      "trace": "examples/traces/live/83fc5342e6754a18924232240a0c45ba.json",
+      "output": "examples/outputs/live/83fc5342e6754a18924232240a0c45ba.json",
+      "input": "examples/inputs/live-83fc5342e6754a18924232240a0c45ba.json",
+      "model_decisions": 8,
+      "tools": [
+        "search_documents",
+        "read_document",
+        "inspect_versions",
+        "search_documents",
+        "read_document",
+        "search_documents",
+        "read_document",
+        "submit_answer"
+      ],
+      "pre_trace": "examples/traces/live/03a8e7e6384b447881323c82b8b6bef5.json"
+    },
+    {
+      "id": "TC06",
+      "question": "办公电脑申领审批需要多久？",
+      "status": "PASS",
+      "result_status": "COMPLETED",
+      "checks": {
+        "schema": true,
+        "mode_consistent": true,
+        "controlled_state": true,
+        "tool_error_observed": true,
+        "decision_after_error": true,
+        "honest_success": true,
+        "all_citations_valid": true
+      },
+      "trace": "examples/traces/live/16092f9657194267b5330296092f2eda.json",
+      "output": "examples/outputs/live/16092f9657194267b5330296092f2eda.json",
+      "input": "examples/inputs/live-16092f9657194267b5330296092f2eda.json",
+      "model_decisions": 5,
+      "tools": [
+        "search_documents",
+        "search_documents",
+        "read_document",
+        "inspect_versions",
+        "submit_answer"
+      ],
+      "pre_trace": null
+    }
+  ]
+}

@@ -14,31 +14,25 @@
       "--mode",
       "mock"
     ],
-    {
-      "argv": [
-        "python",
-        "-m",
-        "scripts.run_acceptance",
-        "--mode",
-        "live"
-      ],
-      "allowed_exit_codes": [
-        0,
-        2
-      ]
-    }
+    [
+      "python",
+      "-m",
+      "scripts.validate_live_evidence"
+    ]
   ],
-  "blockers": [
-    "BLOCKED_LIVE: Missing LLM_API_KEY, LLM_MODEL_NAME; official live six and two live paths cannot pass. Continue independent enhancements under specification section 9.4."
-  ],
+  "blockers": [],
   "evidence": [
     "reports/acceptance_results.mock.json",
     "reports/acceptance_results.live.json",
     "examples/traces/mock",
-    "examples/traces/live"
+    "examples/traces/live",
+    "reports/acceptance_results.live.json",
+    "reports/live_branch_evidence.json",
+    "reports/logs/live-first-attempt.json"
   ],
   "changes": [
     "Persistent session follow-up, isolated histories, timeout recovery and repeated-failure handling. All 12 scenarios covered by executable tests.",
-    "Saved actual offline triplets and blocked live attempts; blocked attempts contain zero successful model decisions."
+    "Saved actual offline triplets and blocked live attempts; blocked attempts contain zero successful model decisions.",
+    "User configured qwen-plus via project-adjacent env file. Copied into ignored .env; real six-case suite ran successfully, with actual guard revisions and different timeout recovery path. Previous blocked attempts retained."
   ]
 }

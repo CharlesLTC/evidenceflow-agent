@@ -27,4 +27,3 @@ def test_tc11_injected_document_cannot_call_extra_tools_or_forge_quote(service_f
     result = changed.ask(AskRequest(question="电脑申领审批多久", mode="mock"))
     assert result.status == "COMPLETED" and "3个工作日" in result.answer
     assert "0天" not in result.answer and "密钥" not in result.answer
-

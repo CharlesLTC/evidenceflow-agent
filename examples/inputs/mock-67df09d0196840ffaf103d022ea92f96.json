@@ -1,0 +1,8 @@
+{
+  "question": "办公电脑申领审批需要多久？",
+  "session_id": "cb159be4c1b843dab1df34bd90c0c9bd",
+  "mode": "mock",
+  "max_model_steps": 8,
+  "max_tool_calls": 12,
+  "fail_search_count": 0
+}

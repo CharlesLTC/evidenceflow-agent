@@ -7,7 +7,7 @@ from langgraph.graph import END, START, StateGraph
 
 from evidenceflow.config import Settings
 from evidenceflow.document_store import DocumentStore
-from evidenceflow.evidence_guard import EvidenceGuard, SUFFIXES
+from evidenceflow.evidence_guard import SUFFIXES, EvidenceGuard
 from evidenceflow.llm_client import LiveModel, MockModel, ModelError
 from evidenceflow.retriever import Retriever
 from evidenceflow.schemas import Answer, AskRequest, Draft
@@ -50,8 +50,16 @@ class AgentState(TypedDict, total=False):
 
 def build_graph(model, tools, guard, trace, request, max_steps, max_calls):
     def terminal(state, status, reason, code=None):
-        return {"status": status, "result": {"answer": SUFFIXES[status], "status": status,
-                "citations": [], "missing_info": [reason], "error_code": code}}
+        return {
+            "status": status,
+            "result": {
+                "answer": SUFFIXES[status],
+                "status": status,
+                "citations": [],
+                "missing_info": [reason],
+                "error_code": code,
+            },
+        }
 
     def decide(state):
         if state["model_steps_used"] >= max_steps or state["tool_calls_used"] >= max_calls:
@@ -67,19 +75,42 @@ def build_graph(model, tools, guard, trace, request, max_steps, max_calls):
                 if isinstance(decision.usage.get(key), (int, float)):
                     usage[key] = usage.get(key, 0) + decision.usage[key]
             # The model's hidden reasoning/content is intentionally not recorded.
-            trace.event("model_decision", model_step=step, tool_calls=calls,
-                        usage=decision.usage or None, next_action=[c["name"] for c in calls],
-                        decision_basis="Model selected tools after receiving the preceding observations.")
-            message = {"role": "assistant", "content": None, "tool_calls": [
-                {"id": c["id"], "type": "function", "function": {"name": c["name"],
-                 "arguments": json.dumps(c["arguments"], ensure_ascii=False)}} for c in calls]}
-            return {"model_steps_used": step, "pending_calls": calls,
-                    "messages": state["messages"] + [message], "usage": usage}
+            trace.event(
+                "model_decision",
+                model_step=step,
+                tool_calls=calls,
+                usage=decision.usage or None,
+                next_action=[c["name"] for c in calls],
+                decision_basis="Model selected tools after receiving the preceding observations.",
+            )
+            message = {
+                "role": "assistant",
+                "content": None,
+                "tool_calls": [
+                    {
+                        "id": c["id"],
+                        "type": "function",
+                        "function": {
+                            "name": c["name"],
+                            "arguments": json.dumps(c["arguments"], ensure_ascii=False),
+                        },
+                    }
+                    for c in calls
+                ],
+            }
+            return {
+                "model_steps_used": step,
+                "pending_calls": calls,
+                "messages": state["messages"] + [message],
+                "usage": usage,
+            }
         except Exception as exc:
             code = str(exc) if isinstance(exc, ModelError) else type(exc).__name__
             trace.event("model_error", model_step=step, error={"code": code}, next_action="stop")
-            return {**terminal(state, "FAILED", "模型调用失败，请检查配置和服务状态", code),
-                    "model_steps_used": step}
+            return {
+                **terminal(state, "FAILED", "模型调用失败，请检查配置和服务状态", code),
+                "model_steps_used": step,
+            }
 
     def execute(state):
         messages = list(state["messages"])
@@ -93,7 +124,9 @@ def build_graph(model, tools, guard, trace, request, max_steps, max_calls):
         result = None
         for call in state["pending_calls"]:
             if count >= max_calls:
-                result = terminal(state, "INCOMPLETE", "Tool execution limit reached", "BUDGET_EXHAUSTED")["result"]
+                result = terminal(
+                    state, "INCOMPLETE", "Tool execution limit reached", "BUDGET_EXHAUSTED"
+                )["result"]
                 break
             count += 1
             name, args = call["name"], call["arguments"]
@@ -101,7 +134,7 @@ def build_graph(model, tools, guard, trace, request, max_steps, max_calls):
             if name == "submit_answer":
                 try:
                     draft = Draft.model_validate(args)
-                    validation = guard.validate(draft, loaded, discovered)
+                    validation = guard.validate(draft, loaded, discovered, observations)
                     obs = validation
                     conflicts = validation["conflicts"]
                     if validation["valid"]:
@@ -122,29 +155,54 @@ def build_graph(model, tools, guard, trace, request, max_steps, max_calls):
                 if name == "inspect_versions":
                     discovered.update(v["doc_id"] for v in obs.get("versions", []))
             duration = (time.perf_counter() - begin) * 1000
-            trace.event("tool_observation", model_step=state["model_steps_used"],
-                        tool_call_number=count, tool_name=name, arguments=args,
-                        observation=obs, observation_summary=json.dumps(obs, ensure_ascii=False)[:500],
-                        latency_ms=duration, next_action="finalize" if result else "agent_decide",
-                        decision_basis="Tool output or Guard rejection returned to the model.")
+            trace.event(
+                "tool_observation",
+                model_step=state["model_steps_used"],
+                tool_call_number=count,
+                tool_name=name,
+                arguments=args,
+                observation=obs,
+                observation_summary=json.dumps(obs, ensure_ascii=False)[:500],
+                latency_ms=duration,
+                next_action="finalize" if result else "agent_decide",
+                decision_basis="Tool output or Guard rejection returned to the model.",
+            )
             observations.append(obs)
-            messages.append({"role": "tool", "tool_call_id": call["id"],
-                             "content": json.dumps(obs, ensure_ascii=False)})
+            messages.append(
+                {
+                    "role": "tool",
+                    "tool_call_id": call["id"],
+                    "content": json.dumps(obs, ensure_ascii=False),
+                }
+            )
             if result:
                 break
-        return {"messages": messages, "observations": observations, "loaded_evidence": loaded,
-                "discovered": sorted(discovered), "search_history": searches,
-                "tool_calls_used": count, "validation_errors": validation_errors,
-                "conflicts": conflicts, "result": result}
+        return {
+            "messages": messages,
+            "observations": observations,
+            "loaded_evidence": loaded,
+            "discovered": sorted(discovered),
+            "search_history": searches,
+            "tool_calls_used": count,
+            "validation_errors": validation_errors,
+            "conflicts": conflicts,
+            "result": result,
+        }
 
     graph = StateGraph(AgentState)
     graph.add_node("agent_decide", decide)
     graph.add_node("execute_tools", execute)
     graph.add_edge(START, "agent_decide")
-    graph.add_conditional_edges("agent_decide", lambda s: "end" if s.get("result") else "tools",
-                                {"end": END, "tools": "execute_tools"})
-    graph.add_conditional_edges("execute_tools", lambda s: "end" if s.get("result") else "decide",
-                                {"end": END, "decide": "agent_decide"})
+    graph.add_conditional_edges(
+        "agent_decide",
+        lambda s: "end" if s.get("result") else "tools",
+        {"end": END, "tools": "execute_tools"},
+    )
+    graph.add_conditional_edges(
+        "execute_tools",
+        lambda s: "end" if s.get("result") else "decide",
+        {"end": END, "decide": "agent_decide"},
+    )
     return graph.compile()
 
 
@@ -152,6 +210,14 @@ class AgentService:
     def __init__(self, settings=None, store=None, model=None, encoder=None):
         self.settings = settings or Settings.from_env()
         self.store = store or DocumentStore(self.settings.root / "data/documents.json")
+        if encoder is None and self.settings.strategy in ("dense", "hybrid"):
+            try:
+                from evidenceflow.embeddings import configured_encoder
+
+                encoder = configured_encoder(self.settings.root)
+            except Exception:
+                # Tool reports RETRIEVAL_UNAVAILABLE; the model chooses a fallback strategy.
+                encoder = None
         self.retriever = Retriever(self.store, encoder)
         self.sessions = SessionStore(self.settings.root / ".cache/sessions.sqlite")
         self.model = model
@@ -169,26 +235,69 @@ class AgentService:
             raise ValueError("Request mode does not match injected model mode")
         mode = model.mode
         trace = TraceWriter(self.settings.root, trace_id, mode, model.name)
-        messages = [{"role": "system", "content": SYSTEM_PROMPT + "\n默认检索策略：" + self.settings.strategy}]
+        messages = [
+            {
+                "role": "system",
+                "content": SYSTEM_PROMPT + "\n默认检索策略：" + self.settings.strategy,
+            }
+        ]
         for old in self.sessions.history(session_id, mode)[-4:]:
-            messages.extend([{"role": "user", "content": old["question"]},
-                             {"role": "assistant", "content": "Historical answer (not current evidence): " + old["answer"]}])
+            messages.extend(
+                [
+                    {"role": "user", "content": old["question"]},
+                    {
+                        "role": "assistant",
+                        "content": "Historical answer (not current evidence): " + old["answer"],
+                    },
+                ]
+            )
         messages.append({"role": "user", "content": request.question})
-        graph = build_graph(model, Tools(self.store, self.retriever, request.fail_search_count),
-                            EvidenceGuard(self.store), trace, request,
-                            min(request.max_model_steps, self.settings.max_model_steps, 8),
-                            min(request.max_tool_calls, self.settings.max_tool_calls, 12))
-        state = graph.invoke({"session_id": session_id, "messages": messages, "question": request.question,
-                              "loaded_evidence": {}, "discovered": [], "search_history": [],
-                              "observations": [], "conflicts": [], "validation_errors": [],
-                              "tool_calls_used": 0, "model_steps_used": 0, "status": "RUNNING",
-                              "result": None, "trace_id": trace_id, "pending_calls": [], "usage": {}},
-                             config={"recursion_limit": 40})
-        result = Answer(question=request.question, **state["result"], conflicts=state["conflicts"],
-                        steps_used=state["model_steps_used"], tool_calls_used=state["tool_calls_used"],
-                        trace_id=trace_id, session_id=session_id, mode=mode, model_name=model.name,
-                        latency_ms=(time.perf_counter() - begin) * 1000, usage=state["usage"])
+        graph = build_graph(
+            model,
+            Tools(self.store, self.retriever, request.fail_search_count),
+            EvidenceGuard(self.store),
+            trace,
+            request,
+            min(request.max_model_steps, self.settings.max_model_steps, 8),
+            min(request.max_tool_calls, self.settings.max_tool_calls, 12),
+        )
+        state = graph.invoke(
+            {
+                "session_id": session_id,
+                "messages": messages,
+                "question": request.question,
+                "loaded_evidence": {},
+                "discovered": [],
+                "search_history": [],
+                "observations": [],
+                "conflicts": [],
+                "validation_errors": [],
+                "tool_calls_used": 0,
+                "model_steps_used": 0,
+                "status": "RUNNING",
+                "result": None,
+                "trace_id": trace_id,
+                "pending_calls": [],
+                "usage": {},
+            },
+            config={"recursion_limit": 40},
+        )
+        result = Answer(
+            question=request.question,
+            **state["result"],
+            conflicts=state["conflicts"],
+            steps_used=state["model_steps_used"],
+            tool_calls_used=state["tool_calls_used"],
+            trace_id=trace_id,
+            session_id=session_id,
+            mode=mode,
+            model_name=model.name,
+            latency_ms=(time.perf_counter() - begin) * 1000,
+            usage=state["usage"],
+        )
         trace.finish(result)
-        write_json(self.settings.root / f"examples/inputs/{mode}-{trace_id}.json", request.model_dump())
+        write_json(
+            self.settings.root / f"examples/inputs/{mode}-{trace_id}.json", request.model_dump()
+        )
         self.sessions.append(result)
         return result

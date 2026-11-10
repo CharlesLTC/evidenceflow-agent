@@ -1,0 +1,228 @@
+{
+  "trace_id": "d292e57d5a6a42aaa6a2b5cb5446132e",
+  "mode": "mock",
+  "model_name": "offline-observation-simulator",
+  "events": [
+    {
+      "kind": "model_decision",
+      "step": 1,
+      "trace_id": "d292e57d5a6a42aaa6a2b5cb5446132e",
+      "mode": "mock",
+      "model_name": "offline-observation-simulator",
+      "timestamp": "2026-11-10T04:48:22.389950+00:00",
+      "model_step": 1,
+      "tool_calls": [
+        {
+          "id": "call_6b33ce2630",
+          "name": "search_documents",
+          "arguments": {
+            "query": "公司的年终奖金是多少？",
+            "top_k": 5,
+            "strategy": "bm25"
+          }
+        }
+      ],
+      "usage": null,
+      "next_action": [
+        "search_documents"
+      ],
+      "decision_basis": "Model selected tools after receiving the preceding observations."
+    },
+    {
+      "kind": "tool_observation",
+      "step": 2,
+      "trace_id": "d292e57d5a6a42aaa6a2b5cb5446132e",
+      "mode": "mock",
+      "model_name": "offline-observation-simulator",
+      "timestamp": "2026-11-10T04:48:22.390722+00:00",
+      "model_step": 1,
+      "tool_call_number": 1,
+      "tool_name": "search_documents",
+      "arguments": {
+        "query": "公司的年终奖金是多少？",
+        "top_k": 5,
+        "strategy": "bm25"
+      },
+      "observation": {
+        "query": "公司的年终奖金是多少？",
+        "strategy": "bm25",
+        "hits": [
+          {
+            "doc_id": "D28",
+            "chunk_id": "D28-C01",
+            "title": "发票抬头查询",
+            "topic": "发票",
+            "version_date": "2025-09-01",
+            "score": 2.544862034879569,
+            "preview": "开具发票前应在财务门户核对公司抬头和税号。"
+          },
+          {
+            "doc_id": "D10",
+            "chunk_id": "D10-C01",
+            "title": "远程会议",
+            "topic": "远程会议",
+            "version_date": "2025-09-01",
+            "score": 2.407189954350113,
+            "preview": "远程会议使用公司会议平台，外部参会人须由主持人发送邀请。"
+          }
+        ]
+      },
+      "observation_summary": "{\"query\": \"公司的年终奖金是多少？\", \"strategy\": \"bm25\", \"hits\": [{\"doc_id\": \"D28\", \"chunk_id\": \"D28-C01\", \"title\": \"发票抬头查询\", \"topic\": \"发票\", \"version_date\": \"2025-09-01\", \"score\": 2.544862034879569, \"preview\": \"开具发票前应在财务门户核对公司抬头和税号。\"}, {\"doc_id\": \"D10\", \"chunk_id\": \"D10-C01\", \"title\": \"远程会议\", \"topic\": \"远程会议\", \"version_date\": \"2025-09-01\", \"score\": 2.407189954350113, \"preview\": \"远程会议使用公司会议平台，外部参会人须由主持人发送邀请。\"}]}",
+      "latency_ms": 0.18649999401532114,
+      "next_action": "agent_decide",
+      "decision_basis": "Tool output or Guard rejection returned to the model."
+    },
+    {
+      "kind": "model_decision",
+      "step": 3,
+      "trace_id": "d292e57d5a6a42aaa6a2b5cb5446132e",
+      "mode": "mock",
+      "model_name": "offline-observation-simulator",
+      "timestamp": "2026-11-10T04:48:22.392175+00:00",
+      "model_step": 2,
+      "tool_calls": [
+        {
+          "id": "call_33b0f328a0",
+          "name": "read_document",
+          "arguments": {
+            "doc_id": "D28"
+          }
+        }
+      ],
+      "usage": null,
+      "next_action": [
+        "read_document"
+      ],
+      "decision_basis": "Model selected tools after receiving the preceding observations."
+    },
+    {
+      "kind": "tool_observation",
+      "step": 4,
+      "trace_id": "d292e57d5a6a42aaa6a2b5cb5446132e",
+      "mode": "mock",
+      "model_name": "offline-observation-simulator",
+      "timestamp": "2026-11-10T04:48:22.392175+00:00",
+      "model_step": 2,
+      "tool_call_number": 2,
+      "tool_name": "read_document",
+      "arguments": {
+        "doc_id": "D28"
+      },
+      "observation": {
+        "doc_id": "D28",
+        "title": "发票抬头查询",
+        "version_date": "2025-09-01",
+        "effective_date": null,
+        "scope": "全体员工",
+        "status": "published",
+        "topic": "发票",
+        "content": "开具发票前应在财务门户核对公司抬头和税号。",
+        "chunks": [
+          {
+            "doc_id": "D28",
+            "chunk_id": "D28-C01",
+            "start": 0,
+            "end": 21,
+            "text": "开具发票前应在财务门户核对公司抬头和税号。"
+          }
+        ],
+        "trust": "untrusted_document_data"
+      },
+      "observation_summary": "{\"doc_id\": \"D28\", \"title\": \"发票抬头查询\", \"version_date\": \"2025-09-01\", \"effective_date\": null, \"scope\": \"全体员工\", \"status\": \"published\", \"topic\": \"发票\", \"content\": \"开具发票前应在财务门户核对公司抬头和税号。\", \"chunks\": [{\"doc_id\": \"D28\", \"chunk_id\": \"D28-C01\", \"start\": 0, \"end\": 21, \"text\": \"开具发票前应在财务门户核对公司抬头和税号。\"}], \"trust\": \"untrusted_document_data\"}",
+      "latency_ms": 0.01930000144056976,
+      "next_action": "agent_decide",
+      "decision_basis": "Tool output or Guard rejection returned to the model."
+    },
+    {
+      "kind": "model_decision",
+      "step": 5,
+      "trace_id": "d292e57d5a6a42aaa6a2b5cb5446132e",
+      "mode": "mock",
+      "model_name": "offline-observation-simulator",
+      "timestamp": "2026-11-10T04:48:22.393178+00:00",
+      "model_step": 3,
+      "tool_calls": [
+        {
+          "id": "call_6cca0b8240",
+          "name": "submit_answer",
+          "arguments": {
+            "answer": "D28：开具发票前应在财务门户核对公司抬头和税号。",
+            "status": "COMPLETED",
+            "citations": [
+              {
+                "doc_id": "D28",
+                "version_date": "2025-09-01",
+                "quote": "开具发票前应在财务门户核对公司抬头和税号。",
+                "chunk_id": "D28-C01"
+              }
+            ],
+            "missing_info": []
+          }
+        }
+      ],
+      "usage": null,
+      "next_action": [
+        "submit_answer"
+      ],
+      "decision_basis": "Model selected tools after receiving the preceding observations."
+    },
+    {
+      "kind": "tool_observation",
+      "step": 6,
+      "trace_id": "d292e57d5a6a42aaa6a2b5cb5446132e",
+      "mode": "mock",
+      "model_name": "offline-observation-simulator",
+      "timestamp": "2026-11-10T04:48:22.394178+00:00",
+      "model_step": 3,
+      "tool_call_number": 3,
+      "tool_name": "submit_answer",
+      "arguments": {
+        "answer": "D28：开具发票前应在财务门户核对公司抬头和税号。",
+        "status": "COMPLETED",
+        "citations": [
+          {
+            "doc_id": "D28",
+            "version_date": "2025-09-01",
+            "quote": "开具发票前应在财务门户核对公司抬头和税号。",
+            "chunk_id": "D28-C01"
+          }
+        ],
+        "missing_info": []
+      },
+      "observation": {
+        "valid": true,
+        "errors": [],
+        "conflicts": [],
+        "expected_answer_format": null
+      },
+      "observation_summary": "{\"valid\": true, \"errors\": [], \"conflicts\": [], \"expected_answer_format\": null}",
+      "latency_ms": 0.03290000313427299,
+      "next_action": "finalize",
+      "decision_basis": "Tool output or Guard rejection returned to the model."
+    }
+  ],
+  "result": {
+    "question": "公司的年终奖金是多少？",
+    "answer": "D28：开具发票前应在财务门户核对公司抬头和税号。",
+    "status": "COMPLETED",
+    "citations": [
+      {
+        "doc_id": "D28",
+        "version_date": "2025-09-01",
+        "quote": "开具发票前应在财务门户核对公司抬头和税号。",
+        "chunk_id": "D28-C01"
+      }
+    ],
+    "missing_info": [],
+    "conflicts": [],
+    "steps_used": 3,
+    "tool_calls_used": 3,
+    "trace_id": "d292e57d5a6a42aaa6a2b5cb5446132e",
+    "session_id": "accept_ef998d5c89dc4b42a0f8bdf20e690ad9",
+    "mode": "mock",
+    "model_name": "offline-observation-simulator",
+    "latency_ms": 9.045300001162104,
+    "usage": {},
+    "error_code": null
+  }
+}

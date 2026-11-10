@@ -1,0 +1,19 @@
+{
+  "question": "差旅报销期限是多久？",
+  "answer": "工具或模型服务不可用，本次未能完成核验。",
+  "status": "FAILED",
+  "citations": [],
+  "missing_info": [
+    "模型调用失败，请检查配置和服务状态"
+  ],
+  "conflicts": [],
+  "steps_used": 1,
+  "tool_calls_used": 0,
+  "trace_id": "193917d8a66b47dd9d32a0d3e99678db",
+  "session_id": "accept_7f05cef246c146d484e1082745f286f5",
+  "mode": "live",
+  "model_name": "",
+  "latency_ms": 4.574799997499213,
+  "usage": {},
+  "error_code": "BLOCKED_LIVE"
+}

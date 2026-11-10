@@ -1,0 +1,39 @@
+{
+  "trace_id": "193917d8a66b47dd9d32a0d3e99678db",
+  "mode": "live",
+  "model_name": "",
+  "events": [
+    {
+      "kind": "model_error",
+      "step": 1,
+      "trace_id": "193917d8a66b47dd9d32a0d3e99678db",
+      "mode": "live",
+      "model_name": "",
+      "timestamp": "2026-11-10T04:47:29.429409+00:00",
+      "model_step": 1,
+      "error": {
+        "code": "BLOCKED_LIVE"
+      },
+      "next_action": "stop"
+    }
+  ],
+  "result": {
+    "question": "差旅报销期限是多久？",
+    "answer": "工具或模型服务不可用，本次未能完成核验。",
+    "status": "FAILED",
+    "citations": [],
+    "missing_info": [
+      "模型调用失败，请检查配置和服务状态"
+    ],
+    "conflicts": [],
+    "steps_used": 1,
+    "tool_calls_used": 0,
+    "trace_id": "193917d8a66b47dd9d32a0d3e99678db",
+    "session_id": "accept_7f05cef246c146d484e1082745f286f5",
+    "mode": "live",
+    "model_name": "",
+    "latency_ms": 4.574799997499213,
+    "usage": {},
+    "error_code": "BLOCKED_LIVE"
+  }
+}

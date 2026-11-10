@@ -1,0 +1,39 @@
+{
+  "trace_id": "3c8bf28ecd96474b93277c7ffacc3fd0",
+  "mode": "live",
+  "model_name": "",
+  "events": [
+    {
+      "kind": "model_error",
+      "step": 1,
+      "trace_id": "3c8bf28ecd96474b93277c7ffacc3fd0",
+      "mode": "live",
+      "model_name": "",
+      "timestamp": "2026-11-10T04:47:29.489233+00:00",
+      "model_step": 1,
+      "error": {
+        "code": "BLOCKED_LIVE"
+      },
+      "next_action": "stop"
+    }
+  ],
+  "result": {
+    "question": "办公电脑申领审批需要多久？",
+    "answer": "工具或模型服务不可用，本次未能完成核验。",
+    "status": "FAILED",
+    "citations": [],
+    "missing_info": [
+      "模型调用失败，请检查配置和服务状态"
+    ],
+    "conflicts": [],
+    "steps_used": 1,
+    "tool_calls_used": 0,
+    "trace_id": "3c8bf28ecd96474b93277c7ffacc3fd0",
+    "session_id": "accept_5b7e134d05864786b3c752941452c149",
+    "mode": "live",
+    "model_name": "",
+    "latency_ms": 4.293200006941333,
+    "usage": {},
+    "error_code": "BLOCKED_LIVE"
+  }
+}

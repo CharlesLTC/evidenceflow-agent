@@ -1,0 +1,23 @@
+{
+  "question": "办公电脑申领审批需要多久？",
+  "answer": "执行预算已用尽，本次核验未完成。",
+  "status": "INCOMPLETE",
+  "citations": [],
+  "missing_info": [
+    "Execution limit reached"
+  ],
+  "conflicts": [],
+  "steps_used": 8,
+  "tool_calls_used": 8,
+  "trace_id": "187a20a3d2e84db8a4af5333bcfe8069",
+  "session_id": "825cd389985b4aed8463230a4e8cbe8f",
+  "mode": "live",
+  "model_name": "qwen-plus",
+  "latency_ms": 9414.378700006637,
+  "usage": {
+    "prompt_tokens": 12831,
+    "completion_tokens": 303,
+    "total_tokens": 13134
+  },
+  "error_code": "BUDGET_EXHAUSTED"
+}

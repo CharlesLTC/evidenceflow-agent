@@ -1,0 +1,334 @@
+{
+  "trace_id": "c73d15e688714a5b953b9e892d4ee0ed",
+  "mode": "mock",
+  "model_name": "offline-observation-simulator",
+  "events": [
+    {
+      "kind": "model_decision",
+      "step": 1,
+      "trace_id": "c73d15e688714a5b953b9e892d4ee0ed",
+      "mode": "mock",
+      "model_name": "offline-observation-simulator",
+      "timestamp": "2026-11-10T05:06:05.474289+00:00",
+      "model_step": 1,
+      "tool_calls": [
+        {
+          "id": "call_714c2b5d3e",
+          "name": "search_documents",
+          "arguments": {
+            "query": "办公电脑申领审批需要多久？",
+            "top_k": 5,
+            "strategy": "bm25"
+          }
+        }
+      ],
+      "usage": null,
+      "next_action": [
+        "search_documents"
+      ],
+      "decision_basis": "Model selected tools after receiving the preceding observations."
+    },
+    {
+      "kind": "tool_observation",
+      "step": 2,
+      "trace_id": "c73d15e688714a5b953b9e892d4ee0ed",
+      "mode": "mock",
+      "model_name": "offline-observation-simulator",
+      "timestamp": "2026-11-10T05:06:05.474289+00:00",
+      "model_step": 1,
+      "tool_call_number": 1,
+      "tool_name": "search_documents",
+      "arguments": {
+        "query": "办公电脑申领审批需要多久？",
+        "top_k": 5,
+        "strategy": "bm25"
+      },
+      "observation": {
+        "error": {
+          "code": "TOOL_TIMEOUT",
+          "type": "TimeoutError",
+          "retryable": true
+        }
+      },
+      "observation_summary": "{\"error\": {\"code\": \"TOOL_TIMEOUT\", \"type\": \"TimeoutError\", \"retryable\": true}}",
+      "latency_ms": 0.019199986127205193,
+      "next_action": "agent_decide",
+      "decision_basis": "Tool output or Guard rejection returned to the model."
+    },
+    {
+      "kind": "model_decision",
+      "step": 3,
+      "trace_id": "c73d15e688714a5b953b9e892d4ee0ed",
+      "mode": "mock",
+      "model_name": "offline-observation-simulator",
+      "timestamp": "2026-11-10T05:06:05.476287+00:00",
+      "model_step": 2,
+      "tool_calls": [
+        {
+          "id": "call_1d8b50b3bc",
+          "name": "search_documents",
+          "arguments": {
+            "query": "办公电脑申领审批需要多久？ 制度",
+            "top_k": 8,
+            "strategy": "bm25"
+          }
+        }
+      ],
+      "usage": null,
+      "next_action": [
+        "search_documents"
+      ],
+      "decision_basis": "Model selected tools after receiving the preceding observations."
+    },
+    {
+      "kind": "tool_observation",
+      "step": 4,
+      "trace_id": "c73d15e688714a5b953b9e892d4ee0ed",
+      "mode": "mock",
+      "model_name": "offline-observation-simulator",
+      "timestamp": "2026-11-10T05:06:05.476287+00:00",
+      "model_step": 2,
+      "tool_call_number": 2,
+      "tool_name": "search_documents",
+      "arguments": {
+        "query": "办公电脑申领审批需要多久？ 制度",
+        "top_k": 8,
+        "strategy": "bm25"
+      },
+      "observation": {
+        "query": "办公电脑申领审批需要多久？ 制度",
+        "strategy": "bm25",
+        "hits": [
+          {
+            "doc_id": "D03",
+            "chunk_id": "D03-C01",
+            "title": "办公电脑申领",
+            "topic": "电脑申领",
+            "version_date": "2025-01-01",
+            "score": 19.30117265215901,
+            "preview": "办公电脑申领须在IT门户填写申请，经主管审批后3个工作日内完成。"
+          },
+          {
+            "doc_id": "D05",
+            "chunk_id": "D05-C01",
+            "title": "员工请假制度",
+            "topic": "请假",
+            "version_date": "2025-01-01",
+            "score": 3.8439821759244497,
+            "preview": "请假应在HR系统提交申请，由直属主管审批。"
+          },
+          {
+            "doc_id": "D01",
+            "chunk_id": "D01-C01",
+            "title": "差旅报销制度 A",
+            "topic": "差旅报销",
+            "version_date": "2025-01-01",
+            "score": 3.42044068513841,
+            "preview": "差旅报销应在30天内提交。报销须附发票和出差审批单。"
+          },
+          {
+            "doc_id": "D02",
+            "chunk_id": "D02-C01",
+            "title": "差旅报销制度 B",
+            "topic": "差旅报销",
+            "version_date": "2025-07-01",
+            "score": 3.42044068513841,
+            "preview": "差旅报销应在15天内提交。报销须附发票和出差审批单。"
+          },
+          {
+            "doc_id": "D23",
+            "chunk_id": "D23-C01",
+            "title": "办公网络报障",
+            "topic": "网络故障",
+            "version_date": "2025-09-01",
+            "score": 2.672236325116708,
+            "preview": "办公室网络无法连接时应提交网络报障工单并注明工位。"
+          },
+          {
+            "doc_id": "D31",
+            "chunk_id": "D31-C01",
+            "title": "离职设备归还",
+            "topic": "设备归还",
+            "version_date": "2025-09-01",
+            "score": 2.5943201809113736,
+            "preview": "离职前须向IT归还电脑和配件，由IT确认资产交接。"
+          },
+          {
+            "doc_id": "D09",
+            "chunk_id": "D09-C01",
+            "title": "会议室预订",
+            "topic": "会议室",
+            "version_date": "2025-09-01",
+            "score": 1.9651293740573292,
+            "preview": "会议室须通过办公系统预订，连续使用不得超过2小时。"
+          },
+          {
+            "doc_id": "D32",
+            "chunk_id": "D32-C01",
+            "title": "紧急事件联系",
+            "topic": "紧急联系",
+            "version_date": "2025-09-01",
+            "score": 1.8258939328300674,
+            "preview": "办公区发生紧急事件时应立即联系现场安保和值班行政。"
+          }
+        ]
+      },
+      "observation_summary": "{\"query\": \"办公电脑申领审批需要多久？ 制度\", \"strategy\": \"bm25\", \"hits\": [{\"doc_id\": \"D03\", \"chunk_id\": \"D03-C01\", \"title\": \"办公电脑申领\", \"topic\": \"电脑申领\", \"version_date\": \"2025-01-01\", \"score\": 19.30117265215901, \"preview\": \"办公电脑申领须在IT门户填写申请，经主管审批后3个工作日内完成。\"}, {\"doc_id\": \"D05\", \"chunk_id\": \"D05-C01\", \"title\": \"员工请假制度\", \"topic\": \"请假\", \"version_date\": \"2025-01-01\", \"score\": 3.8439821759244497, \"preview\": \"请假应在HR系统提交申请，由直属主管审批。\"}, {\"doc_id\": \"D01\", \"chunk_id\": \"D01-C01\", \"title\": \"差旅报销制度 A\", \"topic\": \"差旅报销\", \"version",
+      "latency_ms": 0.22669999452773482,
+      "next_action": "agent_decide",
+      "decision_basis": "Tool output or Guard rejection returned to the model."
+    },
+    {
+      "kind": "model_decision",
+      "step": 5,
+      "trace_id": "c73d15e688714a5b953b9e892d4ee0ed",
+      "mode": "mock",
+      "model_name": "offline-observation-simulator",
+      "timestamp": "2026-11-10T05:06:05.478289+00:00",
+      "model_step": 3,
+      "tool_calls": [
+        {
+          "id": "call_9d5baca91f",
+          "name": "read_document",
+          "arguments": {
+            "doc_id": "D03"
+          }
+        }
+      ],
+      "usage": null,
+      "next_action": [
+        "read_document"
+      ],
+      "decision_basis": "Model selected tools after receiving the preceding observations."
+    },
+    {
+      "kind": "tool_observation",
+      "step": 6,
+      "trace_id": "c73d15e688714a5b953b9e892d4ee0ed",
+      "mode": "mock",
+      "model_name": "offline-observation-simulator",
+      "timestamp": "2026-11-10T05:06:05.478289+00:00",
+      "model_step": 3,
+      "tool_call_number": 3,
+      "tool_name": "read_document",
+      "arguments": {
+        "doc_id": "D03"
+      },
+      "observation": {
+        "doc_id": "D03",
+        "title": "办公电脑申领",
+        "version_date": "2025-01-01",
+        "effective_date": null,
+        "scope": "全体员工",
+        "status": "published",
+        "topic": "电脑申领",
+        "content": "办公电脑申领须在IT门户填写申请，经主管审批后3个工作日内完成。",
+        "chunks": [
+          {
+            "doc_id": "D03",
+            "chunk_id": "D03-C01",
+            "start": 0,
+            "end": 32,
+            "text": "办公电脑申领须在IT门户填写申请，经主管审批后3个工作日内完成。"
+          }
+        ],
+        "trust": "untrusted_document_data"
+      },
+      "observation_summary": "{\"doc_id\": \"D03\", \"title\": \"办公电脑申领\", \"version_date\": \"2025-01-01\", \"effective_date\": null, \"scope\": \"全体员工\", \"status\": \"published\", \"topic\": \"电脑申领\", \"content\": \"办公电脑申领须在IT门户填写申请，经主管审批后3个工作日内完成。\", \"chunks\": [{\"doc_id\": \"D03\", \"chunk_id\": \"D03-C01\", \"start\": 0, \"end\": 32, \"text\": \"办公电脑申领须在IT门户填写申请，经主管审批后3个工作日内完成。\"}], \"trust\": \"untrusted_document_data\"}",
+      "latency_ms": 0.017999991541728377,
+      "next_action": "agent_decide",
+      "decision_basis": "Tool output or Guard rejection returned to the model."
+    },
+    {
+      "kind": "model_decision",
+      "step": 7,
+      "trace_id": "c73d15e688714a5b953b9e892d4ee0ed",
+      "mode": "mock",
+      "model_name": "offline-observation-simulator",
+      "timestamp": "2026-11-10T05:06:05.480287+00:00",
+      "model_step": 4,
+      "tool_calls": [
+        {
+          "id": "call_d7cec62cc4",
+          "name": "submit_answer",
+          "arguments": {
+            "answer": "D03：办公电脑申领须在IT门户填写申请，经主管审批后3个工作日内完成。",
+            "status": "COMPLETED",
+            "citations": [
+              {
+                "doc_id": "D03",
+                "version_date": "2025-01-01",
+                "quote": "办公电脑申领须在IT门户填写申请，经主管审批后3个工作日内完成。",
+                "chunk_id": "D03-C01"
+              }
+            ],
+            "missing_info": []
+          }
+        }
+      ],
+      "usage": null,
+      "next_action": [
+        "submit_answer"
+      ],
+      "decision_basis": "Model selected tools after receiving the preceding observations."
+    },
+    {
+      "kind": "tool_observation",
+      "step": 8,
+      "trace_id": "c73d15e688714a5b953b9e892d4ee0ed",
+      "mode": "mock",
+      "model_name": "offline-observation-simulator",
+      "timestamp": "2026-11-10T05:06:05.480287+00:00",
+      "model_step": 4,
+      "tool_call_number": 4,
+      "tool_name": "submit_answer",
+      "arguments": {
+        "answer": "D03：办公电脑申领须在IT门户填写申请，经主管审批后3个工作日内完成。",
+        "status": "COMPLETED",
+        "citations": [
+          {
+            "doc_id": "D03",
+            "version_date": "2025-01-01",
+            "quote": "办公电脑申领须在IT门户填写申请，经主管审批后3个工作日内完成。",
+            "chunk_id": "D03-C01"
+          }
+        ],
+        "missing_info": []
+      },
+      "observation": {
+        "valid": true,
+        "errors": [],
+        "conflicts": [],
+        "expected_answer_format": null
+      },
+      "observation_summary": "{\"valid\": true, \"errors\": [], \"conflicts\": [], \"expected_answer_format\": null}",
+      "latency_ms": 0.038300000596791506,
+      "next_action": "finalize",
+      "decision_basis": "Tool output or Guard rejection returned to the model."
+    }
+  ],
+  "result": {
+    "question": "办公电脑申领审批需要多久？",
+    "answer": "D03：办公电脑申领须在IT门户填写申请，经主管审批后3个工作日内完成。",
+    "status": "COMPLETED",
+    "citations": [
+      {
+        "doc_id": "D03",
+        "version_date": "2025-01-01",
+        "quote": "办公电脑申领须在IT门户填写申请，经主管审批后3个工作日内完成。",
+        "chunk_id": "D03-C01"
+      }
+    ],
+    "missing_info": [],
+    "conflicts": [],
+    "steps_used": 4,
+    "tool_calls_used": 4,
+    "trace_id": "c73d15e688714a5b953b9e892d4ee0ed",
+    "session_id": "accept_c7eb0d910f8a436b823844b9696c8709",
+    "mode": "mock",
+    "model_name": "offline-observation-simulator",
+    "latency_ms": 10.919200009084307,
+    "usage": {},
+    "error_code": null
+  }
+}

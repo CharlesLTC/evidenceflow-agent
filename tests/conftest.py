@@ -20,4 +20,3 @@ def service_factory(tmp_path):
     yield create
     for service in services:
         service.sessions.close()
-

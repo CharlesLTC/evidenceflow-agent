@@ -1,0 +1,39 @@
+{
+  "trace_id": "f1854620e7e14b57bb0720b9d396476f",
+  "mode": "live",
+  "model_name": "",
+  "events": [
+    {
+      "kind": "model_error",
+      "step": 1,
+      "trace_id": "f1854620e7e14b57bb0720b9d396476f",
+      "mode": "live",
+      "model_name": "",
+      "timestamp": "2026-11-10T04:47:29.455596+00:00",
+      "model_step": 1,
+      "error": {
+        "code": "BLOCKED_LIVE"
+      },
+      "next_action": "stop"
+    }
+  ],
+  "result": {
+    "question": "领电脑一般几天能批下来？",
+    "answer": "工具或模型服务不可用，本次未能完成核验。",
+    "status": "FAILED",
+    "citations": [],
+    "missing_info": [
+      "模型调用失败，请检查配置和服务状态"
+    ],
+    "conflicts": [],
+    "steps_used": 1,
+    "tool_calls_used": 0,
+    "trace_id": "f1854620e7e14b57bb0720b9d396476f",
+    "session_id": "accept_e5f6b6afc22346e6aa5315d3c5ab0539",
+    "mode": "live",
+    "model_name": "",
+    "latency_ms": 4.356399993412197,
+    "usage": {},
+    "error_code": "BLOCKED_LIVE"
+  }
+}

@@ -21,8 +21,13 @@ class DocumentStore:
             for i, start in enumerate(range(0, len(doc.content), 500), 1):
                 end = min(start + 500, len(doc.content))
                 cid = f"{doc.doc_id}-C{i:02}"
-                self.chunks[cid] = dict(doc_id=doc.doc_id, chunk_id=cid, start=start,
-                                        end=end, text=doc.content[start:end])
+                self.chunks[cid] = dict(
+                    doc_id=doc.doc_id,
+                    chunk_id=cid,
+                    start=start,
+                    end=end,
+                    text=doc.content[start:end],
+                )
 
     def read(self, doc_id, chunk_ids=None):
         if doc_id not in self.documents:
@@ -35,8 +40,25 @@ class DocumentStore:
         return {**self.documents[doc_id], "chunks": chunks, "trust": "untrusted_document_data"}
 
     def versions(self, topic):
-        versions = [{k: d[k] for k in ("doc_id", "title", "topic", "version_date", "scope", "effective_date", "status")}
-                    for d in self.documents.values() if topic in d["topic"] or d["topic"] in topic]
-        return {"topic": topic, "versions": versions, "precedence": None,
-                "note": "Newer version alone does not establish precedence."}
-
+        versions = [
+            {
+                k: d[k]
+                for k in (
+                    "doc_id",
+                    "title",
+                    "topic",
+                    "version_date",
+                    "scope",
+                    "effective_date",
+                    "status",
+                )
+            }
+            for d in self.documents.values()
+            if topic in d["topic"] or d["topic"] in topic
+        ]
+        return {
+            "topic": topic,
+            "versions": versions,
+            "precedence": None,
+            "note": "Newer version alone does not establish precedence.",
+        }

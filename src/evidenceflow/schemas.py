@@ -2,8 +2,9 @@ from typing import Literal
 
 from pydantic import BaseModel, ConfigDict, Field, field_validator
 
-
-Status = Literal["COMPLETED", "NEEDS_CLARIFICATION", "INSUFFICIENT_EVIDENCE", "FAILED", "INCOMPLETE"]
+Status = Literal[
+    "COMPLETED", "NEEDS_CLARIFICATION", "INSUFFICIENT_EVIDENCE", "FAILED", "INCOMPLETE"
+]
 Mode = Literal["live", "mock", "fake_model"]
 
 
@@ -31,6 +32,7 @@ class Citation(StrictModel):
 
 class Fact(StrictModel):
     """A claim is extractive: exact evidence plus a citation index, never model self-scoring."""
+
     text: str
     citation_index: int = Field(ge=0)
 
@@ -75,4 +77,3 @@ class Answer(StrictModel):
     latency_ms: float = 0
     usage: dict = Field(default_factory=dict)
     error_code: str | None = None
-

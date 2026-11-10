@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "scanned_text_files": 60,
+  "scanned_text_files": 508,
   "findings": [],
   "scope": "deliverable files, excluding ignored environments/cache and local .env"
 }

@@ -16,4 +16,3 @@ def test_sessions_and_modes_are_isolated(service_factory):
     s.ask(AskRequest(question="电脑怎么申领？", session_id="one", mode="mock"))
     assert s.sessions.history("two") == []
     assert s.sessions.history("one", "live") == []
-

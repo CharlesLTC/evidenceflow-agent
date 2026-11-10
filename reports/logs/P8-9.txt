@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "json_files_checked": 368,
+  "actual_triplets": 92,
+  "security": {
+    "status": "PASS",
+    "scanned_text_files": 506,
+    "findings": [],
+    "scope": "deliverable files, excluding ignored environments/cache and local .env"
+  },
+  "live_six": 6,
+  "scope": "Local artifact validation; GitHub publication verified separately"
+}
+
+STDERR:

@@ -1,0 +1,152 @@
+{
+  "trace_id": "9717e1bd876349358049b2a2dc313a7a",
+  "mode": "mock",
+  "model_name": "offline-observation-simulator",
+  "events": [
+    {
+      "kind": "model_decision",
+      "step": 1,
+      "trace_id": "9717e1bd876349358049b2a2dc313a7a",
+      "mode": "mock",
+      "model_name": "offline-observation-simulator",
+      "timestamp": "2026-11-10T05:06:05.406879+00:00",
+      "model_step": 1,
+      "tool_calls": [
+        {
+          "id": "call_473fe610b8",
+          "name": "search_documents",
+          "arguments": {
+            "query": "公司的年终奖金是多少？",
+            "top_k": 5,
+            "strategy": "bm25"
+          }
+        }
+      ],
+      "usage": null,
+      "next_action": [
+        "search_documents"
+      ],
+      "decision_basis": "Model selected tools after receiving the preceding observations."
+    },
+    {
+      "kind": "tool_observation",
+      "step": 2,
+      "trace_id": "9717e1bd876349358049b2a2dc313a7a",
+      "mode": "mock",
+      "model_name": "offline-observation-simulator",
+      "timestamp": "2026-11-10T05:06:05.406879+00:00",
+      "model_step": 1,
+      "tool_call_number": 1,
+      "tool_name": "search_documents",
+      "arguments": {
+        "query": "公司的年终奖金是多少？",
+        "top_k": 5,
+        "strategy": "bm25"
+      },
+      "observation": {
+        "query": "公司的年终奖金是多少？",
+        "strategy": "bm25",
+        "hits": [
+          {
+            "doc_id": "D28",
+            "chunk_id": "D28-C01",
+            "title": "发票抬头查询",
+            "topic": "发票",
+            "version_date": "2025-09-01",
+            "score": 2.544862034879569,
+            "preview": "开具发票前应在财务门户核对公司抬头和税号。"
+          },
+          {
+            "doc_id": "D10",
+            "chunk_id": "D10-C01",
+            "title": "远程会议",
+            "topic": "远程会议",
+            "version_date": "2025-09-01",
+            "score": 2.407189954350113,
+            "preview": "远程会议使用公司会议平台，外部参会人须由主持人发送邀请。"
+          }
+        ]
+      },
+      "observation_summary": "{\"query\": \"公司的年终奖金是多少？\", \"strategy\": \"bm25\", \"hits\": [{\"doc_id\": \"D28\", \"chunk_id\": \"D28-C01\", \"title\": \"发票抬头查询\", \"topic\": \"发票\", \"version_date\": \"2025-09-01\", \"score\": 2.544862034879569, \"preview\": \"开具发票前应在财务门户核对公司抬头和税号。\"}, {\"doc_id\": \"D10\", \"chunk_id\": \"D10-C01\", \"title\": \"远程会议\", \"topic\": \"远程会议\", \"version_date\": \"2025-09-01\", \"score\": 2.407189954350113, \"preview\": \"远程会议使用公司会议平台，外部参会人须由主持人发送邀请。\"}]}",
+      "latency_ms": 0.18530001398175955,
+      "next_action": "agent_decide",
+      "decision_basis": "Tool output or Guard rejection returned to the model."
+    },
+    {
+      "kind": "model_decision",
+      "step": 3,
+      "trace_id": "9717e1bd876349358049b2a2dc313a7a",
+      "mode": "mock",
+      "model_name": "offline-observation-simulator",
+      "timestamp": "2026-11-10T05:06:05.408879+00:00",
+      "model_step": 2,
+      "tool_calls": [
+        {
+          "id": "call_4fdb3ad990",
+          "name": "submit_answer",
+          "arguments": {
+            "answer": "当前资料不足，无法依据知识库回答。",
+            "status": "INSUFFICIENT_EVIDENCE",
+            "citations": [],
+            "missing_info": [
+              "知识库未包含该问题的依据"
+            ]
+          }
+        }
+      ],
+      "usage": null,
+      "next_action": [
+        "submit_answer"
+      ],
+      "decision_basis": "Model selected tools after receiving the preceding observations."
+    },
+    {
+      "kind": "tool_observation",
+      "step": 4,
+      "trace_id": "9717e1bd876349358049b2a2dc313a7a",
+      "mode": "mock",
+      "model_name": "offline-observation-simulator",
+      "timestamp": "2026-11-10T05:06:05.408879+00:00",
+      "model_step": 2,
+      "tool_call_number": 2,
+      "tool_name": "submit_answer",
+      "arguments": {
+        "answer": "当前资料不足，无法依据知识库回答。",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "citations": [],
+        "missing_info": [
+          "知识库未包含该问题的依据"
+        ]
+      },
+      "observation": {
+        "valid": true,
+        "errors": [],
+        "conflicts": [],
+        "expected_answer_format": null
+      },
+      "observation_summary": "{\"valid\": true, \"errors\": [], \"conflicts\": [], \"expected_answer_format\": null}",
+      "latency_ms": 0.028000009479001164,
+      "next_action": "finalize",
+      "decision_basis": "Tool output or Guard rejection returned to the model."
+    }
+  ],
+  "result": {
+    "question": "公司的年终奖金是多少？",
+    "answer": "当前资料不足，无法依据知识库回答。",
+    "status": "INSUFFICIENT_EVIDENCE",
+    "citations": [],
+    "missing_info": [
+      "知识库未包含该问题的依据"
+    ],
+    "conflicts": [],
+    "steps_used": 2,
+    "tool_calls_used": 2,
+    "trace_id": "9717e1bd876349358049b2a2dc313a7a",
+    "session_id": "accept_fffc23cc36cb41a88617d7621e6c8c64",
+    "mode": "mock",
+    "model_name": "offline-observation-simulator",
+    "latency_ms": 7.2216999978991225,
+    "usage": {},
+    "error_code": null
+  }
+}

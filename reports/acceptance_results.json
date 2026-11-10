@@ -7,8 +7,8 @@
   },
   "live": {
     "path": "reports/acceptance_results.live.json",
-    "status": "BLOCKED",
-    "passed": 0,
+    "status": "PASS",
+    "passed": 6,
     "total": 6
   }
 }

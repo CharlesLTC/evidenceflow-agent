@@ -1,0 +1,8 @@
+{
+  "question": "电脑怎么申领？",
+  "session_id": "accept_781c55a639ae401f9b956576cd86d2bf",
+  "mode": "mock",
+  "max_model_steps": 8,
+  "max_tool_calls": 12,
+  "fail_search_count": 0
+}

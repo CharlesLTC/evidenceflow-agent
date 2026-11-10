@@ -1,0 +1,75 @@
+{
+  "stage": "P4",
+  "started_at": "2026-11-10T04:45:20.084244+00:00",
+  "finished_at": "2026-11-10T04:45:26.843450+00:00",
+  "status": "BLOCKED",
+  "commands": [
+    {
+      "argv": [
+        "python",
+        "-m",
+        "pytest",
+        "-q",
+        "--junitxml=reports/logs/P4-pytest.xml"
+      ],
+      "exit_code": 0,
+      "allowed_exit_codes": [
+        0
+      ],
+      "duration_seconds": 3.1754865999973845,
+      "log": "reports/logs/P4-0.txt"
+    },
+    {
+      "argv": [
+        "python",
+        "-m",
+        "scripts.run_acceptance",
+        "--mode",
+        "mock"
+      ],
+      "exit_code": 0,
+      "allowed_exit_codes": [
+        0
+      ],
+      "duration_seconds": 1.885329600001569,
+      "log": "reports/logs/P4-1.txt"
+    },
+    {
+      "argv": [
+        "python",
+        "-m",
+        "scripts.run_acceptance",
+        "--mode",
+        "live"
+      ],
+      "exit_code": 2,
+      "allowed_exit_codes": [
+        0,
+        2
+      ],
+      "duration_seconds": 1.69075690000318,
+      "log": "reports/logs/P4-2.txt"
+    }
+  ],
+  "test_counts": {
+    "tests": 50,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": 50
+  },
+  "metrics": {},
+  "evidence_paths": [
+    "reports/acceptance_results.mock.json",
+    "reports/acceptance_results.live.json",
+    "examples/traces/mock",
+    "examples/traces/live"
+  ],
+  "errors": [
+    "BLOCKED_LIVE: Missing LLM_API_KEY, LLM_MODEL_NAME; official live six and two live paths cannot pass. Continue independent enhancements under specification section 9.4."
+  ],
+  "changes_made": [
+    "Persistent session follow-up, isolated histories, timeout recovery and repeated-failure handling. All 12 scenarios covered by executable tests.",
+    "Saved actual offline triplets and blocked live attempts; blocked attempts contain zero successful model decisions."
+  ]
+}
